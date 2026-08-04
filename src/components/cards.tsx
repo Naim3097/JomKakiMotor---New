@@ -33,13 +33,11 @@ export function BikeCard({ bike, isNew = false }: { bike: Motorcycle; isNew?: bo
         <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-ink">
           {bike.model}
         </h3>
-        <p className="mt-1.5 text-[15px] font-semibold text-ink">
-          {rm(bike.price)}
-          <span className="ml-2 font-normal text-muted">
-            {rm(bike.monthly)}/mo
-          </span>
-        </p>
-        <p className="mt-0.5 text-xs text-muted">Deposit from {rm(bike.deposit)}</p>
+        {/* One value per line — the layout is identical on every card at
+            every viewport width, instead of wrapping when prices get long. */}
+        <p className="mt-1.5 text-[15px] font-semibold text-ink">{rm(bike.price)}</p>
+        <p className="mt-0.5 text-xs text-muted">From {rm(bike.monthly)}/mo</p>
+        <p className="text-xs text-muted">Deposit from {rm(bike.deposit)}</p>
       </div>
     </Link>
   );

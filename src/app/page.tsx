@@ -207,21 +207,23 @@ export default function HomePage() {
             <p className="mt-5 max-w-md text-base leading-relaxed text-muted">
               {featured.description[0]}
             </p>
-            <dl className="mt-8 grid grid-cols-3 gap-6 border-t border-line pt-7">
+            {/* Stat values never wrap: nowrap + a size step-down on narrow
+                phones where three 24px figures can't share the row. */}
+            <dl className="mt-8 grid grid-cols-3 gap-4 border-t border-line pt-7 sm:gap-6">
               <div>
-                <dd className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink">
+                <dd className="whitespace-nowrap font-display text-lg font-semibold tracking-[-0.02em] text-ink sm:text-2xl">
                   {featured.cc}cc
                 </dd>
                 <dt className="mt-1 text-xs text-muted">Liquid-cooled</dt>
               </div>
               <div>
-                <dd className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink">
+                <dd className="whitespace-nowrap font-display text-lg font-semibold tracking-[-0.02em] text-ink sm:text-2xl">
                   {rm(featured.price)}
                 </dd>
                 <dt className="mt-1 text-xs text-muted">Retail price</dt>
               </div>
               <div>
-                <dd className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink">
+                <dd className="whitespace-nowrap font-display text-lg font-semibold tracking-[-0.02em] text-ink sm:text-2xl">
                   {rm(featured.monthly)}
                 </dd>
                 <dt className="mt-1 text-xs text-muted">Monthly, from</dt>

@@ -1,5 +1,9 @@
+const NBSP = " ";
+
 export function rm(amount: number): string {
-  return `RM ${amount.toLocaleString("en-MY", {
+  // Non-breaking space so "RM 11,598" can never split across lines
+  // on narrow phone viewports.
+  return `RM${NBSP}${amount.toLocaleString("en-MY", {
     minimumFractionDigits: amount % 1 === 0 ? 0 : 2,
     maximumFractionDigits: 2,
   })}`;
