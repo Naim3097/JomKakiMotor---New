@@ -34,7 +34,7 @@ export default function BlogIndexPage() {
               {new Date(post.date).toLocaleDateString("en-MY", { day: "numeric", month: "long", year: "numeric" })}
             </time>
             <div>
-              <h2 className="display-3 max-w-2xl text-ink">{post.title}</h2>
+              <h2 className="display-3 max-w-2xl text-ink transition-colors group-hover:text-brand">{post.title}</h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">{post.excerpt}</p>
               <span className="mt-4 inline-block text-sm font-semibold text-ink underline-offset-4 group-hover:underline">
                 Read the guide

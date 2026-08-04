@@ -81,7 +81,7 @@ export default function RoadTaxPage() {
         <div className="mt-16 grid gap-x-10 gap-y-10 border-t border-line pt-12 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s, i) => (
             <div key={s.title}>
-              <span className="font-display text-3xl font-semibold tracking-[-0.02em] text-line">
+              <span className="font-display text-3xl font-semibold tracking-[-0.02em] text-brand/40">
                 0{i + 1}
               </span>
               <h2 className="mt-3 text-base font-semibold text-ink">{s.title}</h2>

@@ -155,7 +155,7 @@ export default function CatalogueClient({
                 key={`${chip.key}-${chip.value}`}
                 type="button"
                 onClick={() => toggle(chip.key, chip.value)}
-                className="inline-flex items-center gap-1.5 rounded-md bg-surface px-3 py-1.5 text-xs font-semibold text-ink transition-colors hover:bg-line"
+                className="inline-flex items-center gap-1.5 rounded-md bg-brand/10 px-3 py-1.5 text-xs font-semibold text-brand-deep transition-colors hover:bg-brand hover:text-white"
               >
                 {chip.value}
                 <span aria-hidden>×</span>

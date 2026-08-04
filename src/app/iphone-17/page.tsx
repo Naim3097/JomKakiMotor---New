@@ -106,7 +106,7 @@ export default function Iphone17Page() {
               <h3 className="display-3 mt-5 text-ink">{m.name}</h3>
               <p className="mt-1 text-sm text-muted">
                 RRP {rm(m.rrp)} · from{" "}
-                <span className="font-semibold text-ink">RM{m.monthlyFrom.toFixed(2)}/month</span>
+                <span className="font-semibold text-brand">RM{m.monthlyFrom.toFixed(2)}/month</span>
               </p>
               <div className="mt-5 flex flex-1 flex-col">
                 <ProductEnquiry
@@ -141,7 +141,7 @@ export default function Iphone17Page() {
         <div className="mt-10 grid gap-x-10 gap-y-8 border-t border-line pt-10 sm:grid-cols-2 lg:grid-cols-4">
           {IPHONE_WHY.map((w, i) => (
             <div key={w.title}>
-              <span className="font-display text-2xl font-semibold tracking-[-0.02em] text-line">
+              <span className="font-display text-2xl font-semibold tracking-[-0.02em] text-brand/40">
                 0{i + 1}
               </span>
               <p className="mt-2 text-[15px] font-semibold leading-snug text-ink">{w.title}</p>
@@ -159,7 +159,7 @@ export default function Iphone17Page() {
         />
         <div className="mt-12 grid gap-14 md:grid-cols-2 md:gap-10">
           {IPHONE_FINANCING.map((f) => (
-            <div key={f.name} className="border-t-2 border-ink pt-6">
+            <div key={f.name} className="border-t-2 border-brand pt-6">
               <h3 className="display-3 text-ink">{f.name}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">{f.tagline}</p>
               <dl className="mt-6 space-y-5">
@@ -196,7 +196,7 @@ export default function Iphone17Page() {
         <div className="mt-10 grid gap-x-10 gap-y-8 border-t border-line pt-10 sm:grid-cols-2 lg:grid-cols-4">
           {IPHONE_STEPS.map((s, i) => (
             <div key={s.step}>
-              <span className="font-display text-3xl font-semibold tracking-[-0.02em] text-line">
+              <span className="font-display text-3xl font-semibold tracking-[-0.02em] text-brand/40">
                 0{i + 1}
               </span>
               <p className="mt-2 text-[15px] font-semibold leading-snug text-ink">{s.title}</p>

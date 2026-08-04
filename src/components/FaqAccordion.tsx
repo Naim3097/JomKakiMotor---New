@@ -16,7 +16,7 @@ export default function FaqAccordion({
         <details key={f.q} className="group py-5">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-left text-[15px] font-semibold text-ink [&::-webkit-details-marker]:hidden">
             {f.q}
-            <span aria-hidden className="shrink-0 text-muted transition-transform group-open:rotate-45">
+            <span aria-hidden className="shrink-0 text-brand transition-transform group-open:rotate-45">
               <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
                 <path d="M10 4v12M4 10h12" />
               </svg>

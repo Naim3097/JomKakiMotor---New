@@ -30,13 +30,13 @@ export function BikeCard({ bike, isNew = false }: { bike: Motorcycle; isNew?: bo
       </div>
       <div className="mt-4">
         <p className="text-xs font-medium text-muted">{bike.brand}</p>
-        <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-ink">
+        <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-ink transition-colors group-hover:text-brand">
           {bike.model}
         </h3>
         {/* One value per line — the layout is identical on every card at
             every viewport width, instead of wrapping when prices get long. */}
         <p className="mt-1.5 text-[15px] font-semibold text-ink">{rm(bike.price)}</p>
-        <p className="mt-0.5 text-xs text-muted">From {rm(bike.monthly)}/mo</p>
+        <p className="mt-0.5 text-xs font-semibold text-brand">From {rm(bike.monthly)}/mo</p>
         <p className="text-xs text-muted">Deposit from {rm(bike.deposit)}</p>
       </div>
     </Link>
@@ -72,7 +72,7 @@ export function ProductCard({
       </div>
       <div className="mt-4">
         <p className="text-xs font-medium text-muted">{brand}</p>
-        <h3 className="text-[15px] font-semibold leading-snug text-ink">{name}</h3>
+        <h3 className="text-[15px] font-semibold leading-snug text-ink transition-colors group-hover:text-brand">{name}</h3>
         {meta && <p className="mt-0.5 text-xs text-muted">{meta}</p>}
         <p className="mt-1.5 text-[15px] font-semibold text-ink">{rm(price)}</p>
       </div>

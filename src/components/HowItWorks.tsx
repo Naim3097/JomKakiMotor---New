@@ -51,7 +51,7 @@ export default function HowItWorks() {
       <div role="tabpanel" className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
         {FLOWS[active].map((step, i) => (
           <div key={step.title}>
-            <span className="font-display text-3xl font-semibold tracking-[-0.02em] text-line">
+            <span className="font-display text-3xl font-semibold tracking-[-0.02em] text-brand/40">
               0{i + 1}
             </span>
             <h3 className="mt-3 text-base font-semibold text-ink">{step.title}</h3>

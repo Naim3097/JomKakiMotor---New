@@ -80,7 +80,7 @@ export default function ProductDetail(p: DetailProps) {
                 </p>
                 {p.monthly !== undefined && (
                   <p className="mt-1 text-sm text-muted">
-                    From <span className="font-semibold text-ink">{rm(p.monthly)}/month</span>
+                    From <span className="font-semibold text-brand">{rm(p.monthly)}/month</span>
                     {p.deposit !== undefined && <> · deposit {rm(p.deposit)}</>}
                   </p>
                 )}
@@ -210,7 +210,7 @@ export default function ProductDetail(p: DetailProps) {
                 />
                 <div className="mt-4">
                   <p className="text-xs font-medium text-muted">{r.brand}</p>
-                  <h3 className="text-[15px] font-semibold text-ink">{r.name}</h3>
+                  <h3 className="text-[15px] font-semibold text-ink transition-colors group-hover:text-brand">{r.name}</h3>
                   <p className="mt-1 text-[15px] font-semibold text-ink">{rm(r.price)}</p>
                 </div>
               </Link>
