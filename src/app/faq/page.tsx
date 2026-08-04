@@ -47,11 +47,11 @@ export default function FaqPage() {
       <Section tone="ink">
         <div className="max-w-2xl">
           <h2 className="display-2 text-white">Still Have a Question?</h2>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <WaButton href={GENERAL_ENQUIRY} size="lg">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <WaButton href={GENERAL_ENQUIRY} size="lg" className="w-full sm:w-auto">
               WhatsApp us
             </WaButton>
-            <LinkButton href="/contact" size="lg" variant="outline-light">
+            <LinkButton href="/contact" size="lg" variant="outline-light" className="w-full sm:w-auto">
               Contact a branch
             </LinkButton>
           </div>

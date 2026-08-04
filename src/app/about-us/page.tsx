@@ -99,7 +99,7 @@ export default function AboutPage() {
             the open road.
           </p>
           <div className="mt-9">
-            <LinkButton href="/motorcycles" size="lg" variant="brand">
+            <LinkButton href="/motorcycles" size="lg" variant="brand" className="w-full sm:w-auto">
               Shop the catalogue
             </LinkButton>
           </div>

@@ -78,7 +78,9 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
             <p className="text-[15px] font-semibold text-ink">
               Have a question about this guide? Our advisors reply personally.
             </p>
-            <WaButton href={GENERAL_ENQUIRY}>WhatsApp us</WaButton>
+            <WaButton href={GENERAL_ENQUIRY} className="w-full sm:w-auto">
+              WhatsApp us
+            </WaButton>
           </footer>
           <p className="mt-8">
             <Link href="/blog" className="text-sm font-semibold text-ink underline-offset-4 hover:underline">

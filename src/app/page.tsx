@@ -155,11 +155,11 @@ export default function HomePage() {
               Modenas, SYM and more. Flexible financing, real people on
               WhatsApp, collection at five branches nationwide.
             </p>
-            <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-10">
-              <WaButton href={GENERAL_ENQUIRY} size="lg" variant="ink">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center md:mt-10">
+              <WaButton href={GENERAL_ENQUIRY} size="lg" variant="ink" className="w-full sm:w-auto">
                 WhatsApp us
               </WaButton>
-              <LinkButton href="/motorcycles" size="lg" variant="outline-ink">
+              <LinkButton href="/motorcycles" size="lg" variant="outline-ink" className="w-full sm:w-auto">
                 Browse motorcycles
               </LinkButton>
             </div>
@@ -229,11 +229,14 @@ export default function HomePage() {
                 <dt className="mt-1 text-xs text-muted">Monthly, from</dt>
               </div>
             </dl>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <LinkButton href={`/motorcycles/${featured.slug}`} variant="primary">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+              <LinkButton href={`/motorcycles/${featured.slug}`} variant="primary" className="w-full sm:w-auto">
                 Explore the {featured.model}
               </LinkButton>
-              <WaButton href={waLink(WHATSAPP_MOTOR, `Hi JomKaki Motor, I'm interested in the ${featured.brand} ${featured.model}.`)}>
+              <WaButton
+                href={waLink(WHATSAPP_MOTOR, `Hi JomKaki Motor, I'm interested in the ${featured.brand} ${featured.model}.`)}
+                className="w-full sm:w-auto"
+              >
                 Chat to apply
               </WaButton>
             </div>
@@ -386,14 +389,15 @@ export default function HomePage() {
             Message us on WhatsApp. Our sales advisors will check stock, sort
             your financing and book your collection at the nearest branch.
           </p>
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <WaButton
               href={waLink(WHATSAPP_MOTOR, "Hi JomKaki Motor, I'm looking for my next bike.")}
               size="lg"
+              className="w-full sm:w-auto"
             >
               WhatsApp us now
             </WaButton>
-            <LinkButton href="/motorcycles" size="lg" variant="outline-light">
+            <LinkButton href="/motorcycles" size="lg" variant="outline-light" className="w-full sm:w-auto">
               Browse the catalogue
             </LinkButton>
           </div>

@@ -63,14 +63,15 @@ export default function RoadTaxPage() {
             leaving home. Quick and easy renewal, instant price quotations, a
             genuinely hassle-free process.
           </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <WaButton href={ROADTAX_ENQUIRY} size="lg">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <WaButton href={ROADTAX_ENQUIRY} size="lg" className="w-full sm:w-auto">
               WhatsApp for instant quote
             </WaButton>
             <LinkButton
               href="/blog/motorcycle-roadtax-renewal-malaysia-guide"
               size="lg"
               variant="outline"
+              className="w-full sm:w-auto"
             >
               Read the renewal guide
             </LinkButton>
@@ -104,7 +105,7 @@ export default function RoadTaxPage() {
             Don&apos;t risk riding uncovered. Get your instant quotation now.
           </p>
           <div className="mt-8">
-            <WaButton href={ROADTAX_ENQUIRY} size="lg">
+            <WaButton href={ROADTAX_ENQUIRY} size="lg" className="w-full sm:w-auto">
               WhatsApp for instant quote
             </WaButton>
           </div>

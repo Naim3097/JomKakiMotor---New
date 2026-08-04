@@ -51,11 +51,11 @@ export default function SellPage() {
             market price for your bike. Skip the hassle of unverified buyers and
             sell directly to a trusted dealership — or trade in for an upgrade.
           </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <WaButton href={SELL_ENQUIRY} size="lg">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <WaButton href={SELL_ENQUIRY} size="lg" className="w-full sm:w-auto">
               WhatsApp your details now
             </WaButton>
-            <WaButton href={TRADE_IN_ENQUIRY} size="lg" variant="outline">
+            <WaButton href={TRADE_IN_ENQUIRY} size="lg" variant="outline" className="w-full sm:w-auto">
               Trade-in enquiry
             </WaButton>
           </div>
@@ -141,7 +141,7 @@ export default function SellPage() {
             Send us your bike&apos;s details and get your quotation moving today.
           </p>
           <div className="mt-8">
-            <WaButton href={SELL_ENQUIRY} size="lg">
+            <WaButton href={SELL_ENQUIRY} size="lg" className="w-full sm:w-auto">
               WhatsApp your details now
             </WaButton>
           </div>

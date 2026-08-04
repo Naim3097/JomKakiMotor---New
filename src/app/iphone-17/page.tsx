@@ -73,7 +73,7 @@ export default function Iphone17Page() {
               exclusively available for collection at our Satok branch.
             </p>
             <div className="mt-7 md:mt-10">
-              <WaButton href={ORDER_WA} size="lg">
+              <WaButton href={ORDER_WA} size="lg" className="w-full sm:w-auto">
                 WhatsApp to order
               </WaButton>
             </div>
@@ -177,6 +177,7 @@ export default function Iphone17Page() {
           <WaButton
             href={waLink(WHATSAPP_IPHONE, "Hi, I'd like to check my eligibility for iPhone 17 installment plans.")}
             size="lg"
+            className="w-full sm:w-auto"
           >
             Check your eligibility on WhatsApp
           </WaButton>
@@ -237,7 +238,9 @@ export default function Iphone17Page() {
               collection.
             </p>
             <div className="mt-8">
-              <WaButton href={ORDER_WA}>WhatsApp us now</WaButton>
+              <WaButton href={ORDER_WA} className="w-full sm:w-auto">
+                WhatsApp us now
+              </WaButton>
             </div>
           </div>
           <iframe
@@ -267,7 +270,7 @@ export default function Iphone17Page() {
             WhatsApp today.
           </p>
           <div className="mt-8">
-            <WaButton href={ORDER_WA} size="lg">
+            <WaButton href={ORDER_WA} size="lg" className="w-full sm:w-auto">
               WhatsApp to order
             </WaButton>
           </div>
