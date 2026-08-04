@@ -1,0 +1,113 @@
+import type { AccessoryItem } from "./types";
+
+/** SAMPLE INVENTORY — copy follows the Accessories templates from Client Comments R1. */
+export const ACCESSORIES: AccessoryItem[] = [
+  {
+    slug: "enkei-sport-rim-y15zr",
+    accessoryType: "Sport Rims",
+    name: "ENKEI Sport Rim Set for Yamaha Y15ZR",
+    brand: "ENKEI",
+    price: 1280,
+    availability: "In Stock",
+    arrival: "2026-07-29",
+    shareVariant: "full",
+    compatibleModels: ["Yamaha Y15ZR"],
+    highlights: [
+      "100% original genuine product",
+      "Direct plug & play installation",
+      "Lightweight, forged aluminum alloy",
+      "No chassis modifications needed",
+    ],
+    description: [
+      "Transform the look and handling of your motorcycle with the ENKEI Sport Rim Set. Engineered from lightweight, high-strength forged aluminum alloy, these rims reduce unsprung weight to deliver sharper cornering, faster acceleration, and improved braking response.",
+      "Built to withstand the demands of both daily city commuting and spirited weekend rides, they offer the perfect blend of aggressive styling and proven durability.",
+    ],
+    specs: [
+      { label: "Size (Front / Rear)", value: "1.60 x 17 / 1.85 x 17" },
+      { label: "Material", value: "Forged Aluminum Alloy" },
+      { label: "Compatibility", value: "Plug and play exclusively for Yamaha Y15ZR" },
+      { label: "Inclusions", value: "Pre-installed bearings and bushings" },
+      { label: "Available Colors", value: "Matte Black, Anodized Gold, Candy Blue" },
+    ],
+  },
+  {
+    slug: "ppr-sport-rim-lc135",
+    accessoryType: "Sport Rims",
+    name: "PPR Sport Rim Set for Yamaha LC135",
+    brand: "PPR",
+    price: 890,
+    availability: "In Stock",
+    arrival: "2026-07-14",
+    shareVariant: "full",
+    compatibleModels: ["Yamaha LC135"],
+    highlights: [
+      "100% original genuine product",
+      "Direct plug & play installation",
+      "Lightweight CNC-machined alloy",
+      "No chassis modifications needed",
+    ],
+    description: [
+      "Give your LC135 the stance it deserves with the PPR Sport Rim Set. CNC-machined from high-grade aluminum alloy, these rims sharpen handling response while adding unmistakable style to Malaysia's favourite kapcai.",
+    ],
+    specs: [
+      { label: "Size (Front / Rear)", value: "1.40 x 17 / 1.60 x 17" },
+      { label: "Material", value: "CNC Machined Aluminum Alloy" },
+      { label: "Compatibility", value: "Plug and play exclusively for Yamaha LC135" },
+      { label: "Inclusions", value: "Rims only" },
+      { label: "Available Colors", value: "Matte Black, Anodized Gold, Silver" },
+    ],
+  },
+  {
+    slug: "cnc-fork-lay-nvx",
+    accessoryType: "Fork Lay",
+    name: "CNC Racing Fork Lay for Yamaha NVX",
+    brand: "CNC",
+    price: 650,
+    availability: "In Stock",
+    arrival: "2026-07-20",
+    shareVariant: "full",
+    compatibleModels: ["Yamaha NVX 155"],
+    highlights: [
+      "100% original genuine product",
+      "Direct factory unit replacement",
+      "Improves high-speed stability",
+      "No cutting or permanent modifications required",
+    ],
+    description: [
+      "Drop your NVX's stance and sharpen its high-speed manners with the CNC Racing Fork Lay. Machined from high-grade billet aluminum and hardened steel, it installs as a direct factory replacement — no cutting, no welding, fully reversible.",
+    ],
+    specs: [
+      { label: "Compatibility", value: "Direct fit for Yamaha NVX 155" },
+      { label: "Lowering Spec", value: "Lowered by 1.5 inches" },
+      { label: "Material", value: "High-grade Billet Aluminum & Hardened Steel" },
+      { label: "Installation", value: "Plug & Play (No cutting or chassis modification required)" },
+      { label: "Available Colours", value: "Titanium Silver / Anodized Gold / Carbon Black" },
+    ],
+  },
+  {
+    slug: "aerox-thai-led-taillight",
+    accessoryType: "Lighting",
+    name: "AEROX THAI Custom LED Taillight",
+    brand: "AEROX THAI",
+    price: 220,
+    availability: "In Stock",
+    arrival: "2026-07-31",
+    shareVariant: "compact",
+    compatibleModels: ["Yamaha NVX 155"],
+    highlights: [
+      "100% original genuine product",
+      "Direct plug & play installation",
+      "Sequential running-light animation",
+      "Road-legal brightness and beam pattern",
+    ],
+    description: [
+      "Complete your NVX's Thai-style look with the AEROX THAI Custom LED Taillight. The sequential running-light animation adds unmistakable presence at night while staying road-legal, and installation is a direct plug-and-play swap for the factory unit.",
+    ],
+    specs: [
+      { label: "Compatibility", value: "Direct fit for Yamaha NVX 155" },
+      { label: "Light Source", value: "High-Output LED, Sequential Animation" },
+      { label: "Installation", value: "Plug & Play factory connector" },
+      { label: "Finish", value: "Smoked / Clear lens options" },
+    ],
+  },
+];

@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Restrained premium palette: black / white / grey + one brand accent.
+     WhatsApp green is functional (conversion CTA), never decorative. */
+  /* Sampled from the official logo asset */
+  --color-brand: #f26522;
+  --color-brand-deep: #d95312;
+  --color-ink: #0b0b0c;
+  --color-paper: #ffffff;
+  --color-surface: #f5f5f3;
+  --color-line: #e5e5e2;
+  --color-muted: #6d6d68;
+  --color-wa: #17954c;
+  --font-sans: var(--font-geist);
+  --font-display: var(--font-inter-tight);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Typography scale — the site's primary design material.
+   Hero 48–88px · section 32–48px · product 24–32px. */
+.display-1 {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-size: clamp(2.75rem, 4.8vw, 4.25rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+.display-2 {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+.display-3 {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Hide scrollbars on horizontal scrollers while keeping them scrollable */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

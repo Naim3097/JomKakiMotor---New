@@ -1,0 +1,90 @@
+import type { OilItem } from "./types";
+
+/** SAMPLE INVENTORY — copy follows the Engine Oil template from Client Comments R1. */
+export const ENGINE_OILS: OilItem[] = [
+  {
+    slug: "yamalube-power-semi-synthetic-10w40",
+    name: "Yamalube Power Semi-Synthetic 10W-40",
+    brand: "Yamaha",
+    oilType: "Semi-Synthetic",
+    viscosity: "10W-40",
+    volume: "1.0 Liter",
+    price: 38,
+    availability: "In Stock",
+    arrival: "2026-07-27",
+    shareVariant: "compact",
+    highlights: [
+      "100% genuine product guarantee",
+      "Maximizes acceleration and engine power",
+      "Prevents heat buildup and clutch slippage",
+      "Optimized for modern 4-stroke engines",
+    ],
+    description: [
+      "Keep your engine running at peak performance with 100% genuine Yamalube Power Semi-Synthetic. Formulated specifically for modern 4-stroke kapcai engines, this premium oil reduces friction, prevents overheating, and extends the lifespan of your clutch and gearbox.",
+      "JomKaki Motor guarantees the authenticity of all our maintenance products so you can ride with total peace of mind.",
+    ],
+    specs: [
+      { label: "Oil Type", value: "Semi-Synthetic" },
+      { label: "Viscosity Grade", value: "10W-40" },
+      { label: "Volume", value: "1.0 Liter" },
+      { label: "Best Suited For", value: "Underbone (Kapcai) & Street Models" },
+      { label: "Certification", value: "API SL / JASO MA2" },
+    ],
+  },
+  {
+    slug: "honda-genuine-oil-mpx2-10w30",
+    name: "Honda Genuine Oil MPX2 10W-30",
+    brand: "Honda",
+    oilType: "Mineral",
+    viscosity: "10W-30",
+    volume: "1.0 Liter",
+    price: 30,
+    availability: "In Stock",
+    arrival: "2026-07-05",
+    shareVariant: "compact",
+    highlights: [
+      "100% genuine product guarantee",
+      "Factory-fill specification for Honda engines",
+      "Prevents heat buildup and clutch slippage",
+      "Optimized for daily commuting",
+    ],
+    description: [
+      "The exact oil your Honda left the factory with. Honda Genuine Oil MPX2 protects your engine through daily stop-start commuting, maintaining smooth clutch action and stable performance in Malaysian heat.",
+    ],
+    specs: [
+      { label: "Oil Type", value: "Mineral" },
+      { label: "Viscosity Grade", value: "10W-30" },
+      { label: "Volume", value: "1.0 Liter" },
+      { label: "Best Suited For", value: "Honda Underbone & Scooter Models" },
+      { label: "Certification", value: "API SJ / JASO MB" },
+    ],
+  },
+  {
+    slug: "yamalube-fully-synthetic-15w50",
+    name: "Yamalube Fully Synthetic 15W-50",
+    brand: "Yamaha",
+    oilType: "Fully Synthetic",
+    viscosity: "15W-50",
+    volume: "1.0 Liter",
+    price: 62,
+    availability: "In Stock",
+    arrival: "2026-08-01",
+    shareVariant: "compact",
+    highlights: [
+      "100% genuine product guarantee",
+      "Maximum protection for high-performance engines",
+      "Superior heat resistance for hard riding",
+      "Recommended for Y15ZR and high-cc models",
+    ],
+    description: [
+      "For riders who push harder. Yamalube Fully Synthetic delivers maximum film strength and heat resistance for high-revving engines like the Y15ZR — protecting your investment on every hard ride.",
+    ],
+    specs: [
+      { label: "Oil Type", value: "Fully Synthetic" },
+      { label: "Viscosity Grade", value: "15W-50" },
+      { label: "Volume", value: "1.0 Liter" },
+      { label: "Best Suited For", value: "High-Performance 4-Stroke Engines" },
+      { label: "Certification", value: "API SN / JASO MA2" },
+    ],
+  },
+];
