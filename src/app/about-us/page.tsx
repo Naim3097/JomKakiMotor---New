@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Section, SectionHeading } from "@/components/Section";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { LinkButton } from "@/components/Button";
 import { BRANCHES, FINANCING_PARTNERS, PARTNER_LOGOS } from "@/data/site";
+import aboutHero from "../../../public/brand/about-hero.png";
 
 export const metadata: Metadata = {
   title: "About JomKaki Motor — Malaysia's Premier Motorcycle Dealership",
@@ -14,30 +16,45 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Section pad="tight">
-        <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "About Us", href: "/about-us" }]} />
-        <div className="mt-10 max-w-3xl">
-          <p className="eyebrow text-brand">About us</p>
-          <h1 className="display-1 mt-4 text-ink">
-            Malaysia&apos;s Premier Motorcycle Dealership
-          </h1>
-          <div className="mt-8 max-w-2xl space-y-5 text-lg leading-relaxed text-muted">
-            <p>
-              At JomKaki Motor, we are dedicated to providing riders across
-              Malaysia with top-tier motorcycles, genuine replacement parts, and
-              premium riding gear. From daily commuters to high-performance
-              machines, we offer an extensive, carefully curated catalog of the
-              industry&apos;s most trusted brands, including Yamaha, Honda,
-              Modenas, and SYM.
-            </p>
-            <p>
-              We combine the convenience of a modern online catalog with the
-              personalized, human touch of direct WhatsApp support to make
-              buying your next motorcycle a seamless experience.
-            </p>
+      {/* Hero — hand-built section (not <Section>) so the client-supplied
+          artwork can sit flush on the section's bottom edge: the subject's
+          baseline touches the borderline into the grey section below, on
+          desktop and especially on mobile (client request). */}
+      <section className="bg-paper">
+        <div className="mx-auto max-w-7xl px-5 pt-12 sm:px-8 md:pt-16">
+          <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "About Us", href: "/about-us" }]} />
+          <div className="grid items-end gap-x-12 lg:grid-cols-[1fr_560px]">
+            <div className="mt-10 max-w-3xl lg:pb-16">
+              <p className="eyebrow text-brand">About us</p>
+              <h1 className="display-1 mt-4 text-ink">
+                Malaysia&apos;s Premier Motorcycle Dealership
+              </h1>
+              <div className="mt-8 max-w-2xl space-y-5 text-lg leading-relaxed text-muted">
+                <p>
+                  At JomKaki Motor, we are dedicated to providing riders across
+                  Malaysia with top-tier motorcycles, genuine replacement parts, and
+                  premium riding gear. From daily commuters to high-performance
+                  machines, we offer an extensive, carefully curated catalog of the
+                  industry&apos;s most trusted brands, including Yamaha, Honda,
+                  Modenas, and SYM.
+                </p>
+                <p>
+                  We combine the convenience of a modern online catalog with the
+                  personalized, human touch of direct WhatsApp support to make
+                  buying your next motorcycle a seamless experience.
+                </p>
+              </div>
+            </div>
+            <Image
+              src={aboutHero}
+              alt="JomKaki sales advisor with a motorcycle"
+              priority
+              sizes="(min-width: 1024px) 560px, (min-width: 640px) 448px, 90vw"
+              className="mx-auto mt-12 w-full max-w-md lg:mx-0 lg:mt-0 lg:max-w-none"
+            />
           </div>
         </div>
-      </Section>
+      </section>
 
       <Section tone="surface">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">

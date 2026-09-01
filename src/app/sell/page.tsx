@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Section, SectionHeading } from "@/components/Section";
+import sellHero from "../../../public/brand/sell-hero.png";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
 import WaButton from "@/components/WaButton";
@@ -41,27 +43,39 @@ export default function SellPage() {
     <>
       <Section pad="tight">
         <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Sell / Trade-In", href: "/sell" }]} />
-        <div className="mt-10 max-w-3xl">
-          <p className="eyebrow text-brand">Sell / Trade-in</p>
-          <h1 className="display-1 mt-4 text-ink">
-            Sell Your Motorcycle — Fast, Fair, Secure
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            A straightforward, transparent valuation that gets you the best
-            market price for your bike. Skip the hassle of unverified buyers and
-            sell directly to a trusted dealership — or trade in for an upgrade.
-          </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <WaButton href={SELL_ENQUIRY} size="lg" className="w-full sm:w-auto">
-              WhatsApp your details now
-            </WaButton>
-            <WaButton href={TRADE_IN_ENQUIRY} size="lg" variant="outline" className="w-full sm:w-auto">
-              Trade-in enquiry
-            </WaButton>
+        {/* Hero — text left, client-supplied bike artwork right, vertically
+            level with the write-up on desktop; on mobile the artwork sits
+            below the CTAs with clear space before the steps divider. */}
+        <div className="grid gap-x-12 lg:grid-cols-[1fr_440px] lg:items-center">
+          <div className="mt-10 max-w-3xl">
+            <p className="eyebrow text-brand">Sell / Trade-in</p>
+            <h1 className="display-1 mt-4 text-ink">
+              Sell Your Motorcycle — Fast, Fair, Secure
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+              A straightforward, transparent valuation that gets you the best
+              market price for your bike. Skip the hassle of unverified buyers and
+              sell directly to a trusted dealership — or trade in for an upgrade.
+            </p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+              <WaButton href={SELL_ENQUIRY} size="lg" className="w-full sm:w-auto">
+                WhatsApp your details now
+              </WaButton>
+              <WaButton href={TRADE_IN_ENQUIRY} size="lg" variant="outline" className="w-full sm:w-auto">
+                Trade-in enquiry
+              </WaButton>
+            </div>
           </div>
+          <Image
+            src={sellHero}
+            alt="Two motorcycles ready for valuation at JomKaki"
+            priority
+            sizes="(min-width: 1024px) 440px, (min-width: 640px) 448px, 90vw"
+            className="mx-auto mb-14 mt-12 w-full max-w-md lg:mx-0 lg:my-10 lg:max-w-none"
+          />
         </div>
 
-        <div className="mt-16 grid gap-x-10 gap-y-10 border-t border-line pt-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-x-10 gap-y-10 border-t border-line pt-12 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s, i) => (
             <div key={s.title}>
               <span className="font-display text-3xl font-semibold tracking-[-0.02em] text-brand/40">

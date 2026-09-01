@@ -45,18 +45,20 @@ export function BikeCard({ bike, isNew = false }: { bike: Motorcycle; isNew?: bo
           className="absolute right-3 top-3"
         />
       </div>
+      {/* Typography per the client's card mock (R4): bold name, prominent
+          orange price, orange rule, deposit + monthly, *T&C Apply. */}
       <div className="mt-4">
-        <p className="text-[13px] font-medium text-muted">{bike.brand}</p>
-        <h3 className="font-display text-xl font-semibold tracking-[-0.02em] text-ink transition-colors group-hover:text-brand">
-          {bike.model}
+        <h3 className="text-base font-bold leading-snug text-ink">
+          {bike.brand} {bike.model}
         </h3>
-        {/* One value per line — the layout is identical on every card at
-            every viewport width, instead of wrapping when prices get long. */}
-        <p className="mt-1.5 text-base font-semibold text-ink transition-colors group-hover:text-brand">
+        <p className="mt-1 font-display text-[26px] font-bold tracking-[-0.02em] text-brand">
           {rm(bike.price)}
         </p>
-        <p className="mt-0.5 text-[13px] font-semibold text-brand">From {rm(bike.monthly)}/mo</p>
-        <p className="text-[13px] text-muted">Deposit from {rm(bike.deposit)}</p>
+        <div className="mt-2.5 border-t-2 border-brand pt-2.5">
+          <p className="text-sm font-bold text-brand">Deposit: {rm(bike.deposit)}*</p>
+          <p className="mt-0.5 text-sm font-bold text-ink">From {rm(bike.monthly)}/month*</p>
+        </div>
+        <p className="mt-2.5 text-xs text-muted">*T&amp;C Apply</p>
       </div>
     </Link>
   );
@@ -97,11 +99,18 @@ export function ProductCard({
           className="absolute right-3 top-3"
         />
       </div>
+      {/* Same card typography as BikeCard (client mock, R4) */}
       <div className="mt-4">
-        <p className="text-[13px] font-medium text-muted">{brand}</p>
-        <h3 className="text-base font-semibold leading-snug text-ink transition-colors group-hover:text-brand">{name}</h3>
-        {meta && <p className="mt-0.5 text-[13px] text-muted">{meta}</p>}
-        <p className="mt-1.5 text-base font-semibold text-ink transition-colors group-hover:text-brand">{rm(price)}</p>
+        <h3 className="text-base font-bold leading-snug text-ink">{name}</h3>
+        <p className="mt-1 font-display text-[26px] font-bold tracking-[-0.02em] text-brand">
+          {rm(price)}
+        </p>
+        {meta && (
+          <div className="mt-2.5 border-t-2 border-brand pt-2.5">
+            <p className="text-sm font-semibold text-ink">{meta}</p>
+          </div>
+        )}
+        <p className="mt-2.5 text-xs text-muted">*T&amp;C Apply</p>
       </div>
     </Link>
   );

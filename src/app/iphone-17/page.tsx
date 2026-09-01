@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/Section";
+import AddToCartButton from "@/components/AddToCartButton";
 import FaqAccordion from "@/components/FaqAccordion";
 import ProductEnquiry from "@/components/ProductEnquiry";
 import Thumb from "@/components/Thumb";
@@ -13,14 +14,13 @@ import {
   IPHONE_WHY,
 } from "@/data/iphone";
 import { BRANCHES, EMAIL, WHATSAPP_IPHONE } from "@/data/site";
-import { rm } from "@/lib/format";
 import { productSchema } from "@/lib/schema";
 import { waLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "iPhone 17 in Kuching — Easy Installment Plans",
   description:
-    "Get the iPhone 17, 17e, Pro and Pro Max in Kuching with flexible installments via Loan Kedai and First Class Credit. 100% original, Apple Malaysia warranty. WhatsApp to order — collect at our Satok branch.",
+    "Get the iPhone 17, 17 Pro and 17 Pro Max in Kuching with flexible installments via Loan Kedai and First Class Credit. 100% original, Apple Malaysia warranty. WhatsApp to order — collect at our Satok branch.",
   alternates: { canonical: "/iphone-17" },
 };
 
@@ -81,44 +81,64 @@ export default function Iphone17Page() {
         </div>
       </section>
 
-      {/* Model cards */}
+      {/* Model cards — layout per the client's preferred UI (R4): no RRP,
+          "From RM___/month*" only, orange rule under the name, no colour
+          options, cart shortcut, *T&C Apply. */}
       <Section>
         <SectionHeading kicker="The lineup" title="Choose Your iPhone 17" />
-        <div className="mt-12 grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
           {IPHONE_MODELS.map((m) => (
             <div key={m.id} className="flex flex-col">
-              {m.image ? (
-                // White-background lineup render floats on the white page —
-                // no tile chrome needed. All four share 1000×562, so card
-                // image blocks stay equal-height.
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={m.image}
-                  alt={`${m.name} colour lineup`}
-                  width={1000}
-                  height={562}
-                  loading="lazy"
-                  className="aspect-video w-full rounded-lg object-cover"
+              <div className="relative">
+                {m.image ? (
+                  // White-background lineup render floats on the white page —
+                  // no tile chrome needed. All renders share 1000×562, so
+                  // card image blocks stay equal-height.
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={m.image}
+                    alt={`${m.name} colour lineup`}
+                    width={1000}
+                    height={562}
+                    loading="lazy"
+                    className="aspect-video w-full rounded-lg object-cover"
+                  />
+                ) : (
+                  <Thumb kind="phone" label={m.name} className="aspect-video w-full rounded-lg" />
+                )}
+                <AddToCartButton
+                  product={{
+                    id: m.id,
+                    name: m.name,
+                    brand: "Apple",
+                    price: m.rrp,
+                    href: "/iphone-17",
+                  }}
+                  className="absolute right-0 top-0"
                 />
-              ) : (
-                <Thumb kind="phone" label={m.name} className="aspect-square w-full rounded-lg" />
-              )}
-              <h3 className="display-3 mt-5 text-ink">{m.name}</h3>
-              <p className="mt-1 text-sm text-muted">
-                RRP {rm(m.rrp)} · from{" "}
-                <span className="font-semibold text-brand">RM{m.monthlyFrom.toFixed(2)}/month</span>
+              </div>
+              <h3 className="display-3 mt-5 border-b-2 border-brand pb-2.5 text-ink">
+                {m.name}
+              </h3>
+              <p className="mt-4">
+                <span className="block text-xs font-medium text-muted">From</span>
+                <span className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink">
+                  RM{m.monthlyFrom}
+                  <span className="text-base">/month*</span>
+                </span>
               </p>
               <div className="mt-5 flex flex-1 flex-col">
                 <ProductEnquiry
                   productName={m.name}
                   path="/iphone-17"
                   number={WHATSAPP_IPHONE}
-                  cta="WhatsApp to order"
+                  cta="WhatsApp to Order"
                   stretch
                   note={false}
-                  options={[{ label: "Storage", values: m.storage }]}
+                  options={[{ label: "Select Storage", values: m.storage }]}
                 />
               </div>
+              <p className="mt-3 text-xs text-muted">*T&amp;C Apply</p>
             </div>
           ))}
         </div>

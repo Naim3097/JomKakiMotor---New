@@ -1,22 +1,17 @@
 import type { IphoneModel } from "./types";
 
-/** Prices and monthly figures from the client's iPhone Website layout draft. */
+/**
+ * Lineup and monthly figures follow the client's preferred card UI (R4
+ * feedback) — 17e dropped, "From RM___/month*" figures as supplied. RRP is
+ * retained for structured data / the cart, never displayed on the page.
+ */
 export const IPHONE_MODELS: IphoneModel[] = [
-  {
-    id: "iphone-17e",
-    image: "/brand/iphone-17e.jpg",
-    name: "iPhone 17e",
-    rrp: 2999,
-    monthlyFrom: 108.3,
-    storage: ["256GB", "512GB"],
-    colours: ["Black", "White"],
-  },
   {
     id: "iphone-17",
     image: "/brand/iphone-17.jpg",
     name: "iPhone 17",
     rrp: 3999,
-    monthlyFrom: 144.41,
+    monthlyFrom: 200,
     storage: ["256GB", "512GB"],
     colours: ["Lavender", "Sage", "Mist Blue", "Black", "White"],
   },
@@ -25,7 +20,7 @@ export const IPHONE_MODELS: IphoneModel[] = [
     image: "/brand/iphone-17-pro.jpg",
     name: "iPhone 17 Pro",
     rrp: 5499,
-    monthlyFrom: 198.51,
+    monthlyFrom: 260,
     storage: ["256GB", "512GB", "1TB"],
     colours: ["Silver", "Cosmic Orange", "Deep Blue"],
   },
@@ -34,7 +29,7 @@ export const IPHONE_MODELS: IphoneModel[] = [
     image: "/brand/iphone-17-pro-max.jpg",
     name: "iPhone 17 Pro Max",
     rrp: 5799,
-    monthlyFrom: 216.63,
+    monthlyFrom: 280,
     storage: ["256GB", "512GB", "1TB", "2TB"],
     colours: ["Silver", "Cosmic Orange", "Deep Blue"],
   },

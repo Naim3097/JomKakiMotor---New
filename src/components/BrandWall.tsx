@@ -17,14 +17,10 @@ export default function BrandWall({ searchIndex }: { searchIndex: SearchEntry[] 
       <div className="w-full">
         <SearchBox index={searchIndex} placeholder="Search by brand or model" />
       </div>
-      <ul className="mt-8 grid grid-cols-3 border-b border-t border-line sm:grid-cols-5">
-        {BRANDS.map((brand, i) => (
-          <li
-            key={brand}
-            className={`border-line ${i % 3 !== 2 ? "border-r" : ""} ${
-              i % 5 !== 4 ? "sm:border-r" : "sm:border-r-0"
-            } ${i < 12 ? "border-b" : ""} ${i < 10 ? "sm:border-b" : "sm:border-b-0"}`}
-          >
+      {/* Open logo wall — no cell borders (client feedback R5) */}
+      <ul className="mt-8 grid grid-cols-3 gap-x-6 gap-y-4 sm:grid-cols-5">
+        {BRANDS.map((brand) => (
+          <li key={brand}>
             <Link
               href={`/motorcycles?brand=${encodeURIComponent(brand)}`}
               className="group flex h-full min-h-[72px] items-center justify-center px-3 py-5 text-center font-display text-sm font-semibold tracking-[-0.01em] text-muted transition-colors hover:text-brand sm:text-base"
