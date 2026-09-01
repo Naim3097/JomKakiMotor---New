@@ -45,20 +45,22 @@ export function BikeCard({ bike, isNew = false }: { bike: Motorcycle; isNew?: bo
           className="absolute right-3 top-3"
         />
       </div>
-      {/* Typography per the client's card mock (R4): bold name, prominent
-          orange price, orange rule, deposit + monthly, *T&C Apply. */}
+      {/* Typography per the client's card mock (R4), with a clear scale:
+          price (display, 26px, orange) > name (15px semibold) > detail
+          lines (14px) > *T&C (11px muted). One bold weight per tier so
+          the price stays the unambiguous focal point. */}
       <div className="mt-4">
-        <h3 className="text-base font-bold leading-snug text-ink">
+        <h3 className="text-[15px] font-semibold leading-snug text-ink">
           {bike.brand} {bike.model}
         </h3>
-        <p className="mt-1 font-display text-[26px] font-bold tracking-[-0.02em] text-brand">
+        <p className="mt-1 font-display text-[26px] font-bold leading-tight tracking-[-0.02em] text-brand">
           {rm(bike.price)}
         </p>
         <div className="mt-2.5 border-t-2 border-brand pt-2.5">
-          <p className="text-sm font-bold text-brand">Deposit: {rm(bike.deposit)}*</p>
-          <p className="mt-0.5 text-sm font-bold text-ink">From {rm(bike.monthly)}/month*</p>
+          <p className="text-sm font-semibold text-brand">Deposit: {rm(bike.deposit)}*</p>
+          <p className="mt-0.5 text-sm font-semibold text-ink">From {rm(bike.monthly)}/month*</p>
         </div>
-        <p className="mt-2.5 text-xs text-muted">*T&amp;C Apply</p>
+        <p className="mt-2.5 text-[11px] text-muted">*T&amp;C Apply</p>
       </div>
     </Link>
   );
@@ -99,18 +101,18 @@ export function ProductCard({
           className="absolute right-3 top-3"
         />
       </div>
-      {/* Same card typography as BikeCard (client mock, R4) */}
+      {/* Same type scale as BikeCard: price > name > meta > *T&C */}
       <div className="mt-4">
-        <h3 className="text-base font-bold leading-snug text-ink">{name}</h3>
-        <p className="mt-1 font-display text-[26px] font-bold tracking-[-0.02em] text-brand">
+        <h3 className="text-[15px] font-semibold leading-snug text-ink">{name}</h3>
+        <p className="mt-1 font-display text-[26px] font-bold leading-tight tracking-[-0.02em] text-brand">
           {rm(price)}
         </p>
         {meta && (
           <div className="mt-2.5 border-t-2 border-brand pt-2.5">
-            <p className="text-sm font-semibold text-ink">{meta}</p>
+            <p className="text-sm font-medium text-muted">{meta}</p>
           </div>
         )}
-        <p className="mt-2.5 text-xs text-muted">*T&amp;C Apply</p>
+        <p className="mt-2.5 text-[11px] text-muted">*T&amp;C Apply</p>
       </div>
     </Link>
   );
