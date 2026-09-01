@@ -18,9 +18,28 @@ export default function ContactForm() {
     message: "",
   });
 
+  /**
+   * Per-field input restrictions — invalid characters are dropped as the
+   * user types, and `pattern` still validates on submit as a backstop.
+   */
+  const SANITIZERS: Partial<Record<keyof typeof form, (v: string) => string>> = {
+    // Letters (incl. accents), spaces and ' - . / only — no digits in names
+    name: (v) => v.replace(/[^\p{L}\s'\-./]/gu, "").slice(0, 100),
+    // Digits only, with an optional leading + for country code
+    phone: (v) => {
+      const plus = v.startsWith("+") ? "+" : "";
+      return (plus + v.replace(/\D/g, "")).slice(0, 15);
+    },
+    email: (v) => v.replace(/\s/g, "").slice(0, 254),
+    message: (v) => v.slice(0, 2000),
+  };
+
   const set = (key: keyof typeof form) => (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => setForm((f) => ({ ...f, [key]: e.target.value }));
+  ) => {
+    const clean = SANITIZERS[key]?.(e.target.value) ?? e.target.value;
+    setForm((f) => ({ ...f, [key]: clean }));
+  };
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -49,20 +68,52 @@ export default function ContactForm() {
         <label htmlFor="cf-name" className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.08em] text-ink">
           Name<span className="text-brand">*</span>
         </label>
-        <input id="cf-name" required value={form.name} onChange={set("name")} placeholder="Enter your full name" className={field} />
+        <input
+          id="cf-name"
+          required
+          value={form.name}
+          onChange={set("name")}
+          placeholder="Enter your full name"
+          autoComplete="name"
+          maxLength={100}
+          className={field}
+        />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="cf-email" className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.08em] text-ink">
             Email<span className="text-brand">*</span>
           </label>
-          <input id="cf-email" type="email" required value={form.email} onChange={set("email")} placeholder="Enter your email address" className={field} />
+          <input
+            id="cf-email"
+            type="email"
+            required
+            value={form.email}
+            onChange={set("email")}
+            placeholder="Enter your email address"
+            autoComplete="email"
+            maxLength={254}
+            className={field}
+          />
         </div>
         <div>
           <label htmlFor="cf-phone" className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.08em] text-ink">
             Phone Number<span className="text-brand">*</span>
           </label>
-          <input id="cf-phone" type="tel" required value={form.phone} onChange={set("phone")} placeholder="Enter your phone number" className={field} />
+          <input
+            id="cf-phone"
+            type="tel"
+            required
+            value={form.phone}
+            onChange={set("phone")}
+            placeholder="e.g. 0123456789"
+            autoComplete="tel"
+            inputMode="tel"
+            pattern="\+?[0-9]{9,14}"
+            title="Numbers only, 9–14 digits (optional + for country code)"
+            maxLength={15}
+            className={field}
+          />
         </div>
       </div>
       <div>
@@ -91,7 +142,16 @@ export default function ContactForm() {
         <label htmlFor="cf-message" className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.08em] text-ink">
           Your Message<span className="text-brand">*</span>
         </label>
-        <textarea id="cf-message" required rows={4} value={form.message} onChange={set("message")} placeholder="Type your message or inquiry here" className={field} />
+        <textarea
+          id="cf-message"
+          required
+          rows={4}
+          value={form.message}
+          onChange={set("message")}
+          placeholder="Type your message or inquiry here"
+          maxLength={2000}
+          className={field}
+        />
       </div>
       <button
         type="submit"
