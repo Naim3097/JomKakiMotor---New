@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import AddToCartButton, { type CartProduct } from "./AddToCartButton";
 import WaButton from "./WaButton";
 import { productEnquiry } from "@/lib/whatsapp";
 
@@ -12,10 +13,11 @@ export default function ProductEnquiry({
   productName,
   path,
   number,
-  cta = "Chat to Apply",
+  cta = "WhatsApp to Order",
   options = [],
   stretch = false,
   note = true,
+  cartItem,
 }: {
   productName: string;
   path: string;
@@ -26,6 +28,8 @@ export default function ProductEnquiry({
   stretch?: boolean;
   /** Show the "no online payment" reassurance under the CTA */
   note?: boolean;
+  /** When set, an Add to Cart button renders beside the WhatsApp CTA (R2) */
+  cartItem?: CartProduct;
 }) {
   const [picks, setPicks] = useState<Record<string, string>>({});
 
@@ -75,9 +79,18 @@ export default function ProductEnquiry({
         </div>
       ))}
       <div className={stretch ? "mt-auto" : ""}>
-        <WaButton href={href} size="lg" className={stretch ? "w-full" : "w-full sm:w-auto"}>
-          {cta}
-        </WaButton>
+        <div className={`flex flex-col gap-3 ${stretch ? "" : "sm:flex-row sm:flex-wrap sm:items-center"}`}>
+          <WaButton href={href} size="lg" className={stretch ? "w-full" : "w-full sm:w-auto"}>
+            {cta}
+          </WaButton>
+          {cartItem && (
+            <AddToCartButton
+              product={cartItem}
+              variant="button"
+              className={stretch ? "w-full" : "w-full sm:w-auto"}
+            />
+          )}
+        </div>
         {note && (
           <p className="mt-3 text-xs leading-relaxed text-muted">
             No online payment. Chat with a sales advisor, confirm stock, and

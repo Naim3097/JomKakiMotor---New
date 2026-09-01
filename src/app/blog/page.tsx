@@ -28,11 +28,36 @@ export default function BlogIndexPage() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="group grid gap-3 py-8 transition-colors hover:bg-surface md:grid-cols-[160px_1fr] md:gap-10 md:px-4 md:py-10"
+            className="group grid gap-5 py-8 transition-colors hover:bg-surface md:grid-cols-[240px_1fr] md:gap-10 md:px-4 md:py-10"
           >
-            <time dateTime={post.date} className="text-xs font-medium text-muted">
-              {new Date(post.date).toLocaleDateString("en-MY", { day: "numeric", month: "long", year: "numeric" })}
-            </time>
+            {/* Thumbnail per R2 slide 25 — placeholder frame until the
+                client supplies article imagery */}
+            <div>
+              {post.image ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={post.image}
+                  alt=""
+                  loading="lazy"
+                  className="aspect-4/3 w-full rounded-lg object-cover"
+                />
+              ) : (
+                <div
+                  className="flex aspect-4/3 w-full items-center justify-center rounded-lg bg-[#ececea] text-[#d3d3cf]"
+                  role="img"
+                  aria-label="Article image coming soon"
+                >
+                  <svg viewBox="0 0 64 64" className="h-12 w-12" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="10" y="14" width="44" height="36" rx="3" />
+                    <circle cx="24" cy="27" r="4" />
+                    <path d="M10 44l14-12 10 8 8-6 12 10" strokeLinejoin="round" />
+                  </svg>
+                </div>
+              )}
+              <time dateTime={post.date} className="mt-2 block text-xs font-medium text-muted">
+                {new Date(post.date).toLocaleDateString("en-MY", { day: "numeric", month: "long", year: "numeric" })}
+              </time>
+            </div>
             <div>
               <h2 className="display-3 max-w-2xl text-ink transition-colors group-hover:text-brand">{post.title}</h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">{post.excerpt}</p>

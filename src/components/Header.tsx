@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import CartLink from "./CartLink";
 import Logo from "./Logo";
 import SearchBox from "./SearchBox";
 import { ChevronDown } from "./icons";
@@ -61,6 +62,9 @@ export default function Header({ searchIndex }: { searchIndex: SearchEntry[] }) 
           <SearchBox index={searchIndex} />
         </div>
 
+        {/* Cart (R2 slide 2) */}
+        <CartLink className="hidden lg:block" />
+
         {/* BM toggle — enabled once BM translations land */}
         <span
           className="hidden cursor-default select-none text-xs font-semibold uppercase tracking-wider text-muted/50 lg:inline-block"
@@ -70,10 +74,11 @@ export default function Header({ searchIndex }: { searchIndex: SearchEntry[] }) 
           BM
         </span>
 
-        {/* Mobile toggle */}
+        {/* Mobile: cart + menu toggle */}
+        <CartLink className="ml-auto lg:hidden" />
         <button
           type="button"
-          className="ml-auto rounded-md p-2 text-ink lg:hidden"
+          className="rounded-md p-2 text-ink lg:hidden"
           aria-expanded={mobileOpen}
           aria-label="Toggle menu"
           onClick={() => setMobileOpen((v) => !v)}

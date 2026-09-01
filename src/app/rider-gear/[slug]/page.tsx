@@ -27,7 +27,7 @@ export default async function GearPage(props: PageProps<"/rider-gear/[slug]">) {
   if (!item) notFound();
 
   const related = RIDER_GEAR.filter((g) => g.slug !== item.slug)
-    .slice(0, 4)
+    .slice(0, 8)
     .map((g) => ({
       href: `/rider-gear/${g.slug}`,
       name: g.name,
@@ -50,8 +50,11 @@ export default async function GearPage(props: PageProps<"/rider-gear/[slug]">) {
       description={item.description}
       specs={item.specs}
       shareVariant={item.shareVariant}
-      cta="WhatsApp to Enquire"
-      options={item.sizes ? [{ label: "Size", values: item.sizes }] : []}
+      cta="WhatsApp to Order"
+      options={[
+        ...(item.sizes ? [{ label: "Size", values: item.sizes }] : []),
+        ...(item.colours ? [{ label: "Colour", values: item.colours }] : []),
+      ]}
       related={related}
     />
   );

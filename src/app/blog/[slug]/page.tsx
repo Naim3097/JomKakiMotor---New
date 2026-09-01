@@ -50,6 +50,14 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
               })}
             </time>
             <h1 className="display-2 mt-4 text-ink">{post.title}</h1>
+            {post.image && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={post.image}
+                alt=""
+                className="mt-8 aspect-3/2 w-full rounded-lg object-cover"
+              />
+            )}
           </header>
           <div className="mt-10 space-y-10">
             {post.sections.map((section, i) => (

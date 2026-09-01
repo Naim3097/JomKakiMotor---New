@@ -66,6 +66,31 @@ export function MailIcon({ className = "h-4 w-4" }: { className?: string }) {
   );
 }
 
+/** Lucide shopping-cart (lucide.dev, ISC) — do not hand-edit the geometry. */
+export function CartIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
+      <path d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18" />
+      <path d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25" />
+      <circle cx="18" cy="20" r="2" />
+      <circle cx="8" cy="20" r="2" />
+    </svg>
+  );
+}
+
+/** Lucide trash-2 (lucide.dev, ISC) — do not hand-edit the geometry. */
+export function TrashIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
+      <path d="M10 11v6" />
+      <path d="M14 11v6" />
+      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" />
+      <path d="M3 6h18" />
+      <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+    </svg>
+  );
+}
+
 /* --- Share icons --- */
 
 export function FacebookIcon({ className = "h-4 w-4" }: { className?: string }) {

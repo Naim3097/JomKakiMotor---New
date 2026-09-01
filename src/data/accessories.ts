@@ -1,9 +1,10 @@
-import type { AccessoryItem } from "./types";
+﻿import type { AccessoryItem } from "./types";
 
 /** SAMPLE INVENTORY — copy follows the Accessories templates from Client Comments R1. */
 export const ACCESSORIES: AccessoryItem[] = [
   {
     slug: "enkei-sport-rim-y15zr",
+    colours: ["Black", "Gold", "Silver"],
     accessoryType: "Sport Rims",
     name: "ENKEI Sport Rim Set for Yamaha Y15ZR",
     brand: "ENKEI",
@@ -32,6 +33,7 @@ export const ACCESSORIES: AccessoryItem[] = [
   },
   {
     slug: "ppr-sport-rim-lc135",
+    colours: ["Black", "Gold", "Blue"],
     accessoryType: "Sport Rims",
     name: "PPR Sport Rim Set for Yamaha LC135",
     brand: "PPR",
@@ -59,6 +61,7 @@ export const ACCESSORIES: AccessoryItem[] = [
   },
   {
     slug: "cnc-fork-lay-nvx",
+    colours: ["Black", "Gold", "Red"],
     accessoryType: "Fork Lay",
     name: "CNC Racing Fork Lay for Yamaha NVX",
     brand: "CNC",
@@ -86,6 +89,7 @@ export const ACCESSORIES: AccessoryItem[] = [
   },
   {
     slug: "aerox-thai-led-taillight",
+    colours: ["Smoke", "Clear"],
     accessoryType: "Lighting",
     name: "AEROX THAI Custom LED Taillight",
     brand: "AEROX THAI",

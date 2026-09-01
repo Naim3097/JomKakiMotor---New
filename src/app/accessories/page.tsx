@@ -10,8 +10,18 @@ export const metadata: Metadata = {
   alternates: { canonical: "/accessories" },
 };
 
+/* Facet bands per Client Comments R2 slide 16 (plus an Over RM400 band so
+   higher-priced rim sets stay filterable) */
 const priceBand = (p: number) =>
-  p < 500 ? "Under RM500" : p <= 1000 ? "RM500 – RM1,000" : "Over RM1,000";
+  p < 100
+    ? "Under RM100"
+    : p <= 200
+      ? "RM100 - RM200"
+      : p <= 300
+        ? "RM200 - RM300"
+        : p <= 400
+          ? "RM300 - RM400"
+          : "Over RM400";
 
 export default function AccessoriesPage() {
   const items: ListingItem[] = ACCESSORIES.map((a) => ({
@@ -34,9 +44,6 @@ export default function AccessoriesPage() {
     },
   }));
 
-  const uniq = (key: string) => [...new Set(items.map((i) => i.facetValues[key]).filter(Boolean))];
-  const allModels = [...new Set(ACCESSORIES.flatMap((a) => a.compatibleModels ?? []))];
-
   return (
     <CatalogueShell
       title="Accessories"
@@ -45,10 +52,19 @@ export default function AccessoriesPage() {
       items={items}
       newestIds={newestArrivals(ACCESSORIES, 2).map((a) => a.slug)}
       facets={[
-        { key: "type", label: "Type", options: uniq("type") },
-        { key: "brand", label: "Brand", options: uniq("brand") },
-        { key: "model", label: "Compatible Model", options: allModels },
-        { key: "price", label: "Price", options: ["Under RM500", "RM500 – RM1,000", "Over RM1,000"].filter((p) => uniq("price").includes(p)) },
+        /* Option lists fixed by Client Comments R2 slide 16 */
+        { key: "brand", label: "Brand", options: ["PPR", "ENKEI", "AEROX THAI"] },
+        { key: "type", label: "Type", options: ["Sport Rims", "Fork Lay"] },
+        {
+          key: "model",
+          label: "Compatible Model",
+          options: ["Yamaha Y15ZR", "Yamaha Y125Z", "Yamaha LC135", "Yamaha NVX 155"],
+        },
+        {
+          key: "price",
+          label: "Price",
+          options: ["RM100 - RM200", "RM200 - RM300", "RM300 - RM400", "Over RM400"],
+        },
       ]}
     />
   );

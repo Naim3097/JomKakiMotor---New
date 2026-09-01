@@ -1,9 +1,10 @@
-import type { BlogPost } from "./types";
+﻿import type { BlogPost } from "./types";
 
 /** Seed guides for the GEO/SEO content engine — EN launch set, BM versions to follow. */
 export const POSTS: BlogPost[] = [
   {
     slug: "how-motorcycle-trade-in-works-malaysia",
+    image: "/images/blog/trade-in.jpg",
     title: "How Motorcycle Trade-In Works in Malaysia: The JomKaki Process",
     excerpt:
       "Thinking of upgrading your bike? Here is exactly how a motorcycle trade-in works at JomKaki Motor — requirements, inspection, valuation, and collection.",
@@ -45,6 +46,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "documents-required-motorcycle-purchase-malaysia",
+    image: "/images/blog/documents.jpg",
     title: "Documents Required to Buy a Motorcycle in Malaysia (2026 Guide)",
     excerpt:
       "Buying a motorcycle cash or on hire purchase? This checklist covers every document Malaysian riders need — IC, licence, payslips, bank statements and more.",
@@ -86,6 +88,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "yamaha-y15zr-vs-honda-rs150r-comparison",
+    image: "/images/blog/comparison.jpg",
     title: "Yamaha Y15ZR vs Honda RS150R: Which Super Kapcai Should You Buy?",
     excerpt:
       "Malaysia's two favourite super mopeds compared — engine, gearbox, handling, price and monthly installment — with a clear verdict for each type of rider.",
@@ -118,6 +121,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "motorcycle-roadtax-renewal-malaysia-guide",
+    image: "/images/blog/roadtax.jpg",
     title: "Motorcycle Road Tax Renewal in Malaysia: Prices & How to Renew",
     excerpt:
       "How much is motorcycle road tax in Malaysia, what you need to renew it, and how JomKaki Motor can handle your renewal and insurance over WhatsApp.",

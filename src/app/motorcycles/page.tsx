@@ -6,18 +6,48 @@ import { MOTORCYCLES, newestArrivals } from "@/lib/catalog";
 export const metadata: Metadata = {
   title: "Motorcycles for Sale in Malaysia — Kuching, Bintulu, KL & Selangor",
   description:
-    "New Yamaha, Honda, Modenas, SYM and more with flexible HP financing. Filter by brand, engine capacity, price and monthly payment — then enquire on WhatsApp.",
+    "New Yamaha, Honda, Modenas, SYM and more with flexible HP financing. Filter by brand, type, price, deposit and year — then enquire on WhatsApp.",
   alternates: { canonical: "/motorcycles" },
 };
 
-const ccBand = (cc: number) =>
-  cc <= 125 ? "125cc & below" : cc <= 150 ? "126 – 150cc" : cc <= 250 ? "151 – 250cc" : "Above 250cc";
+/* Facet bands per Client Comments R2 slide 15 */
 
 const priceBand = (p: number) =>
-  p < 5000 ? "Under RM5,000" : p <= 10000 ? "RM5,000 – RM10,000" : "Over RM10,000";
+  p < 10000
+    ? "Under RM10,000"
+    : p <= 15000
+      ? "RM10,000 - RM15,000"
+      : p <= 20000
+        ? "RM15,000 - RM20,000"
+        : "Over RM20,000";
 
-const monthlyBand = (m: number) =>
-  m < 200 ? "Under RM200/mth" : m <= 400 ? "RM200 – RM400/mth" : "Over RM400/mth";
+const depositBand = (d: number) =>
+  d <= 0
+    ? "No Deposit Required"
+    : d <= 1000
+      ? "RM500 - RM1,000"
+      : d <= 5000
+        ? "RM1,000 - RM5,000"
+        : "Over RM5,000";
+
+const yearBand = (y: number) =>
+  y >= 2026 ? "Latest Models (2026 - Present)" : "Older Models (Before 2026)";
+
+/** Brand list is fixed by the client — includes marques arriving in stock soon. */
+const BRAND_OPTIONS = [
+  "Yamaha",
+  "Honda",
+  "Modenas",
+  "SYM",
+  "WMOTO",
+  "CFMOTO",
+  "Moda",
+  "Keeway",
+  "Aveta",
+  "QJMOTOR",
+];
+
+const TYPE_OPTIONS = ["Underbone", "Scooter", "Cafe Racer", "Mini-sport", "Sport", "Naked"];
 
 export default function MotorcyclesPage() {
   const items: ListingItem[] = MOTORCYCLES.map((m) => ({
@@ -28,10 +58,9 @@ export default function MotorcyclesPage() {
     facetValues: {
       brand: m.brand,
       type: m.type,
-      cc: ccBand(m.cc),
       price: priceBand(m.price),
-      monthly: monthlyBand(m.monthly),
-      year: String(m.year),
+      deposit: depositBand(m.deposit),
+      year: yearBand(m.year),
       availability: m.availability,
     },
   }));
@@ -47,12 +76,23 @@ export default function MotorcyclesPage() {
       items={items}
       newestIds={newestArrivals(MOTORCYCLES, 4).map((m) => m.slug)}
       facets={[
-        { key: "brand", label: "Brand", options: uniq("brand") },
-        { key: "type", label: "Type", options: ["Kapcai", "Scooter", "Sport", "Naked"].filter((t) => uniq("type").includes(t)) },
-        { key: "cc", label: "Engine Capacity", options: ["125cc & below", "126 – 150cc", "151 – 250cc", "Above 250cc"].filter((c) => uniq("cc").includes(c)) },
-        { key: "price", label: "Price Range", options: ["Under RM5,000", "RM5,000 – RM10,000", "Over RM10,000"].filter((p) => uniq("price").includes(p)) },
-        { key: "monthly", label: "Monthly Payment", options: ["Under RM200/mth", "RM200 – RM400/mth", "Over RM400/mth"].filter((p) => uniq("monthly").includes(p)) },
-        { key: "year", label: "Year", options: uniq("year").sort().reverse() },
+        { key: "brand", label: "Brand", options: BRAND_OPTIONS },
+        { key: "type", label: "Type", options: TYPE_OPTIONS },
+        {
+          key: "price",
+          label: "Price Range",
+          options: ["Under RM10,000", "RM10,000 - RM15,000", "RM15,000 - RM20,000", "Over RM20,000"],
+        },
+        {
+          key: "deposit",
+          label: "Deposit",
+          options: ["No Deposit Required", "RM500 - RM1,000", "RM1,000 - RM5,000", "Over RM5,000"],
+        },
+        {
+          key: "year",
+          label: "Year",
+          options: ["Latest Models (2026 - Present)", "Older Models (Before 2026)"],
+        },
         { key: "availability", label: "Availability", options: uniq("availability") },
       ]}
     />

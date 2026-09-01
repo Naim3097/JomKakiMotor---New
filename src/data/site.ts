@@ -19,6 +19,11 @@ export const HOURS = [
   { days: "Sunday & Public Holidays", time: "Closed" },
 ];
 
+/**
+ * Moda replaces CNC per R2 — the client added Moda to the motorcycle brand
+ * filter (slide 15) and dropped CNC from accessories (slide 16). The list
+ * stays at 15 so the wall grid fills exactly.
+ */
 export const BRANDS = [
   "Yamaha",
   "Honda",
@@ -29,9 +34,9 @@ export const BRANDS = [
   "QJMOTOR",
   "CFMOTO",
   "Aveta",
+  "Moda",
   "KYT",
   "ARC",
-  "CNC",
   "PPR",
   "ENKEI",
   "AEROX THAI",
@@ -45,7 +50,22 @@ export const BRANDS = [
  * official artwork from the client/manufacturer press kits goes here.
  * Example: Yamaha: "/brand/logos/yamaha.png",
  */
-export const BRAND_LOGOS: Partial<Record<(typeof BRANDS)[number], string>> = {};
+export const BRAND_LOGOS: Partial<Record<(typeof BRANDS)[number], string>> = {
+  Yamaha: "/brand/logos/yamaha.png",
+  Honda: "/brand/logos/honda.png",
+  Modenas: "/brand/logos/modenas.png",
+  SYM: "/brand/logos/sym.png",
+  WMOTO: "/brand/logos/wmoto.png",
+  KEEWAY: "/brand/logos/keeway.png",
+  QJMOTOR: "/brand/logos/qjmotor.png",
+  CFMOTO: "/brand/logos/cfmoto.png",
+  Aveta: "/brand/logos/aveta.png",
+  Moda: "/brand/logos/moda.png",
+  ARC: "/brand/logos/arc.png",
+  PPR: "/brand/logos/ppr.png",
+  ENKEI: "/brand/logos/enkei.png",
+  // KYT and AEROX THAI: no logo supplied yet — text wordmark fallback
+};
 
 export const FINANCING_PARTNERS = [
   "Loan Kedai",
@@ -53,6 +73,19 @@ export const FINANCING_PARTNERS = [
   "Chailease Berjaya",
   "JCL",
 ];
+
+/**
+ * Credit-partner logo files (R2 slide 24). Drop the client's supplied assets
+ * into public/brand/partners/ and map them here — the About Us page renders
+ * any mapped partner as a logo and falls back to the text wordmark.
+ * Example: "Loan Kedai": "/brand/partners/loan-kedai.png",
+ */
+export const PARTNER_LOGOS: Partial<Record<(typeof FINANCING_PARTNERS)[number], string>> = {
+  "First Class Credit": "/brand/partners/first-class-credit.png",
+  "Chailease Berjaya": "/brand/partners/chailease-berjaya.png",
+  JCL: "/brand/partners/jcl.png",
+  // Loan Kedai is in-house — no logo supplied; text wordmark fallback
+};
 
 export const SOCIALS = {
   sarawak: {
@@ -146,7 +179,6 @@ export const NAV_LINKS = [
     { label: "Motorcycles", href: "/motorcycles" },
     { label: "Rider Gear", href: "/rider-gear" },
     { label: "Accessories", href: "/accessories" },
-    { label: "Engine Oil", href: "/engine-oil" },
   ]},
   { label: "Sell", href: "/sell" },
   { label: "iPhone 17", href: "/iphone-17" },

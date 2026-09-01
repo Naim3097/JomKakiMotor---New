@@ -3,7 +3,7 @@
  * photography. Renders a subtle line icon per product kind on a warm
  * surface — deliberately quiet, never a fake render.
  */
-export type ThumbKind = "bike" | "helmet" | "gear" | "rim" | "oil" | "phone" | "part";
+export type ThumbKind = "bike" | "helmet" | "gear" | "rim" | "phone" | "part";
 
 const ICONS: Record<ThumbKind, React.ReactNode> = {
   bike: (
@@ -31,12 +31,6 @@ const ICONS: Record<ThumbKind, React.ReactNode> = {
       <circle cx="32" cy="32" r="20" />
       <circle cx="32" cy="32" r="5" />
       <path d="M32 12v15M32 37v15M12 32h15M37 32h15M18 18l10 10M36 36l10 10M46 18 36 28M28 36 18 46" />
-    </g>
-  ),
-  oil: (
-    <g>
-      <path d="M24 12h16v6l6 4v28a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4V22l6-4v-6Z" strokeLinejoin="round" />
-      <path d="M24 34h16" />
     </g>
   ),
   phone: (

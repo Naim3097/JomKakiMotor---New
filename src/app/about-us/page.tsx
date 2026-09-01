@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/Section";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { LinkButton } from "@/components/Button";
-import { BRANCHES, FINANCING_PARTNERS } from "@/data/site";
+import { BRANCHES, FINANCING_PARTNERS, PARTNER_LOGOS } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About JomKaki Motor — Malaysia's Premier Motorcycle Dealership",
@@ -76,10 +76,26 @@ export default function AboutPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">
               Our Trusted Credit Partners
             </p>
-            <ul className="mt-5 space-y-4">
+            {/* R2 slide 24 — renders official logos once mapped in PARTNER_LOGOS */}
+            <ul className="mt-5 grid grid-cols-2 gap-4">
               {FINANCING_PARTNERS.map((p) => (
-                <li key={p} className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink">
-                  {p}
+                <li
+                  key={p}
+                  className="flex min-h-24 items-center justify-center rounded-lg border border-line bg-paper px-4 py-5 text-center"
+                >
+                  {PARTNER_LOGOS[p] ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={PARTNER_LOGOS[p]}
+                      alt={p}
+                      loading="lazy"
+                      className="h-10 w-auto max-w-full object-contain"
+                    />
+                  ) : (
+                    <span className="font-display text-lg font-semibold tracking-[-0.02em] text-ink">
+                      {p}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -93,8 +109,8 @@ export default function AboutPage() {
           <p className="eyebrow text-white/50">Our promise</p>
           <h2 className="display-2 mt-3 text-white">A Commitment to Quality</h2>
           <p className="mt-6 text-lg leading-relaxed text-white/70">
-            Every motorcycle, sport rim, helmet, and bottle of engine oil in our
-            catalog is guaranteed authentic. We never compromise on safety,
+            Every motorcycle, sport rim and helmet in our catalog is
+            guaranteed authentic. We never compromise on safety,
             performance, or customer satisfaction — from the first inquiry to
             the open road.
           </p>

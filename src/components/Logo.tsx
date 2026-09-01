@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/brand/jomkaki-logo.png";
+import logo from "../../public/brand/jomkaki-rider-logo.png";
 
 /**
- * Official JomKaki Motor lockup (orange on transparent — works on light and
- * dark surfaces). Web-optimised copy of the client's master asset; do not
- * recreate or recolour.
+ * Official JomKaki Rider lockup (R2 slide 2 — replaces the JomKaki Motor
+ * mark). Orange on transparent, works on light and dark surfaces. Sourced
+ * from the client's supplied artwork; do not recreate or recolour.
  */
 export default function Logo({
   size = "header",
@@ -20,11 +20,11 @@ export default function Logo({
     <Link
       href="/"
       className={`inline-flex shrink-0 items-center ${className}`}
-      aria-label="JomKaki Motor — Home"
+      aria-label="JomKaki Rider — Home"
     >
       <Image
         src={logo}
-        alt="JomKaki Motor"
+        alt="JomKaki Rider"
         priority={size === "header"}
         className={size === "header" ? "h-12 w-auto md:h-14" : "h-24 w-auto"}
       />

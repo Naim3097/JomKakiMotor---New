@@ -3,7 +3,6 @@ import { SITE_URL } from "@/data/site";
 import { POSTS } from "@/data/posts";
 import {
   ACCESSORIES,
-  ENGINE_OILS,
   MOTORCYCLES,
   RIDER_GEAR,
 } from "@/lib/catalog";
@@ -14,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/motorcycles",
     "/rider-gear",
     "/accessories",
-    "/engine-oil",
     "/iphone-17",
     "/sell",
     "/road-tax",
@@ -34,7 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...MOTORCYCLES.map((m) => `/motorcycles/${m.slug}`),
     ...RIDER_GEAR.map((g) => `/rider-gear/${g.slug}`),
     ...ACCESSORIES.map((a) => `/accessories/${a.slug}`),
-    ...ENGINE_OILS.map((o) => `/engine-oil/${o.slug}`),
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     changeFrequency: "weekly" as const,

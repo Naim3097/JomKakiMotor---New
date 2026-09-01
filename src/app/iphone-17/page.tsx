@@ -116,10 +116,7 @@ export default function Iphone17Page() {
                   cta="WhatsApp to order"
                   stretch
                   note={false}
-                  options={[
-                    { label: "Storage", values: m.storage },
-                    { label: "Colour", values: m.colours },
-                  ]}
+                  options={[{ label: "Storage", values: m.storage }]}
                 />
               </div>
             </div>

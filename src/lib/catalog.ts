@@ -1,9 +1,8 @@
 import { MOTORCYCLES } from "@/data/motorcycles";
 import { RIDER_GEAR } from "@/data/riderGear";
 import { ACCESSORIES } from "@/data/accessories";
-import { ENGINE_OILS } from "@/data/engineOils";
 
-export type CategoryKey = "motorcycles" | "rider-gear" | "accessories" | "engine-oil";
+export type CategoryKey = "motorcycles" | "rider-gear" | "accessories";
 
 export const CATEGORY_META: Record<
   CategoryKey,
@@ -23,11 +22,6 @@ export const CATEGORY_META: Record<
     label: "Accessories",
     blurb:
       "Sport rims, fork lays and bolt-on upgrades — 100% genuine parts with model-matched fitment.",
-  },
-  "engine-oil": {
-    label: "Engine Oil",
-    blurb:
-      "Guaranteed-authentic engine oils for kapcai, scooter and high-performance engines.",
   },
 };
 
@@ -55,11 +49,6 @@ export function buildSearchIndex(): SearchEntry[] {
       sub: `Accessories · ${a.accessoryType}`,
       href: `/accessories/${a.slug}`,
     })),
-    ...ENGINE_OILS.map((o) => ({
-      label: o.name,
-      sub: `Engine Oil · ${o.viscosity}`,
-      href: `/engine-oil/${o.slug}`,
-    })),
   ];
 }
 
@@ -70,4 +59,4 @@ export function newestArrivals<T extends { arrival: string }>(
   return [...items].sort((a, b) => b.arrival.localeCompare(a.arrival)).slice(0, count);
 }
 
-export { MOTORCYCLES, RIDER_GEAR, ACCESSORIES, ENGINE_OILS };
+export { MOTORCYCLES, RIDER_GEAR, ACCESSORIES };

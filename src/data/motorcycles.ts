@@ -1,4 +1,4 @@
-import type { Motorcycle } from "./types";
+﻿import type { Motorcycle } from "./types";
 
 /**
  * SAMPLE INVENTORY — prices, deposits and monthly figures are indicative
@@ -10,7 +10,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     slug: "yamaha-y15zr",
     brand: "Yamaha",
     model: "Y15ZR",
-    type: "Kapcai",
+    type: "Underbone",
     cc: 150,
     price: 8998,
     deposit: 500,
@@ -117,7 +117,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     slug: "yamaha-lc135",
     brand: "Yamaha",
     model: "LC135",
-    type: "Kapcai",
+    type: "Underbone",
     cc: 135,
     price: 7498,
     deposit: 500,
@@ -165,7 +165,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     slug: "honda-rs150r",
     brand: "Honda",
     model: "RS150R",
-    type: "Kapcai",
+    type: "Underbone",
     cc: 150,
     price: 8799,
     deposit: 500,
@@ -261,7 +261,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     slug: "honda-ex5",
     brand: "Honda",
     model: "EX5",
-    type: "Kapcai",
+    type: "Underbone",
     cc: 110,
     price: 4899,
     deposit: 300,
@@ -307,7 +307,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     slug: "modenas-kriss-mr2",
     brand: "Modenas",
     model: "Kriss MR2",
-    type: "Kapcai",
+    type: "Underbone",
     cc: 110,
     price: 4599,
     deposit: 300,
@@ -353,7 +353,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     slug: "sym-vf3i",
     brand: "SYM",
     model: "VF3i 185",
-    type: "Kapcai",
+    type: "Underbone",
     cc: 185,
     price: 9338,
     deposit: 600,

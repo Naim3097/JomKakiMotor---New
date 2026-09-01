@@ -3,6 +3,7 @@ import { Geist, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { CartProvider } from "@/components/CartContext";
 import WhatsAppFab from "@/components/WhatsAppFab";
 import JsonLd from "@/components/JsonLd";
 import { buildSearchIndex } from "@/lib/catalog";
@@ -40,10 +41,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geist.variable} ${interTight.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
-        <Header searchIndex={searchIndex} />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppFab />
+        <CartProvider>
+          <Header searchIndex={searchIndex} />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <WhatsAppFab />
+        </CartProvider>
         <JsonLd data={[organizationSchema(), ...dealerSchemas()]} />
       </body>
     </html>

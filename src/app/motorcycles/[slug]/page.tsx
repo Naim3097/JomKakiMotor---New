@@ -26,10 +26,16 @@ export default async function MotorcyclePage(props: PageProps<"/motorcycles/[slu
   const bike = MOTORCYCLES.find((m) => m.slug === slug);
   if (!bike) notFound();
 
-  const related = MOTORCYCLES.filter(
+  // Same brand/type first, then everything else — enough cards to fill the
+  // You May Also Like carousel (R2 slide 20).
+  const similar = MOTORCYCLES.filter(
     (m) => m.slug !== bike.slug && (m.brand === bike.brand || m.type === bike.type)
-  )
-    .slice(0, 4)
+  );
+  const rest = MOTORCYCLES.filter(
+    (m) => m.slug !== bike.slug && !similar.includes(m)
+  );
+  const related = [...similar, ...rest]
+    .slice(0, 8)
     .map((m) => ({
       href: `/motorcycles/${m.slug}`,
       name: `${m.brand} ${m.model}`,
@@ -57,8 +63,7 @@ export default async function MotorcyclePage(props: PageProps<"/motorcycles/[slu
       shareVariant="full"
       isVehicle
       cc={bike.cc}
-      showTradeIn
-      cta="Chat to Apply"
+      cta="WhatsApp to Order"
       options={[{ label: "Colour", values: bike.colours }]}
       related={related}
     />

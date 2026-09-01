@@ -1,4 +1,11 @@
-export type MotorcycleType = "Kapcai" | "Scooter" | "Sport" | "Naked";
+/** R2 slide 15 — client's type taxonomy for the motorcycle filter */
+export type MotorcycleType =
+  | "Underbone"
+  | "Scooter"
+  | "Cafe Racer"
+  | "Mini-sport"
+  | "Sport"
+  | "Naked";
 
 export interface Motorcycle {
   slug: string;
@@ -42,6 +49,8 @@ export interface CatalogueProduct {
   specs: { label: string; value: string }[];
   /** Rider gear only — renders the size selection bar */
   sizes?: string[];
+  /** Colour options shown on the detail page (R2 slides 21–22) */
+  colours?: string[];
   /** Accessories only — bike models this part fits */
   compatibleModels?: string[];
   /** Which share row variant to use */
@@ -54,12 +63,6 @@ export interface GearItem extends CatalogueProduct {
 
 export interface AccessoryItem extends CatalogueProduct {
   accessoryType: AccessoryType;
-}
-
-export interface OilItem extends CatalogueProduct {
-  oilType: "Mineral" | "Semi-Synthetic" | "Fully Synthetic";
-  viscosity: string;
-  volume: string;
 }
 
 export interface IphoneModel {
@@ -101,5 +104,7 @@ export interface BlogPost {
   excerpt: string;
   date: string;
   updated?: string;
+  /** Listing thumbnail (R2 slide 25) — a placeholder frame renders until set */
+  image?: string;
   sections: { heading?: string; paragraphs: string[]; list?: string[] }[];
 }

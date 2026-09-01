@@ -1,17 +1,18 @@
 import Link from "next/link";
 import Breadcrumbs from "./Breadcrumbs";
+import { TextLink } from "./Button";
+import Carousel from "./Carousel";
+import DetailGallery from "./DetailGallery";
 import FaqAccordion from "./FaqAccordion";
 import JsonLd from "./JsonLd";
 import ProductEnquiry from "./ProductEnquiry";
 import { Section, SectionHeading } from "./Section";
 import ShareRow from "./ShareRow";
 import Thumb, { type ThumbKind } from "./Thumb";
-import WaButton from "./WaButton";
 import { SHOP_FAQS } from "@/data/faqs";
 import { FINANCING_PARTNERS, WHATSAPP_MOTOR } from "@/data/site";
 import { rm } from "@/lib/format";
 import { productSchema } from "@/lib/schema";
-import { TRADE_IN_ENQUIRY } from "@/lib/whatsapp";
 import type { Faq } from "@/data/types";
 
 export interface DetailProps {
@@ -30,12 +31,13 @@ export interface DetailProps {
   shareVariant: "full" | "compact";
   options?: { label: string; values: string[] }[];
   cta?: string;
+  /** Gallery photos — placeholder frames render until these are supplied */
+  images?: string[];
   /** Motorcycle extras */
   deposit?: number;
   monthly?: number;
   isVehicle?: boolean;
   cc?: number;
-  showTradeIn?: boolean;
   faqs?: Faq[];
   related?: {
     href: string;
@@ -60,12 +62,14 @@ export default function ProductDetail(p: DetailProps) {
         />
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
-          {/* Presentation */}
+          {/* Presentation — picture gallery in carousel structure (R2) */}
           <div>
-            <Thumb kind={p.thumb} label={p.name} className="aspect-4/3 w-full rounded-lg" />
-            <p className="mt-3 text-xs text-muted/70">
-              Product photography placeholder. Client imagery to follow.
-            </p>
+            <DetailGallery kind={p.thumb} label={p.name} images={p.images} />
+            {(!p.images || p.images.length === 0) && (
+              <p className="mt-3 text-xs text-muted/70">
+                Product photography placeholder. Client imagery to follow.
+              </p>
+            )}
           </div>
 
           {/* Buy box */}
@@ -99,7 +103,8 @@ export default function ProductDetail(p: DetailProps) {
               </p>
             )}
 
-            <ul className="mt-8 space-y-2.5 border-t border-line pt-7 text-[15px] leading-relaxed text-ink">
+            {/* Bullet-point form per R2 slides 19/21/22 */}
+            <ul className="mt-8 list-disc space-y-2.5 border-t border-line pl-5 pt-7 text-[15px] leading-relaxed text-ink marker:text-brand">
               {p.highlights.map((h) => (
                 <li key={h}>{h}</li>
               ))}
@@ -114,31 +119,17 @@ export default function ProductDetail(p: DetailProps) {
                 }
                 path={p.path}
                 number={WHATSAPP_MOTOR}
-                cta={p.cta ?? "Chat to Apply"}
+                cta={p.cta ?? "WhatsApp to Order"}
                 options={p.options}
+                cartItem={{
+                  id: p.path,
+                  name: p.name,
+                  brand: p.brand,
+                  price: p.price,
+                  href: p.path,
+                }}
               />
             </div>
-
-            {p.showTradeIn && (
-              <div className="mt-8 rounded-lg bg-surface p-5">
-                <p className="text-sm font-semibold text-ink">
-                  Have a bike to trade in? Offset your deposit.
-                </p>
-                <div className="mt-3 flex flex-wrap gap-4">
-                  <Link href="/sell" className="text-sm font-semibold text-ink underline-offset-4 hover:underline">
-                    How it works
-                  </Link>
-                  <a
-                    href={TRADE_IN_ENQUIRY}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-brand underline-offset-4 hover:underline"
-                  >
-                    Trade-in enquiry
-                  </a>
-                </div>
-              </div>
-            )}
 
             <div className="mt-8 border-t border-line pt-6">
               <ShareRow path={p.path} title={p.name} variant={p.shareVariant} />
@@ -196,25 +187,32 @@ export default function ProductDetail(p: DetailProps) {
         </div>
       </Section>
 
-      {/* Related */}
+      {/* Related — carousel structure with View All (R2 slide 20) */}
       {p.related && p.related.length > 0 && (
         <Section pad="tight">
-          <SectionHeading title="You May Also Like" />
-          <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
-            {p.related.map((r) => (
-              <Link key={r.href} href={r.href} className="group block">
-                <Thumb
-                  kind={r.thumb}
-                  label={r.name}
-                  className="aspect-4/3 w-full rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
-                />
-                <div className="mt-4">
-                  <p className="text-xs font-medium text-muted">{r.brand}</p>
-                  <h3 className="text-[15px] font-semibold text-ink transition-colors group-hover:text-brand">{r.name}</h3>
-                  <p className="mt-1 text-[15px] font-semibold text-ink">{rm(r.price)}</p>
-                </div>
-              </Link>
-            ))}
+          <div className="flex items-end justify-between gap-6">
+            <SectionHeading title="You May Also Like" />
+            <TextLink href={p.categoryHref} className="shrink-0">
+              View All
+            </TextLink>
+          </div>
+          <div className="mt-8">
+            <Carousel>
+              {p.related.map((r) => (
+                <Link key={r.href} href={r.href} className="group block w-60 shrink-0 snap-start sm:w-72">
+                  <Thumb
+                    kind={r.thumb}
+                    label={r.name}
+                    className="aspect-4/3 w-full rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
+                  />
+                  <div className="mt-4">
+                    <p className="text-xs font-medium text-muted">{r.brand}</p>
+                    <h3 className="text-[15px] font-semibold text-ink transition-colors group-hover:text-brand">{r.name}</h3>
+                    <p className="mt-1 text-[15px] font-semibold text-ink">{rm(r.price)}</p>
+                  </div>
+                </Link>
+              ))}
+            </Carousel>
           </div>
         </Section>
       )}

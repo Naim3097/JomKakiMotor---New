@@ -98,17 +98,19 @@ export default function SellPage() {
           title="Find Your Nearest Inspection Center"
           lead="Bring your motorcycle to any of our established branches for a fast, professional evaluation."
         />
-        <div className="mt-10 grid gap-12 lg:grid-cols-2">
-          <ul className="divide-y divide-line border-y border-line">
+        {/* R2 slide 23: branch list and map share one fixed height — the
+            list scrolls inside it, so the section stays compact. */}
+        <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:gap-10">
+          <ul className="h-64 divide-y divide-line overflow-y-auto rounded-lg border border-line px-5 lg:h-[440px]">
             {BRANCHES.map((b) => (
-              <li key={b.id} className="py-5">
+              <li key={b.id} className="py-4">
                 <p className="text-[15px] font-semibold text-ink">{b.name}</p>
                 <p className="mt-1 text-sm leading-relaxed text-muted">{b.address}</p>
                 <a
                   href={b.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1.5 inline-block text-sm font-semibold text-ink underline-offset-4 hover:underline"
+                  className="mt-1.5 inline-block text-sm font-semibold text-brand underline-offset-4 hover:underline"
                 >
                   View on Google Maps
                 </a>
@@ -118,7 +120,7 @@ export default function SellPage() {
           <iframe
             title="JomKaki Motor branches map"
             src="https://www.google.com/maps?q=JomKaki+Motor&output=embed"
-            className="min-h-96 w-full rounded-lg border border-line"
+            className="h-72 w-full rounded-lg border border-line lg:h-[440px]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />

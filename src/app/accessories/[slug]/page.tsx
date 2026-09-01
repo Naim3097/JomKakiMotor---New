@@ -50,7 +50,8 @@ export default async function AccessoryPage(props: PageProps<"/accessories/[slug
       description={item.description}
       specs={item.specs}
       shareVariant={item.shareVariant}
-      cta="WhatsApp to Enquire"
+      cta="WhatsApp to Order"
+      options={item.colours ? [{ label: "Colour", values: item.colours }] : []}
       related={related}
     />
   );

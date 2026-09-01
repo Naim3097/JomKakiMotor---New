@@ -3,16 +3,23 @@ import Logo from "./Logo";
 import { FacebookIcon, InstagramIcon, TikTokIcon } from "./icons";
 import { COPYRIGHT, HOURS, SOCIALS } from "@/data/site";
 
-const NAVIGATE = [
-  { label: "Motorcycles", href: "/motorcycles" },
-  { label: "Rider Gear", href: "/rider-gear" },
-  { label: "Accessories", href: "/accessories" },
-  { label: "Engine Oil", href: "/engine-oil" },
-  { label: "iPhone 17", href: "/iphone-17" },
-  { label: "Sell / Trade-In", href: "/sell" },
-  { label: "Road Tax", href: "/road-tax" },
-  { label: "About Us", href: "/about-us" },
-  { label: "Contact Us", href: "/contact" },
+/**
+ * R2 slide 14: Navigate renders as two columns to keep the footer short.
+ * Split kept deliberately at shop links / everything else.
+ */
+const NAVIGATE_COLS: { label: string; href: string }[][] = [
+  [
+    { label: "Motorcycles", href: "/motorcycles" },
+    { label: "Rider Gear", href: "/rider-gear" },
+    { label: "Accessories", href: "/accessories" },
+    { label: "Road Tax", href: "/road-tax" },
+  ],
+  [
+    { label: "iPhone 17", href: "/iphone-17" },
+    { label: "Sell / Trade-In", href: "/sell" },
+    { label: "About Us", href: "/about-us" },
+    { label: "Contact Us", href: "/contact" },
+  ],
 ];
 
 const RESOURCES = [
@@ -60,15 +67,19 @@ export default function Footer() {
 
         <div>
           <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/45">Navigate</h3>
-          <ul className="mt-5 space-y-3">
-            {NAVIGATE.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="text-sm text-white/75 transition-colors hover:text-white">
-                  {l.label}
-                </Link>
-              </li>
+          <div className="mt-5 grid grid-cols-2 gap-x-6">
+            {NAVIGATE_COLS.map((col, i) => (
+              <ul key={i} className="space-y-3">
+                {col.map((l) => (
+                  <li key={l.href}>
+                    <Link href={l.href} className="text-sm text-white/75 transition-colors hover:text-white">
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             ))}
-          </ul>
+          </div>
         </div>
 
         <div>

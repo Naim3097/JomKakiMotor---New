@@ -4,21 +4,18 @@ import { BRANDS, BRAND_LOGOS } from "@/data/site";
 import type { SearchEntry } from "@/lib/catalog";
 
 /**
- * Search + brand index (R1 slide 7) as a structured logo-wall grid.
+ * Search + brand index as a structured logo-wall grid.
+ * R2 slide 6: the search bar spans the full section width and the count
+ * label is gone; brand cells render full-colour official logos once the
+ * client's files are mapped in BRAND_LOGOS.
  * 15 brands fill the grid exactly: 3 cols × 5 rows on mobile,
  * 5 cols × 3 rows from sm up — no ragged rows, no orphans.
- * Text wordmarks become official logo files when the client supplies them.
  */
 export default function BrandWall({ searchIndex }: { searchIndex: SearchEntry[] }) {
   return (
     <div>
-      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <div className="w-full max-w-xl">
-          <SearchBox index={searchIndex} placeholder="Search by brand or model" />
-        </div>
-        <p className="shrink-0 text-xs font-semibold uppercase tracking-[0.08em] text-muted">
-          {BRANDS.length} brands in the catalogue
-        </p>
+      <div className="w-full">
+        <SearchBox index={searchIndex} placeholder="Search by brand or model" />
       </div>
       <ul className="mt-8 grid grid-cols-3 border-b border-t border-line sm:grid-cols-5">
         {BRANDS.map((brand, i) => (
@@ -34,13 +31,14 @@ export default function BrandWall({ searchIndex }: { searchIndex: SearchEntry[] 
             >
               {BRAND_LOGOS[brand] ? (
                 // Uniform sizing: every logo renders inside the same 28px-high
-                // box regardless of its native proportions, muted until hover.
+                // box regardless of its native proportions. Full colour per R2
+                // slide 6.
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={BRAND_LOGOS[brand]}
                   alt={brand}
                   loading="lazy"
-                  className="h-7 w-auto max-w-[70%] object-contain opacity-60 grayscale transition group-hover:opacity-100 group-hover:grayscale-0"
+                  className="h-7 w-auto max-w-[70%] object-contain"
                 />
               ) : (
                 brand

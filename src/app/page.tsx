@@ -3,22 +3,20 @@ import Link from "next/link";
 import { Section, SectionHeading } from "@/components/Section";
 import { LinkButton, TextLink } from "@/components/Button";
 import { BikeCard, ProductCard } from "@/components/cards";
-import Carousel from "@/components/Carousel";
 import HowItWorks from "@/components/HowItWorks";
 import BrandWall from "@/components/BrandWall";
 import ReviewsSection from "@/components/ReviewsSection";
-import Thumb from "@/components/Thumb";
+import Thumb, { type ThumbKind } from "@/components/Thumb";
 import WaButton from "@/components/WaButton";
+import { ArrowRight } from "@/components/icons";
 import {
   ACCESSORIES,
-  ENGINE_OILS,
   MOTORCYCLES,
   RIDER_GEAR,
   buildSearchIndex,
   newestArrivals,
 } from "@/lib/catalog";
-import { FINANCING_PARTNERS, WHATSAPP_MOTOR } from "@/data/site";
-import { rm } from "@/lib/format";
+import { WHATSAPP_MOTOR } from "@/data/site";
 import {
   GENERAL_ENQUIRY,
   ROADTAX_ENQUIRY,
@@ -34,30 +32,58 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const CATEGORIES = [
+/** R2 slide 4 copy; R3 feedback — image-led, less wordy. Unsplash placeholders. */
+const WHY_CHOOSE_US: { title: string; body: React.ReactNode; image: string; alt: string }[] = [
+  {
+    title: "Flexible Financing",
+    body: (
+      <>
+        Easy payment plans for any budget, including credit company options and
+        our in-house <em>loan kedai</em>.
+      </>
+    ),
+    image: "/images/home/why-financing.jpg",
+    alt: "Working out a payment plan with a calculator",
+  },
+  {
+    title: "100% Genuine Quality",
+    body: "Guaranteed authentic motorcycles, premium accessories, and reliable replacement parts for your peace of mind.",
+    image: "/images/home/why-quality.jpg",
+    alt: "Close-up of a chrome motorcycle engine",
+  },
+  {
+    title: "Direct Expert Support",
+    body: "Connect instantly with our sales team via WhatsApp for personalized assistance and easy paperwork.",
+    image: "/images/home/why-support.jpg",
+    alt: "Chatting with support on a smartphone",
+  },
+  {
+    title: "All-in-One Selection",
+    body: "Everything you need in one place, from the latest motorcycles to daily riding gear.",
+    image: "/images/home/why-selection.jpg",
+    alt: "Motorcycle on display in a showroom",
+  },
+];
+
+/** R2 slide 5 — category cards with a See More CTA (Engine Oil removed per R3). */
+const CATEGORIES: { label: string; href: string; blurb: string; thumb: ThumbKind }[] = [
   {
     label: "Motorcycles",
     href: "/motorcycles",
     blurb: "New bikes from Malaysia's most trusted brands",
-    count: MOTORCYCLES.length,
+    thumb: "bike",
   },
   {
     label: "Rider Gear",
     href: "/rider-gear",
     blurb: "Helmets, gloves, apparel and rain protection",
-    count: RIDER_GEAR.length,
+    thumb: "helmet",
   },
   {
     label: "Accessories",
     href: "/accessories",
     blurb: "Sport rims, fork lays and bolt-on upgrades",
-    count: ACCESSORIES.length,
-  },
-  {
-    label: "Engine Oil",
-    href: "/engine-oil",
-    blurb: "Guaranteed-authentic oils for every engine",
-    count: ENGINE_OILS.length,
+    thumb: "rim",
   },
 ];
 
@@ -68,6 +94,8 @@ const SERVICES = [
     href: "/sell",
     hrefLabel: "How selling works",
     wa: SELL_ENQUIRY,
+    image: "/images/home/service-sell.jpg",
+    alt: "Motorcycle parked in front of a building",
   },
   {
     title: "Roadtax & Insurance Renewal",
@@ -75,6 +103,8 @@ const SERVICES = [
     href: "/road-tax",
     hrefLabel: "About renewals",
     wa: ROADTAX_ENQUIRY,
+    image: "/images/home/service-roadtax.jpg",
+    alt: "Signing renewal documents",
   },
   {
     title: "Trade In Your Motorcycle",
@@ -82,19 +112,18 @@ const SERVICES = [
     href: "/sell",
     hrefLabel: "How trade-in works",
     wa: TRADE_IN_ENQUIRY,
+    image: "/images/home/service-tradein.jpg",
+    alt: "Hands on a motorcycle fuel tank during handover",
   },
 ];
 
 export default function HomePage() {
   const searchIndex = buildSearchIndex();
-  const featured = MOTORCYCLES.find((m) => m.slug === "yamaha-y15zr") ?? MOTORCYCLES[0];
-  const popular = MOTORCYCLES.filter((m) => m.popular && m.slug !== featured.slug);
   const newBikes = newestArrivals(MOTORCYCLES, 4);
   const newProducts = newestArrivals(
     [
       ...RIDER_GEAR.map((g) => ({ ...g, href: `/rider-gear/${g.slug}`, thumb: g.gearType === "Helmet" ? ("helmet" as const) : ("gear" as const) })),
       ...ACCESSORIES.map((a) => ({ ...a, href: `/accessories/${a.slug}`, thumb: "rim" as const })),
-      ...ENGINE_OILS.map((o) => ({ ...o, href: `/engine-oil/${o.slug}`, thumb: "oil" as const })),
     ],
     4
   );
@@ -167,117 +196,90 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Category index — editorial rows, not cards */}
+      {/* Why Choose Us — R2 slide 4; image-led per R3 feedback */}
       <Section>
+        <SectionHeading kicker="The JomKaki difference" title="Why Choose Us" />
+        <div className="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+          {WHY_CHOOSE_US.map((w) => (
+            <div key={w.title}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={w.image}
+                alt={w.alt}
+                loading="lazy"
+                className="aspect-4/3 w-full rounded-lg object-cover"
+              />
+              <h3 className="mt-4 text-base font-semibold text-ink">{w.title}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted">{w.body}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Category cards — R2 slide 5: four cards with a See More CTA */}
+      <Section tone="surface">
         <SectionHeading
           kicker="The catalogue"
           title="Everything a Rider Needs"
         />
-        <div className="mt-10 border-t border-line">
+        <div className="mt-10 grid gap-4 sm:grid-cols-3 sm:gap-6">
           {CATEGORIES.map((c) => (
             <Link
               key={c.href}
               href={c.href}
-              className="group grid items-baseline gap-2 border-b border-line py-7 transition-colors hover:bg-surface sm:grid-cols-[1fr_auto] sm:px-4 md:py-9"
+              className="group overflow-hidden rounded-lg border border-line bg-paper transition-shadow hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
             >
-              <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1">
-                <h3 className="display-3 text-ink transition-colors group-hover:text-brand">{c.label}</h3>
-                <p className="text-sm text-muted">{c.blurb}</p>
+              <Thumb
+                kind={c.thumb}
+                label={c.label}
+                className="aspect-4/3 w-full transition-transform duration-500 group-hover:scale-[1.02]"
+              />
+              <div className="border-t border-line p-4 sm:p-5">
+                <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-ink transition-colors group-hover:text-brand">
+                  {c.label}
+                </h3>
+                <p className="mt-1 hidden text-xs leading-relaxed text-muted sm:block">{c.blurb}</p>
+                <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
+                  See More
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                </span>
               </div>
-              <span className="text-sm font-medium text-muted transition-colors group-hover:text-ink">
-                {c.count} products
-              </span>
             </Link>
           ))}
         </div>
-        <div className="mt-12">
+      </Section>
+
+      {/* Brand index — R2 slide 6: full-width search, logo wall */}
+      <Section>
+        <SectionHeading
+          kicker="Trusted marques"
+          title="More Than 10 Brands in Our Catalogue"
+        />
+        <div className="mt-10">
           <BrandWall searchIndex={searchIndex} />
         </div>
       </Section>
 
-      {/* Featured motorcycle — product storytelling */}
-      <Section tone="surface">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <Thumb kind="bike" label={`${featured.brand} ${featured.model}`} className="aspect-4/3 w-full rounded-lg" />
-          <div>
-            <p className="eyebrow text-brand">Featured</p>
-            <h2 className="display-2 mt-3 text-ink">
-              {featured.brand} {featured.model}
-            </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-muted">
-              {featured.description[0]}
-            </p>
-            {/* Stat values never wrap: nowrap + a size step-down on narrow
-                phones where three 24px figures can't share the row. */}
-            <dl className="mt-8 grid grid-cols-3 gap-4 border-t border-line pt-7 sm:gap-6">
-              <div>
-                <dd className="whitespace-nowrap font-display text-lg font-semibold tracking-[-0.02em] text-ink sm:text-2xl">
-                  {featured.cc}cc
-                </dd>
-                <dt className="mt-1 text-xs text-muted">Liquid-cooled</dt>
-              </div>
-              <div>
-                <dd className="whitespace-nowrap font-display text-lg font-semibold tracking-[-0.02em] text-ink sm:text-2xl">
-                  {rm(featured.price)}
-                </dd>
-                <dt className="mt-1 text-xs text-muted">Retail price</dt>
-              </div>
-              <div>
-                <dd className="whitespace-nowrap font-display text-lg font-semibold tracking-[-0.02em] text-ink sm:text-2xl">
-                  {rm(featured.monthly)}
-                </dd>
-                <dt className="mt-1 text-xs text-muted">Monthly, from</dt>
-              </div>
-            </dl>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-              <LinkButton href={`/motorcycles/${featured.slug}`} variant="primary" className="w-full sm:w-auto">
-                Explore the {featured.model}
-              </LinkButton>
-              <WaButton
-                href={waLink(WHATSAPP_MOTOR, `Hi JomKaki Motor, I'm interested in the ${featured.brand} ${featured.model}.`)}
-                className="w-full sm:w-auto"
-              >
-                Chat to apply
-              </WaButton>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* Popular models */}
-      <Section>
-        <div className="flex items-end justify-between gap-6">
-          <SectionHeading
-            kicker="Rider favourites"
-            title="Our Most Popular Motorcycles"
-          />
-          <TextLink href="/motorcycles" className="hidden shrink-0 sm:block">
-            View all
-          </TextLink>
-        </div>
-        <div className="mt-10">
-          <Carousel>
-            {popular.map((bike) => (
-              <div key={bike.slug} className="w-64 shrink-0 snap-start sm:w-72">
-                <BikeCard bike={bike} />
-              </div>
-            ))}
-          </Carousel>
-        </div>
-      </Section>
-
-      {/* Services — quiet columns, no boxes */}
+      {/* Services — R2 slide 7: straight after the search/brand section */}
       <Section tone="ink">
         <SectionHeading
           kicker="Beyond the sale"
           title="We Also Provide These Services"
           onDark
         />
-        <div className="mt-12 grid gap-12 border-t border-white/15 pt-12 md:grid-cols-3">
+        <div className="mt-12 grid gap-10 border-t border-white/15 pt-12 md:grid-cols-3 md:gap-8">
           {SERVICES.map((s) => (
             <div key={s.title} className="flex flex-col">
-              <h3 className="display-3 text-white">{s.title}</h3>
-              <ul className="mt-4 space-y-1.5 text-[15px] text-white/65">
+              {/* Image-led per R3 feedback */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={s.image}
+                alt={s.alt}
+                loading="lazy"
+                className="aspect-3/2 w-full rounded-lg object-cover"
+              />
+              <h3 className="display-3 mt-5 text-white">{s.title}</h3>
+              <ul className="mt-3 space-y-1.5 text-[15px] text-white/65">
                 {s.points.map((p) => (
                   <li key={p}>{p}</li>
                 ))}
@@ -303,7 +305,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Newest arrivals */}
+      {/* Newest arrivals — R2 slide 8 */}
       <Section>
         <SectionHeading
           kicker="Just landed"
@@ -348,7 +350,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* How it works */}
+      {/* How it works — R2 slide 9: after Newest Arrivals */}
       <Section tone="surface">
         <SectionHeading
           kicker="Simple steps"
@@ -360,49 +362,35 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Financing — one quiet row */}
-      <Section pad="tight">
-        <div className="flex flex-col justify-between gap-6 border-y border-line py-10 md:flex-row md:items-center">
-          <div className="max-w-md">
-            <h2 className="display-3 text-ink">Flexible HP Financing</h2>
-            <p className="mt-2 text-sm leading-relaxed text-muted">
-              Hire Purchase plans tailored to any budget, with fast approvals
-              through Malaysia&apos;s reputable credit providers.
-            </p>
-          </div>
-          <p className="font-display text-lg font-semibold tracking-[-0.02em] text-muted">
-            {FINANCING_PARTNERS.join("  ·  ")}
-          </p>
-        </div>
-      </Section>
-
       {/* Google reviews */}
       <Section>
         <ReviewsSection />
       </Section>
 
-      {/* Final CTA */}
-      <Section tone="ink">
-        <div className="max-w-2xl">
-          <h2 className="display-2 text-white">Ready for Your Next Bike?</h2>
-          <p className="mt-5 text-lg leading-relaxed text-white/70">
-            Message us on WhatsApp. Our sales advisors will check stock, sort
-            your financing and book your collection at the nearest branch.
-          </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+      {/* Final CTA — R2 slide 13: brand orange, compact */}
+      <section className="bg-brand">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-5 py-12 sm:px-8 md:flex-row md:items-center md:py-14">
+          <div className="max-w-xl">
+            <h2 className="display-3 text-white">Ready for Your Next Bike?</h2>
+            <p className="mt-2 text-[15px] leading-relaxed text-white/85">
+              Message us on WhatsApp. Our sales advisors will check stock, sort
+              your financing and book your collection at the nearest branch.
+            </p>
+          </div>
+          <div className="flex shrink-0 flex-col gap-3 sm:flex-row sm:items-center">
             <WaButton
               href={waLink(WHATSAPP_MOTOR, "Hi JomKaki Motor, I'm looking for my next bike.")}
-              size="lg"
+              variant="ink"
               className="w-full sm:w-auto"
             >
               WhatsApp us now
             </WaButton>
-            <LinkButton href="/motorcycles" size="lg" variant="outline-light" className="w-full sm:w-auto">
+            <LinkButton href="/motorcycles" variant="outline-ink" className="w-full sm:w-auto">
               Browse the catalogue
             </LinkButton>
           </div>
         </div>
-      </Section>
+      </section>
     </>
   );
 }

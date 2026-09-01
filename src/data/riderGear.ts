@@ -1,9 +1,10 @@
-import type { GearItem } from "./types";
+﻿import type { GearItem } from "./types";
 
 /** SAMPLE INVENTORY — copy follows the Rider Gear templates from Client Comments R1. */
 export const RIDER_GEAR: GearItem[] = [
   {
     slug: "kyt-tt-course-helmet",
+    colours: ["Gloss Black", "Matte Black", "White", "Red"],
     gearType: "Helmet",
     name: "KYT TT-Course Full Face Helmet",
     brand: "KYT",
@@ -32,6 +33,7 @@ export const RIDER_GEAR: GearItem[] = [
   },
   {
     slug: "arc-ritz-open-face-helmet",
+    colours: ["Black", "White", "Red"],
     gearType: "Helmet",
     name: "ARC Ritz Open Face Helmet",
     brand: "ARC",
@@ -59,6 +61,7 @@ export const RIDER_GEAR: GearItem[] = [
   },
   {
     slug: "kyt-tt-course-visor",
+    colours: ["Clear", "Smoke", "Rainbow"],
     gearType: "Helmet Visor",
     name: "KYT Replacement Visor for TT-Course",
     brand: "KYT",
@@ -86,6 +89,7 @@ export const RIDER_GEAR: GearItem[] = [
   },
   {
     slug: "jomkaki-riding-gloves",
+    colours: ["Black", "Black/Red"],
     gearType: "Gloves",
     name: "JomKaki Armored Riding Gloves",
     brand: "JomKaki",
@@ -114,6 +118,7 @@ export const RIDER_GEAR: GearItem[] = [
   },
   {
     slug: "jomkaki-graphic-tee",
+    colours: ["Black", "White", "Orange"],
     gearType: "T-Shirt",
     name: "JomKaki Racing Graphic T-Shirt",
     brand: "JomKaki",
@@ -142,6 +147,7 @@ export const RIDER_GEAR: GearItem[] = [
   },
   {
     slug: "jomkaki-heavy-duty-raincoat",
+    colours: ["Black", "Navy"],
     gearType: "Raincoat",
     name: "JomKaki Heavy-Duty Rain Suit",
     brand: "JomKaki",
@@ -170,6 +176,7 @@ export const RIDER_GEAR: GearItem[] = [
   },
   {
     slug: "jomkaki-snapback-cap",
+    colours: ["Black", "Orange"],
     gearType: "Cap",
     name: "JomKaki Moto Snapback Cap",
     brand: "JomKaki",

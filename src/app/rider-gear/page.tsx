@@ -34,9 +34,6 @@ export default function RiderGearPage() {
     },
   }));
 
-  const uniq = (key: string) => [...new Set(items.map((i) => i.facetValues[key]).filter(Boolean))];
-  const allSizes = [...new Set(RIDER_GEAR.flatMap((g) => g.sizes ?? []))];
-
   return (
     <CatalogueShell
       title="Rider Gear"
@@ -45,10 +42,15 @@ export default function RiderGearPage() {
       items={items}
       newestIds={newestArrivals(RIDER_GEAR, 3).map((g) => g.slug)}
       facets={[
-        { key: "type", label: "Type", options: uniq("type") },
-        { key: "brand", label: "Brand", options: uniq("brand") },
-        { key: "size", label: "Size", options: allSizes },
-        { key: "price", label: "Price", options: ["Under RM100", "RM100 – RM500", "Over RM500"].filter((p) => uniq("price").includes(p)) },
+        /* Option lists fixed by Client Comments R2 slide 17 */
+        { key: "brand", label: "Brand", options: ["KYT", "ARC", "Yamaha", "SGV", "BOGO"] },
+        {
+          key: "type",
+          label: "Type",
+          options: ["Helmet", "Helmet Spoiler", "Helmet Visor", "Raincoat"],
+        },
+        { key: "size", label: "Size", options: ["M", "L", "XL", "XXL"] },
+        { key: "price", label: "Price", options: ["Under RM100", "RM100 – RM500", "Over RM500"] },
       ]}
     />
   );
