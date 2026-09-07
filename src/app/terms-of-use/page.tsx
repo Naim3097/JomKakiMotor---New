@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "Terms of use for the JomKaki Motor website.",
+  description: "Terms of use for the JomKaki Rider website.",
   alternates: { canonical: "/terms-of-use" },
   robots: { index: false },
 };
@@ -21,7 +21,7 @@ export default function TermsPage() {
           This website is an online catalogue. Prices, promotions and availability
           shown are indicative and confirmed only through direct communication with
           our sales team via WhatsApp or in-branch. All transactions are concluded
-          offline at JomKaki Motor branches.
+          offline at JomKaki Rider branches.
         </p>
       </div>
     </Section>

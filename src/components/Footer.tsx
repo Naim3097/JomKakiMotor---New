@@ -30,9 +30,12 @@ const RESOURCES = [
 ];
 
 function SocialRow({ set }: { set: { label: string; facebook: string; instagram: string; tiktok: string } }) {
+  // Region only on screen so both sets fit one row (R3 slide 6); the full
+  // account name still reaches screen readers via each link's aria-label.
+  const region = set.label.replace(/^JomKaki Rider\s*/, "");
   return (
     <div>
-      <p className="text-xs font-medium text-white/45">{set.label}</p>
+      <p className="text-xs font-medium text-white/45">{region}</p>
       <div className="mt-2 flex gap-4">
         <a href={set.facebook} target="_blank" rel="noopener noreferrer" aria-label={`${set.label} on Facebook`} className="text-white/60 transition-colors hover:text-white">
           <FacebookIcon className="h-[18px] w-[18px]" />
@@ -59,7 +62,8 @@ export default function Footer() {
             parts and riding gear, with branches in Kuching, Bintulu, KL and
             Selangor.
           </p>
-          <div className="space-y-5">
+          {/* Side by side to keep the footer short (R3 slide 6) */}
+          <div className="flex flex-wrap gap-x-10 gap-y-5">
             <SocialRow set={SOCIALS.kl} />
             <SocialRow set={SOCIALS.sarawak} />
           </div>

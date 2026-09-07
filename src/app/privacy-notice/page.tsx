@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "Privacy Notice",
-  description: "Privacy notice for the JomKaki Motor website.",
+  description: "Privacy notice for the JomKaki Rider website.",
   alternates: { canonical: "/privacy-notice" },
   robots: { index: false },
 };

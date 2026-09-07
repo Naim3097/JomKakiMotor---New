@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/Section";
 import AddToCartButton from "@/components/AddToCartButton";
+import CtaBanner from "@/components/CtaBanner";
 import FaqAccordion from "@/components/FaqAccordion";
+import { IconBadge } from "@/components/LineIcon";
 import ProductEnquiry from "@/components/ProductEnquiry";
 import Thumb from "@/components/Thumb";
 import WaButton from "@/components/WaButton";
@@ -32,7 +34,7 @@ export default function Iphone17Page() {
     <>
       {/* Location notice */}
       <div className="border-b border-line bg-surface px-5 py-2.5 text-center text-xs font-medium text-muted">
-        The JomKaki Motor iPhone 17 lineup and financing options are exclusively
+        The JomKaki Rider iPhone 17 lineup and financing options are exclusively
         available for collection at our Kuching, Satok branch.
       </div>
 
@@ -155,13 +157,12 @@ export default function Iphone17Page() {
           title="Why Choose Us for Your iPhone 17?"
           lead="We combine the latest Apple technology with the local reliability you already know."
         />
+        {/* Icons rather than numbers (R3 slide 11) */}
         <div className="mt-10 grid gap-x-10 gap-y-8 border-t border-line pt-10 sm:grid-cols-2 lg:grid-cols-4">
-          {IPHONE_WHY.map((w, i) => (
+          {IPHONE_WHY.map((w) => (
             <div key={w.title}>
-              <span className="font-display text-2xl font-semibold tracking-[-0.02em] text-brand/40">
-                0{i + 1}
-              </span>
-              <p className="mt-2 text-[15px] font-semibold leading-snug text-ink">{w.title}</p>
+              <IconBadge name={w.icon} />
+              <p className="mt-3 text-[15px] font-semibold leading-snug text-ink">{w.title}</p>
             </div>
           ))}
         </div>
@@ -177,13 +178,30 @@ export default function Iphone17Page() {
         <div className="mt-12 grid gap-14 md:grid-cols-2 md:gap-10">
           {IPHONE_FINANCING.map((f) => (
             <div key={f.name} className="border-t-2 border-brand pt-6">
-              <h3 className="display-3 text-ink">{f.name}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{f.tagline}</p>
+              {/* Partner's own mark where supplied (R3 slide 12) */}
+              {"logo" in f && f.logo ? (
+                <>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={f.logo}
+                    alt={f.name}
+                    loading="lazy"
+                    className="h-11 w-auto max-w-[220px] object-contain"
+                  />
+                </>
+              ) : (
+                <h3 className="display-3 text-ink">{f.name}</h3>
+              )}
+              <p className="mt-3 text-sm leading-relaxed text-muted">{f.tagline}</p>
+              {/* Icons per point (R3 slide 12) */}
               <dl className="mt-6 space-y-5">
                 {f.points.map((pt) => (
-                  <div key={pt.title}>
-                    <dt className="text-sm font-semibold text-ink">{pt.title}</dt>
-                    <dd className="mt-0.5 text-sm leading-relaxed text-muted">{pt.body}</dd>
+                  <div key={pt.title} className="flex gap-3.5">
+                    <IconBadge name={pt.icon} size="sm" />
+                    <div>
+                      <dt className="text-sm font-semibold text-ink">{pt.title}</dt>
+                      <dd className="mt-0.5 text-sm leading-relaxed text-muted">{pt.body}</dd>
+                    </div>
                   </div>
                 ))}
               </dl>
@@ -200,7 +218,7 @@ export default function Iphone17Page() {
           </WaButton>
           <p className="mt-4 max-w-xl text-xs leading-relaxed text-muted">
             <strong className="text-ink">Purchases and financing only.</strong>{" "}
-            JomKaki Motor operates exclusively through direct sales and the
+            JomKaki Rider operates exclusively through direct sales and the
             financing options listed above. We currently do not offer device
             trade-in services.
           </p>
@@ -210,13 +228,12 @@ export default function Iphone17Page() {
       {/* Steps */}
       <Section tone="surface" pad="tight">
         <SectionHeading kicker="Four simple steps" title="How to Get Yours Today" />
+        {/* Icons rather than numbers (R3 slide 11) */}
         <div className="mt-10 grid gap-x-10 gap-y-8 border-t border-line pt-10 sm:grid-cols-2 lg:grid-cols-4">
-          {IPHONE_STEPS.map((s, i) => (
-            <div key={s.step}>
-              <span className="font-display text-3xl font-semibold tracking-[-0.02em] text-brand/40">
-                0{i + 1}
-              </span>
-              <p className="mt-2 text-[15px] font-semibold leading-snug text-ink">{s.title}</p>
+          {IPHONE_STEPS.map((s) => (
+            <div key={s.title}>
+              <IconBadge name={s.icon} />
+              <p className="mt-3 text-[15px] font-semibold leading-snug text-ink">{s.title}</p>
             </div>
           ))}
         </div>
@@ -229,7 +246,7 @@ export default function Iphone17Page() {
             <SectionHeading
               kicker="Official collection point"
               title="Collect at Satok, Kuching"
-              lead="Once your financing is approved via WhatsApp, collect your new iPhone 17 securely at our designated JomKaki Motor Satok branch."
+              lead="Once your financing is approved via WhatsApp, collect your new iPhone 17 securely at our designated JomKaki Rider Satok branch."
             />
             <address className="mt-8 space-y-3 text-sm not-italic leading-relaxed text-muted">
               <p className="font-semibold text-ink">{satok.name} branch</p>
@@ -261,7 +278,7 @@ export default function Iphone17Page() {
             </div>
           </div>
           <iframe
-            title="JomKaki Motor Satok branch map"
+            title="JomKaki Rider Satok branch map"
             src="https://www.google.com/maps?q=JomKaki+Motor+Satok+Kuching&output=embed"
             className="h-full min-h-96 w-full rounded-lg border border-line"
             loading="lazy"
@@ -278,27 +295,21 @@ export default function Iphone17Page() {
         </div>
       </Section>
 
-      {/* Final CTA */}
-      <Section tone="ink">
-        <div className="max-w-2xl">
-          <h2 className="display-2 text-white">Ready to Experience the New iPhone 17?</h2>
-          <p className="mt-5 text-lg text-white/70">
-            Check stock, apply for easy financing, and schedule your pickup via
-            WhatsApp today.
-          </p>
-          <div className="mt-8">
-            <WaButton href={ORDER_WA} size="lg" className="w-full sm:w-auto">
-              WhatsApp to order
-            </WaButton>
-          </div>
-        </div>
-      </Section>
+      {/* Final CTA — compact orange banner per R3 slide 14 */}
+      <CtaBanner
+        title="Ready to Experience the New iPhone 17?"
+        body="Check stock, apply for easy financing, and schedule your pickup via WhatsApp today."
+      >
+        <WaButton href={ORDER_WA} variant="ink" className="w-full sm:w-auto">
+          WhatsApp to order
+        </WaButton>
+      </CtaBanner>
 
       <JsonLd
         data={IPHONE_MODELS.map((m) =>
           productSchema({
             name: m.name,
-            description: `${m.name} — 100% original, sealed, with official Apple Malaysia warranty. Installments from RM${m.monthlyFrom.toFixed(2)}/month via Loan Kedai or First Class Credit. Collection at JomKaki Motor Satok, Kuching.`,
+            description: `${m.name} — 100% original, sealed, with official Apple Malaysia warranty. Installments from RM${m.monthlyFrom.toFixed(2)}/month via Loan Kedai or First Class Credit. Collection at JomKaki Rider Satok, Kuching.`,
             price: m.rrp,
             path: "/iphone-17",
             brand: "Apple",

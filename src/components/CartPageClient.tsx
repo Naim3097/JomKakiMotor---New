@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { LinkButton } from "./Button";
-import { useCart } from "./CartContext";
+import { describeOptions, useCart } from "./CartContext";
 import WaButton from "./WaButton";
 import { TrashIcon } from "./icons";
 import { SITE_URL, WHATSAPP_MOTOR } from "@/data/site";
@@ -33,10 +33,16 @@ export default function CartPageClient() {
     );
   }
 
+  // Colour/size travels with each line into WhatsApp (R3 slide 8)
   const orderLines = items
-    .map((i) => `• ${i.name} × ${i.qty} — ${rm(i.price * i.qty)}`)
+    .map((i) => {
+      const opts = describeOptions(i.options);
+      return `• ${i.name}${opts ? ` (${opts})` : ""} × ${i.qty} — ${rm(
+        i.price * i.qty
+      )}`;
+    })
     .join("\n");
-  const message = `Hi JomKaki Motor, I'd like to order:\n${orderLines}\n\nTotal: ${rm(
+  const message = `Hi JomKaki Rider, I'd like to order:\n${orderLines}\n\nTotal: ${rm(
     subtotal
   )}\n${SITE_URL}/cart`;
 
@@ -46,50 +52,55 @@ export default function CartPageClient() {
   return (
     <div className="grid gap-12 lg:grid-cols-[1fr_360px] lg:gap-16">
       <ul className="divide-y divide-line border-y border-line">
-        {items.map((item) => (
-          <li key={item.id} className="flex flex-wrap items-center gap-x-6 gap-y-3 py-5">
-            <div className="min-w-0 flex-1">
-              <p className="text-xs font-medium text-muted">{item.brand}</p>
-              <Link
-                href={item.href}
-                className="text-[15px] font-semibold text-ink underline-offset-4 hover:underline"
-              >
-                {item.name}
-              </Link>
-              <p className="mt-0.5 text-sm font-semibold text-brand">{rm(item.price)}</p>
-            </div>
-            <div className="flex items-center gap-2">
+        {items.map((item) => {
+          const opts = describeOptions(item.options);
+          return (
+            <li key={item.key} className="flex flex-wrap items-center gap-x-6 gap-y-3 py-5">
+              <div className="min-w-0 flex-1">
+                <p className="text-xs font-medium text-muted">{item.brand}</p>
+                <Link
+                  href={item.href}
+                  className="text-[15px] font-semibold text-ink underline-offset-4 hover:underline"
+                >
+                  {item.name}
+                </Link>
+                {/* Chosen colour / size (R3 slide 8) */}
+                {opts && <p className="mt-0.5 text-xs text-muted">{opts}</p>}
+                <p className="mt-0.5 text-sm font-semibold text-brand">{rm(item.price)}</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setQty(item.key, item.qty - 1)}
+                  aria-label={`Reduce quantity of ${item.name}`}
+                  className={qtyBtn}
+                >
+                  −
+                </button>
+                <span className="w-8 text-center text-sm font-semibold text-ink">{item.qty}</span>
+                <button
+                  type="button"
+                  onClick={() => setQty(item.key, item.qty + 1)}
+                  aria-label={`Increase quantity of ${item.name}`}
+                  className={qtyBtn}
+                >
+                  +
+                </button>
+              </div>
+              <p className="w-24 text-right text-[15px] font-semibold text-ink">
+                {rm(item.price * item.qty)}
+              </p>
               <button
                 type="button"
-                onClick={() => setQty(item.id, item.qty - 1)}
-                aria-label={`Reduce quantity of ${item.name}`}
-                className={qtyBtn}
+                onClick={() => remove(item.key)}
+                aria-label={`Remove ${item.name} from cart`}
+                className="text-muted transition-colors hover:text-ink"
               >
-                −
+                <TrashIcon className="h-[18px] w-[18px]" />
               </button>
-              <span className="w-8 text-center text-sm font-semibold text-ink">{item.qty}</span>
-              <button
-                type="button"
-                onClick={() => setQty(item.id, item.qty + 1)}
-                aria-label={`Increase quantity of ${item.name}`}
-                className={qtyBtn}
-              >
-                +
-              </button>
-            </div>
-            <p className="w-24 text-right text-[15px] font-semibold text-ink">
-              {rm(item.price * item.qty)}
-            </p>
-            <button
-              type="button"
-              onClick={() => remove(item.id)}
-              aria-label={`Remove ${item.name} from cart`}
-              className="text-muted transition-colors hover:text-ink"
-            >
-              <TrashIcon className="h-[18px] w-[18px]" />
-            </button>
-          </li>
-        ))}
+            </li>
+          );
+        })}
       </ul>
 
       <div className="h-fit rounded-lg bg-surface p-6">

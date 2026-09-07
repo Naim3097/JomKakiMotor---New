@@ -1,10 +1,10 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/brand/jomkaki-rider-logo.png";
 
 /**
- * Official JomKaki Rider lockup (R2 slide 2 — replaces the JomKaki Motor
- * mark). Orange on transparent, works on light and dark surfaces. Sourced
+ * Official JomKaki Rider lockup (R2 slide 2 — replaced the older JomKaki
+ * Motor mark). Orange on transparent, works on light and dark surfaces. Sourced
  * from the client's supplied artwork; do not recreate or recolour.
  */
 export default function Logo({

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { usePathname } from "next/navigation";
 import { WhatsAppIcon } from "./icons";
@@ -14,7 +14,7 @@ export default function WhatsAppFab() {
   const isIphone = pathname?.startsWith("/iphone-17");
   const href = isIphone
     ? waLink(WHATSAPP_IPHONE, "Hi, I'd like to order an iPhone 17.")
-    : waLink(WHATSAPP_MOTOR, "Hi JomKaki Motor, I'd like to make an enquiry.");
+    : waLink(WHATSAPP_MOTOR, "Hi JomKaki Rider, I'd like to make an enquiry.");
 
   return (
     <a

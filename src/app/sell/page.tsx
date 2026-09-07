@@ -1,18 +1,20 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Section, SectionHeading } from "@/components/Section";
 import sellHero from "../../../public/brand/sell-hero.png";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import BranchMap from "@/components/BranchMap";
+import CtaBanner from "@/components/CtaBanner";
 import FaqAccordion from "@/components/FaqAccordion";
+import { IconBadge, type LineIconName } from "@/components/LineIcon";
 import WaButton from "@/components/WaButton";
 import { SELL_PAGE_FAQS } from "@/data/faqs";
-import { BRANCHES } from "@/data/site";
 import { SELL_ENQUIRY, TRADE_IN_ENQUIRY } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "Sell Your Motorcycle — Fast, Fair & Secure | Trade-In Welcome",
   description:
-    "Sell your motorcycle to JomKaki Motor or trade it in for an upgrade. Free 15–30 minute inspection at branches in Kuching, Bintulu, KL & Selangor. WhatsApp your details for a fast quotation.",
+    "Sell your motorcycle to JomKaki Rider or trade it in for an upgrade. Free 15–30 minute inspection at branches in Kuching, Bintulu, KL & Selangor. WhatsApp your details for a fast quotation.",
   alternates: { canonical: "/sell" },
 };
 
@@ -23,18 +25,22 @@ const STEPS = [
   { title: "Get Paid Fast", body: "Accept the offer, we handle the paperwork, and you get your money." },
 ];
 
-const REQUIREMENTS = [
+/** Icons per R3 slide 9 */
+const REQUIREMENTS: { title: string; body: string; icon: LineIconName }[] = [
   {
     title: "Fully Settled Loans Only",
-    body: "JomKaki Motor does not assist with paying off outstanding hire purchase loans. Your motorcycle must be fully paid off with the bank or credit provider, and you must hold the clear title (geran) before selling or trading it in.",
+    body: "JomKaki Rider does not assist with paying off outstanding hire purchase loans. Your motorcycle must be fully paid off with the bank or credit provider, and you must hold the clear title (geran) before selling or trading it in.",
+    icon: "fileCheck",
   },
   {
     title: "100% Original Condition",
     body: "The motorcycle must remain in its original factory condition. We do not accept bikes with aftermarket modifications such as modified exhausts, custom engine blocks, or non-standard bodywork.",
+    icon: "shieldCheck",
   },
   {
     title: "Good Engine Condition",
     body: "The engine must be well-maintained, running smoothly, and free of major mechanical issues or leaks.",
+    icon: "gauge",
   },
 ];
 
@@ -97,8 +103,11 @@ export default function SellPage() {
         />
         <div className="mt-10 divide-y divide-line border-y border-line">
           {REQUIREMENTS.map((r) => (
-            <div key={r.title} className="grid gap-2 py-6 md:grid-cols-[280px_1fr] md:gap-10">
-              <h3 className="text-[15px] font-semibold text-ink">{r.title}</h3>
+            <div key={r.title} className="grid gap-3 py-6 md:grid-cols-[280px_1fr] md:gap-10">
+              <div className="flex items-center gap-3">
+                <IconBadge name={r.icon} size="sm" />
+                <h3 className="text-[15px] font-semibold text-ink">{r.title}</h3>
+              </div>
               <p className="text-sm leading-relaxed text-muted">{r.body}</p>
             </div>
           ))}
@@ -112,32 +121,9 @@ export default function SellPage() {
           title="Find Your Nearest Inspection Center"
           lead="Bring your motorcycle to any of our established branches for a fast, professional evaluation."
         />
-        {/* R2 slide 23: branch list and map share one fixed height — the
-            list scrolls inside it, so the section stays compact. */}
-        <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:gap-10">
-          <ul className="h-64 divide-y divide-line overflow-y-auto rounded-lg border border-line px-5 lg:h-[440px]">
-            {BRANCHES.map((b) => (
-              <li key={b.id} className="py-4">
-                <p className="text-[15px] font-semibold text-ink">{b.name}</p>
-                <p className="mt-1 text-sm leading-relaxed text-muted">{b.address}</p>
-                <a
-                  href={b.mapUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1.5 inline-block text-sm font-semibold text-brand underline-offset-4 hover:underline"
-                >
-                  View on Google Maps
-                </a>
-              </li>
-            ))}
-          </ul>
-          <iframe
-            title="JomKaki Motor branches map"
-            src="https://www.google.com/maps?q=JomKaki+Motor&output=embed"
-            className="h-72 w-full rounded-lg border border-line lg:h-[440px]"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+        {/* R2 slide 23 (equal heights) + R3 slide 9 (every branch on the map) */}
+        <div className="mt-10">
+          <BranchMap />
         </div>
       </Section>
 
@@ -149,20 +135,15 @@ export default function SellPage() {
         </div>
       </Section>
 
-      {/* CTA */}
-      <Section tone="ink">
-        <div className="max-w-2xl">
-          <h2 className="display-2 text-white">Ready to Get Started?</h2>
-          <p className="mt-4 text-lg text-white/70">
-            Send us your bike&apos;s details and get your quotation moving today.
-          </p>
-          <div className="mt-8">
-            <WaButton href={SELL_ENQUIRY} size="lg" className="w-full sm:w-auto">
-              WhatsApp your details now
-            </WaButton>
-          </div>
-        </div>
-      </Section>
+      {/* CTA — compact orange banner per R3 slide 10 */}
+      <CtaBanner
+        title="Ready to Get Started?"
+        body="Send us your bike's details and get your quotation moving today."
+      >
+        <WaButton href={SELL_ENQUIRY} variant="ink" className="w-full sm:w-auto">
+          WhatsApp your details now
+        </WaButton>
+      </CtaBanner>
     </>
   );
 }

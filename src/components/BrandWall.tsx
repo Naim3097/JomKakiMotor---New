@@ -23,18 +23,19 @@ export default function BrandWall({ searchIndex }: { searchIndex: SearchEntry[] 
           <li key={brand}>
             <Link
               href={`/motorcycles?brand=${encodeURIComponent(brand)}`}
-              className="group flex h-full min-h-[72px] items-center justify-center px-3 py-5 text-center font-display text-sm font-semibold tracking-[-0.01em] text-muted transition-colors hover:text-brand sm:text-base"
+              className="group flex h-full min-h-[88px] items-center justify-center px-3 py-5 text-center font-display text-sm font-semibold tracking-[-0.01em] text-muted transition-colors hover:text-brand sm:text-base"
             >
               {BRAND_LOGOS[brand] ? (
-                // Uniform sizing: every logo renders inside the same 28px-high
-                // box regardless of its native proportions. Full colour per R2
-                // slide 6.
+                // R3 slide 4: every logo occupies the same optical box.
+                // Fitting inside a fixed width AND height (rather than
+                // capping height alone) keeps wide wordmarks and squarish
+                // marks visually equal in weight.
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={BRAND_LOGOS[brand]}
                   alt={brand}
                   loading="lazy"
-                  className="h-7 w-auto max-w-[70%] object-contain"
+                  className="h-12 w-full max-w-[130px] object-contain"
                 />
               ) : (
                 brand

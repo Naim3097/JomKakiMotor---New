@@ -35,6 +35,7 @@ export const IPHONE_MODELS: IphoneModel[] = [
   },
 ];
 
+/** `logo` renders the partner's official mark in place of the name (R3 slide 12) */
 export const IPHONE_FINANCING = [
   {
     name: "Loan Kedai (In-House)",
@@ -44,56 +45,66 @@ export const IPHONE_FINANCING = [
       {
         title: "Easy Access",
         body: "More accommodating credit assessments compared to traditional banking routes.",
+        icon: "zap",
       },
       {
         title: "Minimal Hassle",
-        body: "A streamlined, local application process managed directly by our JomKaki team.",
+        body: "A streamlined, local application process managed directly by our JomKaki Rider team.",
+        icon: "sliders",
       },
       {
         title: "Personalized Service",
         body: "We work with you directly via WhatsApp to arrange a practical payment structure.",
+        icon: "userCheck",
       },
       {
         title: "Direct Collection",
-        body: "Once approved, simply walk into our designated JomKaki Motor Satok branch to pick up your new iPhone.",
+        body: "Once approved, simply walk into our designated JomKaki Rider Satok branch to pick up your new iPhone.",
+        icon: "packageCheck",
       },
     ],
   },
   {
     name: "First Class Credit",
+    logo: "/brand/partners/first-class-credit.png",
     tagline:
       "Leverage our trusted partnership with First Class Credit for a seamless installment experience.",
     points: [
       {
         title: "Fast Approvals",
         body: "Get your application reviewed and approved quickly.",
+        icon: "zap",
       },
       {
         title: "Flexible Tenures",
         body: "Choose a repayment period that comfortably aligns with your monthly income.",
+        icon: "sliders",
       },
       {
         title: "Simple Documentation",
         body: "Just prepare your standard income documents (latest payslips, bank statements, and IC).",
+        icon: "fileText",
       },
       {
         title: "Direct Collection",
-        body: "Once approved, simply walk into our designated JomKaki Motor Satok branch to pick up your new iPhone.",
+        body: "Once approved, simply walk into our designated JomKaki Rider Satok branch to pick up your new iPhone.",
+        icon: "packageCheck",
       },
     ],
   },
-];
+] as const;
 
+/** Icons rather than step numbers (R3 slide 11) */
 export const IPHONE_STEPS = [
-  { step: "Step 1", title: "Choose Your iPhone 17 Model & Specs" },
-  { step: "Step 2", title: "Contact Us Directly via WhatsApp" },
-  { step: "Step 3", title: "Secure Your Financing" },
-  { step: "Step 4", title: "Collect at JomKaki Motor Satok Branch" },
-];
+  { title: "Choose Your iPhone 17 Model & Specs", icon: "smartphone" },
+  { title: "Contact Us Directly via WhatsApp", icon: "chat" },
+  { title: "Secure Your Financing", icon: "creditCard" },
+  { title: "Collect at JomKaki Rider Satok Branch", icon: "store" },
+] as const;
 
 export const IPHONE_WHY = [
-  { title: "Backed by a Trusted Local Brand" },
-  { title: "Exclusive, Hassle-Free Financing" },
-  { title: "100% Original & Guaranteed" },
-  { title: "VIP WhatsApp Service" },
-];
+  { title: "Backed by a Trusted Local Brand", icon: "handshake" },
+  { title: "Exclusive, Hassle-Free Financing", icon: "banknote" },
+  { title: "100% Original & Guaranteed", icon: "badgeCheck" },
+  { title: "VIP WhatsApp Service", icon: "chat" },
+] as const;

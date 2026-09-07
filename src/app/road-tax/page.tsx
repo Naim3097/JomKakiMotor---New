@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/Section";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -9,7 +9,7 @@ import { ROADTAX_ENQUIRY } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Road Tax & Insurance Renewal for Motorcycles — Instant Quote",
   description:
-    "Renew your motorcycle road tax (cukai jalan) and insurance through JomKaki Motor. WhatsApp your bike details for an instant quotation — quick, easy and hassle-free.",
+    "Renew your motorcycle road tax (cukai jalan) and insurance through JomKaki Rider. WhatsApp your bike details for an instant quotation — quick, easy and hassle-free.",
   alternates: { canonical: "/road-tax" },
 };
 

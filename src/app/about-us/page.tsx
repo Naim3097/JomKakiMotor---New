@@ -1,15 +1,17 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Section, SectionHeading } from "@/components/Section";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { LinkButton } from "@/components/Button";
+import CtaBanner from "@/components/CtaBanner";
+import LineIcon from "@/components/LineIcon";
 import { BRANCHES, FINANCING_PARTNERS, PARTNER_LOGOS } from "@/data/site";
 import aboutHero from "../../../public/brand/about-hero.png";
 
 export const metadata: Metadata = {
-  title: "About JomKaki Motor — Malaysia's Premier Motorcycle Dealership",
+  title: "About JomKaki Rider — Malaysia's Premier Motorcycle Dealership",
   description:
-    "JomKaki Motor (K Trading Sdn. Bhd.) supplies genuine motorcycles, parts and riding gear across Malaysia, with branches in Kuching, Bintulu, KL & Selangor and flexible HP financing.",
+    "JomKaki Rider (K Trading Sdn. Bhd.) supplies genuine motorcycles, parts and riding gear across Malaysia, with branches in Kuching, Bintulu, KL & Selangor and flexible HP financing.",
   alternates: { canonical: "/about-us" },
 };
 
@@ -31,7 +33,7 @@ export default function AboutPage() {
               </h1>
               <div className="mt-8 max-w-2xl space-y-5 text-lg leading-relaxed text-muted">
                 <p>
-                  At JomKaki Motor, we are dedicated to providing riders across
+                  At JomKaki Rider, we are dedicated to providing riders across
                   Malaysia with top-tier motorcycles, genuine replacement parts, and
                   premium riding gear. From daily commuters to high-performance
                   machines, we offer an extensive, carefully curated catalog of the
@@ -71,11 +73,15 @@ export default function AboutPage() {
               accessory bundle for your specific needs.
             </p>
           </div>
+          {/* Location pins per R3 slide 15 */}
           <ul className="divide-y divide-line border-y border-line">
             {BRANCHES.map((b) => (
-              <li key={b.id} className="py-5">
-                <p className="text-[15px] font-semibold text-ink">{b.name}</p>
-                <p className="mt-1 text-sm leading-relaxed text-muted">{b.address}</p>
+              <li key={b.id} className="flex gap-3 py-5">
+                <LineIcon name="mapPin" className="mt-0.5 h-[18px] w-[18px] shrink-0 text-brand" />
+                <div>
+                  <p className="text-[15px] font-semibold text-ink">{b.name}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted">{b.address}</p>
+                </div>
               </li>
             ))}
           </ul>
@@ -106,7 +112,7 @@ export default function AboutPage() {
                       src={PARTNER_LOGOS[p]}
                       alt={p}
                       loading="lazy"
-                      className="h-10 w-auto max-w-full object-contain"
+                      className="max-h-11 w-full max-w-[150px] object-contain"
                     />
                   ) : (
                     <span className="font-display text-lg font-semibold tracking-[-0.02em] text-ink">
@@ -116,28 +122,19 @@ export default function AboutPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-xs text-muted/70">Partner logos to be supplied by client.</p>
           </div>
         </div>
       </Section>
 
-      <Section tone="ink">
-        <div className="max-w-2xl">
-          <p className="eyebrow text-white/50">Our promise</p>
-          <h2 className="display-2 mt-3 text-white">A Commitment to Quality</h2>
-          <p className="mt-6 text-lg leading-relaxed text-white/70">
-            Every motorcycle, sport rim and helmet in our catalog is
-            guaranteed authentic. We never compromise on safety,
-            performance, or customer satisfaction — from the first inquiry to
-            the open road.
-          </p>
-          <div className="mt-9">
-            <LinkButton href="/motorcycles" size="lg" variant="brand" className="w-full sm:w-auto">
-              Shop the catalogue
-            </LinkButton>
-          </div>
-        </div>
-      </Section>
+      {/* Compact orange banner per R3 slide 17 */}
+      <CtaBanner
+        title="A Commitment to Quality"
+        body="Every motorcycle, sport rim and helmet in our catalogue is guaranteed authentic — from the first inquiry to the open road."
+      >
+        <LinkButton href="/motorcycles" variant="primary" className="w-full sm:w-auto">
+          Shop the catalogue
+        </LinkButton>
+      </CtaBanner>
     </>
   );
 }

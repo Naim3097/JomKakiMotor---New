@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/Section";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContactForm from "@/components/ContactForm";
@@ -9,7 +9,7 @@ import { waLink } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Contact Us — 5 Branches in Kuching, Bintulu, KL & Selangor",
   description:
-    "Find your nearest JomKaki Motor branch and chat directly with our sales advisors on WhatsApp. Addresses, maps and contact details for Satok, Batu Kawa, Kota Samarahan, Bintulu and Petaling Jaya.",
+    "Find your nearest JomKaki Rider branch and chat directly with our sales advisors on WhatsApp. Addresses, maps and contact details for Satok, Batu Kawa, Kota Samarahan, Bintulu and Petaling Jaya.",
   alternates: { canonical: "/contact" },
 };
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
                   {b.staff.map((s) => (
                     <a
                       key={s.name}
-                      href={waLink(s.whatsapp, `Hi ${s.name}, I'd like to make an enquiry with JomKaki Motor ${b.name}.`)}
+                      href={waLink(s.whatsapp, `Hi ${s.name}, I'd like to make an enquiry with JomKaki Rider ${b.name}.`)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-md border border-line px-3.5 py-2 text-sm font-medium text-ink transition-colors hover:border-wa hover:text-wa"
@@ -88,7 +88,7 @@ export default function ContactPage() {
           </div>
           <div>
             <iframe
-              title="JomKaki Motor branches — interactive map"
+              title="JomKaki Rider branches — interactive map"
               src="https://www.google.com/maps?q=JomKaki+Motor+Malaysia&output=embed"
               className="h-full min-h-96 w-full rounded-lg border border-line"
               loading="lazy"

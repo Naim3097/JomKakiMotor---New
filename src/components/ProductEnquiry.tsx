@@ -39,6 +39,11 @@ export default function ProductEnquiry({
     .join(", ");
   const href = productEnquiry(number, productName, path, extras || undefined);
 
+  // Carry the chosen colour/size into the cart line (R3 slide 8)
+  const chosen = Object.fromEntries(
+    Object.entries(picks).filter(([, v]) => v)
+  );
+
   return (
     <div className={`flex flex-col gap-6 ${stretch ? "h-full" : ""}`}>
       {options.map((opt) => (
@@ -85,7 +90,7 @@ export default function ProductEnquiry({
           </WaButton>
           {cartItem && (
             <AddToCartButton
-              product={cartItem}
+              product={{ ...cartItem, options: chosen }}
               variant="button"
               className={stretch ? "w-full" : "w-full sm:w-auto"}
             />

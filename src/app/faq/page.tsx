@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Section } from "@/components/Section";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import CtaBanner from "@/components/CtaBanner";
 import FaqAccordion from "@/components/FaqAccordion";
 import WaButton from "@/components/WaButton";
 import { LinkButton } from "@/components/Button";
@@ -10,7 +11,7 @@ import { GENERAL_ENQUIRY } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "FAQ — Buying, Selling & Trade-In Questions Answered",
   description:
-    "Everything riders ask before buying, selling or trading in a motorcycle at JomKaki Motor: brands, financing, loans, warranty, inspections and required documents.",
+    "Everything riders ask before buying, selling or trading in a motorcycle at JomKaki Rider: brands, financing, loans, warranty, inspections and required documents.",
   alternates: { canonical: "/faq" },
 };
 
@@ -44,19 +45,15 @@ export default function FaqPage() {
         </div>
       </Section>
 
-      <Section tone="ink">
-        <div className="max-w-2xl">
-          <h2 className="display-2 text-white">Still Have a Question?</h2>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <WaButton href={GENERAL_ENQUIRY} size="lg" className="w-full sm:w-auto">
-              WhatsApp us
-            </WaButton>
-            <LinkButton href="/contact" size="lg" variant="outline-light" className="w-full sm:w-auto">
-              Contact a branch
-            </LinkButton>
-          </div>
-        </div>
-      </Section>
+      {/* Compact orange banner per R3 slide 18 */}
+      <CtaBanner title="Still Have a Question?" body="WhatsApp us and a real person replies.">
+        <WaButton href={GENERAL_ENQUIRY} variant="ink" className="w-full sm:w-auto">
+          WhatsApp us
+        </WaButton>
+        <LinkButton href="/contact" variant="outline-ink" className="w-full sm:w-auto">
+          Contact a branch
+        </LinkButton>
+      </CtaBanner>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading } from "@/components/Section";
 import { LinkButton, TextLink } from "@/components/Button";
@@ -8,6 +8,7 @@ import BrandWall from "@/components/BrandWall";
 import ReviewsSection from "@/components/ReviewsSection";
 import Thumb, { type ThumbKind } from "@/components/Thumb";
 import WaButton from "@/components/WaButton";
+import LineIcon, { IconBadge, type LineIconName } from "@/components/LineIcon";
 import { ArrowRight } from "@/components/icons";
 import {
   ACCESSORIES,
@@ -26,14 +27,14 @@ import {
 } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: { absolute: "JomKaki Motor — Motorcycles, Gear & Genuine Parts in Malaysia" },
+  title: { absolute: "JomKaki Rider — Motorcycles, Gear & Genuine Parts in Malaysia" },
   description:
     "Browse new Yamaha, Honda, Modenas & SYM motorcycles with flexible financing. Sell or trade in your bike, renew road tax, and enquire instantly on WhatsApp. Branches in Kuching, Bintulu, KL & Selangor.",
   alternates: { canonical: "/" },
 };
 
-/** R2 slide 4 copy; R3 feedback — image-led, less wordy. Unsplash placeholders. */
-const WHY_CHOOSE_US: { title: string; body: React.ReactNode; image: string; alt: string }[] = [
+/** R2 slide 4 copy; R3 slide 2 — icons rather than photography. */
+const WHY_CHOOSE_US: { title: string; body: React.ReactNode; icon: LineIconName }[] = [
   {
     title: "Flexible Financing",
     body: (
@@ -42,26 +43,22 @@ const WHY_CHOOSE_US: { title: string; body: React.ReactNode; image: string; alt:
         our in-house <em>loan kedai</em>.
       </>
     ),
-    image: "/images/home/why-financing.jpg",
-    alt: "Working out a payment plan with a calculator",
+    icon: "wallet",
   },
   {
     title: "100% Genuine Quality",
     body: "Guaranteed authentic motorcycles, premium accessories, and reliable replacement parts for your peace of mind.",
-    image: "/images/home/why-quality.jpg",
-    alt: "Close-up of a chrome motorcycle engine",
+    icon: "badgeCheck",
   },
   {
     title: "Direct Expert Support",
     body: "Connect instantly with our sales team via WhatsApp for personalized assistance and easy paperwork.",
-    image: "/images/home/why-support.jpg",
-    alt: "Chatting with support on a smartphone",
+    icon: "chat",
   },
   {
     title: "All-in-One Selection",
     body: "Everything you need in one place, from the latest motorcycles to daily riding gear.",
-    image: "/images/home/why-selection.jpg",
-    alt: "Motorcycle on display in a showroom",
+    icon: "grid",
   },
 ];
 
@@ -70,19 +67,19 @@ const CATEGORIES: { label: string; href: string; blurb: string; thumb: ThumbKind
   {
     label: "Motorcycles",
     href: "/motorcycles",
-    blurb: "New bikes from Malaysia's most trusted brands",
+    blurb: "Authentic bikes from Malaysia's most trusted brands",
     thumb: "bike",
   },
   {
     label: "Rider Gear",
     href: "/rider-gear",
-    blurb: "Helmets, gloves, apparel and rain protection",
+    blurb: "Helmets, helmet visors, helmet spoilers and raincoats",
     thumb: "helmet",
   },
   {
     label: "Accessories",
     href: "/accessories",
-    blurb: "Sport rims, fork lays and bolt-on upgrades",
+    blurb: "Sport rims and fork lays",
     thumb: "rim",
   },
 ];
@@ -196,19 +193,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Choose Us — R2 slide 4; image-led per R3 feedback */}
+      {/* Why Choose Us — R3 slide 2: icons rather than photography */}
       <Section>
-        <SectionHeading kicker="The JomKaki difference" title="Why Choose Us" />
-        <div className="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        <SectionHeading kicker="The JomKaki Rider difference" title="Why Choose Us" />
+        <div className="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
           {WHY_CHOOSE_US.map((w) => (
             <div key={w.title}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={w.image}
-                alt={w.alt}
-                loading="lazy"
-                className="aspect-4/3 w-full rounded-lg object-cover"
-              />
+              <IconBadge name={w.icon} />
               <h3 className="mt-4 text-base font-semibold text-ink">{w.title}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-muted">{w.body}</p>
             </div>
@@ -279,9 +270,13 @@ export default function HomePage() {
                 className="aspect-3/2 w-full rounded-lg object-cover"
               />
               <h3 className="display-3 mt-5 text-white">{s.title}</h3>
-              <ul className="mt-3 space-y-1.5 text-[15px] text-white/65">
+              {/* Check icons per R3 slide 5 */}
+              <ul className="mt-3 space-y-2 text-[15px] text-white/65">
                 {s.points.map((p) => (
-                  <li key={p}>{p}</li>
+                  <li key={p} className="flex items-start gap-2.5">
+                    <LineIcon name="checkCircle" className="mt-0.5 h-[18px] w-[18px] shrink-0 text-brand" />
+                    <span>{p}</span>
+                  </li>
                 ))}
               </ul>
               <div className="mt-auto flex flex-wrap items-center gap-5 pt-6">
@@ -379,7 +374,7 @@ export default function HomePage() {
           </div>
           <div className="flex shrink-0 flex-col gap-3 sm:flex-row sm:items-center">
             <WaButton
-              href={waLink(WHATSAPP_MOTOR, "Hi JomKaki Motor, I'm looking for my next bike.")}
+              href={waLink(WHATSAPP_MOTOR, "Hi JomKaki Rider, I'm looking for my next bike.")}
               variant="ink"
               className="w-full sm:w-auto"
             >

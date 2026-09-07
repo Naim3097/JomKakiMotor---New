@@ -1,9 +1,9 @@
-import type { Review } from "./types";
+﻿import type { Review } from "./types";
 
 /**
  * PLACEHOLDER REVIEWS — every entry below is sample content (isSample: true).
  * Before launch these must be replaced with real reviews pulled from the
- * JomKaki Motor Satok Google Business Profile (client link:
+ * JomKaki Rider Satok Google Business Profile (client link:
  * https://share.google/XiPijy5Hpgrdn7zTm), ideally via a Google Places API
  * fetch cached at build time. The section renders a visible note while any
  * sample entry remains.

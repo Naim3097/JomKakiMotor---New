@@ -5,9 +5,9 @@ export const POSTS: BlogPost[] = [
   {
     slug: "how-motorcycle-trade-in-works-malaysia",
     image: "/images/blog/trade-in.jpg",
-    title: "How Motorcycle Trade-In Works in Malaysia: The JomKaki Process",
+    title: "How Motorcycle Trade-In Works in Malaysia: The JomKaki Rider Process",
     excerpt:
-      "Thinking of upgrading your bike? Here is exactly how a motorcycle trade-in works at JomKaki Motor — requirements, inspection, valuation, and collection.",
+      "Thinking of upgrading your bike? Here is exactly how a motorcycle trade-in works at JomKaki Rider — requirements, inspection, valuation, and collection.",
     date: "2026-08-01",
     sections: [
       {
@@ -18,7 +18,7 @@ export const POSTS: BlogPost[] = [
       {
         heading: "Who Qualifies for a Trade-In?",
         paragraphs: [
-          "JomKaki Motor accepts trade-ins for selected motorcycle models that meet three conditions:",
+          "JomKaki Rider accepts trade-ins for selected motorcycle models that meet three conditions:",
         ],
         list: [
           "The loan is fully settled — you hold the clear title (geran) in your name. We do not assist with paying off outstanding hire purchase loans.",
@@ -33,7 +33,7 @@ export const POSTS: BlogPost[] = [
           "Book an appointment — WhatsApp us your current motorcycle's details (model, year, mileage, photos) to schedule a valuation.",
           "Choose your next bike — browse our catalogue and pick the motorcycle you want to upgrade to.",
           "Prepare your documents — bring your original IC and the geran registered under your name.",
-          "Pick up at our showroom — finalize the trade and collect your new ride from any JomKaki Motor branch in Kuching, Bintulu, KL, or Selangor.",
+          "Pick up at our showroom — finalize the trade and collect your new ride from any JomKaki Rider branch in Kuching, Bintulu, KL, or Selangor.",
         ],
       },
       {
@@ -79,7 +79,7 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
-        heading: "How the Application Works at JomKaki Motor",
+        heading: "How the Application Works at JomKaki Rider",
         paragraphs: [
           "You do not need to visit a branch to start. Choose your motorcycle on our website, tap \"Chat to Apply\", and send your details over WhatsApp. Our sales advisors submit your application to the credit partner that best fits your profile, and most applicants receive a decision quickly. Once approved, you sign the documents and collect your bike at your nearest branch in Kuching, Bintulu, KL, or Selangor.",
         ],
@@ -114,7 +114,7 @@ export const POSTS: BlogPost[] = [
       {
         heading: "Ownership and Resale",
         paragraphs: [
-          "The Y15ZR's enormous popularity means unbeatable parts availability and strong resale value across Malaysia. The RS150R counters with Honda's reputation for build quality. Either way, both carry official manufacturer warranties when purchased new from JomKaki Motor.",
+          "The Y15ZR's enormous popularity means unbeatable parts availability and strong resale value across Malaysia. The RS150R counters with Honda's reputation for build quality. Either way, both carry official manufacturer warranties when purchased new from JomKaki Rider.",
         ],
       },
     ],
@@ -124,7 +124,7 @@ export const POSTS: BlogPost[] = [
     image: "/images/blog/roadtax.jpg",
     title: "Motorcycle Road Tax Renewal in Malaysia: Prices & How to Renew",
     excerpt:
-      "How much is motorcycle road tax in Malaysia, what you need to renew it, and how JomKaki Motor can handle your renewal and insurance over WhatsApp.",
+      "How much is motorcycle road tax in Malaysia, what you need to renew it, and how JomKaki Rider can handle your renewal and insurance over WhatsApp.",
     date: "2026-08-01",
     sections: [
       {
@@ -148,7 +148,7 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
-        heading: "Renew Through JomKaki Motor",
+        heading: "Renew Through JomKaki Rider",
         paragraphs: [
           "Skip the queues. WhatsApp us your bike details and we will quote your insurance and road tax renewal instantly, process both, and have you covered without leaving home. It is quick, easy, and hassle-free — exactly how renewal should be.",
         ],

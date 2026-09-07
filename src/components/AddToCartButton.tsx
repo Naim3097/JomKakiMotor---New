@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { useCart, type CartItem } from "./CartContext";
+import { useCart, type CartInput } from "./CartContext";
 import { CartIcon, CheckIcon } from "./icons";
 
-export type CartProduct = Omit<CartItem, "qty">;
+export type CartProduct = CartInput;
 
 /**
  * Two shapes, per R2: a corner icon on product cards (slide 18) and a full

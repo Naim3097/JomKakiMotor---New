@@ -1,9 +1,9 @@
-import type { Faq } from "./types";
+﻿import type { Faq } from "./types";
 
 /** Shop & product page FAQ — Client Comments R1, slide 18. */
 export const SHOP_FAQS: Faq[] = [
   {
-    q: "How to buy a motorcycle at JomKaki Motor?",
+    q: "How to buy a motorcycle at JomKaki Rider?",
     a: [
       "Purchasing your motorcycle is easy and can be done directly through our website. Simply browse through our online catalogue, select your preferred motorbike, and send us your order by clicking on 'Chat to Apply'.",
       "This will connect you directly to our WhatsApp, where our Sales Advisors will guide you step-by-step through the entire application and purchasing process.",
@@ -13,7 +13,7 @@ export const SHOP_FAQS: Faq[] = [
     q: "Is there another way I can buy a motorcycle there?",
     a: [
       "Yes — if you prefer not to use the website catalogue, you can walk into any of our branches and browse our physical display. Our salesperson will be on standby to assist you throughout the entire process. We are open Monday to Friday 8:30 am – 5:30 pm and Saturday 8:30 am – 12:30 pm (closed Sunday and public holidays), with branches in Kuching (Satok, Batu Kawa, Kota Samarahan), Bintulu, and Selangor & KL.",
-      "You can also explore our range, compare prices, and contact our sales team on our official social media channels — JomKaki Motor Sarawak and JomKaki Motor KL & Selangor on Facebook, Instagram, and TikTok. These are the ONLY authorized platforms outside of our website where you can safely explore and make purchases.",
+      "You can also explore our range, compare prices, and contact our sales team on our official social media channels — JomKaki Rider Sarawak and JomKaki Rider KL & Selangor on Facebook, Instagram, and TikTok. These are the ONLY authorized platforms outside of our website where you can safely explore and make purchases.",
     ],
   },
   {
@@ -54,7 +54,7 @@ export const BUYING_FAQS: Faq[] = [
   {
     q: "Do motorcycles come with a warranty?",
     a: [
-      "Yes, all new motorcycles purchased through JomKaki Motor come with an official manufacturer warranty, ensuring your peace of mind on the road.",
+      "Yes, all new motorcycles purchased through JomKaki Rider come with an official manufacturer warranty, ensuring your peace of mind on the road.",
     ],
   },
 ];
@@ -64,7 +64,7 @@ export const SELLING_FAQS: Faq[] = [
   {
     q: "Can I sell or trade in my motorcycle if I still have an outstanding loan?",
     a: [
-      "No. JomKaki Motor does not assist with paying off outstanding hire purchase or personal loans. Your motorcycle must be fully paid off with the bank or credit provider, and you must hold the clear title (geran) in your name before we can accept it for sale or trade-in.",
+      "No. JomKaki Rider does not assist with paying off outstanding hire purchase or personal loans. Your motorcycle must be fully paid off with the bank or credit provider, and you must hold the clear title (geran) in your name before we can accept it for sale or trade-in.",
     ],
   },
   {
@@ -74,7 +74,7 @@ export const SELLING_FAQS: Faq[] = [
     ],
   },
   {
-    q: "Can I trade in my old bike to buy a new one from JomKaki Motor?",
+    q: "Can I trade in my old bike to buy a new one from JomKaki Rider?",
     a: [
       "Yes! We accept trade-ins for selected motorcycle models. As long as your current motorcycle is an accepted model, fully paid off, and in its original condition, you can use its trade-in value to offset the cost or deposit of a new motorcycle from our catalog.",
     ],
@@ -82,7 +82,7 @@ export const SELLING_FAQS: Faq[] = [
   {
     q: "How and where does the physical inspection take place?",
     a: [
-      "After you WhatsApp us your bike's details and photos, we will schedule a free, 15 to 30-minute physical inspection at your nearest JomKaki Motor branch (Kuala Lumpur, Selangor, Kuching, or Bintulu). Our expert mechanics will evaluate the engine and physical condition to provide an accurate market quotation.",
+      "After you WhatsApp us your bike's details and photos, we will schedule a free, 15 to 30-minute physical inspection at your nearest JomKaki Rider branch (Kuala Lumpur, Selangor, Kuching, or Bintulu). Our expert mechanics will evaluate the engine and physical condition to provide an accurate market quotation.",
     ],
   },
   {
@@ -146,7 +146,7 @@ export const IPHONE_FAQS: Faq[] = [
   {
     q: "Where exactly do I collect my new iPhone 17?",
     a: [
-      "To ensure a secure and safe handover, all collections are done in person. Once your financing is approved and your order is finalized, you can pick up your device exclusively at our JomKaki Motor Satok branch in Kuching.",
+      "To ensure a secure and safe handover, all collections are done in person. Once your financing is approved and your order is finalized, you can pick up your device exclusively at our JomKaki Rider Satok branch in Kuching.",
     ],
   },
   {

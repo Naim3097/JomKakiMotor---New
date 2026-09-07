@@ -1,4 +1,4 @@
-import { StarIcon } from "./icons";
+﻿import { StarIcon } from "./icons";
 import { REVIEWS, REVIEWS_PROFILE_URL } from "@/data/reviews";
 
 function Stars({ rating }: { rating: number }) {
@@ -21,7 +21,7 @@ export default function ReviewsSection() {
       <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div className="max-w-xl">
           <p className="eyebrow text-brand">Google Reviews</p>
-          <h2 className="display-2 mt-3 text-ink">Riders Trust JomKaki</h2>
+          <h2 className="display-2 mt-3 text-ink">Riders Trust JomKaki Rider</h2>
           <div className="mt-5 flex items-baseline gap-4">
             <span className="font-display text-5xl font-semibold tracking-[-0.03em] text-ink">
               {avg.toFixed(1)}
@@ -55,7 +55,7 @@ export default function ReviewsSection() {
       {hasSamples && (
         <p className="mt-6 text-xs text-muted/70">
           Sample reviews shown for layout. To be replaced with live reviews from the
-          JomKaki Motor Google Business Profile before launch.
+          JomKaki Rider Google Business Profile before launch.
         </p>
       )}
     </div>

@@ -4,13 +4,13 @@ import {
   MailIcon,
   ThreadsIcon,
   WhatsAppIcon,
-  XIcon,
 } from "./icons";
 import { SITE_URL } from "@/data/site";
 
 /**
- * Share row per R1: "full" = Facebook, Threads, X, IG, Email, WhatsApp;
- * "compact" = Facebook, IG, Email, WhatsApp.
+ * Share row — R3 slide 7 fixes the set to Facebook, Instagram, Threads,
+ * Email and WhatsApp (X removed). "full" adds Threads; "compact" is the
+ * four-icon set used on shorter product pages.
  */
 export default function ShareRow({
   path,
@@ -31,6 +31,12 @@ export default function ShareRow({
       href: `https://www.facebook.com/sharer/sharer.php?u=${encoded}`,
       icon: <FacebookIcon />,
     },
+    {
+      // Instagram has no web share intent — links to the profile per client list
+      label: "JomKaki Rider on Instagram",
+      href: "https://www.instagram.com/jomkakimotor",
+      icon: <InstagramIcon />,
+    },
     ...(variant === "full"
       ? [
           {
@@ -38,19 +44,8 @@ export default function ShareRow({
             href: `https://www.threads.net/intent/post?text=${text}`,
             icon: <ThreadsIcon />,
           },
-          {
-            label: "Share on X",
-            href: `https://x.com/intent/post?text=${text}`,
-            icon: <XIcon />,
-          },
         ]
       : []),
-    {
-      // Instagram has no web share intent — links to the profile per client list
-      label: "JomKaki on Instagram",
-      href: "https://www.instagram.com/jomkakimotor",
-      icon: <InstagramIcon />,
-    },
     {
       label: "Share by Email",
       href: `mailto:?subject=${encodeURIComponent(title)}&body=${text}`,

@@ -1,7 +1,7 @@
-import type { Branch } from "./types";
+﻿import type { Branch } from "./types";
 
 export const SITE_URL = "https://www.jomkaki.com.my";
-export const SITE_NAME = "JomKaki Motor";
+export const SITE_NAME = "JomKaki Rider";
 
 export const COPYRIGHT =
   "Copyright © 2026 K Trading Sdn. Bhd. [Registration No. 202201045481 (1491178-H)]. All Rights Reserved.";
@@ -61,10 +61,11 @@ export const BRAND_LOGOS: Partial<Record<(typeof BRANDS)[number], string>> = {
   CFMOTO: "/brand/logos/cfmoto.png",
   Aveta: "/brand/logos/aveta.png",
   Moda: "/brand/logos/moda.png",
+  KYT: "/brand/logos/kyt.png",
   ARC: "/brand/logos/arc.png",
   PPR: "/brand/logos/ppr.png",
   ENKEI: "/brand/logos/enkei.png",
-  // KYT and AEROX THAI: no logo supplied yet — text wordmark fallback
+  // AEROX THAI: no logo supplied yet — text wordmark fallback
 };
 
 export const FINANCING_PARTNERS = [
@@ -89,13 +90,13 @@ export const PARTNER_LOGOS: Partial<Record<(typeof FINANCING_PARTNERS)[number], 
 
 export const SOCIALS = {
   sarawak: {
-    label: "JomKaki Motor Sarawak",
+    label: "JomKaki Rider Sarawak",
     facebook: "https://www.facebook.com/jomkakimotor",
     instagram: "https://www.instagram.com/jomkakimotor",
     tiktok: "https://www.tiktok.com/@jomkakimotor",
   },
   kl: {
-    label: "JomKaki Motor KL & Selangor",
+    label: "JomKaki Rider KL & Selangor",
     facebook: "https://www.facebook.com/jomkakimotorkl",
     instagram: "https://www.instagram.com/jomkakimotorkl",
     tiktok: "https://www.tiktok.com/@jomkakimotorkl",
