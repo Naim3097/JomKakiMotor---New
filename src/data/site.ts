@@ -30,7 +30,7 @@ export const BRANDS = [
   "Modenas",
   "SYM",
   "WMOTO",
-  "KEEWAY",
+  "Keeway",
   "QJMOTOR",
   "CFMOTO",
   "Aveta",
@@ -56,7 +56,7 @@ export const BRAND_LOGOS: Partial<Record<(typeof BRANDS)[number], string>> = {
   Modenas: "/brand/logos/modenas.png",
   SYM: "/brand/logos/sym.png",
   WMOTO: "/brand/logos/wmoto.png",
-  KEEWAY: "/brand/logos/keeway.png",
+  Keeway: "/brand/logos/keeway.png",
   QJMOTOR: "/brand/logos/qjmotor.png",
   CFMOTO: "/brand/logos/cfmoto.png",
   Aveta: "/brand/logos/aveta.png",
@@ -66,6 +66,19 @@ export const BRAND_LOGOS: Partial<Record<(typeof BRANDS)[number], string>> = {
   PPR: "/brand/logos/ppr.png",
   ENKEI: "/brand/logos/enkei.png",
   // AEROX THAI: no logo supplied yet — text wordmark fallback
+};
+
+/**
+ * Where a brand-wall tile should filter to. Bike marques go to the
+ * motorcycle catalogue; helmet and rim brands to their own listings. Values
+ * must match each product's `brand` field exactly for the filter to select.
+ */
+export const BRAND_CATALOGUE: Record<string, "/motorcycles" | "/rider-gear" | "/accessories"> = {
+  KYT: "/rider-gear",
+  ARC: "/rider-gear",
+  PPR: "/accessories",
+  ENKEI: "/accessories",
+  "AEROX THAI": "/accessories",
 };
 
 export const FINANCING_PARTNERS = [

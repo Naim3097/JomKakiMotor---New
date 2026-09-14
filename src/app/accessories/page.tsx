@@ -33,6 +33,7 @@ export default function AccessoriesPage() {
       price: a.price,
       meta: a.compatibleModels ? `Fits: ${a.compatibleModels.join(", ")}` : a.accessoryType,
       thumb: a.accessoryType === "Sport Rims" ? "rim" : "part",
+      image: a.image,
     },
     price: a.price,
     arrival: a.arrival,
@@ -58,7 +59,7 @@ export default function AccessoriesPage() {
         {
           key: "model",
           label: "Compatible Model",
-          options: ["Yamaha Y15ZR", "Yamaha Y125Z", "Yamaha LC135", "Yamaha NVX 155"],
+          options: ["Yamaha Y15ZR", "Yamaha Y125Z", "Yamaha LC135", "Yamaha NVX"],
         },
         {
           key: "price",

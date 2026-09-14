@@ -34,6 +34,7 @@ export default async function GearPage(props: PageProps<"/rider-gear/[slug]">) {
       brand: g.brand,
       price: g.price,
       thumb: (g.gearType === "Helmet" || g.gearType === "Helmet Visor" ? "helmet" : "gear") as "helmet" | "gear",
+      image: g.image,
     }));
 
   return (
@@ -51,6 +52,7 @@ export default async function GearPage(props: PageProps<"/rider-gear/[slug]">) {
       specs={item.specs}
       shareVariant={item.shareVariant}
       cta="WhatsApp to Order"
+      images={item.images}
       options={[
         ...(item.sizes ? [{ label: "Size", values: item.sizes }] : []),
         ...(item.colours ? [{ label: "Colour", values: item.colours }] : []),

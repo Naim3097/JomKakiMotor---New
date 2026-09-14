@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SearchBox from "./SearchBox";
-import { BRANDS, BRAND_LOGOS } from "@/data/site";
+import { BRANDS, BRAND_CATALOGUE, BRAND_LOGOS } from "@/data/site";
 import type { SearchEntry } from "@/lib/catalog";
 
 /**
@@ -22,7 +22,7 @@ export default function BrandWall({ searchIndex }: { searchIndex: SearchEntry[] 
         {BRANDS.map((brand) => (
           <li key={brand}>
             <Link
-              href={`/motorcycles?brand=${encodeURIComponent(brand)}`}
+              href={`${BRAND_CATALOGUE[brand] ?? "/motorcycles"}?brand=${encodeURIComponent(brand)}`}
               className="group flex h-full min-h-[88px] items-center justify-center px-3 py-5 text-center font-display text-sm font-semibold tracking-[-0.01em] text-muted transition-colors hover:text-brand sm:text-base"
             >
               {BRAND_LOGOS[brand] ? (

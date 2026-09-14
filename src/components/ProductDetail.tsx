@@ -7,8 +7,9 @@ import FaqAccordion from "./FaqAccordion";
 import JsonLd from "./JsonLd";
 import ProductEnquiry from "./ProductEnquiry";
 import { Section, SectionHeading } from "./Section";
+import ProductImage from "./ProductImage";
 import ShareRow from "./ShareRow";
-import Thumb, { type ThumbKind } from "./Thumb";
+import { type ThumbKind } from "./Thumb";
 import { SHOP_FAQS } from "@/data/faqs";
 import { FINANCING_PARTNERS, WHATSAPP_MOTOR } from "@/data/site";
 import { rm } from "@/lib/format";
@@ -30,6 +31,11 @@ export interface DetailProps {
   specs: { label: string; value: string }[];
   shareVariant: "full" | "compact";
   options?: { label: string; values: string[] }[];
+  /**
+   * Accessories: which colours fit which bike models. When set, the enquiry
+   * panel asks for the bike first and only offers matching colours.
+   */
+  fitment?: { colour: string; models: string[] }[];
   cta?: string;
   /** Gallery photos — placeholder frames render until these are supplied */
   images?: string[];
@@ -38,6 +44,8 @@ export interface DetailProps {
   monthly?: number;
   isVehicle?: boolean;
   cc?: number;
+  /** Overrides the site-wide credit partner list (e.g. Aveta: JCL & Chailease only) */
+  financingPartners?: string[];
   faqs?: Faq[];
   related?: {
     href: string;
@@ -45,6 +53,7 @@ export interface DetailProps {
     brand: string;
     price: number;
     thumb: ThumbKind;
+    image?: string;
   }[];
 }
 
@@ -85,7 +94,9 @@ export default function ProductDetail(p: DetailProps) {
                 {p.monthly !== undefined && (
                   <p className="mt-1 text-sm text-muted">
                     From <span className="font-semibold text-brand">{rm(p.monthly)}/month</span>
-                    {p.deposit !== undefined && <> · deposit {rm(p.deposit)}</>}
+                    {p.deposit !== undefined && (
+                      <> · {p.deposit > 0 ? `deposit ${rm(p.deposit)}` : "no deposit required"}</>
+                    )}
                   </p>
                 )}
               </div>
@@ -121,6 +132,7 @@ export default function ProductDetail(p: DetailProps) {
                 number={WHATSAPP_MOTOR}
                 cta={p.cta ?? "WhatsApp to Order"}
                 options={p.options}
+                fitment={p.fitment}
                 cartItem={{
                   id: p.path,
                   name: p.name,
@@ -179,8 +191,13 @@ export default function ProductDetail(p: DetailProps) {
                   Financing Partners
                 </h3>
                 <p className="mt-3 text-[15px] font-medium text-ink">
-                  {FINANCING_PARTNERS.join("  ·  ")}
+                  {(p.financingPartners ?? FINANCING_PARTNERS).join("  ·  ")}
                 </p>
+                {p.financingPartners && (
+                  <p className="mt-1.5 text-xs text-muted">
+                    Financing for this model is available through these partners only.
+                  </p>
+                )}
               </div>
             )}
           </div>
@@ -200,9 +217,10 @@ export default function ProductDetail(p: DetailProps) {
             <Carousel>
               {p.related.map((r) => (
                 <Link key={r.href} href={r.href} className="group block w-60 shrink-0 snap-start sm:w-72">
-                  <Thumb
+                  <ProductImage
+                    src={r.image}
                     kind={r.thumb}
-                    label={r.name}
+                    alt={r.name}
                     className="aspect-4/3 w-full rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                   <div className="mt-4">

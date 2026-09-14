@@ -1,6 +1,7 @@
 import Link from "next/link";
 import AddToCartButton from "./AddToCartButton";
-import Thumb, { type ThumbKind } from "./Thumb";
+import ProductImage from "./ProductImage";
+import { type ThumbKind } from "./Thumb";
 import { rm } from "@/lib/format";
 import type { Motorcycle } from "@/data/types";
 
@@ -25,10 +26,12 @@ export function BikeCard({ bike, isNew = false }: { bike: Motorcycle; isNew?: bo
   return (
     <Link href={`/motorcycles/${bike.slug}`} className={CARD_HOVER}>
       <div className="relative overflow-hidden rounded-lg">
-        <Thumb
+        <ProductImage
+          src={bike.image}
           kind="bike"
-          label={`${bike.brand} ${bike.model}`}
-          className="aspect-4/3 w-full transition-transform duration-500 group-hover:scale-[1.02]"
+          alt={`${bike.brand} ${bike.model}`}
+          sizes="(min-width: 1024px) 25vw, 50vw"
+          className="aspect-4/3 w-full rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
         />
         <div className="absolute left-3 top-3 flex flex-col items-start gap-1.5">
           {isNew && <Flag>New</Flag>}
@@ -57,7 +60,9 @@ export function BikeCard({ bike, isNew = false }: { bike: Motorcycle; isNew?: bo
           {rm(bike.price)}
         </p>
         <div className="mt-2.5 border-t-2 border-brand pt-2.5">
-          <p className="text-sm font-semibold text-brand">Deposit: {rm(bike.deposit)}*</p>
+          <p className="text-sm font-semibold text-brand">
+            {bike.deposit > 0 ? `Deposit: ${rm(bike.deposit)}*` : "No Deposit Required*"}
+          </p>
           <p className="mt-0.5 text-sm font-semibold text-ink">From {rm(bike.monthly)}/month*</p>
         </div>
         <p className="mt-2.5 text-[11px] text-muted">*T&amp;C Apply</p>
@@ -73,6 +78,7 @@ export function ProductCard({
   price,
   meta,
   kind,
+  image,
   isNew = false,
 }: {
   href: string;
@@ -81,15 +87,18 @@ export function ProductCard({
   price: number;
   meta?: string;
   kind: ThumbKind;
+  image?: string;
   isNew?: boolean;
 }) {
   return (
     <Link href={href} className={CARD_HOVER}>
       <div className="relative overflow-hidden rounded-lg">
-        <Thumb
+        <ProductImage
+          src={image}
           kind={kind}
-          label={name}
-          className="aspect-square w-full transition-transform duration-500 group-hover:scale-[1.02]"
+          alt={name}
+          sizes="(min-width: 1024px) 25vw, 50vw"
+          className="aspect-square w-full rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
         />
         {isNew && (
           <div className="absolute left-3 top-3">

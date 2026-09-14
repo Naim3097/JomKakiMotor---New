@@ -34,6 +34,7 @@ export default async function AccessoryPage(props: PageProps<"/accessories/[slug
       brand: a.brand,
       price: a.price,
       thumb: (a.accessoryType === "Sport Rims" ? "rim" : "part") as "rim" | "part",
+      image: a.image,
     }));
 
   return (
@@ -51,7 +52,9 @@ export default async function AccessoryPage(props: PageProps<"/accessories/[slug
       specs={item.specs}
       shareVariant={item.shareVariant}
       cta="WhatsApp to Order"
-      options={item.colours ? [{ label: "Colour", values: item.colours }] : []}
+      images={item.images}
+      fitment={item.fitment}
+      options={item.fitment ? [] : item.colours ? [{ label: "Colour", values: item.colours }] : []}
       related={related}
     />
   );

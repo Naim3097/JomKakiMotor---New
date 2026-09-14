@@ -1,492 +1,2260 @@
-﻿import type { Motorcycle } from "./types";
+import type { Motorcycle } from "./types";
 
 /**
- * SAMPLE INVENTORY — prices, deposits and monthly figures are indicative
- * placeholders pending the client's confirmed price list. The Yamaha Y15ZR
- * entry uses the description/spec templates supplied in Client Comments R1.
+ * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
+ * on 2026-09-14. Edit the sheet and re-run the generator rather than
+ * hand-editing prices or copy here.
  */
 export const MOTORCYCLES: Motorcycle[] = [
   {
-    slug: "yamaha-y15zr",
+    slug: "yamaha-lc135-v8",
     brand: "Yamaha",
-    model: "Y15ZR",
-    type: "Underbone",
-    cc: 150,
-    price: 8998,
-    deposit: 500,
-    monthly: 325,
-    year: 2026,
-    colours: ["Racing Blue", "Matte Black", "Cyan"],
-    availability: "In Stock",
-    popular: true,
-    arrival: "2026-07-20",
-    highlights: [
-      "150cc liquid-cooled 4-stroke engine",
-      "Flexible financing available via trusted credit partners",
-      "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
-    ],
-    description: [
-      "Discover the perfect balance of performance and agility with the Yamaha Y15ZR. Engineered for the modern Malaysian rider, this iconic super moped delivers explosive acceleration, razor-sharp handling, and a striking aerodynamic design that dominates the road.",
-      "Whether you are cutting through dense city traffic or pushing the pace on the open highway, the Y15ZR provides a thrilling, reliable, and unmatched riding experience.",
-    ],
-    featureBlocks: [
-      {
-        title: "150cc Liquid-Cooled Engine",
-        body: "Experience highly responsive power and torque designed for rapid acceleration and sustained top-end performance.",
-      },
-      {
-        title: "Aggressive LED Lighting",
-        body: "Features a fiercely styled LED headlight and taillight combination for commanding presence and superior nighttime visibility.",
-      },
-      {
-        title: "Full Digital LCD Meter",
-        body: "A modernized, easy-to-read digital dashboard that displays all your crucial riding metrics at a single glance.",
-      },
-      {
-        title: "Flexible Financing Available",
-        body: "Owning the Yamaha Y15ZR is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners, including Loan Kedai, First Class Credit, Chailease Berjaya, and JCL.",
-      },
-    ],
-    specs: [
-      { label: "Engine Type", value: "4-Stroke, SOHC, 4-Valve, Liquid-Cooled" },
-      { label: "Displacement", value: "150 cc" },
-      { label: "Maximum Power", value: "11.3 kW @ 8,500 rpm" },
-      { label: "Maximum Torque", value: "13.8 Nm @ 7,000 rpm" },
-      { label: "Transmission System", value: "Constant Mesh, 5-Speed" },
-      { label: "Fuel Capacity", value: "4.2 Liters" },
-      { label: "Front / Rear Brakes", value: "Hydraulic Single Disc / Hydraulic Single Disc" },
-      { label: "Kerb Weight", value: "117 kg" },
-      { label: "Starting System", value: "Electric Starter" },
-    ],
-  },
-  {
-    slug: "yamaha-nvx-155",
-    brand: "Yamaha",
-    model: "NVX 155",
-    type: "Scooter",
-    cc: 155,
-    price: 11598,
-    deposit: 800,
-    monthly: 415,
-    year: 2026,
-    colours: ["Matte Grey", "Racing Blue", "Black"],
-    availability: "In Stock",
-    popular: true,
-    arrival: "2026-07-28",
-    highlights: [
-      "155cc liquid-cooled Blue Core engine with VVA",
-      "Flexible financing available via trusted credit partners",
-      "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
-    ],
-    description: [
-      "The Yamaha NVX 155 is the flagship sports scooter for riders who want maximum presence with automatic convenience. Variable Valve Actuation keeps power on tap across the rev range while the aggressive bodywork turns heads at every stop.",
-      "Keyless Smart Key operation, a spacious under-seat compartment and a full digital meter make it as practical for daily commutes as it is exciting on weekend rides.",
-    ],
-    featureBlocks: [
-      {
-        title: "Blue Core Engine with VVA",
-        body: "155cc liquid-cooled power tuned for strong acceleration and efficient cruising in one package.",
-      },
-      {
-        title: "Smart Key System",
-        body: "Keyless start and answer-back function for modern, fuss-free convenience.",
-      },
-      {
-        title: "Sport-Tuned Suspension",
-        body: "Confident, stable handling in city traffic and on the open road.",
-      },
-      {
-        title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
-    ],
-    specs: [
-      { label: "Engine Type", value: "4-Stroke, SOHC, Liquid-Cooled, VVA" },
-      { label: "Displacement", value: "155 cc" },
-      { label: "Maximum Power", value: "11.3 kW @ 8,000 rpm" },
-      { label: "Transmission System", value: "Automatic CVT" },
-      { label: "Fuel Capacity", value: "4.6 Liters" },
-      { label: "Front / Rear Brakes", value: "Hydraulic Single Disc / Drum" },
-      { label: "Kerb Weight", value: "118 kg" },
-      { label: "Starting System", value: "Electric Starter (Smart Key)" },
-    ],
-  },
-  {
-    slug: "yamaha-lc135",
-    brand: "Yamaha",
-    model: "LC135",
+    model: "LC135 V8",
     type: "Underbone",
     cc: 135,
-    price: 7498,
+    price: 12200,
     deposit: 500,
-    monthly: 270,
+    monthly: 295,
     year: 2026,
-    colours: ["Blue", "Red", "Black"],
+    colours: [
+      "Matador Red",
+      "Tank White",
+      "Samba Green"
+    ],
     availability: "In Stock",
-    popular: true,
-    arrival: "2026-06-15",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/yamaha-lc135-v8/lc135-v8-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/yamaha-lc135-v8/lc135-v8-thumbnail.jpg"
+    ],
     highlights: [
-      "135cc liquid-cooled engine — a proven Malaysian favourite",
+      "135cc liquid-cooled, SOHC, Euro 4 engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "The legend continues. The Yamaha LC135 has earned its place as one of Malaysia's most loved kapcai — a dependable, quick and easy-to-maintain machine that handles daily riding without complaint.",
-      "With its liquid-cooled engine and 4-speed rotary gearbox, the LC135 remains the benchmark for riders who want proven performance at a sensible price.",
+      "Embrace the legendary kapchai spirit with the Yamaha LC135 V8 2026, where proven performance meets modern Euro 4 compliance. This reliable daily driver offers a silky-smooth liquid-cooled engine that effortlessly tackles both city streets and long highway stretches.",
+      "With upgraded hydraulic disc brakes and a sporty monoshock suspension, riders can enjoy a perfectly balanced, safe, and exhilarating commute."
     ],
     featureBlocks: [
       {
-        title: "Liquid-Cooled Reliability",
-        body: "Consistent performance in stop-start traffic and on long highway stretches alike.",
+        title: "Proven Powertrain",
+        body: "The liquid-cooled engine delivers reliable power for city and highway cruising."
       },
       {
-        title: "Easy Maintenance",
-        body: "Parts availability and simple servicing keep long-term ownership costs low.",
+        title: "Hydraulic Disc Brakes",
+        body: "Equipped with front and rear discs for superior stopping power."
+      },
+      {
+        title: "Monoshock Suspension",
+        body: "Features a preload-adjustable rear monoshock for tailored riding comfort."
       },
       {
         title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
+        body: "Owning the Yamaha LC135 V8 2026 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
     ],
     specs: [
-      { label: "Engine Type", value: "4-Stroke, SOHC, Liquid-Cooled" },
-      { label: "Displacement", value: "135 cc" },
-      { label: "Transmission System", value: "4-Speed Rotary" },
-      { label: "Fuel Capacity", value: "4.0 Liters" },
-      { label: "Front / Rear Brakes", value: "Hydraulic Single Disc / Drum" },
-      { label: "Kerb Weight", value: "104 kg" },
-      { label: "Starting System", value: "Electric & Kick Starter" },
-    ],
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "135cc"
+      },
+      {
+        label: "Max Power",
+        value: "12.4 HP @ 8000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "12.2 Nm @ 6000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "4-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "4.6L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc"
+      },
+      {
+        label: "Weight",
+        value: "109 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
   },
   {
-    slug: "honda-rs150r",
-    brand: "Honda",
-    model: "RS150R",
-    type: "Underbone",
-    cc: 150,
-    price: 8799,
-    deposit: 500,
-    monthly: 318,
-    year: 2026,
-    colours: ["Winner Red", "Matte Black", "Tricolour"],
+    slug: "yamaha-r15m",
+    brand: "Yamaha",
+    model: "R15M",
+    type: "Sport",
+    cc: 155,
+    price: 19400,
+    deposit: 4000,
+    monthly: 387,
+    year: 2025,
+    colours: [
+      "Signature Black"
+    ],
     availability: "In Stock",
-    popular: true,
-    arrival: "2026-07-05",
+    arrival: "2025-01-01",
+    image: "/products/motorcycles/yamaha-r15m/r15m-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/yamaha-r15m/r15m-thumbnail.jpg"
+    ],
     highlights: [
-      "150cc DOHC liquid-cooled engine with 6-speed gearbox",
+      "155cc liquid-cooled, SOHC with VVA engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "The Honda RS150R brings race-derived DNA to the daily ride. Its DOHC 6-speed powertrain delivers crisp, rev-happy performance that made it the Y15ZR's fiercest rival on Malaysian roads.",
-      "Sharp bodywork, a full digital meter and confident braking round out a package built for riders who take their kapcai seriously.",
+      "Unleash your inner racer with the Yamaha R15M, a street-legal sportbike packed with track-ready technology. Featuring an aerodynamic R-series fairing, an intuitive Quick Shifter, and advanced Traction Control, it delivers a deeply engaging and precise riding experience.",
+      "The premium inverted front forks and aggressive riding posture ensure that every twisty road becomes your personal playground."
     ],
     featureBlocks: [
       {
-        title: "DOHC 6-Speed Engine",
-        body: "High-revving 150cc performance with a slick 6-speed gearbox for precise control.",
+        title: "Quick Shifter System",
+        body: "Allows for seamless, clutchless upshifts for maximum acceleration."
       },
       {
-        title: "Racing-Inspired Design",
-        body: "Aggressive lines and layered fairings straight from Honda's racing heritage.",
+        title: "Traction Control System",
+        body: "Actively prevents rear wheel slip under heavy acceleration."
+      },
+      {
+        title: "Inverted Front Forks",
+        body: "Premium USD forks provide exceptional front-end feedback and cornering stability."
       },
       {
         title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
+        body: "Owning the Yamaha R15M is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
     ],
     specs: [
-      { label: "Engine Type", value: "4-Stroke, DOHC, Liquid-Cooled" },
-      { label: "Displacement", value: "149.7 cc" },
-      { label: "Maximum Power", value: "11.5 kW @ 9,000 rpm" },
-      { label: "Transmission System", value: "6-Speed Manual" },
-      { label: "Fuel Capacity", value: "4.5 Liters" },
-      { label: "Front / Rear Brakes", value: "Hydraulic Single Disc / Hydraulic Single Disc" },
-      { label: "Kerb Weight", value: "122 kg" },
-      { label: "Starting System", value: "Electric Starter" },
-    ],
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, VVA, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "155cc"
+      },
+      {
+        label: "Max Power",
+        value: "19.0 HP @ 10000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "14.7 Nm @ 8500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "11L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc (ABS)"
+      },
+      {
+        label: "Weight",
+        value: "140 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
   },
   {
-    slug: "honda-vario-160",
-    brand: "Honda",
-    model: "Vario 160",
+    slug: "yamaha-ego-gear",
+    brand: "Yamaha",
+    model: "Ego Gear",
     type: "Scooter",
-    cc: 160,
-    price: 9998,
-    deposit: 600,
+    cc: 125,
+    price: 8900,
+    deposit: 0,
+    monthly: 225,
+    year: 2025,
+    colours: [
+      "Yellow",
+      "Blue",
+      "Green"
+    ],
+    availability: "In Stock",
+    arrival: "2025-01-01",
+    image: "/products/motorcycles/yamaha-ego-gear/ego-gear-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/yamaha-ego-gear/ego-gear-thumbnail.jpg"
+    ],
+    highlights: [
+      "125cc air-cooled, SOHC Blue Core engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Tackle your daily adventures with the rugged and highly versatile Yamaha Ego Gear. Designed to withstand the demands of busy city life, it features an anti-slip floorboard and a Smart Motor Generator for whisper-quiet startups.",
+      "Whether you are running errands or commuting to work, its nimble chassis and confidence-inspiring ergonomics make every trip an absolute breeze."
+    ],
+    featureBlocks: [
+      {
+        title: "Smart Motor Generator (SMG)",
+        body: "Ensures a quiet and seamless engine startup every time."
+      },
+      {
+        title: "Anti-Slip Floorboard",
+        body: "Designed with extra grip and legroom for a comfortable ride."
+      },
+      {
+        title: "Hazard Lamp Feature",
+        body: "Enhances safety during emergency stops on busy roads."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Yamaha Ego Gear is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "125cc"
+      },
+      {
+        label: "Max Power",
+        value: "9.4 HP @ 8000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "9.6 Nm @ 5500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "4.2L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc, Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "95 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "yamaha-xmax-250",
+    brand: "Yamaha",
+    model: "XMAX 250",
+    type: "Scooter",
+    cc: 250,
+    price: 32000,
+    deposit: 8000,
+    monthly: 602,
+    year: 2025,
+    colours: [
+      "Ceramic Grey",
+      "Icon Red"
+    ],
+    availability: "In Stock",
+    arrival: "2025-01-01",
+    image: "/products/motorcycles/yamaha-xmax-250/xmax-250-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/yamaha-xmax-250/xmax-250-thumbnail.jpg"
+    ],
+    highlights: [
+      "250cc liquid-cooled, SOHC, 4-valve engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Redefine your weekend getaways and daily commutes with the Yamaha XMAX, a luxurious mid-size maxi-scooter built for the open road. Its motorcycle-style front forks provide incredible high-speed stability, allowing you to conquer highways with absolute confidence.",
+      "Featuring cavernous under-seat storage and a suite of electronic safety aids, it offers unparalleled comfort and practicality for the long-distance rider."
+    ],
+    featureBlocks: [
+      {
+        title: "Motorcycle-Style Front Forks",
+        body: "Dual clamp telescopic forks ensure exceptional high-speed stability."
+      },
+      {
+        title: "Massive Storage Capacity",
+        body: "easily accommodates two full-face helmets under the plush seat."
+      },
+      {
+        title: "Traction Control & ABS",
+        body: "A comprehensive safety net for confident all-weather riding."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Yamaha XMAX 250 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "249.8cc"
+      },
+      {
+        label: "Max Power",
+        value: "22.5 HP @ 7000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "24.3 Nm @ 5500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "13L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc (ABS)"
+      },
+      {
+        label: "Weight",
+        value: "183 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "honda-wave-alpha",
+    brand: "Honda",
+    model: "Wave Alpha",
+    type: "Underbone",
+    cc: 109.2,
+    price: 7500,
+    deposit: 500,
+    monthly: 207,
+    year: 2025,
+    colours: [
+      "Silver",
+      "Blue",
+      "Red",
+      "Black"
+    ],
+    availability: "In Stock",
+    arrival: "2025-01-01",
+    image: "/products/motorcycles/honda-wave-alpha/wave-alpha-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/honda-wave-alpha/wave-alpha-thumbnail.jpg"
+    ],
+    highlights: [
+      "109.2cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Discover true peace of mind with the Honda Wave Alpha, a legendary kapchai renowned for its bulletproof durability. Its highly efficient 109cc engine delivers class-leading fuel economy, ensuring you spend less time at the pump and more time on the move.",
+      "With generous under-seat storage and effortless handling, it is the ultimate, fuss-free companion for your daily commuting needs."
+    ],
+    featureBlocks: [
+      {
+        title: "Class-Leading Fuel Economy",
+        body: "PGM-FI injection ensures you go further on every drop of fuel."
+      },
+      {
+        title: "Generous Underseat Storage",
+        body: "7.3 liters of space offers practical utility for daily errands."
+      },
+      {
+        title: "Sturdy Build Quality",
+        body: "Renowned Honda reliability makes it a long-lasting commuter."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Wave Alpha is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "109.2cc"
+      },
+      {
+        label: "Max Power",
+        value: "8.7 HP @ 7500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "8.7 Nm @ 5500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "4-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "4.0L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Drum (or Disc Front)"
+      },
+      {
+        label: "Weight",
+        value: "98 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric/Kick"
+      }
+    ]
+  },
+  {
+    slug: "honda-vario-125-street",
+    brand: "Honda",
+    model: "Vario 125 Street",
+    type: "Scooter",
+    cc: 124.9,
+    price: 10600,
+    deposit: 1000,
+    monthly: 242,
+    year: 2026,
+    colours: [
+      "Purple",
+      "White"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/honda-vario-125-street/vario-125-street-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/honda-vario-125-street/vario-125-street-thumbnail.jpg"
+    ],
+    highlights: [
+      "124.9 liquid-cooled, SOHC, eSP engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "The Honda Vario 125 Street is an agile urban scooter engineered for smart daily commuting and trend-forward street style. Driven by a 125cc liquid-cooled single-cylinder eSP engine, it balances responsive street performance with EEV-certified fuel economy.",
+      "Packed with keyless entry, CBS safety, a digital display, and an 18-liter under-seat utility box, it offers high convenience for city riders."
+    ],
+    featureBlocks: [
+      {
+        title: "Honda Smart Key System",
+        body: "Provides keyless ignition along with an integrated anti-theft alarm and answer-back security system."
+      },
+      {
+        title: "Combi Brake System (CBS)",
+        body: "Distributes braking force evenly between the front and rear wheels to enhance stopping stability in unexpected stops."
+      },
+      {
+        title: "Full Digital Speedometer",
+        body: "Displays vital ride statistics clearly at a glance, including real-time fuel consumption and trip data."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Vario 125 Street is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "124.9cc"
+      },
+      {
+        label: "Max Power",
+        value: "11.5 HP @ 8500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "11.7 Nm @ 5000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "5.5L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc, Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "112 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "honda-adv160-roadsync",
+    brand: "Honda",
+    model: "ADV160 RoadSync",
+    type: "Scooter",
+    cc: 156.9,
+    price: 17800,
+    deposit: 3500,
     monthly: 360,
     year: 2026,
-    colours: ["Pearl White", "Matte Black", "Red"],
+    colours: [
+      "Matte Grey",
+      "Brown"
+    ],
     availability: "In Stock",
-    arrival: "2026-07-30",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/honda-adv160-roadsync/adv160-roadsync-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/honda-adv160-roadsync/adv160-roadsync-thumbnail.jpg"
+    ],
     highlights: [
-      "160cc eSP+ engine with smooth automatic power",
+      "156.9cc liquid-cooled, 4-valve eSP+ engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "The Honda Vario 160 pairs a punchy eSP+ engine with everyday practicality — generous under-seat storage, LED lighting all round and Honda's renowned reliability.",
-      "A favourite among urban commuters who want scooter convenience without giving up performance.",
+      "The Honda ADV160 RoadSync blends rugged adventure-bike aesthetics with maxi-scooter practicality for both urban commutes and weekend getaways. Driven by a 157cc 4-valve eSP+ liquid-cooled engine, it delivers strong power managed by Honda Selectable Torque Control (HSTC) and ABS.",
+      "Outfitted with Honda RoadSync smartphone connectivity, an adjustable windscreen, and 30L of storage, it provides maximum connectivity and long-range comfort."
     ],
     featureBlocks: [
       {
-        title: "eSP+ 160cc Engine",
-        body: "Efficient, responsive power with Honda's enhanced Smart Power technology.",
+        title: "Honda RoadSync Connectivity",
+        body: "Connects your smartphone via Bluetooth to view turn-by-turn navigation, incoming calls, and music playback directly on the panel."
       },
       {
-        title: "Practical By Design",
-        body: "Large under-seat storage, USB charging and full LED lighting for daily convenience.",
+        title: "Honda Selectable Torque Control (HSTC)",
+        body: "Actively prevents rear-wheel slip on slick surfaces by modulating engine torque for optimized traction. 3. 2-Step Adjustable Windscreen: Allows easy adjustment of airflow aerodynamics to enhance rider comfort on high-speed highway cruises."
       },
       {
         title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
+        body: "Owning the ADV 160 RoadSync is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
     ],
     specs: [
-      { label: "Engine Type", value: "4-Stroke, SOHC, Liquid-Cooled, eSP+" },
-      { label: "Displacement", value: "156.9 cc" },
-      { label: "Transmission System", value: "Automatic CVT" },
-      { label: "Fuel Capacity", value: "5.5 Liters" },
-      { label: "Front / Rear Brakes", value: "Hydraulic Single Disc / Drum" },
-      { label: "Kerb Weight", value: "115 kg" },
-      { label: "Starting System", value: "Electric Starter" },
-    ],
+      {
+        label: "Engine",
+        value: "4-Stroke, 4-Valve, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "156.9cc"
+      },
+      {
+        label: "Max Power",
+        value: "15.8 HP @ 8500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "14.7 Nm @ 6500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "8.1L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc (ABS), Rear Disc"
+      },
+      {
+        label: "Weight",
+        value: "133 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
   },
   {
-    slug: "honda-ex5",
+    slug: "honda-cbr150r",
     brand: "Honda",
-    model: "EX5",
-    type: "Underbone",
-    cc: 110,
-    price: 4899,
-    deposit: 300,
-    monthly: 178,
-    year: 2026,
-    colours: ["Red", "Blue"],
+    model: "CBR150R",
+    type: "Sport",
+    cc: 149.2,
+    price: 17500,
+    deposit: 4000,
+    monthly: 340,
+    year: 2025,
+    colours: [
+      "Black",
+      "Silver",
+      "Tricolor"
+    ],
     availability: "In Stock",
-    arrival: "2026-05-10",
+    arrival: "2025-01-01",
+    image: "/products/motorcycles/honda-cbr150r/cbr150r-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/honda-cbr150r/cbr150r-thumbnail.jpg"
+    ],
     highlights: [
-      "110cc fuel-injected engine — legendary fuel economy",
+      "149.2cc liquid-cooled, DOHC engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "Three decades on Malaysian roads and still going strong. The Honda EX5 is the definition of dependable transport — outstanding fuel economy, bulletproof mechanicals and a resale value that speaks for itself.",
+      "Bring Fireblade-inspired racing DNA to your everyday commute with the lightweight and agile Honda CBR150R. Its premium Showa inverted forks and rigid chassis offer incredibly precise feedback, allowing you to carve corners with surgical accuracy.",
+      "Equipped with an assist/slipper clutch for smooth downshifts and Emergency Stop Signals for added safety, it delivers an authentic and thrilling sportbike experience."
     ],
     featureBlocks: [
       {
-        title: "Legendary Fuel Economy",
-        body: "PGM-FI fuel injection stretches every litre further, keeping running costs minimal.",
+        title: "Assist/Slipper Clutch",
+        body: "Reduces rear-wheel chatter during hard downshifts for smoother corner entries."
       },
       {
-        title: "Proven Durability",
-        body: "A design refined over generations, trusted by riders across the country.",
+        title: "Showa SFF-BP Inverted Forks",
+        body: "Delivers exceptional front-end rigidity and damping performance."
+      },
+      {
+        title: "Emergency Stop Signal (ESS)",
+        body: "Automatically flashes hazard lights during sudden, hard braking."
       },
       {
         title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
+        body: "Owning the Honda CBR150R is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
     ],
     specs: [
-      { label: "Engine Type", value: "4-Stroke, SOHC, Air-Cooled, PGM-FI" },
-      { label: "Displacement", value: "109.1 cc" },
-      { label: "Transmission System", value: "4-Speed Rotary" },
-      { label: "Fuel Capacity", value: "4.3 Liters" },
-      { label: "Front / Rear Brakes", value: "Drum / Drum" },
-      { label: "Kerb Weight", value: "97 kg" },
-      { label: "Starting System", value: "Electric & Kick Starter" },
-    ],
+      {
+        label: "Engine",
+        value: "4-Stroke, DOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "149.2cc"
+      },
+      {
+        label: "Max Power",
+        value: "16.1 HP @ 9000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "13.7 Nm @ 7000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "12L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc (ABS)"
+      },
+      {
+        label: "Weight",
+        value: "137 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
   },
   {
-    slug: "modenas-kriss-mr2",
+    slug: "modenas-elit-150s",
     brand: "Modenas",
-    model: "Kriss MR2",
-    type: "Underbone",
-    cc: 110,
-    price: 4599,
-    deposit: 300,
-    monthly: 166,
+    model: "ELIT 150S",
+    type: "Scooter",
+    cc: 149,
+    price: 11500,
+    deposit: 500,
+    monthly: 323,
     year: 2026,
-    colours: ["Blue", "Red", "Grey"],
+    colours: [
+      "Riviera Blue",
+      "Quantum Grey"
+    ],
     availability: "In Stock",
-    arrival: "2026-06-25",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/modenas-elit-150s/elit-150s-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/modenas-elit-150s/elit-150s-thumbnail.jpg"
+    ],
     highlights: [
-      "110cc fuel-injected engine built for Malaysian roads",
+      "149cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "The Modenas Kriss MR2 carries forward a nameplate Malaysians have trusted for decades — an affordable, economical kapcai that simply gets the job done, day in and day out.",
+      "Enjoy a relaxed and comfortable commute with the Modenas ELIT 150S, a classic scooter designed for easy urban living. Its wide, plush saddle and generous flat floorboard provide an exceptionally comfortable riding posture, even when carrying a pillion or heavy groceries.",
+      "Powered by a proven, low-maintenance engine, it offers a stress-free, economical, and highly practical daily riding experience."
     ],
     featureBlocks: [
       {
-        title: "Efficient EFI Engine",
-        body: "Modern fuel injection for easy starts, smooth running and low fuel bills.",
+        title: "Plush Seating",
+        body: "Features a wide, comfortable saddle perfect for two-up riding."
       },
       {
-        title: "Built For Value",
-        body: "Low purchase price and affordable parts make the MR2 the sensible choice.",
+        title: "Large Flat Floorboard",
+        body: "Provides generous legroom and space to carry groceries."
+      },
+      {
+        title: "Simple, Reliable Engine",
+        body: "A proven liquid-cooled motor that is easy and cheap to maintain."
       },
       {
         title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
+        body: "Owning the Modenas ELIT 150S is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
     ],
     specs: [
-      { label: "Engine Type", value: "4-Stroke, SOHC, Air-Cooled, EFI" },
-      { label: "Displacement", value: "110 cc" },
-      { label: "Transmission System", value: "4-Speed Rotary" },
-      { label: "Fuel Capacity", value: "4.5 Liters" },
-      { label: "Front / Rear Brakes", value: "Hydraulic Single Disc / Drum" },
-      { label: "Kerb Weight", value: "100 kg" },
-      { label: "Starting System", value: "Electric & Kick Starter" },
-    ],
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "149cc"
+      },
+      {
+        label: "Max Power",
+        value: "10.5kW / 8250rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "13.5Nm / 6750 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "12L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc, Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "137 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
   },
   {
-    slug: "sym-vf3i",
+    slug: "modenas-z15gt",
+    brand: "Modenas",
+    model: "Z15GT",
+    type: "Underbone",
+    cc: 149.5,
+    price: 11500,
+    deposit: 500,
+    monthly: 323,
+    year: 2026,
+    colours: [
+      "Graphite Grey",
+      "Nardo Grey",
+      "Rosso Red"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/modenas-z15gt/z15gt-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/modenas-z15gt/z15gt-thumbnail.jpg"
+    ],
+    highlights: [
+      "149.5cc liquid-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Embark on long journeys with absolute comfort aboard the Modenas Z15GT, a grand-touring scooter built for the open road. The tall factory windscreen and ergonomic riding geometry effectively eliminate wind fatigue during extended highway cruising.",
+      "With cavernous under-seat storage and a smooth, torquey engine, it is the ultimate affordable maxi-scooter for weekend touring and relaxed daily commutes."
+    ],
+    featureBlocks: [
+      {
+        title: "Touring Windscreen",
+        body: "Tall factory shield reduces wind fatigue on long highway stretches."
+      },
+      {
+        title: "Cavernous Storage",
+        body: "Accommodates multiple items under the seat, perfect for touring."
+      },
+      {
+        title: "Ergonomic Riding Posture",
+        body: "Designed for ultimate comfort with a relaxed handlebar sweep."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Modenas Z15GT is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "149.5cc"
+      },
+      {
+        label: "Max Power",
+        value: "12.5 kW @ 9500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "13.5 Nm @ 7500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "5.7L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "modenas-kriss-110-fi",
+    brand: "Modenas",
+    model: "Kriss 110 FI",
+    type: "Underbone",
+    cc: 107,
+    price: 7200,
+    deposit: 500,
+    monthly: 244,
+    year: 2023,
+    colours: [
+      "Vigorous Blue",
+      "Caribbean Cyan",
+      "Glorious Black"
+    ],
+    availability: "In Stock",
+    arrival: "2023-01-01",
+    image: "/products/motorcycles/modenas-kriss-110-fi/kriss-110-fi-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/modenas-kriss-110-fi/kriss-110-fi-thumbnail.jpg"
+    ],
+    highlights: [
+      "107cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Trust in the unmatched legacy of the Modenas Kriss 110 FI, an iconic Malaysian workhorse built to last a lifetime. Known for its rugged durability and simple mechanicals, it offers incredibly low maintenance costs and exceptional fuel economy.",
+      "Its lightweight chassis and familiar setup make it an incredibly accessible, reliable, and cost-effective solution for riders of all skill levels."
+    ],
+    featureBlocks: [
+      {
+        title: "Bulletproof Reliability",
+        body: "Built to withstand years of hard, daily usage with minimal upkeep."
+      },
+      {
+        title: "Superb Fuel Economy",
+        body: "A highly efficient carburetor setup designed to save money at the pump."
+      },
+      {
+        title: "Familiar Drum Brakes",
+        body: "Utilizes low-maintenance drum brakes ideal for simple town riding."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Modenas Kriss 110 FI is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "107cc"
+      },
+      {
+        label: "Max Power",
+        value: "6.6 HP @ 8000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "6.7 Nm @ 6000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "4-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "4.2L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "97 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric/Kick"
+      }
+    ]
+  },
+  {
+    slug: "modenas-karisma-ex-125",
+    brand: "Modenas",
+    model: "Karisma EX 125",
+    type: "Scooter",
+    cc: 125,
+    price: 8400,
+    deposit: 500,
+    monthly: 287,
+    year: 2025,
+    colours: [
+      "Mint Green",
+      "Passionate Red",
+      "Caribbean Cyan"
+    ],
+    availability: "In Stock",
+    arrival: "2025-01-01",
+    image: "/products/motorcycles/modenas-karisma-ex-125/karisma-ex-125-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/modenas-karisma-ex-125/karisma-ex-125-thumbnail.jpg"
+    ],
+    highlights: [
+      "125cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Commute in sharp, contemporary style with the Modenas Karisma EX 125, an automatic scooter designed for the modern urbanite. Its striking twin LED headlamps and fully digital dashboard give it a premium, high-tech aesthetic that stands out in the city.",
+      "Designed for absolute convenience, its anti-theft key shutter and smooth power delivery make daily errands a secure and effortless affair."
+    ],
+    featureBlocks: [
+      {
+        title: "Full LED Lighting",
+        body: "Features twin LED headlamps with integrated DRLs for a premium look."
+      },
+      {
+        title: "Digital Fuel Gauge & Meter",
+        body: "A cleanly laid out dashboard that is easy to read day or night."
+      },
+      {
+        title: "Key Slot with Shutter",
+        body: "Anti-theft magnetic key cover provides peace of mind when parked."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Modenas Karisma EX 125 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "125cc"
+      },
+      {
+        label: "Max Power",
+        value: "9.4 HP @ 7500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "10.0 Nm @ 6000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "5.1L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc, Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "108 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric/Kick"
+      }
+    ]
+  },
+  {
+    slug: "keeway-xdv-180-evo",
+    brand: "Keeway",
+    model: "XDV 180 EVO",
+    type: "Scooter",
+    cc: 174,
+    price: 12500,
+    deposit: 2500,
+    monthly: 294,
+    year: 2026,
+    colours: [
+      "Black",
+      "Grey",
+      "White"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/keeway-xdv-180-evo/xdv-180-evo-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/keeway-xdv-180-evo/xdv-180-evo-thumbnail.jpg"
+    ],
+    highlights: [
+      "174cc liquid-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Embrace the rugged adventure-scooter trend with the highly capable Keeway XDV 180 EVO. Its robust, faceted bodywork and exposed crash bars signal its readiness to tackle both potholed city streets and loose gravel trails.",
+      "Featuring premium KYB suspension and dual-channel ABS, riders can enjoy a supremely confident, plush, and highly controlled riding experience across any terrain."
+    ],
+    featureBlocks: [
+      {
+        title: "Adventure Styling",
+        body: "Features exposed crash bars and a robust, faceted bodywork design."
+      },
+      {
+        title: "KYB Suspension",
+        body: "High-quality front and rear shocks engineered to absorb heavy impacts."
+      },
+      {
+        title: "Dual Channel ABS",
+        body: "Ensures maximum braking performance on loose or slippery surfaces."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Keeway XDV 180 EVO is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "174cc"
+      },
+      {
+        label: "Max Power",
+        value: "18.1 HP @ 8500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "17.2 Nm @ 6500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc (ABS)"
+      },
+      {
+        label: "Weight",
+        value: "145 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "keeway-cafe-racer-152",
+    brand: "Keeway",
+    model: "Cafe Racer 152",
+    type: "Cafe Racer",
+    cc: 149,
+    price: 9900,
+    deposit: 2000,
+    monthly: 288,
+    year: 2024,
+    colours: [
+      "Black",
+      "Red",
+      "Green"
+    ],
+    availability: "In Stock",
+    arrival: "2024-01-01",
+    image: "/products/motorcycles/keeway-cafe-racer-152/cafe-racer-152-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/keeway-cafe-racer-152/cafe-racer-152-thumbnail.jpg"
+    ],
+    highlights: [
+      "149cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Turn every ride into a nostalgic journey with the beautifully retro Keeway Cafe Racer 152. Featuring authentic clip-on bars, a rear seat cowl, and a classic peashooter exhaust, it perfectly captures the spirit of 1960s motorcycling.",
+      "Its incredibly lightweight and stripped-down chassis makes it highly flickable in traffic, offering a pure, visceral, and endlessly fun urban riding experience."
+    ],
+    featureBlocks: [
+      {
+        title: "Authentic Cafe Aesthetics",
+        body: "Complete with a rear seat cowl, clip-on style bars, and a round headlamp."
+      },
+      {
+        title: "Peashooter Exhaust",
+        body: "Emits a classic, throaty exhaust note characteristic of the 60s."
+      },
+      {
+        title: "Lightweight Nimbleness",
+        body: "Stripped-down design makes it incredibly fun to toss around city corners."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Keeway Cafe Racer 152 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "149cc"
+      },
+      {
+        label: "Max Power",
+        value: "8.4 kW @ 8,000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "11.1 Nm @ 6000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "5-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "12.1L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc, Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "108 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric/Kick"
+      }
+    ]
+  },
+  {
+    slug: "qj-motor-ax-200s",
+    brand: "QJMOTOR",
+    model: "AX 200S",
+    type: "Scooter",
+    cc: 175,
+    price: 11500,
+    deposit: 500,
+    monthly: 323,
+    year: 2026,
+    colours: [
+      "Grey",
+      "White",
+      "Matte Black",
+      "Chameleon Green",
+      "Sand Brown",
+      "Moon Blue"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/qj-motor-ax-200s/ax-200s.jpg",
+    images: [
+      "/products/motorcycles/qj-motor-ax-200s/ax-200s.jpg"
+    ],
+    highlights: [
+      "175cc liquid-cooled engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Experience a premium blend of technology and performance with the QJ Motor AX 200S. This compact urban commuter boasts a potent liquid-cooled engine and an interactive TFT color dashboard, bringing high-end features to the 200cc class.",
+      "Its sporty, upright ergonomics provide the rider with absolute command of the road, ensuring a brisk, comfortable, and highly engaging daily commute."
+    ],
+    featureBlocks: [
+      {
+        title: "Robust Liquid Cooling",
+        body: "Maintains optimal engine temperature even in heavy stop-and-go traffic."
+      },
+      {
+        title: "TFT Dashboard",
+        body: "A full-color digital screen that provides a premium interactive experience."
+      },
+      {
+        title: "Sporty Ergonomics",
+        body: "An upright yet aggressive riding position for absolute control."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the QJ Motor AX 200S is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "175cc"
+      },
+      {
+        label: "Max Power",
+        value: "13.0 kW @ 8500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "15.2 Nm @ 6500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic / Manual (Variant dependent)"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc"
+      },
+      {
+        label: "Weight",
+        value: "127 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "sym-husky-200",
+    brand: "SYM",
+    model: "Husky 200",
+    type: "Scooter",
+    cc: 175,
+    price: 15500,
+    deposit: 2000,
+    monthly: 339,
+    year: 2026,
+    colours: [
+      "Glossy Green",
+      "Silk Purple",
+      "Pearl White"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/sym-husky-200/husky-200-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/sym-husky-200/husky-200-thumbnail.jpg"
+    ],
+    highlights: [
+      "175cc liquid-cooled, 4-stroke, single-cylinder engine",
+      "Flexible financing available via trusted credit partners,",
+      "Comes with official manufacturer warranty &",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Conquer both city streets and weekend adventures with the bold, adventure-ready SYM Husky 200. Combining rugged styling with a powerful liquid-cooled engine and an impressive 15-liter fuel capacity, this versatile scooter guarantees a comfortable, high-tech, and unrestricted journey wherever you choose to explore."
+    ],
+    featureBlocks: [
+      {
+        title: "Large 15-Liter Fuel Tank",
+        body: "Paired with QC 3.0 fast charging for long-distance touring."
+      },
+      {
+        title: "Advanced 5-inch Instrument Display",
+        body: "A cool feature with an auto-dimmer and a keyless ignition system."
+      },
+      {
+        title: "Traction Control System (TCS)",
+        body: "Along with upgraded suspension to give you superior off-road and city handling experience."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the SYM Husky 200 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-stroke, liquid-cooled, single-cylinder"
+      },
+      {
+        label: "Displacement",
+        value: "175 cc"
+      },
+      {
+        label: "Max Power",
+        value: "18 HP @ 8,000 RPM"
+      },
+      {
+        label: "Max Torque",
+        value: "16 Nm @ 7,000 RPM"
+      },
+      {
+        label: "Transmission",
+        value: "Automatic, CVT"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "15 Liters"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc (ABS)"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "sym-benelli-panarea-125",
+    brand: "SYM",
+    model: "Benelli Panarea 125",
+    type: "Scooter",
+    cc: 124,
+    price: 9400,
+    deposit: 1000,
+    monthly: 247,
+    year: 2022,
+    colours: [
+      "Black",
+      "Yellow",
+      "Red",
+      "White"
+    ],
+    availability: "In Stock",
+    arrival: "2022-01-01",
+    image: "/products/motorcycles/sym-benelli-panarea-125/benelli-panarea-125-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/sym-benelli-panarea-125/benelli-panarea-125-thumbnail.jpg"
+    ],
+    highlights: [
+      "124cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Glide through the city with timeless elegance on the Benelli Panarea 125, a beautifully crafted European-style scooter. Its classic rounded headlight and sweeping body panels are complemented by a premium quilted leatherette seat, offering luxurious comfort for both rider and pillion.",
+      "Blending vintage Italian aesthetics with modern LED technology, it provides a smooth, stylish, and highly sophisticated urban commute."
+    ],
+    featureBlocks: [
+      {
+        title: "Timeless Italian Styling",
+        body: "Features a classic rounded headlight and sweeping body panels."
+      },
+      {
+        title: "Quilted Leatherette Seat",
+        body: "Provides a premium, comfortable perch for both rider and pillion."
+      },
+      {
+        title: "Modern LED Touches",
+        body: "Blends vintage aesthetics with modern, bright LED lighting technology."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Benelli Panarea 125 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "124cc"
+      },
+      {
+        label: "Max Power",
+        value: "8.4 HP @ 7500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "8.6 Nm @ 6000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "4.6L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc, Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "104 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "sym-vf3i-185",
     brand: "SYM",
     model: "VF3i 185",
     type: "Underbone",
-    cc: 185,
-    price: 9338,
-    deposit: 600,
-    monthly: 338,
-    year: 2026,
-    colours: ["Yellow", "Matte Black", "White"],
+    cc: 183,
+    price: 12900,
+    deposit: 1500,
+    monthly: 335,
+    year: 2020,
+    colours: [
+      "Red",
+      "Blue",
+      "Gold"
+    ],
     availability: "In Stock",
-    arrival: "2026-07-12",
+    arrival: "2020-01-01",
+    image: "/products/motorcycles/sym-vf3i-185/vf3i-185-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/sym-vf3i-185/vf3i-185-thumbnail.jpg"
+    ],
     highlights: [
-      "183cc engine — the biggest capacity in its class",
+      "183cc liquid-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "The SYM VF3i 185 rewrote the kapcai rulebook with a class-leading 183cc engine, 6-speed gearbox and superbike-inspired styling. For riders who want maximum muscle in the moped class, nothing else comes close.",
+      "Command the ultimate kapchai performance with the SYM VF3i 185, boasting a massive 183cc engine that leaves the competition behind. Designed for true highway dominance, it features a massive 7-liter fuel tank that easily enables long-distance interstate touring.",
+      "Equipped with an anti-lock braking system to safely harness its breathtaking top-end speed, it delivers a thrilling, unmatched supermoped riding experience."
     ],
     featureBlocks: [
       {
-        title: "Class-Leading 183cc Power",
-        body: "The largest displacement in the super-moped segment, matched to a 6-speed gearbox.",
+        title: "183cc Powerplant",
+        body: "A massive engine for a kapchai, delivering breathtaking top-end speed. 2. 7-Liter Fuel Tank: Extremely large capacity for a moped, enabling true interstate touring."
       },
       {
-        title: "Superbike Styling",
-        body: "Twin projector headlamps and sculpted bodywork give the VF3i unmistakable road presence.",
+        title: "ABS Equipped",
+        body: "Features an anti-lock braking system to harness its immense power safely."
       },
       {
         title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
+        body: "Owning the SYM VF3i 185 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
     ],
     specs: [
-      { label: "Engine Type", value: "4-Stroke, SOHC, Liquid-Cooled, EFI" },
-      { label: "Displacement", value: "183 cc" },
-      { label: "Maximum Power", value: "12.9 kW @ 9,000 rpm" },
-      { label: "Transmission System", value: "6-Speed Manual" },
-      { label: "Fuel Capacity", value: "6.4 Liters" },
-      { label: "Front / Rear Brakes", value: "Hydraulic Single Disc / Hydraulic Single Disc" },
-      { label: "Kerb Weight", value: "122 kg" },
-      { label: "Starting System", value: "Electric Starter" },
-    ],
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "183cc"
+      },
+      {
+        label: "Max Power",
+        value: "19.7 HP @ 9000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "17.4 Nm @ 7500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "7.0L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc"
+      },
+      {
+        label: "Weight",
+        value: "124 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
   },
   {
-    slug: "wmoto-es250i",
-    brand: "WMOTO",
-    model: "ES250i",
+    slug: "sym-tuscany-150",
+    brand: "SYM",
+    model: "Tuscany 150",
     type: "Scooter",
-    cc: 250,
-    price: 13888,
-    deposit: 1000,
-    monthly: 495,
-    year: 2026,
-    colours: ["Matte Grey", "Black", "White"],
-    availability: "Pre-Order",
-    arrival: "2026-08-01",
+    cc: 149.6,
+    price: 11900,
+    deposit: 1500,
+    monthly: 306,
+    year: 2023,
+    colours: [
+      "Red",
+      "White",
+      "Grey"
+    ],
+    availability: "In Stock",
+    arrival: "2023-01-01",
+    image: "/products/motorcycles/sym-tuscany-150/tuscany-150-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/sym-tuscany-150/tuscany-150-thumbnail.jpg"
+    ],
     highlights: [
-      "250cc maxi-scooter comfort with touring capability",
+      "149.6cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "The WMoto ES250i delivers maxi-scooter presence and long-distance comfort at a price that undercuts the established players. Keyless start, TFT display, ABS braking and generous storage make it a compelling step up.",
+      "Elevate your daily commute with the SYM Tuscany 150, where classic scooter design meets modern 150cc power. Enjoy the seamless convenience of keyless ignition and a brilliant full-color digital dash that beautifully contrasts with its elegant vintage lines.",
+      "Its spacious legroom and relaxed riding geometry ensure that even taller riders experience a comfortable, luxurious, and highly refined journey."
     ],
     featureBlocks: [
       {
-        title: "Touring Comfort",
-        body: "Relaxed ergonomics, a broad seat and wind protection built for longer rides.",
+        title: "Keyless Ignition",
+        body: "Start the scooter and unlock the seat seamlessly without a physical key."
       },
       {
-        title: "Full-Spec Equipment",
-        body: "TFT meter, keyless ignition, ABS and traction control as standard.",
+        title: "Digital Color Dash",
+        body: "A bright, multi-colored display that adds a modern touch to a classic design."
+      },
+      {
+        title: "Spacious Ergonomics",
+        body: "Offers excellent knee room and a relaxed riding geometry for taller riders."
       },
       {
         title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
+        body: "Owning the SYM Tuscany 150 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
     ],
     specs: [
-      { label: "Engine Type", value: "4-Stroke, SOHC, Liquid-Cooled, EFI" },
-      { label: "Displacement", value: "244 cc" },
-      { label: "Transmission System", value: "Automatic CVT" },
-      { label: "Fuel Capacity", value: "11.5 Liters" },
-      { label: "Front / Rear Brakes", value: "Dual Disc ABS / Single Disc ABS" },
-      { label: "Kerb Weight", value: "165 kg" },
-      { label: "Starting System", value: "Electric Starter (Keyless)" },
-    ],
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "149.6cc"
+      },
+      {
+        label: "Max Power",
+        value: "11.4 HP @ 8000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "11.4 Nm @ 5500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "V-Belt Automatic"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "5.7L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc"
+      },
+      {
+        label: "Weight",
+        value: "123 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
   },
   {
-    slug: "cfmoto-250nk",
-    brand: "CFMOTO",
-    model: "250NK",
-    type: "Naked",
-    cc: 250,
-    price: 12800,
+    slug: "wmoto-nx150s",
+    brand: "WMOTO",
+    model: "NX150S",
+    type: "Scooter",
+    cc: 149.6,
+    price: 9500,
     deposit: 1000,
-    monthly: 458,
+    monthly: 250,
     year: 2026,
-    colours: ["Nebula Black", "Athens White"],
+    colours: [
+      "Lava Brown",
+      "Grind Green",
+      "Glacier Grey"
+    ],
     availability: "In Stock",
-    arrival: "2026-07-25",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/wmoto-nx150s/nx150s-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/wmoto-nx150s/nx150s-thumbnail.jpg"
+    ],
     highlights: [
-      "249cc liquid-cooled naked sports performance",
+      "149.6cc liquid-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "The CFMoto 250NK is the accessible gateway into naked-bike ownership — sharp streetfighter looks, a willing 249cc single and a TFT dash that punches far above its price point.",
+      "Make a fierce statement on the road with the WMoto NX150S, an affordable streetfighter packed with aggressive attitude. Its muscular tank design and sharp shrouds offer a commanding street presence, while the digital display keeps you informed at a glance.",
+      "The responsive rear monoshock and liquid-cooled engine provide a sporty, stable, and highly engaging ride through dense city traffic."
     ],
     featureBlocks: [
       {
-        title: "Streetfighter Styling",
-        body: "Angular LED lighting and exposed trellis lines straight from the big-bike class.",
+        title: "Aggressive Streetfighter Stance",
+        body: "Muscular tank design and sharp shrouds turn heads on the street."
       },
       {
-        title: "Confident Handling",
-        body: "Upside-down forks and ABS braking deliver control beyond its class.",
+        title: "Digital Display",
+        body: "A fully digital instrument cluster provides all vital information clearly."
+      },
+      {
+        title: "Rear Monoshock",
+        body: "Ensures stable handling and a comfortable ride over urban potholes."
       },
       {
         title: "Flexible Financing Available",
-        body: "Apply via WhatsApp and choose from Loan Kedai, First Class Credit, Chailease Berjaya, or JCL.",
-      },
+        body: "Owning the WMoto NS150S is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
     ],
     specs: [
-      { label: "Engine Type", value: "4-Stroke, DOHC, Liquid-Cooled" },
-      { label: "Displacement", value: "249.2 cc" },
-      { label: "Maximum Power", value: "20.5 kW @ 9,750 rpm" },
-      { label: "Transmission System", value: "6-Speed Manual" },
-      { label: "Fuel Capacity", value: "12.5 Liters" },
-      { label: "Front / Rear Brakes", value: "Single Disc ABS / Single Disc ABS" },
-      { label: "Kerb Weight", value: "151 kg" },
-      { label: "Starting System", value: "Electric Starter" },
-    ],
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "150cc"
+      },
+      {
+        label: "Max Power",
+        value: "11.6 kW @ 8,500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "14.7 N.m @ 6,500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "15L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc (ABS)"
+      },
+      {
+        label: "Weight",
+        value: "132 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
   },
+  {
+    slug: "cfmoto-xo-papio-125",
+    brand: "CFMOTO",
+    model: "XO Papio 125",
+    type: "Mini-sport",
+    cc: 126,
+    price: 11800,
+    deposit: 1100,
+    monthly: 315,
+    year: 2023,
+    colours: [
+      "White"
+    ],
+    availability: "In Stock",
+    arrival: "2023-01-01",
+    image: "/products/motorcycles/cfmoto-xo-papio-125/xo-papio-125-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/cfmoto-xo-papio-125/xo-papio-125-thumbnail.jpg"
+    ],
+    highlights: [
+      "126cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Inject massive fun into your daily ride with the radically styled CFMoto XO Papio 125 mini-sport bike. Its ultra-low seat height and tiny 12-inch wheels make it incredibly unintimidating and hilariously nimble, perfect for carving through tight urban spaces.",
+      "Boasting a genuine 6-speed gearbox and a futuristic bug-eye LED headlight, it offers a highly engaging, big-bike feel in a brilliantly compact package."
+    ],
+    featureBlocks: [
+      {
+        title: "Mini-Moto Dimensions",
+        body: "Its 12-inch wheels and ultra-low seat make it incredibly unintimidating and fun. 2. 6-Speed Gearbox: Uniquely features a 6-speed transmission for genuine motorcycle engagement."
+      },
+      {
+        title: "LED Projector Headlight",
+        body: "A distinctive bug-eye headlamp setup gives it a unique, futuristic face."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the CFMoto XO Papio 125 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "126cc"
+      },
+      {
+        label: "Max Power",
+        value: "9.4 HP @ 8500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "8.3 Nm @ 6500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "7.0L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc (ABS)"
+      },
+      {
+        label: "Weight",
+        value: "114 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "aveta-dy-90",
+    brand: "Aveta",
+    model: "DY 90",
+    type: "Underbone",
+    cc: 90,
+    price: 6500,
+    deposit: 500,
+    monthly: 219,
+    year: 2020,
+    colours: [
+      "Red",
+      "Blue",
+      "Black"
+    ],
+    availability: "In Stock",
+    arrival: "2020-01-01",
+    image: "/products/motorcycles/aveta-dy-90/aveta-dy-90-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/aveta-dy-90/aveta-dy-90-thumbnail.jpg"
+    ],
+    highlights: [
+      "90cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Maximize your business efficiency with the Aveta Dayang DY 90, the ultimate utilitarian workhorse designed for absolute simplicity. Its incredibly economical 90cc engine ensures that your running costs remain astonishingly low day in and day out.",
+      "Featuring a classic step-through frame and minimalist mechanicals, it offers delivery riders a completely fuss-free, easy-to-maintain, and highly reliable everyday tool."
+    ],
+    featureBlocks: [
+      {
+        title: "Ultra-Economical 90cc Engine",
+        body: "Sips fuel, making it one of the cheapest motorcycles to run daily."
+      },
+      {
+        title: "Classic Step-Through Frame",
+        body: "Easy to mount and dismount, perfect for delivery riders."
+      },
+      {
+        title: "Minimalist Maintenance",
+        body: "Mechanical simplicity ensures repair costs are virtually non-existent."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Aveta Dayang DY 90 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners (JCL & Chailease Berjaya Credit only)."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "90cc"
+      },
+      {
+        label: "Transmission",
+        value: "4-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "3.5L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "93 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Kick"
+      }
+    ],
+    financingPartners: [
+      "JCL",
+      "Chailease Berjaya"
+    ]
+  },
+  {
+    slug: "aveta-ranger-max-explorer-130",
+    brand: "Aveta",
+    model: "Ranger Max Explorer 130",
+    type: "Underbone",
+    cc: 127,
+    price: 10100,
+    deposit: 1000,
+    monthly: 331,
+    year: 2023,
+    colours: [
+      "Storm Blue",
+      "Iron Grey",
+      "Sierra Yellow"
+    ],
+    availability: "In Stock",
+    arrival: "2023-01-01",
+    image: "/products/motorcycles/aveta-ranger-max-explorer-130/aveta-ranger-max-explorer-130-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/aveta-ranger-max-explorer-130/aveta-ranger-max-explorer-130-thumbnail.jpg"
+    ],
+    highlights: [
+      "127cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Take your outdoor excursions to the next level with the Aveta Ranger Max Explorer 130. This upgraded adventure kapchai features premium touring mounts ready for saddlebags, making it the perfect companion for off-road camping trips.",
+      "Complete with a modern digital dash and a rugged headlamp guard, it blends retro charm with advanced capability for a highly thrilling and practical exploration experience."
+    ],
+    featureBlocks: [
+      {
+        title: "Touring Accessories Ready",
+        body: "Features mounting points optimized for saddlebags and top boxes."
+      },
+      {
+        title: "Upgraded Headlamp Guard",
+        body: "A metal grill protects the headlight from rocks and trail debris."
+      },
+      {
+        title: "Digital Dash",
+        body: "Upgrades to a modern digital meter while retaining its retro charm."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Aveta Ranger Max Explorer 130 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners (JCL & Chailease Berjaya Credit only)."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "127cc"
+      },
+      {
+        label: "Max Power",
+        value: "10.1 HP @ 8000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "10.5 Nm @ 5500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "4-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "8.5L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc, Rear Drum"
+      },
+      {
+        label: "Weight",
+        value: "115 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric/Kick"
+      }
+    ],
+    financingPartners: [
+      "JCL",
+      "Chailease Berjaya"
+    ]
+  },
+  {
+    slug: "aveta-nova-250",
+    brand: "Aveta",
+    model: "Nova 250",
+    type: "Scooter",
+    cc: 244,
+    price: 18400,
+    deposit: 0,
+    monthly: 460,
+    year: 2026,
+    colours: [
+      "Titan Red",
+      "Metro Grey",
+      "Emerald Green"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/aveta-nova-250/aveta-nova-250-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/aveta-nova-250/aveta-nova-250-thumbnail.jpg"
+    ],
+    highlights: [
+      "244cc liquid-cooled, DOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Step into the thrilling quarter-liter class with the powerful and aggressive Aveta Nova 250 naked bike. Its potent liquid-cooled twin-cylinder engine is tuned to deliver exhilarating acceleration and high top speeds for adrenaline-seeking riders.",
+      "Outfitted with premium inverted front forks and robust dual disc brakes, it ensures a highly precise, safe, and wildly engaging canyon-carving experience."
+    ],
+    featureBlocks: [
+      {
+        title: "Potent 250cc Engine",
+        body: "Designed to deliver thrilling acceleration and high top speeds."
+      },
+      {
+        title: "USD Front Forks",
+        body: "Premium inverted suspension setup for precise, sporty handling."
+      },
+      {
+        title: "Dual Disc Brakes",
+        body: "Equipped with robust braking hardware to safely tame the 250cc power."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Aveta Nova 250 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners (JCL & Chailease Berjaya Credit only)."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "244cc"
+      },
+      {
+        label: "Max Power",
+        value: "25.5 hp @ 8250 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "23 Nm @ 6500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "12L"
+      },
+      {
+        label: "Brakes",
+        value: "Front/Rear Disc"
+      },
+      {
+        label: "Weight",
+        value: "165 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ],
+    financingPartners: [
+      "JCL",
+      "Chailease Berjaya"
+    ]
+  },
+  {
+    slug: "aveta-nova-125",
+    brand: "Aveta",
+    model: "Nova 125",
+    type: "Underbone",
+    cc: 125,
+    price: 8000,
+    deposit: 0,
+    monthly: 200,
+    year: 2026,
+    colours: [
+      "Nano Grey",
+      "Blue Lemon",
+      "Grey Lemon"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/aveta-nova-125/aveta-nova-125-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/aveta-nova-125/aveta-nova-125-thumbnail.jpg"
+    ],
+    highlights: [
+      "125cc air-cooled, SOHC engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Experience the true essence of practical commuting with the Aveta Nova 125, a no-nonsense motorcycle focused on unbeatable value. Its simple, lightweight chassis and easy-to-tune carburetor engine make it incredibly maneuverable and remarkably cheap to maintain.",
+      "Complete with a standard rear grab rail for easy top-box installation, it offers an exceptionally reliable, highly utilitarian, and deeply satisfying daily ride."
+    ],
+    featureBlocks: [
+      {
+        title: "Simple Carburetor Setup",
+        body: "Extremely easy and cheap to tune and repair."
+      },
+      {
+        title: "Lightweight Chassis",
+        body: "effortless to maneuver through dense traffic jams."
+      },
+      {
+        title: "Practical Utility",
+        body: "Comes standard with a rear grab rail suitable for attaching a top box."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Aveta Nova 125 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners (JCL & Chailease Berjaya Credit only)."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "125cc"
+      },
+      {
+        label: "Max Power",
+        value: "9 hp @ 8000 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "8.6 Nm @ 6500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "4-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "6L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc, Rear Drum"
+      },
+      {
+        label: "Starting System",
+        value: "Electric/Kick"
+      }
+    ],
+    financingPartners: [
+      "JCL",
+      "Chailease Berjaya"
+    ]
+  },
+  {
+    slug: "moda-moca-110",
+    brand: "Moda",
+    model: "Moca 110",
+    type: "Scooter",
+    cc: 108,
+    price: 7000,
+    deposit: 500,
+    monthly: 192,
+    year: 2026,
+    colours: [
+      "Piano Black",
+      "Ocean Blue",
+      "Neon Orange"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/moda-moca-110/moca-110-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/moda-moca-110/moca-110-thumbnail.jpg"
+    ],
+    highlights: [
+      "108cc air-cooled, SOHC, single-cylinder engine",
+      "Flexible financing available via trusted credit partners,",
+      "Comes with official manufacturer warranty &",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Embrace everyday convenience with a splash of retro charm on the ultralight Moda Moca 110. Perfectly tailored for swift city navigation, this stylish and highly fuel-efficient scooter turns heads with its European-inspired silhouette while providing effortless handling and modern LED visibility."
+    ],
+    featureBlocks: [
+      {
+        title: "Ultralight 89 kg Retro-Inspired Design",
+        body: "It is nimble, easy to park, and economical for daily rides."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Moda Moca 110 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, Single Cylinder, Air Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "108 cc"
+      },
+      {
+        label: "Max Power",
+        value: "8 Hp @ 7,500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "8.5 Nm @ 7,000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "CVT"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "4.8 Liters"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc Brake, Rear Drum Brake"
+      },
+      {
+        label: "Weight",
+        value: "89 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  }
 ];

@@ -21,21 +21,23 @@ export interface Motorcycle {
   availability: "In Stock" | "Pre-Order";
   popular?: boolean;
   arrival: string; // ISO date, drives "Newest Arrivals"
+  /** Primary (card) photo and the full gallery, under public/products/ */
+  image?: string;
+  images?: string[];
+  /**
+   * Credit partners this model can be financed through. Omit for the full
+   * FINANCING_PARTNERS list; Aveta is JCL & Chailease Berjaya only.
+   */
+  financingPartners?: string[];
   highlights: string[]; // 4 key bullets
   description: string[];
   featureBlocks: { title: string; body: string }[];
   specs: { label: string; value: string }[];
 }
 
-export type GearType =
-  | "Helmet"
-  | "Helmet Visor"
-  | "Gloves"
-  | "T-Shirt"
-  | "Raincoat"
-  | "Cap";
+export type GearType = "Helmet" | "Helmet Visor" | "Helmet Spoiler" | "Raincoat";
 
-export type AccessoryType = "Sport Rims" | "Fork Lay" | "Bodykit" | "Lighting";
+export type AccessoryType = "Sport Rims" | "Fork Lay";
 
 export interface CatalogueProduct {
   slug: string;
@@ -51,8 +53,13 @@ export interface CatalogueProduct {
   sizes?: string[];
   /** Colour options shown on the detail page (R2 slides 21–22) */
   colours?: string[];
-  /** Accessories only — bike models this part fits */
+  /** Accessories only — every bike model this part fits (union of fitment) */
   compatibleModels?: string[];
+  /** Primary (card) photo and the full gallery, under public/products/ */
+  image?: string;
+  images?: string[];
+  /** Colour option → the gallery photo showing that colour */
+  colourImages?: Record<string, string>;
   /** Which share row variant to use */
   shareVariant: "full" | "compact";
 }
@@ -63,6 +70,12 @@ export interface GearItem extends CatalogueProduct {
 
 export interface AccessoryItem extends CatalogueProduct {
   accessoryType: AccessoryType;
+  /**
+   * Which bike models each colour is made for — rim colours are not
+   * interchangeable across models (client sheet, e.g. Orange 3 Bintang is
+   * Y125Z only). The detail page only offers valid colour/model pairs.
+   */
+  fitment?: { colour: string; models: string[] }[];
 }
 
 export interface IphoneModel {

@@ -17,6 +17,7 @@ export interface ListingItem {
     price: number;
     meta?: string;
     thumb: ThumbKind;
+    image?: string;
   };
   /** All filterable dimensions precomputed to strings by the server page */
   facetValues: Record<string, string>;
@@ -184,6 +185,7 @@ export default function CatalogueClient({
                 price={item.product.price}
                 meta={item.product.meta}
                 kind={item.product.thumb}
+                image={item.product.image}
                 isNew={newestIds.includes(item.id)}
               />
             ) : null

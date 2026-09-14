@@ -42,6 +42,7 @@ export default async function MotorcyclePage(props: PageProps<"/motorcycles/[slu
       brand: m.brand,
       price: m.price,
       thumb: "bike" as const,
+      image: m.image,
     }));
 
   return (
@@ -63,6 +64,8 @@ export default async function MotorcyclePage(props: PageProps<"/motorcycles/[slu
       shareVariant="full"
       isVehicle
       cc={bike.cc}
+      images={bike.images}
+      financingPartners={bike.financingPartners}
       cta="WhatsApp to Order"
       options={[{ label: "Colour", values: bike.colours }]}
       related={related}

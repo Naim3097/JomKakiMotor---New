@@ -1,117 +1,328 @@
-﻿import type { AccessoryItem } from "./types";
+import type { AccessoryItem } from "./types";
 
-/** SAMPLE INVENTORY — copy follows the Accessories templates from Client Comments R1. */
+/**
+ * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
+ * on 2026-09-14. Edit the sheet and re-run the generator rather than
+ * hand-editing prices or copy here.
+ */
 export const ACCESSORIES: AccessoryItem[] = [
   {
-    slug: "enkei-sport-rim-y15zr",
-    colours: ["Black", "Gold", "Silver"],
+    slug: "ppr-racing-r63-sport-rim",
     accessoryType: "Sport Rims",
-    name: "ENKEI Sport Rim Set for Yamaha Y15ZR",
-    brand: "ENKEI",
-    price: 1280,
-    availability: "In Stock",
-    arrival: "2026-07-29",
-    shareVariant: "full",
-    compatibleModels: ["Yamaha Y15ZR"],
-    highlights: [
-      "100% original genuine product",
-      "Direct plug & play installation",
-      "Lightweight, forged aluminum alloy",
-      "No chassis modifications needed",
-    ],
-    description: [
-      "Transform the look and handling of your motorcycle with the ENKEI Sport Rim Set. Engineered from lightweight, high-strength forged aluminum alloy, these rims reduce unsprung weight to deliver sharper cornering, faster acceleration, and improved braking response.",
-      "Built to withstand the demands of both daily city commuting and spirited weekend rides, they offer the perfect blend of aggressive styling and proven durability.",
-    ],
-    specs: [
-      { label: "Size (Front / Rear)", value: "1.60 x 17 / 1.85 x 17" },
-      { label: "Material", value: "Forged Aluminum Alloy" },
-      { label: "Compatibility", value: "Plug and play exclusively for Yamaha Y15ZR" },
-      { label: "Inclusions", value: "Pre-installed bearings and bushings" },
-      { label: "Available Colors", value: "Matte Black, Anodized Gold, Candy Blue" },
-    ],
-  },
-  {
-    slug: "ppr-sport-rim-lc135",
-    colours: ["Black", "Gold", "Blue"],
-    accessoryType: "Sport Rims",
-    name: "PPR Sport Rim Set for Yamaha LC135",
+    name: "PPR RACING R63 Sport Rim",
     brand: "PPR",
-    price: 890,
+    price: 290,
     availability: "In Stock",
-    arrival: "2026-07-14",
+    arrival: "2026-09-01",
     shareVariant: "full",
-    compatibleModels: ["Yamaha LC135"],
+    colours: [
+      "Black"
+    ],
+    compatibleModels: [
+      "Yamaha Y15ZR"
+    ],
+    fitment: [
+      {
+        colour: "Black",
+        models: [
+          "Yamaha Y15ZR"
+        ]
+      }
+    ],
+    image: "/products/accessories/ppr-racing-r63-sport-rim/thumbnail.jpg",
+    images: [
+      "/products/accessories/ppr-racing-r63-sport-rim/thumbnail.jpg",
+      "/products/accessories/ppr-racing-r63-sport-rim/r63-black.jpg"
+    ],
     highlights: [
       "100% original genuine product",
-      "Direct plug & play installation",
-      "Lightweight CNC-machined alloy",
-      "No chassis modifications needed",
+      "Direct Plug & Play installation",
+      "No chassis modification needed",
+      "Lightweight, forged aluminium alloy"
     ],
     description: [
-      "Give your LC135 the stance it deserves with the PPR Sport Rim Set. CNC-machined from high-grade aluminum alloy, these rims sharpen handling response while adding unmistakable style to Malaysia's favourite kapcai.",
+      "The PPR Racing R63 Rim brings track-inspired engineering directly to your Yamaha Y15ZR, delivering high-speed stability, reduced rotational drag, and a bold stealth profile tailored for aggressive riders."
     ],
     specs: [
-      { label: "Size (Front / Rear)", value: "1.40 x 17 / 1.60 x 17" },
-      { label: "Material", value: "CNC Machined Aluminum Alloy" },
-      { label: "Compatibility", value: "Plug and play exclusively for Yamaha LC135" },
-      { label: "Inclusions", value: "Rims only" },
-      { label: "Available Colors", value: "Matte Black, Anodized Gold, Silver" },
-    ],
+      {
+        label: "Material",
+        value: "Forged Aluminium Alloy"
+      },
+      {
+        label: "Compatibility",
+        value: "Yamaha Y15ZR"
+      },
+      {
+        label: "Inclusions",
+        value: "1x Pair Sport Rims (Front & Rear)"
+      },
+      {
+        label: "Available Colours",
+        value: "Black"
+      }
+    ]
   },
   {
-    slug: "cnc-fork-lay-nvx",
-    colours: ["Black", "Gold", "Red"],
-    accessoryType: "Fork Lay",
-    name: "CNC Racing Fork Lay for Yamaha NVX",
-    brand: "CNC",
-    price: 650,
+    slug: "enkei-3-bintang-sport-rim",
+    accessoryType: "Sport Rims",
+    name: "ENKEI 3 Bintang Sport Rim",
+    brand: "ENKEI",
+    price: 240,
     availability: "In Stock",
-    arrival: "2026-07-20",
+    arrival: "2026-09-01",
     shareVariant: "full",
-    compatibleModels: ["Yamaha NVX 155"],
+    colours: [
+      "Orange",
+      "Black",
+      "White"
+    ],
+    compatibleModels: [
+      "Yamaha Y125Z",
+      "Yamaha Y15ZR",
+      "Yamaha NVX"
+    ],
+    fitment: [
+      {
+        colour: "Orange",
+        models: [
+          "Yamaha Y125Z"
+        ]
+      },
+      {
+        colour: "Black",
+        models: [
+          "Yamaha Y125Z",
+          "Yamaha Y15ZR",
+          "Yamaha NVX"
+        ]
+      },
+      {
+        colour: "White",
+        models: [
+          "Yamaha Y15ZR",
+          "Yamaha NVX"
+        ]
+      }
+    ],
+    image: "/products/accessories/enkei-3-bintang-sport-rim/thumbnail.jpg",
+    images: [
+      "/products/accessories/enkei-3-bintang-sport-rim/thumbnail.jpg",
+      "/products/accessories/enkei-3-bintang-sport-rim/black.jpg",
+      "/products/accessories/enkei-3-bintang-sport-rim/orange.jpg",
+      "/products/accessories/enkei-3-bintang-sport-rim/white.jpg"
+    ],
+    colourImages: {
+      Orange: "/products/accessories/enkei-3-bintang-sport-rim/orange.jpg",
+      Black: "/products/accessories/enkei-3-bintang-sport-rim/black.jpg",
+      White: "/products/accessories/enkei-3-bintang-sport-rim/white.jpg"
+    },
     highlights: [
       "100% original genuine product",
-      "Direct factory unit replacement",
-      "Improves high-speed stability",
-      "No cutting or permanent modifications required",
+      "Direct Plug & Play installation",
+      "No chassis modification needed",
+      "Lightweight, forged aluminium alloy"
     ],
     description: [
-      "Drop your NVX's stance and sharpen its high-speed manners with the CNC Racing Fork Lay. Machined from high-grade billet aluminum and hardened steel, it installs as a direct factory replacement — no cutting, no welding, fully reversible.",
+      "A timeless favorite among street riders, the Enkei 3 Bintang (3-Star) Sport Rim combines proven structural toughness with an iconic tri-spoke layout that excels in both daily city commuting and sport riding."
     ],
     specs: [
-      { label: "Compatibility", value: "Direct fit for Yamaha NVX 155" },
-      { label: "Lowering Spec", value: "Lowered by 1.5 inches" },
-      { label: "Material", value: "High-grade Billet Aluminum & Hardened Steel" },
-      { label: "Installation", value: "Plug & Play (No cutting or chassis modification required)" },
-      { label: "Available Colours", value: "Titanium Silver / Anodized Gold / Carbon Black" },
-    ],
+      {
+        label: "Material",
+        value: "Forged Aluminium Alloy"
+      },
+      {
+        label: "Compatibility",
+        value: "Yamaha Y15ZR (Black/White), Yamaha NVX (Black/White), Yamaha Y125Z (Black/Orange)"
+      },
+      {
+        label: "Inclusions",
+        value: "1x Pair Sport Rims (Front & Rear)"
+      },
+      {
+        label: "Available Colours",
+        value: "Orange, Black, White"
+      }
+    ]
   },
   {
-    slug: "aerox-thai-led-taillight",
-    colours: ["Smoke", "Clear"],
-    accessoryType: "Lighting",
-    name: "AEROX THAI Custom LED Taillight",
+    slug: "enkei-g500-custom",
+    accessoryType: "Sport Rims",
+    name: "ENKEI G500 Custom",
+    brand: "ENKEI",
+    price: 350,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    colours: [
+      "Black"
+    ],
+    compatibleModels: [
+      "Yamaha Y15ZR"
+    ],
+    fitment: [
+      {
+        colour: "Black",
+        models: [
+          "Yamaha Y15ZR"
+        ]
+      }
+    ],
+    image: "/products/accessories/enkei-g500-custom/thumbnail.jpg",
+    images: [
+      "/products/accessories/enkei-g500-custom/thumbnail.jpg",
+      "/products/accessories/enkei-g500-custom/g500-black.jpg"
+    ],
+    highlights: [
+      "100% original genuine product",
+      "Direct Plug & Play installation",
+      "No chassis modification needed",
+      "Lightweight, forged aluminium alloy"
+    ],
+    description: [
+      "Purpose-built for riders seeking a distinctive custom aesthetic, the Enkei G500 Custom combines aggressive multi-spoke styling with lightweight alloy construction to elevate the road presence of your Yamaha Y15ZR."
+    ],
+    specs: [
+      {
+        label: "Material",
+        value: "Forged Aluminium Alloy"
+      },
+      {
+        label: "Compatibility",
+        value: "Yamaha Y15ZR"
+      },
+      {
+        label: "Inclusions",
+        value: "1x Pair Sport Rims (Front & Rear)"
+      },
+      {
+        label: "Available Colours",
+        value: "Black"
+      }
+    ]
+  },
+  {
+    slug: "aerox-thai-sport-rim",
+    accessoryType: "Sport Rims",
+    name: "AEROX THAI Sport Rim",
     brand: "AEROX THAI",
-    price: 220,
+    price: 290,
     availability: "In Stock",
-    arrival: "2026-07-31",
-    shareVariant: "compact",
-    compatibleModels: ["Yamaha NVX 155"],
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    colours: [
+      "Black",
+      "Gold"
+    ],
+    compatibleModels: [
+      "Yamaha NVX"
+    ],
+    fitment: [
+      {
+        colour: "Black",
+        models: [
+          "Yamaha NVX"
+        ]
+      },
+      {
+        colour: "Gold",
+        models: [
+          "Yamaha NVX"
+        ]
+      }
+    ],
+    image: "/products/accessories/aerox-thai-sport-rim/thumbnail.jpg",
+    images: [
+      "/products/accessories/aerox-thai-sport-rim/thumbnail.jpg",
+      "/products/accessories/aerox-thai-sport-rim/aerox-thai-black.jpg",
+      "/products/accessories/aerox-thai-sport-rim/aerox-thai-gold.jpg"
+    ],
     highlights: [
       "100% original genuine product",
-      "Direct plug & play installation",
-      "Sequential running-light animation",
-      "Road-legal brightness and beam pattern",
+      "Direct Plug & Play installation",
+      "No chassis modification needed",
+      "Lightweight, forged aluminium alloy"
     ],
     description: [
-      "Complete your NVX's Thai-style look with the AEROX THAI Custom LED Taillight. The sequential running-light animation adds unmistakable presence at night while staying road-legal, and installation is a direct plug-and-play swap for the factory unit.",
+      "Inspired by Thai street-racing culture, the Aerox Thai Sport Rim gives your Yamaha NVX an aggressive, low-profile stance alongside lightweight performance for rapid urban maneuvering."
     ],
     specs: [
-      { label: "Compatibility", value: "Direct fit for Yamaha NVX 155" },
-      { label: "Light Source", value: "High-Output LED, Sequential Animation" },
-      { label: "Installation", value: "Plug & Play factory connector" },
-      { label: "Finish", value: "Smoked / Clear lens options" },
-    ],
+      {
+        label: "Material",
+        value: "Forged Aluminium Alloy"
+      },
+      {
+        label: "Compatibility",
+        value: "Yamaha NVX (Black/Gold)"
+      },
+      {
+        label: "Inclusions",
+        value: "1x Pair Sport Rims (Front & Rear)"
+      },
+      {
+        label: "Available Colours",
+        value: "Black, Gold"
+      }
+    ]
   },
+  {
+    slug: "ppr-racing-cnc-fork-lay-yamaha-lc135",
+    accessoryType: "Fork Lay",
+    name: "PPR RACING CNC Fork Lay (Yamaha LC135)",
+    brand: "PPR",
+    price: 150,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    colours: [
+      "Black/Gold"
+    ],
+    compatibleModels: [
+      "Yamaha LC135"
+    ],
+    fitment: [
+      {
+        colour: "Black/Gold",
+        models: [
+          "Yamaha LC135"
+        ]
+      }
+    ],
+    image: "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/thumbnail.jpg",
+    images: [
+      "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/thumbnail.jpg",
+      "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/black-and-gold.jpg"
+    ],
+    highlights: [
+      "100% original genuine product backed by PPR Racing authentic quality standards",
+      "Direct factory unit replacement designed to match stock mounting points effortlessly",
+      "Improves high-speed stability by lowering your front profile and center of gravity",
+      "No cutting or permanent modifications required for installation"
+    ],
+    description: [
+      "Transform your street ride with the authentic PPR Racing CNC Fork Lay. 5 inches.",
+      "By bringing your front end closer to the road, it reduces wind resistance, eliminates unwanted front-wheel jitter at high speeds, and delivers sharper cornering feedback. Ideal for daily riders looking for a sleek, aggressive stance combined with factory-level reliability."
+    ],
+    specs: [
+      {
+        label: "Compatibility",
+        value: "Direct fit for Yamaha LC135"
+      },
+      {
+        label: "Lowering Spec",
+        value: "Lowered by 1.5 inches (Fixed CNC Lower Drop)"
+      },
+      {
+        label: "Material",
+        value: "CNC-Machined Billet Alloy Casing & Hardened Steel Tubes"
+      },
+      {
+        label: "Installation",
+        value: "Plug & Play (No cutting or chassis modification required)"
+      },
+      {
+        label: "Available Colours",
+        value: "Anodized Gold, Stealth Black"
+      }
+    ]
+  }
 ];

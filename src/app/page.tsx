@@ -6,7 +6,8 @@ import { BikeCard, ProductCard } from "@/components/cards";
 import HowItWorks from "@/components/HowItWorks";
 import BrandWall from "@/components/BrandWall";
 import ReviewsSection from "@/components/ReviewsSection";
-import Thumb, { type ThumbKind } from "@/components/Thumb";
+import ProductImage from "@/components/ProductImage";
+import { type ThumbKind } from "@/components/Thumb";
 import WaButton from "@/components/WaButton";
 import LineIcon, { IconBadge, type LineIconName } from "@/components/LineIcon";
 import { ArrowRight } from "@/components/icons";
@@ -63,24 +64,28 @@ const WHY_CHOOSE_US: { title: string; body: React.ReactNode; icon: LineIconName 
 ];
 
 /** R2 slide 5 — category cards with a See More CTA (Engine Oil removed per R3). */
-const CATEGORIES: { label: string; href: string; blurb: string; thumb: ThumbKind }[] = [
+/** Each card fronts a real product photo from its catalogue. */
+const CATEGORIES: { label: string; href: string; blurb: string; thumb: ThumbKind; image?: string }[] = [
   {
     label: "Motorcycles",
     href: "/motorcycles",
     blurb: "Authentic bikes from Malaysia's most trusted brands",
     thumb: "bike",
+    image: MOTORCYCLES.find((m) => m.image)?.image,
   },
   {
     label: "Rider Gear",
     href: "/rider-gear",
     blurb: "Helmets, helmet visors, helmet spoilers and raincoats",
     thumb: "helmet",
+    image: RIDER_GEAR.find((g) => g.gearType === "Helmet" && g.image)?.image,
   },
   {
     label: "Accessories",
     href: "/accessories",
     blurb: "Sport rims and fork lays",
     thumb: "rim",
+    image: ACCESSORIES.find((a) => a.image)?.image,
   },
 ];
 
@@ -220,9 +225,11 @@ export default function HomePage() {
               href={c.href}
               className="group overflow-hidden rounded-lg border border-line bg-paper transition-shadow hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
             >
-              <Thumb
+              <ProductImage
+                src={c.image}
                 kind={c.thumb}
-                label={c.label}
+                alt={c.label}
+                sizes="(min-width: 640px) 33vw, 100vw"
                 className="aspect-4/3 w-full transition-transform duration-500 group-hover:scale-[1.02]"
               />
               <div className="border-t border-line p-4 sm:p-5">
@@ -337,6 +344,7 @@ export default function HomePage() {
                   brand={p.brand}
                   price={p.price}
                   kind={p.thumb}
+                  image={p.image}
                   isNew
                 />
               ))}

@@ -4,9 +4,9 @@ import type { ListingItem } from "@/components/CatalogueClient";
 import { RIDER_GEAR, newestArrivals } from "@/lib/catalog";
 
 export const metadata: Metadata = {
-  title: "Rider Gear — Helmets, Gloves, Apparel & Rain Protection",
+  title: "Rider Gear — Helmets, Visors, Spoilers & Raincoats",
   description:
-    "SIRIM-approved helmets, riding gloves, T-shirts, raincoats and caps — 100% genuine stock. Filter by type, brand, size and price, then enquire on WhatsApp.",
+    "SIRIM-approved KYT, ARC and Yamaha helmets, replacement visors, spoilers and raincoats — 100% genuine stock. Filter by type, brand, size and price, then enquire on WhatsApp.",
   alternates: { canonical: "/rider-gear" },
 };
 
@@ -23,6 +23,7 @@ export default function RiderGearPage() {
       price: g.price,
       meta: g.sizes ? `Sizes: ${g.sizes.join(", ")}` : g.gearType,
       thumb: g.gearType === "Helmet" || g.gearType === "Helmet Visor" ? "helmet" : "gear",
+      image: g.image,
     },
     price: g.price,
     arrival: g.arrival,
@@ -37,7 +38,7 @@ export default function RiderGearPage() {
   return (
     <CatalogueShell
       title="Rider Gear"
-      blurb="Helmets, gloves, apparel and rain protection — genuine stock, SIRIM-certified where it matters, sized for Malaysian riders."
+      blurb="Helmets, helmet visors, spoilers and raincoats — genuine stock, SIRIM-certified where it matters, sized for Malaysian riders."
       path="/rider-gear"
       items={items}
       newestIds={newestArrivals(RIDER_GEAR, 3).map((g) => g.slug)}

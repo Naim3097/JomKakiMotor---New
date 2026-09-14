@@ -16,7 +16,7 @@ export const CATEGORY_META: Record<
   "rider-gear": {
     label: "Rider Gear",
     blurb:
-      "Helmets, gloves, apparel and rain protection — genuine stock, SIRIM-certified where it matters.",
+      "Helmets, helmet visors, spoilers and raincoats — genuine stock, SIRIM-certified where it matters.",
   },
   accessories: {
     label: "Accessories",

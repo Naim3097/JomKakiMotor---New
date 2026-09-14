@@ -18,6 +18,7 @@ export default function ProductEnquiry({
   stretch = false,
   note = true,
   cartItem,
+  fitment,
 }: {
   productName: string;
   path: string;
@@ -30,8 +31,41 @@ export default function ProductEnquiry({
   note?: boolean;
   /** When set, an Add to Cart button renders beside the WhatsApp CTA (R2) */
   cartItem?: CartProduct;
+  /**
+   * Colour → bike-model compatibility (rims). Adds a "Your Bike Model"
+   * picker ahead of Colour and limits colours to ones made for that model,
+   * so a buyer can never pair e.g. an Orange 3 Bintang with an NVX.
+   */
+  fitment?: { colour: string; models: string[] }[];
 }) {
   const [picks, setPicks] = useState<Record<string, string>>({});
+
+  const MODEL = "Your Bike Model";
+  const COLOUR = "Colour";
+  let groups = options;
+  if (fitment && fitment.length) {
+    const models = [...new Set(fitment.flatMap((f) => f.models))];
+    const chosenModel = picks[MODEL];
+    const colours = fitment
+      .filter((f) => !chosenModel || f.models.includes(chosenModel))
+      .map((f) => f.colour);
+    groups = [
+      { label: MODEL, values: models },
+      { label: COLOUR, values: colours },
+      ...options.filter((o) => o.label !== COLOUR),
+    ];
+  }
+
+  const pick = (label: string, value: string) =>
+    setPicks((prev) => {
+      const next = { ...prev, [label]: prev[label] === value ? "" : value };
+      // Changing the bike can invalidate the colour already chosen
+      if (fitment && label === MODEL && next[COLOUR]) {
+        const ok = fitment.find((f) => f.colour === next[COLOUR])?.models.includes(next[MODEL]);
+        if (next[MODEL] && !ok) next[COLOUR] = "";
+      }
+      return next;
+    });
 
   const extras = Object.entries(picks)
     .filter(([, v]) => v)
@@ -46,7 +80,7 @@ export default function ProductEnquiry({
 
   return (
     <div className={`flex flex-col gap-6 ${stretch ? "h-full" : ""}`}>
-      {options.map((opt) => (
+      {groups.map((opt) => (
         <div key={opt.label}>
           <p className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">
             {opt.label}
@@ -63,12 +97,7 @@ export default function ProductEnquiry({
                 <button
                   key={v}
                   type="button"
-                  onClick={() =>
-                    setPicks((prev) => ({
-                      ...prev,
-                      [opt.label]: prev[opt.label] === v ? "" : v,
-                    }))
-                  }
+                  onClick={() => pick(opt.label, v)}
                   aria-pressed={active}
                   className={`min-w-11 rounded-md border px-3.5 py-2 text-sm font-medium transition-colors ${
                     active

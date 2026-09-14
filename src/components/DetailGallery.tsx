@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Thumb, { type ThumbKind } from "./Thumb";
+import ProductImage from "./ProductImage";
+import { type ThumbKind } from "./Thumb";
 
 /**
  * Product picture gallery in a carousel structure (R2 slides 19 & 21).
@@ -30,16 +31,14 @@ export default function DetailGallery({
   return (
     <div>
       <div className="relative overflow-hidden rounded-lg">
-        {slides[active] ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={slides[active] as string}
-            alt={`${label} — photo ${active + 1}`}
-            className="aspect-4/3 w-full object-cover"
-          />
-        ) : (
-          <Thumb kind={kind} label={label} className="aspect-4/3 w-full" />
-        )}
+        <ProductImage
+          src={slides[active] ?? undefined}
+          kind={kind}
+          alt={`${label} — photo ${active + 1}`}
+          priority={active === 0}
+          sizes="(min-width: 1024px) 55vw, 100vw"
+          className="aspect-4/3 w-full"
+        />
 
         {slides.length > 1 && (
           <>
@@ -80,12 +79,13 @@ export default function DetailGallery({
                 i === active ? "border-brand" : "border-transparent hover:border-line"
               }`}
             >
-              {src ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={src} alt="" className="aspect-4/3 w-full object-cover" />
-              ) : (
-                <Thumb kind={kind} className="aspect-4/3 w-full" />
-              )}
+              <ProductImage
+                src={src ?? undefined}
+                kind={kind}
+                alt=""
+                sizes="120px"
+                className="aspect-4/3 w-full"
+              />
             </button>
           ))}
         </div>
