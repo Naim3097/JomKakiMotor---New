@@ -53,6 +53,7 @@ export default async function AccessoryPage(props: PageProps<"/accessories/[slug
       shareVariant={item.shareVariant}
       cta="WhatsApp to Order"
       images={item.images}
+      colourImages={item.colourImages}
       fitment={item.fitment}
       options={item.fitment ? [] : item.colours ? [{ label: "Colour", values: item.colours }] : []}
       related={related}

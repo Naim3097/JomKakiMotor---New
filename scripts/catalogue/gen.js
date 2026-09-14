@@ -126,13 +126,47 @@ async function fetchImages(folderUrl, category, slug) {
 }
 
 /** Map each colour option to a gallery image whose name starts with it. */
-function colourImages(colours, saved) {
+/** Words that describe a finish, not a hue — ignored when matching. */
+const FINISH_WORDS = new Set(["matte", "matt", "gloss", "glossy", "metallic", "pearl", "piano", "ocean", "neon", "racing", "royal", "special", "edition", "sky", "classic", "cosmic", "stellar", "icon", "crystal", "premium", "electric", "deep", "light"]);
+
+const unmatched = [];
+
+/**
+ * Map each colour option to a gallery photo. Photo names come from the
+ * client and drift from the sheet — prefixes ("r63-black"), spelling
+ * ("tricolour"), or a plain hue for a fancy name ("black" for "Piano
+ * Black") — so matching is progressively looser, and a lone leftover
+ * colour pairs with a lone leftover photo group. Anything still unmatched
+ * is reported at the end for the client to reconcile.
+ */
+function colourImages(colours, saved, productName) {
   const out = {};
+  const norm = (x) =>
+    x.toLowerCase().replace(/\s*\([^)]*\)$/, "").replace(/colour/g, "color").replace(/grey/g, "gray")
+      .replace(/[^a-z0-9]+/g, " ").replace(/\s*\d+$/, "").trim();
+  const gallery = saved.filter((s) => !/thumbnail/i.test(s.base));
+  // photo groups: "matador red 1/2" → "matador red"
+  const groups = new Map();
+  for (const s of gallery) { const g = norm(s.base); if (!groups.has(g)) groups.set(g, s); }
+  const taken = new Set();
+  const claim = (c, g) => { out[c] = groups.get(g).url; taken.add(g); };
+  const remaining = [];
   for (const c of colours) {
-    const hit = saved.find((s) => s.base.toLowerCase().replace(/\s*\d+$/, "") === c.toLowerCase()) ||
-      saved.find((s) => s.base.toLowerCase().startsWith(c.toLowerCase()));
-    if (hit) out[c] = hit.url;
+    const want = norm(c);
+    const hues = want.split(" ").filter((w) => w && !FINISH_WORDS.has(w));
+    const free = [...groups.keys()].filter((g) => !taken.has(g));
+    const g =
+      free.find((g) => g === want) ||
+      free.find((g) => g.startsWith(want) || g.endsWith(want)) ||
+      free.find((g) => g.split(" ").includes(want)) ||
+      free.find((g) => hues.length && hues.every((h) => g.split(" ").includes(h))) ||
+      free.find((g) => hues.length && g.split(" ").includes(hues[hues.length - 1]));
+    if (g) claim(c, g); else remaining.push(c);
   }
+  // One colour left and one photo group left → they belong together
+  const freeGroups = [...groups.keys()].filter((g) => !taken.has(g));
+  if (remaining.length === 1 && freeGroups.length === 1) claim(remaining[0], freeGroups[0]);
+  else if (remaining.length && gallery.length) unmatched.push(`${productName}: sheet says "${remaining.join(", ")}" but photos are named "${freeGroups.join(", ") || "(numbered only)"}"`);
   return Object.keys(out).length ? out : undefined;
 }
 
@@ -161,14 +195,15 @@ async function motorcycles() {
     const disp = specs.find((x) => x.label === "Displacement")?.value || "";
     const cc = parseFloat((c("H").match(/([\d.]+)\s*cc/i) || disp.match(/([\d.]+)/) || [])[1] || "0");
     console.log(`- ${name}`);
-    const { image, images } = await fetchImages(c("B"), "motorcycles", slug);
+    const { image, images, saved } = await fetchImages(c("B"), "motorcycles", slug);
+    const colours = splitList(fixTypos(c("I")));
     out.push({
       slug, brand, model, type: c("D"), cc, price: Math.round(parseFloat(c("E"))), deposit,
       monthly: Math.round(parseFloat(c("G"))), year,
-      colours: splitList(fixTypos(c("I"))),
+      colours,
       availability: "In Stock",
       arrival: `${year}-01-01`,
-      image, images,
+      image, images, colourImages: colourImages(colours, saved || [], name),
       highlights,
       description: paragraphs(c("J")),
       featureBlocks: featureBlocks(c("K")),
@@ -209,7 +244,7 @@ async function accessories() {
       slug, accessoryType, name, brand, price: Math.round(parseFloat(c("C"))),
       availability: "In Stock", arrival: "2026-09-01", shareVariant: "full",
       colours, compatibleModels, fitment,
-      image, images, colourImages: colourImages(colours, saved || []),
+      image, images, colourImages: colourImages(colours, saved || [], name),
       highlights: bullets(c("D")),
       description: paragraphs(c("F")),
       specs,
@@ -248,7 +283,7 @@ async function riderGear() {
         availability: "In Stock", arrival: "2026-09-01", shareVariant: "full",
         ...(sizes.length ? { sizes } : {}),
         ...(colours.length ? { colours } : {}),
-        image, images, colourImages: colourImages(colours, saved || []),
+        image, images, colourImages: colourImages(colours, saved || [], name),
         highlights: bullets(c(g.short)),
         description: paragraphs(c(g.long)),
         specs: specsBullets(c(g.spec), g.keys),
@@ -284,4 +319,7 @@ function emit(file, typeName, importLine, header, items) {
   emit("riderGear.ts", "RIDER_GEAR: GearItem[]", 'import type { GearItem } from "./types";', gen, gear);
   fs.writeFileSync(path.join(PUB, "manifest.json"), JSON.stringify(imageManifest, null, 2));
   console.log(`\nTotal: ${bikes.length} bikes, ${acc.length} accessories, ${gear.length} gear`);
+  if (unmatched.length) {
+    console.log(`\nColour names that do not match the photo names (ask the client):\n  - ${unmatched.join("\n  - ")}`);
+  }
 })().catch((e) => { console.error(e); process.exit(1); });

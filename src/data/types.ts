@@ -24,6 +24,8 @@ export interface Motorcycle {
   /** Primary (card) photo and the full gallery, under public/products/ */
   image?: string;
   images?: string[];
+  /** Colour option → the gallery photo showing that colour */
+  colourImages?: Record<string, string>;
   /**
    * Credit partners this model can be financed through. Omit for the full
    * FINANCING_PARTNERS list; Aveta is JCL & Chailease Berjaya only.

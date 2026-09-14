@@ -53,6 +53,7 @@ export default async function GearPage(props: PageProps<"/rider-gear/[slug]">) {
       shareVariant={item.shareVariant}
       cta="WhatsApp to Order"
       images={item.images}
+      colourImages={item.colourImages}
       options={[
         ...(item.sizes ? [{ label: "Size", values: item.sizes }] : []),
         ...(item.colours ? [{ label: "Colour", values: item.colours }] : []),

@@ -65,6 +65,7 @@ export default async function MotorcyclePage(props: PageProps<"/motorcycles/[slu
       isVehicle
       cc={bike.cc}
       images={bike.images}
+      colourImages={bike.colourImages}
       financingPartners={bike.financingPartners}
       cta="WhatsApp to Order"
       options={[{ label: "Colour", values: bike.colours }]}

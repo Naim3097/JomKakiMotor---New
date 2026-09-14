@@ -25,8 +25,19 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/yamaha-lc135-v8/lc135-v8-thumbnail.jpg",
     images: [
-      "/products/motorcycles/yamaha-lc135-v8/lc135-v8-thumbnail.jpg"
+      "/products/motorcycles/yamaha-lc135-v8/lc135-v8-thumbnail.jpg",
+      "/products/motorcycles/yamaha-lc135-v8/matador-red-1.jpg",
+      "/products/motorcycles/yamaha-lc135-v8/matador-red-2.jpg",
+      "/products/motorcycles/yamaha-lc135-v8/samba-green-1.jpg",
+      "/products/motorcycles/yamaha-lc135-v8/samba-green-2.jpg",
+      "/products/motorcycles/yamaha-lc135-v8/tank-white-1.jpg",
+      "/products/motorcycles/yamaha-lc135-v8/tank-white-2.jpg"
     ],
+    colourImages: {
+      "Matador Red": "/products/motorcycles/yamaha-lc135-v8/matador-red-1.jpg",
+      "Tank White": "/products/motorcycles/yamaha-lc135-v8/tank-white-1.jpg",
+      "Samba Green": "/products/motorcycles/yamaha-lc135-v8/samba-green-1.jpg"
+    },
     highlights: [
       "135cc liquid-cooled, SOHC, Euro 4 engine",
       "Flexible financing available via trusted credit partners",
@@ -111,8 +122,19 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/yamaha-r15m/r15m-thumbnail.jpg",
     images: [
-      "/products/motorcycles/yamaha-r15m/r15m-thumbnail.jpg"
+      "/products/motorcycles/yamaha-r15m/r15m-thumbnail.jpg",
+      "/products/motorcycles/yamaha-r15m/signature-black-1.jpg",
+      "/products/motorcycles/yamaha-r15m/signature-black-2.jpg",
+      "/products/motorcycles/yamaha-r15m/signature-black-3.jpg",
+      "/products/motorcycles/yamaha-r15m/signature-black-4.jpg",
+      "/products/motorcycles/yamaha-r15m/signature-black-5.jpg",
+      "/products/motorcycles/yamaha-r15m/signature-black-6.jpg",
+      "/products/motorcycles/yamaha-r15m/signature-black-7.jpg",
+      "/products/motorcycles/yamaha-r15m/signature-black-8.jpg"
     ],
+    colourImages: {
+      "Signature Black": "/products/motorcycles/yamaha-r15m/signature-black-1.jpg"
+    },
     highlights: [
       "155cc liquid-cooled, SOHC with VVA engine",
       "Flexible financing available via trusted credit partners",
@@ -199,8 +221,35 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/yamaha-ego-gear/ego-gear-thumbnail.jpg",
     images: [
-      "/products/motorcycles/yamaha-ego-gear/ego-gear-thumbnail.jpg"
+      "/products/motorcycles/yamaha-ego-gear/ego-gear-thumbnail.jpg",
+      "/products/motorcycles/yamaha-ego-gear/cyan-1.jpg",
+      "/products/motorcycles/yamaha-ego-gear/cyan-2.jpg",
+      "/products/motorcycles/yamaha-ego-gear/cyan-3.jpg",
+      "/products/motorcycles/yamaha-ego-gear/cyan-4.jpg",
+      "/products/motorcycles/yamaha-ego-gear/cyan-5.jpg",
+      "/products/motorcycles/yamaha-ego-gear/cyan-6.jpg",
+      "/products/motorcycles/yamaha-ego-gear/cyan-7.jpg",
+      "/products/motorcycles/yamaha-ego-gear/cyan-8.jpg",
+      "/products/motorcycles/yamaha-ego-gear/grey-1.jpg",
+      "/products/motorcycles/yamaha-ego-gear/grey-2.jpg",
+      "/products/motorcycles/yamaha-ego-gear/grey-3.jpg",
+      "/products/motorcycles/yamaha-ego-gear/grey-4.jpg",
+      "/products/motorcycles/yamaha-ego-gear/grey-5.jpg",
+      "/products/motorcycles/yamaha-ego-gear/grey-6.jpg",
+      "/products/motorcycles/yamaha-ego-gear/grey-7.jpg",
+      "/products/motorcycles/yamaha-ego-gear/grey-8.jpg",
+      "/products/motorcycles/yamaha-ego-gear/navy-blue-1.jpg",
+      "/products/motorcycles/yamaha-ego-gear/navy-blue-2.jpg",
+      "/products/motorcycles/yamaha-ego-gear/navy-blue-3.jpg",
+      "/products/motorcycles/yamaha-ego-gear/navy-blue-4.jpg",
+      "/products/motorcycles/yamaha-ego-gear/navy-blue-5.jpg",
+      "/products/motorcycles/yamaha-ego-gear/navy-blue-6.jpg",
+      "/products/motorcycles/yamaha-ego-gear/navy-blue-7.jpg",
+      "/products/motorcycles/yamaha-ego-gear/navy-blue-8.jpg"
     ],
+    colourImages: {
+      Blue: "/products/motorcycles/yamaha-ego-gear/navy-blue-1.jpg"
+    },
     highlights: [
       "125cc air-cooled, SOHC Blue Core engine",
       "Flexible financing available via trusted credit partners",
@@ -286,8 +335,20 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/yamaha-xmax-250/xmax-250-thumbnail.jpg",
     images: [
-      "/products/motorcycles/yamaha-xmax-250/xmax-250-thumbnail.jpg"
+      "/products/motorcycles/yamaha-xmax-250/xmax-250-thumbnail.jpg",
+      "/products/motorcycles/yamaha-xmax-250/ceramic-grey-1.jpg",
+      "/products/motorcycles/yamaha-xmax-250/ceramic-grey-2.jpg",
+      "/products/motorcycles/yamaha-xmax-250/ceramic-grey-3.jpg",
+      "/products/motorcycles/yamaha-xmax-250/ceramic-grey-4.jpg",
+      "/products/motorcycles/yamaha-xmax-250/icon-red-1.jpg",
+      "/products/motorcycles/yamaha-xmax-250/icon-red-2.jpg",
+      "/products/motorcycles/yamaha-xmax-250/icon-red-3.jpg",
+      "/products/motorcycles/yamaha-xmax-250/icon-red-4.jpg"
     ],
+    colourImages: {
+      "Ceramic Grey": "/products/motorcycles/yamaha-xmax-250/ceramic-grey-1.jpg",
+      "Icon Red": "/products/motorcycles/yamaha-xmax-250/icon-red-1.jpg"
+    },
     highlights: [
       "250cc liquid-cooled, SOHC, 4-valve engine",
       "Flexible financing available via trusted credit partners",
@@ -375,8 +436,45 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/honda-wave-alpha/wave-alpha-thumbnail.jpg",
     images: [
-      "/products/motorcycles/honda-wave-alpha/wave-alpha-thumbnail.jpg"
+      "/products/motorcycles/honda-wave-alpha/wave-alpha-thumbnail.jpg",
+      "/products/motorcycles/honda-wave-alpha/black-1.jpg",
+      "/products/motorcycles/honda-wave-alpha/black-2.jpg",
+      "/products/motorcycles/honda-wave-alpha/black-3.jpg",
+      "/products/motorcycles/honda-wave-alpha/black-4.jpg",
+      "/products/motorcycles/honda-wave-alpha/black-5.jpg",
+      "/products/motorcycles/honda-wave-alpha/black-6.jpg",
+      "/products/motorcycles/honda-wave-alpha/black-7.jpg",
+      "/products/motorcycles/honda-wave-alpha/blue-1.jpg",
+      "/products/motorcycles/honda-wave-alpha/blue-2.jpg",
+      "/products/motorcycles/honda-wave-alpha/blue-3.jpg",
+      "/products/motorcycles/honda-wave-alpha/blue-4.jpg",
+      "/products/motorcycles/honda-wave-alpha/blue-5.jpg",
+      "/products/motorcycles/honda-wave-alpha/blue-6.jpg",
+      "/products/motorcycles/honda-wave-alpha/blue-7.jpg",
+      "/products/motorcycles/honda-wave-alpha/blue-8.jpg",
+      "/products/motorcycles/honda-wave-alpha/grey-1.jpg",
+      "/products/motorcycles/honda-wave-alpha/grey-2.jpg",
+      "/products/motorcycles/honda-wave-alpha/grey-3.jpg",
+      "/products/motorcycles/honda-wave-alpha/grey-4.jpg",
+      "/products/motorcycles/honda-wave-alpha/grey-5.jpg",
+      "/products/motorcycles/honda-wave-alpha/grey-6.jpg",
+      "/products/motorcycles/honda-wave-alpha/grey-7.jpg",
+      "/products/motorcycles/honda-wave-alpha/grey-8.jpg",
+      "/products/motorcycles/honda-wave-alpha/red-1.jpg",
+      "/products/motorcycles/honda-wave-alpha/red-2.jpg",
+      "/products/motorcycles/honda-wave-alpha/red-3.jpg",
+      "/products/motorcycles/honda-wave-alpha/red-4.jpg",
+      "/products/motorcycles/honda-wave-alpha/red-5.jpg",
+      "/products/motorcycles/honda-wave-alpha/red-6.jpg",
+      "/products/motorcycles/honda-wave-alpha/red-7.jpg",
+      "/products/motorcycles/honda-wave-alpha/red-8.jpg"
     ],
+    colourImages: {
+      Blue: "/products/motorcycles/honda-wave-alpha/blue-1.jpg",
+      Red: "/products/motorcycles/honda-wave-alpha/red-1.jpg",
+      Black: "/products/motorcycles/honda-wave-alpha/black-1.jpg",
+      Silver: "/products/motorcycles/honda-wave-alpha/grey-1.jpg"
+    },
     highlights: [
       "109.2cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -462,8 +560,28 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/honda-vario-125-street/vario-125-street-thumbnail.jpg",
     images: [
-      "/products/motorcycles/honda-vario-125-street/vario-125-street-thumbnail.jpg"
+      "/products/motorcycles/honda-vario-125-street/vario-125-street-thumbnail.jpg",
+      "/products/motorcycles/honda-vario-125-street/purple-1.jpg",
+      "/products/motorcycles/honda-vario-125-street/purple-2.jpg",
+      "/products/motorcycles/honda-vario-125-street/purple-3.jpg",
+      "/products/motorcycles/honda-vario-125-street/purple-4.jpg",
+      "/products/motorcycles/honda-vario-125-street/purple-5.jpg",
+      "/products/motorcycles/honda-vario-125-street/purple-6.jpg",
+      "/products/motorcycles/honda-vario-125-street/purple-7.jpg",
+      "/products/motorcycles/honda-vario-125-street/purple-8.jpg",
+      "/products/motorcycles/honda-vario-125-street/white-1.jpg",
+      "/products/motorcycles/honda-vario-125-street/white-2.jpg",
+      "/products/motorcycles/honda-vario-125-street/white-3.jpg",
+      "/products/motorcycles/honda-vario-125-street/white-4.jpg",
+      "/products/motorcycles/honda-vario-125-street/white-5.jpg",
+      "/products/motorcycles/honda-vario-125-street/white-6.jpg",
+      "/products/motorcycles/honda-vario-125-street/white-7.jpg",
+      "/products/motorcycles/honda-vario-125-street/white-8.jpg"
     ],
+    colourImages: {
+      Purple: "/products/motorcycles/honda-vario-125-street/purple-1.jpg",
+      White: "/products/motorcycles/honda-vario-125-street/white-1.jpg"
+    },
     highlights: [
       "124.9 liquid-cooled, SOHC, eSP engine",
       "Flexible financing available via trusted credit partners",
@@ -549,8 +667,28 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/honda-adv160-roadsync/adv160-roadsync-thumbnail.jpg",
     images: [
-      "/products/motorcycles/honda-adv160-roadsync/adv160-roadsync-thumbnail.jpg"
+      "/products/motorcycles/honda-adv160-roadsync/adv160-roadsync-thumbnail.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/brown-1.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/brown-2.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/brown-3.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/brown-4.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/brown-5.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/brown-6.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/brown-7.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/brown-8.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/matte-grey-1.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/matte-grey-2.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/matte-grey-3.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/matte-grey-4.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/matte-grey-5.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/matte-grey-6.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/matte-grey-7.jpg",
+      "/products/motorcycles/honda-adv160-roadsync/matte-grey-8.jpg"
     ],
+    colourImages: {
+      "Matte Grey": "/products/motorcycles/honda-adv160-roadsync/matte-grey-1.jpg",
+      Brown: "/products/motorcycles/honda-adv160-roadsync/brown-1.jpg"
+    },
     highlights: [
       "156.9cc liquid-cooled, 4-valve eSP+ engine",
       "Flexible financing available via trusted credit partners",
@@ -633,8 +771,37 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/honda-cbr150r/cbr150r-thumbnail.jpg",
     images: [
-      "/products/motorcycles/honda-cbr150r/cbr150r-thumbnail.jpg"
+      "/products/motorcycles/honda-cbr150r/cbr150r-thumbnail.jpg",
+      "/products/motorcycles/honda-cbr150r/black-1.jpg",
+      "/products/motorcycles/honda-cbr150r/black-2.jpg",
+      "/products/motorcycles/honda-cbr150r/black-3.jpg",
+      "/products/motorcycles/honda-cbr150r/black-4.jpg",
+      "/products/motorcycles/honda-cbr150r/black-5.jpg",
+      "/products/motorcycles/honda-cbr150r/black-6.jpg",
+      "/products/motorcycles/honda-cbr150r/black-7.jpg",
+      "/products/motorcycles/honda-cbr150r/black-8.jpg",
+      "/products/motorcycles/honda-cbr150r/silver-1.jpg",
+      "/products/motorcycles/honda-cbr150r/silver-2.jpg",
+      "/products/motorcycles/honda-cbr150r/silver-3.jpg",
+      "/products/motorcycles/honda-cbr150r/silver-4.jpg",
+      "/products/motorcycles/honda-cbr150r/silver-5.jpg",
+      "/products/motorcycles/honda-cbr150r/silver-6.jpg",
+      "/products/motorcycles/honda-cbr150r/silver-7.jpg",
+      "/products/motorcycles/honda-cbr150r/silver-8.jpg",
+      "/products/motorcycles/honda-cbr150r/tricolour-1.jpg",
+      "/products/motorcycles/honda-cbr150r/tricolour-2.jpg",
+      "/products/motorcycles/honda-cbr150r/tricolour-3.jpg",
+      "/products/motorcycles/honda-cbr150r/tricolour-4.jpg",
+      "/products/motorcycles/honda-cbr150r/tricolour-5.jpg",
+      "/products/motorcycles/honda-cbr150r/tricolour-6.jpg",
+      "/products/motorcycles/honda-cbr150r/tricolour-7.jpg",
+      "/products/motorcycles/honda-cbr150r/tricolour-8.jpg"
     ],
+    colourImages: {
+      Black: "/products/motorcycles/honda-cbr150r/black-1.jpg",
+      Silver: "/products/motorcycles/honda-cbr150r/silver-1.jpg",
+      Tricolor: "/products/motorcycles/honda-cbr150r/tricolour-1.jpg"
+    },
     highlights: [
       "149.2cc liquid-cooled, DOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -720,8 +887,18 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/modenas-elit-150s/elit-150s-thumbnail.jpg",
     images: [
-      "/products/motorcycles/modenas-elit-150s/elit-150s-thumbnail.jpg"
+      "/products/motorcycles/modenas-elit-150s/elit-150s-thumbnail.jpg",
+      "/products/motorcycles/modenas-elit-150s/quantum-grey-1.jpg",
+      "/products/motorcycles/modenas-elit-150s/quantum-grey-2.jpg",
+      "/products/motorcycles/modenas-elit-150s/quantum-grey-3.jpg",
+      "/products/motorcycles/modenas-elit-150s/riviera-blue-1.jpg",
+      "/products/motorcycles/modenas-elit-150s/riviera-blue-2.jpg",
+      "/products/motorcycles/modenas-elit-150s/riviera-blue-3.jpg"
     ],
+    colourImages: {
+      "Riviera Blue": "/products/motorcycles/modenas-elit-150s/riviera-blue-1.jpg",
+      "Quantum Grey": "/products/motorcycles/modenas-elit-150s/quantum-grey-1.jpg"
+    },
     highlights: [
       "149cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -808,8 +985,37 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/modenas-z15gt/z15gt-thumbnail.jpg",
     images: [
-      "/products/motorcycles/modenas-z15gt/z15gt-thumbnail.jpg"
+      "/products/motorcycles/modenas-z15gt/z15gt-thumbnail.jpg",
+      "/products/motorcycles/modenas-z15gt/graphite-grey-1.jpg",
+      "/products/motorcycles/modenas-z15gt/graphite-grey-2.jpg",
+      "/products/motorcycles/modenas-z15gt/graphite-grey-3.jpg",
+      "/products/motorcycles/modenas-z15gt/graphite-grey-4.jpg",
+      "/products/motorcycles/modenas-z15gt/graphite-grey-5.jpg",
+      "/products/motorcycles/modenas-z15gt/graphite-grey-6.jpg",
+      "/products/motorcycles/modenas-z15gt/graphite-grey-7.jpg",
+      "/products/motorcycles/modenas-z15gt/graphite-grey-8.jpg",
+      "/products/motorcycles/modenas-z15gt/nardo-grey-1.jpg",
+      "/products/motorcycles/modenas-z15gt/nardo-grey-2.jpg",
+      "/products/motorcycles/modenas-z15gt/nardo-grey-3.jpg",
+      "/products/motorcycles/modenas-z15gt/nardo-grey-4.jpg",
+      "/products/motorcycles/modenas-z15gt/nardo-grey-5.jpg",
+      "/products/motorcycles/modenas-z15gt/nardo-grey-6.jpg",
+      "/products/motorcycles/modenas-z15gt/nardo-grey-7.jpg",
+      "/products/motorcycles/modenas-z15gt/nardo-grey-8.jpg",
+      "/products/motorcycles/modenas-z15gt/rosso-red-1.jpg",
+      "/products/motorcycles/modenas-z15gt/rosso-red-2.jpg",
+      "/products/motorcycles/modenas-z15gt/rosso-red-3.jpg",
+      "/products/motorcycles/modenas-z15gt/rosso-red-4.jpg",
+      "/products/motorcycles/modenas-z15gt/rosso-red-5.jpg",
+      "/products/motorcycles/modenas-z15gt/rosso-red-6.jpg",
+      "/products/motorcycles/modenas-z15gt/rosso-red-7.jpg",
+      "/products/motorcycles/modenas-z15gt/rosso-red-8.jpg"
     ],
+    colourImages: {
+      "Graphite Grey": "/products/motorcycles/modenas-z15gt/graphite-grey-1.jpg",
+      "Nardo Grey": "/products/motorcycles/modenas-z15gt/nardo-grey-1.jpg",
+      "Rosso Red": "/products/motorcycles/modenas-z15gt/rosso-red-1.jpg"
+    },
     highlights: [
       "149.5cc liquid-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -892,8 +1098,30 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2023-01-01",
     image: "/products/motorcycles/modenas-kriss-110-fi/kriss-110-fi-thumbnail.jpg",
     images: [
-      "/products/motorcycles/modenas-kriss-110-fi/kriss-110-fi-thumbnail.jpg"
+      "/products/motorcycles/modenas-kriss-110-fi/kriss-110-fi-thumbnail.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-1.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-2.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-3.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-4.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-5.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-6.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/glorious-black-1.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/glorious-black-2.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/glorious-black-3.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/glorious-black-4.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/glorious-black-5.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/glorious-black-6.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/vigorous-blue-1.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/vigorous-blue-2.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/vigorous-blue-3.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/vigorous-blue-4.jpg",
+      "/products/motorcycles/modenas-kriss-110-fi/vigorous-blue-5.jpg"
     ],
+    colourImages: {
+      "Vigorous Blue": "/products/motorcycles/modenas-kriss-110-fi/vigorous-blue-1.jpg",
+      "Caribbean Cyan": "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-1.jpg",
+      "Glorious Black": "/products/motorcycles/modenas-kriss-110-fi/glorious-black-1.jpg"
+    },
     highlights: [
       "107cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -980,8 +1208,16 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/modenas-karisma-ex-125/karisma-ex-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/modenas-karisma-ex-125/karisma-ex-125-thumbnail.jpg"
+      "/products/motorcycles/modenas-karisma-ex-125/karisma-ex-125-thumbnail.jpg",
+      "/products/motorcycles/modenas-karisma-ex-125/caribbean-cyan.jpg",
+      "/products/motorcycles/modenas-karisma-ex-125/mint-green.jpg",
+      "/products/motorcycles/modenas-karisma-ex-125/passionate-red.jpg"
     ],
+    colourImages: {
+      "Mint Green": "/products/motorcycles/modenas-karisma-ex-125/mint-green.jpg",
+      "Passionate Red": "/products/motorcycles/modenas-karisma-ex-125/passionate-red.jpg",
+      "Caribbean Cyan": "/products/motorcycles/modenas-karisma-ex-125/caribbean-cyan.jpg"
+    },
     highlights: [
       "125cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1068,8 +1304,19 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/keeway-xdv-180-evo/xdv-180-evo-thumbnail.jpg",
     images: [
-      "/products/motorcycles/keeway-xdv-180-evo/xdv-180-evo-thumbnail.jpg"
+      "/products/motorcycles/keeway-xdv-180-evo/xdv-180-evo-thumbnail.jpg",
+      "/products/motorcycles/keeway-xdv-180-evo/black-1.jpg",
+      "/products/motorcycles/keeway-xdv-180-evo/black-2.jpg",
+      "/products/motorcycles/keeway-xdv-180-evo/grey-1.jpg",
+      "/products/motorcycles/keeway-xdv-180-evo/grey-2.jpg",
+      "/products/motorcycles/keeway-xdv-180-evo/white-1.jpg",
+      "/products/motorcycles/keeway-xdv-180-evo/white-2.jpg"
     ],
+    colourImages: {
+      Black: "/products/motorcycles/keeway-xdv-180-evo/black-1.jpg",
+      Grey: "/products/motorcycles/keeway-xdv-180-evo/grey-1.jpg",
+      White: "/products/motorcycles/keeway-xdv-180-evo/white-1.jpg"
+    },
     highlights: [
       "174cc liquid-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1152,8 +1399,19 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2024-01-01",
     image: "/products/motorcycles/keeway-cafe-racer-152/cafe-racer-152-thumbnail.jpg",
     images: [
-      "/products/motorcycles/keeway-cafe-racer-152/cafe-racer-152-thumbnail.jpg"
+      "/products/motorcycles/keeway-cafe-racer-152/cafe-racer-152-thumbnail.jpg",
+      "/products/motorcycles/keeway-cafe-racer-152/black-1.jpg",
+      "/products/motorcycles/keeway-cafe-racer-152/black-2.jpg",
+      "/products/motorcycles/keeway-cafe-racer-152/green-1.jpg",
+      "/products/motorcycles/keeway-cafe-racer-152/green-2.jpg",
+      "/products/motorcycles/keeway-cafe-racer-152/red-1.jpg",
+      "/products/motorcycles/keeway-cafe-racer-152/red-2.jpg"
     ],
+    colourImages: {
+      Black: "/products/motorcycles/keeway-cafe-racer-152/black-1.jpg",
+      Red: "/products/motorcycles/keeway-cafe-racer-152/red-1.jpg",
+      Green: "/products/motorcycles/keeway-cafe-racer-152/green-1.jpg"
+    },
     highlights: [
       "149cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1243,8 +1501,22 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/qj-motor-ax-200s/ax-200s.jpg",
     images: [
-      "/products/motorcycles/qj-motor-ax-200s/ax-200s.jpg"
+      "/products/motorcycles/qj-motor-ax-200s/ax-200s.jpg",
+      "/products/motorcycles/qj-motor-ax-200s/chameleon-green.jpg",
+      "/products/motorcycles/qj-motor-ax-200s/grey.jpg",
+      "/products/motorcycles/qj-motor-ax-200s/matte-black.jpg",
+      "/products/motorcycles/qj-motor-ax-200s/moon-blue.jpg",
+      "/products/motorcycles/qj-motor-ax-200s/sand-brown.jpg",
+      "/products/motorcycles/qj-motor-ax-200s/white.jpg"
     ],
+    colourImages: {
+      Grey: "/products/motorcycles/qj-motor-ax-200s/grey.jpg",
+      White: "/products/motorcycles/qj-motor-ax-200s/white.jpg",
+      "Matte Black": "/products/motorcycles/qj-motor-ax-200s/matte-black.jpg",
+      "Chameleon Green": "/products/motorcycles/qj-motor-ax-200s/chameleon-green.jpg",
+      "Sand Brown": "/products/motorcycles/qj-motor-ax-200s/sand-brown.jpg",
+      "Moon Blue": "/products/motorcycles/qj-motor-ax-200s/moon-blue.jpg"
+    },
     highlights: [
       "175cc liquid-cooled engine",
       "Flexible financing available via trusted credit partners",
@@ -1327,8 +1599,19 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/sym-husky-200/husky-200-thumbnail.jpg",
     images: [
-      "/products/motorcycles/sym-husky-200/husky-200-thumbnail.jpg"
+      "/products/motorcycles/sym-husky-200/husky-200-thumbnail.jpg",
+      "/products/motorcycles/sym-husky-200/glossy-green-1.jpg",
+      "/products/motorcycles/sym-husky-200/glossy-green-2.jpg",
+      "/products/motorcycles/sym-husky-200/pearl-white-1.jpg",
+      "/products/motorcycles/sym-husky-200/pearl-white-2.jpg",
+      "/products/motorcycles/sym-husky-200/silk-purple-1.jpg",
+      "/products/motorcycles/sym-husky-200/silk-purple-2.jpg"
     ],
+    colourImages: {
+      "Glossy Green": "/products/motorcycles/sym-husky-200/glossy-green-1.jpg",
+      "Silk Purple": "/products/motorcycles/sym-husky-200/silk-purple-1.jpg",
+      "Pearl White": "/products/motorcycles/sym-husky-200/pearl-white-1.jpg"
+    },
     highlights: [
       "175cc liquid-cooled, 4-stroke, single-cylinder engine",
       "Flexible financing available via trusted credit partners,",
@@ -1411,8 +1694,46 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2022-01-01",
     image: "/products/motorcycles/sym-benelli-panarea-125/benelli-panarea-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/sym-benelli-panarea-125/benelli-panarea-125-thumbnail.jpg"
+      "/products/motorcycles/sym-benelli-panarea-125/benelli-panarea-125-thumbnail.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/black-1.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/black-2.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/black-3.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/black-4.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/black-5.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/black-6.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/black-7.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/black-8.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/red-1.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/red-2.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/red-3.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/red-4.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/red-5.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/red-6.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/red-7.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/red-8.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/white-1.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/white-2.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/white-3.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/white-4.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/white-5.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/white-6.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/white-7.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/white-8.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/yellow-1.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/yellow-2.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/yellow-3.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/yellow-4.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/yellow-5.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/yellow-6.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/yellow-7.jpg",
+      "/products/motorcycles/sym-benelli-panarea-125/yellow-8.jpg"
     ],
+    colourImages: {
+      Black: "/products/motorcycles/sym-benelli-panarea-125/black-1.jpg",
+      Yellow: "/products/motorcycles/sym-benelli-panarea-125/yellow-1.jpg",
+      Red: "/products/motorcycles/sym-benelli-panarea-125/red-1.jpg",
+      White: "/products/motorcycles/sym-benelli-panarea-125/white-1.jpg"
+    },
     highlights: [
       "124cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1499,8 +1820,16 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2020-01-01",
     image: "/products/motorcycles/sym-vf3i-185/vf3i-185-thumbnail.jpg",
     images: [
-      "/products/motorcycles/sym-vf3i-185/vf3i-185-thumbnail.jpg"
+      "/products/motorcycles/sym-vf3i-185/vf3i-185-thumbnail.jpg",
+      "/products/motorcycles/sym-vf3i-185/blue.jpg",
+      "/products/motorcycles/sym-vf3i-185/gold.jpg",
+      "/products/motorcycles/sym-vf3i-185/red.jpg"
     ],
+    colourImages: {
+      Red: "/products/motorcycles/sym-vf3i-185/red.jpg",
+      Blue: "/products/motorcycles/sym-vf3i-185/blue.jpg",
+      Gold: "/products/motorcycles/sym-vf3i-185/gold.jpg"
+    },
     highlights: [
       "183cc liquid-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1583,8 +1912,19 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2023-01-01",
     image: "/products/motorcycles/sym-tuscany-150/tuscany-150-thumbnail.jpg",
     images: [
-      "/products/motorcycles/sym-tuscany-150/tuscany-150-thumbnail.jpg"
+      "/products/motorcycles/sym-tuscany-150/tuscany-150-thumbnail.jpg",
+      "/products/motorcycles/sym-tuscany-150/grey-1.jpg",
+      "/products/motorcycles/sym-tuscany-150/grey-2.jpg",
+      "/products/motorcycles/sym-tuscany-150/red-1.jpg",
+      "/products/motorcycles/sym-tuscany-150/red-2.jpg",
+      "/products/motorcycles/sym-tuscany-150/white-1.jpg",
+      "/products/motorcycles/sym-tuscany-150/white-2.jpg"
     ],
+    colourImages: {
+      Red: "/products/motorcycles/sym-tuscany-150/red-1.jpg",
+      White: "/products/motorcycles/sym-tuscany-150/white-1.jpg",
+      Grey: "/products/motorcycles/sym-tuscany-150/grey-1.jpg"
+    },
     highlights: [
       "149.6cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1671,8 +2011,19 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/wmoto-nx150s/nx150s-thumbnail.jpg",
     images: [
-      "/products/motorcycles/wmoto-nx150s/nx150s-thumbnail.jpg"
+      "/products/motorcycles/wmoto-nx150s/nx150s-thumbnail.jpg",
+      "/products/motorcycles/wmoto-nx150s/glacier-grey-1.jpg",
+      "/products/motorcycles/wmoto-nx150s/glacier-grey-2.jpg",
+      "/products/motorcycles/wmoto-nx150s/grind-green-1.jpg",
+      "/products/motorcycles/wmoto-nx150s/grind-green-2.jpg",
+      "/products/motorcycles/wmoto-nx150s/lava-brown-1.jpg",
+      "/products/motorcycles/wmoto-nx150s/lava-brown-2.jpg"
     ],
+    colourImages: {
+      "Lava Brown": "/products/motorcycles/wmoto-nx150s/lava-brown-1.jpg",
+      "Grind Green": "/products/motorcycles/wmoto-nx150s/grind-green-1.jpg",
+      "Glacier Grey": "/products/motorcycles/wmoto-nx150s/glacier-grey-1.jpg"
+    },
     highlights: [
       "149.6cc liquid-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1757,8 +2108,13 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2023-01-01",
     image: "/products/motorcycles/cfmoto-xo-papio-125/xo-papio-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/cfmoto-xo-papio-125/xo-papio-125-thumbnail.jpg"
+      "/products/motorcycles/cfmoto-xo-papio-125/xo-papio-125-thumbnail.jpg",
+      "/products/motorcycles/cfmoto-xo-papio-125/white-1.jpg",
+      "/products/motorcycles/cfmoto-xo-papio-125/white-2.jpg"
     ],
+    colourImages: {
+      White: "/products/motorcycles/cfmoto-xo-papio-125/white-1.jpg"
+    },
     highlights: [
       "126cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1841,8 +2197,16 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2020-01-01",
     image: "/products/motorcycles/aveta-dy-90/aveta-dy-90-thumbnail.jpg",
     images: [
-      "/products/motorcycles/aveta-dy-90/aveta-dy-90-thumbnail.jpg"
+      "/products/motorcycles/aveta-dy-90/aveta-dy-90-thumbnail.jpg",
+      "/products/motorcycles/aveta-dy-90/black.jpg",
+      "/products/motorcycles/aveta-dy-90/blue.jpg",
+      "/products/motorcycles/aveta-dy-90/red.jpg"
     ],
+    colourImages: {
+      Red: "/products/motorcycles/aveta-dy-90/red.jpg",
+      Blue: "/products/motorcycles/aveta-dy-90/blue.jpg",
+      Black: "/products/motorcycles/aveta-dy-90/black.jpg"
+    },
     highlights: [
       "90cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -1925,8 +2289,16 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2023-01-01",
     image: "/products/motorcycles/aveta-ranger-max-explorer-130/aveta-ranger-max-explorer-130-thumbnail.jpg",
     images: [
-      "/products/motorcycles/aveta-ranger-max-explorer-130/aveta-ranger-max-explorer-130-thumbnail.jpg"
+      "/products/motorcycles/aveta-ranger-max-explorer-130/aveta-ranger-max-explorer-130-thumbnail.jpg",
+      "/products/motorcycles/aveta-ranger-max-explorer-130/iron-grey.jpg",
+      "/products/motorcycles/aveta-ranger-max-explorer-130/sierra-yellow.jpg",
+      "/products/motorcycles/aveta-ranger-max-explorer-130/storm-blue.jpg"
     ],
+    colourImages: {
+      "Storm Blue": "/products/motorcycles/aveta-ranger-max-explorer-130/storm-blue.jpg",
+      "Iron Grey": "/products/motorcycles/aveta-ranger-max-explorer-130/iron-grey.jpg",
+      "Sierra Yellow": "/products/motorcycles/aveta-ranger-max-explorer-130/sierra-yellow.jpg"
+    },
     highlights: [
       "127cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -2017,8 +2389,16 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/aveta-nova-250/aveta-nova-250-thumbnail.jpg",
     images: [
-      "/products/motorcycles/aveta-nova-250/aveta-nova-250-thumbnail.jpg"
+      "/products/motorcycles/aveta-nova-250/aveta-nova-250-thumbnail.jpg",
+      "/products/motorcycles/aveta-nova-250/emerald-green.jpg",
+      "/products/motorcycles/aveta-nova-250/metro-green.jpg",
+      "/products/motorcycles/aveta-nova-250/titan-red.jpg"
     ],
+    colourImages: {
+      "Titan Red": "/products/motorcycles/aveta-nova-250/titan-red.jpg",
+      "Emerald Green": "/products/motorcycles/aveta-nova-250/emerald-green.jpg",
+      "Metro Grey": "/products/motorcycles/aveta-nova-250/metro-green.jpg"
+    },
     highlights: [
       "244cc liquid-cooled, DOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -2109,8 +2489,16 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/aveta-nova-125/aveta-nova-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/aveta-nova-125/aveta-nova-125-thumbnail.jpg"
+      "/products/motorcycles/aveta-nova-125/aveta-nova-125-thumbnail.jpg",
+      "/products/motorcycles/aveta-nova-125/blue-lemon.jpg",
+      "/products/motorcycles/aveta-nova-125/grey-lemon.jpg",
+      "/products/motorcycles/aveta-nova-125/nano-grey.jpg"
     ],
+    colourImages: {
+      "Nano Grey": "/products/motorcycles/aveta-nova-125/nano-grey.jpg",
+      "Blue Lemon": "/products/motorcycles/aveta-nova-125/blue-lemon.jpg",
+      "Grey Lemon": "/products/motorcycles/aveta-nova-125/grey-lemon.jpg"
+    },
     highlights: [
       "125cc air-cooled, SOHC engine",
       "Flexible financing available via trusted credit partners",
@@ -2197,8 +2585,37 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/moda-moca-110/moca-110-thumbnail.jpg",
     images: [
-      "/products/motorcycles/moda-moca-110/moca-110-thumbnail.jpg"
+      "/products/motorcycles/moda-moca-110/moca-110-thumbnail.jpg",
+      "/products/motorcycles/moda-moca-110/black-1.jpg",
+      "/products/motorcycles/moda-moca-110/black-2.jpg",
+      "/products/motorcycles/moda-moca-110/black-3.jpg",
+      "/products/motorcycles/moda-moca-110/black-4.jpg",
+      "/products/motorcycles/moda-moca-110/black-5.jpg",
+      "/products/motorcycles/moda-moca-110/black-6.jpg",
+      "/products/motorcycles/moda-moca-110/black-7.jpg",
+      "/products/motorcycles/moda-moca-110/black-8.jpg",
+      "/products/motorcycles/moda-moca-110/blue-1.jpg",
+      "/products/motorcycles/moda-moca-110/blue-2.jpg",
+      "/products/motorcycles/moda-moca-110/blue-3.jpg",
+      "/products/motorcycles/moda-moca-110/blue-4.jpg",
+      "/products/motorcycles/moda-moca-110/blue-5.jpg",
+      "/products/motorcycles/moda-moca-110/blue-6.jpg",
+      "/products/motorcycles/moda-moca-110/blue-7.jpg",
+      "/products/motorcycles/moda-moca-110/blue-8.jpg",
+      "/products/motorcycles/moda-moca-110/orange-1.jpg",
+      "/products/motorcycles/moda-moca-110/orange-2.jpg",
+      "/products/motorcycles/moda-moca-110/orange-3.jpg",
+      "/products/motorcycles/moda-moca-110/orange-4.jpg",
+      "/products/motorcycles/moda-moca-110/orange-5.jpg",
+      "/products/motorcycles/moda-moca-110/orange-6.jpg",
+      "/products/motorcycles/moda-moca-110/orange-7.jpg",
+      "/products/motorcycles/moda-moca-110/orange-8.jpg"
     ],
+    colourImages: {
+      "Piano Black": "/products/motorcycles/moda-moca-110/black-1.jpg",
+      "Ocean Blue": "/products/motorcycles/moda-moca-110/blue-1.jpg",
+      "Neon Orange": "/products/motorcycles/moda-moca-110/orange-1.jpg"
+    },
     highlights: [
       "108cc air-cooled, SOHC, single-cylinder engine",
       "Flexible financing available via trusted credit partners,",

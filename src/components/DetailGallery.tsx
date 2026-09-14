@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import ProductImage from "./ProductImage";
+import { useProductMedia } from "./ProductMedia";
 import { type ThumbKind } from "./Thumb";
 
 /**
@@ -19,8 +20,20 @@ export default function DetailGallery({
   images?: string[];
 }) {
   // Three placeholder frames stand in for the main/side/detail shots.
-  const slides = images.length > 0 ? images : [null, null, null];
+  const slides = useMemo<(string | null)[]>(
+    () => (images.length > 0 ? images : [null, null, null]),
+    [images]
+  );
   const [active, setActive] = useState(0);
+
+  // Jump to the photo for whichever colour the buyer picks
+  const { focus } = useProductMedia();
+  useEffect(() => {
+    if (!focus) return;
+    const i = slides.indexOf(focus);
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- syncing to an external selection
+    if (i >= 0) setActive(i);
+  }, [focus, slides]);
 
   const go = (next: number) =>
     setActive((next + slides.length) % slides.length);

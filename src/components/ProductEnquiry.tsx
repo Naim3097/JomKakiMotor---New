@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import AddToCartButton, { type CartProduct } from "./AddToCartButton";
+import { useProductMedia } from "./ProductMedia";
 import WaButton from "./WaButton";
 import { productEnquiry } from "@/lib/whatsapp";
 
@@ -19,6 +20,7 @@ export default function ProductEnquiry({
   note = true,
   cartItem,
   fitment,
+  colourImages,
 }: {
   productName: string;
   path: string;
@@ -37,8 +39,11 @@ export default function ProductEnquiry({
    * so a buyer can never pair e.g. an Orange 3 Bintang with an NVX.
    */
   fitment?: { colour: string; models: string[] }[];
+  /** Colour option → gallery photo; picking a colour shows that photo */
+  colourImages?: Record<string, string>;
 }) {
   const [picks, setPicks] = useState<Record<string, string>>({});
+  const { setFocus } = useProductMedia();
 
   const MODEL = "Your Bike Model";
   const COLOUR = "Colour";
@@ -56,7 +61,8 @@ export default function ProductEnquiry({
     ];
   }
 
-  const pick = (label: string, value: string) =>
+  const pick = (label: string, value: string) => {
+    if (label === COLOUR && colourImages?.[value]) setFocus(colourImages[value]);
     setPicks((prev) => {
       const next = { ...prev, [label]: prev[label] === value ? "" : value };
       // Changing the bike can invalidate the colour already chosen
@@ -66,6 +72,7 @@ export default function ProductEnquiry({
       }
       return next;
     });
+  };
 
   const extras = Object.entries(picks)
     .filter(([, v]) => v)

@@ -18,20 +18,48 @@ function get(url, redirects = 5) {
   });
 }
 
-async function listFolder(folderUrl) {
-  const id = (folderUrl.match(/folders\/([A-Za-z0-9_-]+)/) || [])[1];
+/**
+ * Files in a public folder, recursing into sub-folders (bikes keep their
+ * colour shots in a "Gallery" sub-folder beside the thumbnail). Each entry
+ * is {id, name, folder} where folder is the sub-folder path, "" at the top.
+ */
+async function listFolder(folderUrl, depth = 0, prefix = "") {
+  const id = (folderUrl.match(/folders\/([A-Za-z0-9_-]+)/) || [, folderUrl])[1];
   const { body } = await get(`https://drive.google.com/drive/folders/${id}`);
   const html = body.toString("utf8");
-  const out = new Map();
-  const blob = /\\x22([A-Za-z0-9_-]{25,})\\x22,\\x22([^\\]+?)\\x22/g;
-  for (const m of html.matchAll(blob)) {
-    if (!out.has(m[1]) && /\.(jpe?g|png|webp)$/i.test(m[2])) out.set(m[1], m[2]);
+  const files = new Map();
+  const folders = new Map();
+
+  // Every grid row carries data-id and, a little later, a tooltip of the
+  // form "<name> Image" / "<name> Shared folder" / "<name> Folder".
+  const rowRe = /data-id="([A-Za-z0-9_-]{25,})"/g;
+  for (const m of html.matchAll(rowRe)) {
+    const rid = m[1];
+    if (files.has(rid) || folders.has(rid)) continue;
+    const win = html.slice(m.index, m.index + 6000);
+    const tip = (win.match(/data-tooltip="([^"]+)"/) || [])[1];
+    if (!tip) continue;
+    const f = tip.match(/^(.+?) (?:Shared )?[Ff]older$/);
+    const i = tip.match(/^(.+?) (?:Image|JPEG image|PNG image|WebP image)$/);
+    if (f) folders.set(rid, f[1].replace(/&amp;/g, "&"));
+    else if (i) files.set(rid, i[1].replace(/&amp;/g, "&"));
   }
-  if (!out.size) {
-    const rows = /data-id="([A-Za-z0-9_-]{25,})"[\s\S]{0,3000}?data-tooltip="([^"]+?) (?:Image|JPEG image|PNG image)"/g;
-    for (const m of html.matchAll(rows)) if (!out.has(m[1])) out.set(m[1], m[2]);
+  // Older page variant: an ivd blob with \x22-escaped [id, name] pairs
+  if (!files.size && !folders.size) {
+    const blob = /\\x22([A-Za-z0-9_-]{25,})\\x22,\\x22([^\\]+?)\\x22/g;
+    for (const m of html.matchAll(blob)) {
+      if (!files.has(m[1]) && /\.(jpe?g|png|webp)$/i.test(m[2])) files.set(m[1], m[2]);
+    }
   }
-  return [...out].map(([fid, name]) => ({ id: fid, name }));
+
+  const out = [...files].map(([fid, name]) => ({ id: fid, name, folder: prefix }));
+  if (depth < 3) {
+    for (const [fid, name] of folders) {
+      const sub = await listFolder(fid, depth + 1, prefix ? `${prefix}/${name}` : name);
+      out.push(...sub);
+    }
+  }
+  return out;
 }
 
 async function download(fileId) {

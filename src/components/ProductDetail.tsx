@@ -8,6 +8,7 @@ import JsonLd from "./JsonLd";
 import ProductEnquiry from "./ProductEnquiry";
 import { Section, SectionHeading } from "./Section";
 import ProductImage from "./ProductImage";
+import { ProductMedia } from "./ProductMedia";
 import ShareRow from "./ShareRow";
 import { type ThumbKind } from "./Thumb";
 import { SHOP_FAQS } from "@/data/faqs";
@@ -36,6 +37,8 @@ export interface DetailProps {
    * panel asks for the bike first and only offers matching colours.
    */
   fitment?: { colour: string; models: string[] }[];
+  /** Colour option → gallery photo, so picking a colour shows it */
+  colourImages?: Record<string, string>;
   cta?: string;
   /** Gallery photos — placeholder frames render until these are supplied */
   images?: string[];
@@ -70,6 +73,7 @@ export default function ProductDetail(p: DetailProps) {
           ]}
         />
 
+        <ProductMedia>
         <div className="mt-10 grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
           {/* Presentation — picture gallery in carousel structure (R2) */}
           <div>
@@ -133,6 +137,7 @@ export default function ProductDetail(p: DetailProps) {
                 cta={p.cta ?? "WhatsApp to Order"}
                 options={p.options}
                 fitment={p.fitment}
+                colourImages={p.colourImages}
                 cartItem={{
                   id: p.path,
                   name: p.name,
@@ -148,6 +153,7 @@ export default function ProductDetail(p: DetailProps) {
             </div>
           </div>
         </div>
+        </ProductMedia>
       </Section>
 
       {/* Description + specs */}

@@ -34,6 +34,9 @@ export const ACCESSORIES: AccessoryItem[] = [
       "/products/accessories/ppr-racing-r63-sport-rim/thumbnail.jpg",
       "/products/accessories/ppr-racing-r63-sport-rim/r63-black.jpg"
     ],
+    colourImages: {
+      Black: "/products/accessories/ppr-racing-r63-sport-rim/r63-black.jpg"
+    },
     highlights: [
       "100% original genuine product",
       "Direct Plug & Play installation",
@@ -172,6 +175,9 @@ export const ACCESSORIES: AccessoryItem[] = [
       "/products/accessories/enkei-g500-custom/thumbnail.jpg",
       "/products/accessories/enkei-g500-custom/g500-black.jpg"
     ],
+    colourImages: {
+      Black: "/products/accessories/enkei-g500-custom/g500-black.jpg"
+    },
     highlights: [
       "100% original genuine product",
       "Direct Plug & Play installation",
@@ -236,6 +242,10 @@ export const ACCESSORIES: AccessoryItem[] = [
       "/products/accessories/aerox-thai-sport-rim/aerox-thai-black.jpg",
       "/products/accessories/aerox-thai-sport-rim/aerox-thai-gold.jpg"
     ],
+    colourImages: {
+      Black: "/products/accessories/aerox-thai-sport-rim/aerox-thai-black.jpg",
+      Gold: "/products/accessories/aerox-thai-sport-rim/aerox-thai-gold.jpg"
+    },
     highlights: [
       "100% original genuine product",
       "Direct Plug & Play installation",
@@ -292,6 +302,9 @@ export const ACCESSORIES: AccessoryItem[] = [
       "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/thumbnail.jpg",
       "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/black-and-gold.jpg"
     ],
+    colourImages: {
+      "Black/Gold": "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/black-and-gold.jpg"
+    },
     highlights: [
       "100% original genuine product backed by PPR Racing authentic quality standards",
       "Direct factory unit replacement designed to match stock mounting points effortlessly",

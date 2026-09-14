@@ -197,7 +197,12 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/arc-ritz-yf-dragon-series/thumbnail.jpg",
     images: [
-      "/products/rider-gear/arc-ritz-yf-dragon-series/thumbnail.jpg"
+      "/products/rider-gear/arc-ritz-yf-dragon-series/thumbnail.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/1.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/2.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/3.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/4.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/5.jpg"
     ],
     highlights: [
       "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
@@ -254,6 +259,9 @@ export const RIDER_GEAR: GearItem[] = [
       "/products/rider-gear/yamaha-r-series/2.jpg",
       "/products/rider-gear/yamaha-r-series/3.jpg"
     ],
+    colourImages: {
+      "Graphic Blue": "/products/rider-gear/yamaha-r-series/1.jpg"
+    },
     highlights: [
       "SIRIM Certified: SIRIM-certified for maximum safety standards and legal compliance",
       "Impact-Resistant & Aerodynamic: High-impact thermoplastic resin shell with aerodynamic contouring",
@@ -318,7 +326,8 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     colourImages: {
       Blue: "/products/rider-gear/kyt-raincoat/blue-1.jpg",
-      Red: "/products/rider-gear/kyt-raincoat/red-1.jpg"
+      Red: "/products/rider-gear/kyt-raincoat/red-1.jpg",
+      Yellow: "/products/rider-gear/kyt-raincoat/lime-green-1.jpg"
     },
     highlights: [
       "100% waterproof heavy-duty PVC jacket",
