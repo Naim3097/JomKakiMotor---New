@@ -2,7 +2,7 @@ import type { AccessoryItem } from "./types";
 
 /**
  * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-09-14. Edit the sheet and re-run the generator rather than
+ * on 2026-09-15. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const ACCESSORIES: AccessoryItem[] = [
@@ -31,7 +31,6 @@ export const ACCESSORIES: AccessoryItem[] = [
     ],
     image: "/products/accessories/ppr-racing-r63-sport-rim/thumbnail.jpg",
     images: [
-      "/products/accessories/ppr-racing-r63-sport-rim/thumbnail.jpg",
       "/products/accessories/ppr-racing-r63-sport-rim/r63-black.jpg"
     ],
     colourImages: {
@@ -109,7 +108,6 @@ export const ACCESSORIES: AccessoryItem[] = [
     ],
     image: "/products/accessories/enkei-3-bintang-sport-rim/thumbnail.jpg",
     images: [
-      "/products/accessories/enkei-3-bintang-sport-rim/thumbnail.jpg",
       "/products/accessories/enkei-3-bintang-sport-rim/black.jpg",
       "/products/accessories/enkei-3-bintang-sport-rim/orange.jpg",
       "/products/accessories/enkei-3-bintang-sport-rim/white.jpg"
@@ -172,7 +170,6 @@ export const ACCESSORIES: AccessoryItem[] = [
     ],
     image: "/products/accessories/enkei-g500-custom/thumbnail.jpg",
     images: [
-      "/products/accessories/enkei-g500-custom/thumbnail.jpg",
       "/products/accessories/enkei-g500-custom/g500-black.jpg"
     ],
     colourImages: {
@@ -238,7 +235,6 @@ export const ACCESSORIES: AccessoryItem[] = [
     ],
     image: "/products/accessories/aerox-thai-sport-rim/thumbnail.jpg",
     images: [
-      "/products/accessories/aerox-thai-sport-rim/thumbnail.jpg",
       "/products/accessories/aerox-thai-sport-rim/aerox-thai-black.jpg",
       "/products/accessories/aerox-thai-sport-rim/aerox-thai-gold.jpg"
     ],
@@ -299,7 +295,6 @@ export const ACCESSORIES: AccessoryItem[] = [
     ],
     image: "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/thumbnail.jpg",
     images: [
-      "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/thumbnail.jpg",
       "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/black-and-gold.jpg"
     ],
     colourImages: {

@@ -36,8 +36,12 @@ What the generator encodes from the sheet:
 
 Drive folders are read by scraping the public folder page and downloading
 each file via `uc?export=download`, **recursing into sub-folders** — bikes
-keep their colour shots in a `Gallery` sub-folder beside the thumbnail. The
-`Thumbnail` file becomes the card image; the rest form the gallery, and
+keep their colour shots in a `Gallery` sub-folder beside the thumbnail.
+The two layers never mix: with a sub-folder present, the top-level file is
+the listing-card image (whatever it is named) and the sub-folder is the
+product-page gallery; in a flat folder the file named `Thumbnail` is the
+card image and the rest are the gallery. `public/products/manifest.json`
+records each file's layer. On the product page,
 `colourImages` maps each colour option to its photo so picking a colour on
 the product page shows it. The generator prints any colour whose name
 could not be matched to a photo name — take those back to the client.

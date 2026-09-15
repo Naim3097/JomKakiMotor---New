@@ -34,9 +34,10 @@ export default function ProductEnquiry({
   /** When set, an Add to Cart button renders beside the WhatsApp CTA (R2) */
   cartItem?: CartProduct;
   /**
-   * Colour → bike-model compatibility (rims). Adds a "Your Bike Model"
-   * picker ahead of Colour and limits colours to ones made for that model,
-   * so a buyer can never pair e.g. an Orange 3 Bintang with an NVX.
+   * Colour ↔ bike-model compatibility (rims). Adds a "Your Bike Model"
+   * picker beside Colour and filters each by the other: choose a bike and
+   * only its colours remain; choose a colour and only the bikes it is made
+   * for remain. A buyer can never pair e.g. an Orange 3 Bintang with an NVX.
    */
   fitment?: { colour: string; models: string[] }[];
   /** Colour option → gallery photo; picking a colour shows that photo */
@@ -49,8 +50,16 @@ export default function ProductEnquiry({
   const COLOUR = "Colour";
   let groups = options;
   if (fitment && fitment.length) {
-    const models = [...new Set(fitment.flatMap((f) => f.models))];
     const chosenModel = picks[MODEL];
+    const chosenColour = picks[COLOUR];
+    // Each list is narrowed by the other selection (both directions)
+    const models = [
+      ...new Set(
+        fitment
+          .filter((f) => !chosenColour || f.colour === chosenColour)
+          .flatMap((f) => f.models)
+      ),
+    ];
     const colours = fitment
       .filter((f) => !chosenModel || f.models.includes(chosenModel))
       .map((f) => f.colour);

@@ -1,455 +1,1580 @@
 {
   "yamaha-lc135-v8": [
-    "lc135-v8-thumbnail.jpg",
-    "matador-red-1.jpg",
-    "matador-red-2.jpg",
-    "samba-green-1.jpg",
-    "samba-green-2.jpg",
-    "tank-white-1.jpg",
-    "tank-white-2.jpg"
+    {
+      "file": "lc135-v8-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "matador-red-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matador-red-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "samba-green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "samba-green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tank-white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tank-white-2.jpg",
+      "layer": "Gallery"
+    }
   ],
   "yamaha-r15m": [
-    "r15m-thumbnail.jpg",
-    "signature-black-1.jpg",
-    "signature-black-2.jpg",
-    "signature-black-3.jpg",
-    "signature-black-4.jpg",
-    "signature-black-5.jpg",
-    "signature-black-6.jpg",
-    "signature-black-7.jpg",
-    "signature-black-8.jpg"
+    {
+      "file": "r15m-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "signature-black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "signature-black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "signature-black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "signature-black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "signature-black-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "signature-black-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "signature-black-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "signature-black-8.jpg",
+      "layer": "Gallery"
+    }
   ],
   "yamaha-ego-gear": [
-    "ego-gear-thumbnail.jpg",
-    "cyan-1.jpg",
-    "cyan-2.jpg",
-    "cyan-3.jpg",
-    "cyan-4.jpg",
-    "cyan-5.jpg",
-    "cyan-6.jpg",
-    "cyan-7.jpg",
-    "cyan-8.jpg",
-    "grey-1.jpg",
-    "grey-2.jpg",
-    "grey-3.jpg",
-    "grey-4.jpg",
-    "grey-5.jpg",
-    "grey-6.jpg",
-    "grey-7.jpg",
-    "grey-8.jpg",
-    "navy-blue-1.jpg",
-    "navy-blue-2.jpg",
-    "navy-blue-3.jpg",
-    "navy-blue-4.jpg",
-    "navy-blue-5.jpg",
-    "navy-blue-6.jpg",
-    "navy-blue-7.jpg",
-    "navy-blue-8.jpg"
+    {
+      "file": "cyan-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ego-gear-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-blue-8.jpg",
+      "layer": "Gallery"
+    }
   ],
   "yamaha-xmax-250": [
-    "xmax-250-thumbnail.jpg",
-    "ceramic-grey-1.jpg",
-    "ceramic-grey-2.jpg",
-    "ceramic-grey-3.jpg",
-    "ceramic-grey-4.jpg",
-    "icon-red-1.jpg",
-    "icon-red-2.jpg",
-    "icon-red-3.jpg",
-    "icon-red-4.jpg"
+    {
+      "file": "ceramic-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ceramic-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ceramic-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ceramic-grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-red-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-red-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-red-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-red-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "xmax-250-thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "honda-wave-alpha": [
-    "wave-alpha-thumbnail.jpg",
-    "black-1.jpg",
-    "black-2.jpg",
-    "black-3.jpg",
-    "black-4.jpg",
-    "black-5.jpg",
-    "black-6.jpg",
-    "black-7.jpg",
-    "blue-1.jpg",
-    "blue-2.jpg",
-    "blue-3.jpg",
-    "blue-4.jpg",
-    "blue-5.jpg",
-    "blue-6.jpg",
-    "blue-7.jpg",
-    "blue-8.jpg",
-    "grey-1.jpg",
-    "grey-2.jpg",
-    "grey-3.jpg",
-    "grey-4.jpg",
-    "grey-5.jpg",
-    "grey-6.jpg",
-    "grey-7.jpg",
-    "grey-8.jpg",
-    "red-1.jpg",
-    "red-2.jpg",
-    "red-3.jpg",
-    "red-4.jpg",
-    "red-5.jpg",
-    "red-6.jpg",
-    "red-7.jpg",
-    "red-8.jpg"
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "wave-alpha-thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "honda-vario-125-street": [
-    "vario-125-street-thumbnail.jpg",
-    "purple-1.jpg",
-    "purple-2.jpg",
-    "purple-3.jpg",
-    "purple-4.jpg",
-    "purple-5.jpg",
-    "purple-6.jpg",
-    "purple-7.jpg",
-    "purple-8.jpg",
-    "white-1.jpg",
-    "white-2.jpg",
-    "white-3.jpg",
-    "white-4.jpg",
-    "white-5.jpg",
-    "white-6.jpg",
-    "white-7.jpg",
-    "white-8.jpg"
+    {
+      "file": "purple-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "purple-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "purple-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "purple-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "purple-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "purple-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "purple-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "purple-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "vario-125-street-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-8.jpg",
+      "layer": "Gallery"
+    }
   ],
   "honda-adv160-roadsync": [
-    "adv160-roadsync-thumbnail.jpg",
-    "brown-1.jpg",
-    "brown-2.jpg",
-    "brown-3.jpg",
-    "brown-4.jpg",
-    "brown-5.jpg",
-    "brown-6.jpg",
-    "brown-7.jpg",
-    "brown-8.jpg",
-    "matte-grey-1.jpg",
-    "matte-grey-2.jpg",
-    "matte-grey-3.jpg",
-    "matte-grey-4.jpg",
-    "matte-grey-5.jpg",
-    "matte-grey-6.jpg",
-    "matte-grey-7.jpg",
-    "matte-grey-8.jpg"
+    {
+      "file": "adv160-roadsync-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "brown-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "brown-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "brown-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "brown-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "brown-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "brown-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "brown-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "brown-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-8.jpg",
+      "layer": "Gallery"
+    }
   ],
   "honda-cbr150r": [
-    "cbr150r-thumbnail.jpg",
-    "black-1.jpg",
-    "black-2.jpg",
-    "black-3.jpg",
-    "black-4.jpg",
-    "black-5.jpg",
-    "black-6.jpg",
-    "black-7.jpg",
-    "black-8.jpg",
-    "silver-1.jpg",
-    "silver-2.jpg",
-    "silver-3.jpg",
-    "silver-4.jpg",
-    "silver-5.jpg",
-    "silver-6.jpg",
-    "silver-7.jpg",
-    "silver-8.jpg",
-    "tricolour-1.jpg",
-    "tricolour-2.jpg",
-    "tricolour-3.jpg",
-    "tricolour-4.jpg",
-    "tricolour-5.jpg",
-    "tricolour-6.jpg",
-    "tricolour-7.jpg",
-    "tricolour-8.jpg"
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cbr150r-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "silver-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-8.jpg",
+      "layer": "Gallery"
+    }
   ],
   "modenas-elit-150s": [
-    "elit-150s-thumbnail.jpg",
-    "quantum-grey-1.jpg",
-    "quantum-grey-2.jpg",
-    "quantum-grey-3.jpg",
-    "riviera-blue-1.jpg",
-    "riviera-blue-2.jpg",
-    "riviera-blue-3.jpg"
+    {
+      "file": "elit-150s-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "quantum-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "quantum-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "quantum-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "riviera-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "riviera-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "riviera-blue-3.jpg",
+      "layer": "Gallery"
+    }
   ],
   "modenas-z15gt": [
-    "z15gt-thumbnail.jpg",
-    "graphite-grey-1.jpg",
-    "graphite-grey-2.jpg",
-    "graphite-grey-3.jpg",
-    "graphite-grey-4.jpg",
-    "graphite-grey-5.jpg",
-    "graphite-grey-6.jpg",
-    "graphite-grey-7.jpg",
-    "graphite-grey-8.jpg",
-    "nardo-grey-1.jpg",
-    "nardo-grey-2.jpg",
-    "nardo-grey-3.jpg",
-    "nardo-grey-4.jpg",
-    "nardo-grey-5.jpg",
-    "nardo-grey-6.jpg",
-    "nardo-grey-7.jpg",
-    "nardo-grey-8.jpg",
-    "rosso-red-1.jpg",
-    "rosso-red-2.jpg",
-    "rosso-red-3.jpg",
-    "rosso-red-4.jpg",
-    "rosso-red-5.jpg",
-    "rosso-red-6.jpg",
-    "rosso-red-7.jpg",
-    "rosso-red-8.jpg"
+    {
+      "file": "graphite-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nardo-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nardo-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nardo-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nardo-grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nardo-grey-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nardo-grey-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nardo-grey-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nardo-grey-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rosso-red-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rosso-red-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rosso-red-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rosso-red-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rosso-red-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rosso-red-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rosso-red-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rosso-red-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "z15gt-thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "modenas-kriss-110-fi": [
-    "kriss-110-fi-thumbnail.jpg",
-    "caribbean-cyan-1.jpg",
-    "caribbean-cyan-2.jpg",
-    "caribbean-cyan-3.jpg",
-    "caribbean-cyan-4.jpg",
-    "caribbean-cyan-5.jpg",
-    "caribbean-cyan-6.jpg",
-    "glorious-black-1.jpg",
-    "glorious-black-2.jpg",
-    "glorious-black-3.jpg",
-    "glorious-black-4.jpg",
-    "glorious-black-5.jpg",
-    "glorious-black-6.jpg",
-    "vigorous-blue-1.jpg",
-    "vigorous-blue-2.jpg",
-    "vigorous-blue-3.jpg",
-    "vigorous-blue-4.jpg",
-    "vigorous-blue-5.jpg"
+    {
+      "file": "caribbean-cyan-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "caribbean-cyan-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "caribbean-cyan-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "caribbean-cyan-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "caribbean-cyan-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "caribbean-cyan-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glorious-black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glorious-black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glorious-black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glorious-black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glorious-black-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glorious-black-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "kriss-110-fi-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "vigorous-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "vigorous-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "vigorous-blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "vigorous-blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "vigorous-blue-5.jpg",
+      "layer": "Gallery"
+    }
   ],
   "modenas-karisma-ex-125": [
-    "karisma-ex-125-thumbnail.jpg",
-    "caribbean-cyan.jpg",
-    "mint-green.jpg",
-    "passionate-red.jpg"
+    {
+      "file": "caribbean-cyan.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "karisma-ex-125-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "mint-green.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "passionate-red.jpg",
+      "layer": "Gallery"
+    }
   ],
   "keeway-xdv-180-evo": [
-    "xdv-180-evo-thumbnail.jpg",
-    "black-1.jpg",
-    "black-2.jpg",
-    "grey-1.jpg",
-    "grey-2.jpg",
-    "white-1.jpg",
-    "white-2.jpg"
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "xdv-180-evo-thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "keeway-cafe-racer-152": [
-    "cafe-racer-152-thumbnail.jpg",
-    "black-1.jpg",
-    "black-2.jpg",
-    "green-1.jpg",
-    "green-2.jpg",
-    "red-1.jpg",
-    "red-2.jpg"
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cafe-racer-152-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-2.jpg",
+      "layer": "Gallery"
+    }
   ],
   "qj-motor-ax-200s": [
-    "ax-200s.jpg",
-    "chameleon-green.jpg",
-    "grey.jpg",
-    "matte-black.jpg",
-    "moon-blue.jpg",
-    "sand-brown.jpg",
-    "white.jpg"
+    {
+      "file": "ax-200s.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "chameleon-green.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "moon-blue.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "sand-brown.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white.jpg",
+      "layer": "Gallery"
+    }
   ],
   "sym-husky-200": [
-    "husky-200-thumbnail.jpg",
-    "glossy-green-1.jpg",
-    "glossy-green-2.jpg",
-    "pearl-white-1.jpg",
-    "pearl-white-2.jpg",
-    "silk-purple-1.jpg",
-    "silk-purple-2.jpg"
+    {
+      "file": "glossy-green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glossy-green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "husky-200-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "pearl-white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "pearl-white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silk-purple-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silk-purple-2.jpg",
+      "layer": "Gallery"
+    }
   ],
   "sym-benelli-panarea-125": [
-    "benelli-panarea-125-thumbnail.jpg",
-    "black-1.jpg",
-    "black-2.jpg",
-    "black-3.jpg",
-    "black-4.jpg",
-    "black-5.jpg",
-    "black-6.jpg",
-    "black-7.jpg",
-    "black-8.jpg",
-    "red-1.jpg",
-    "red-2.jpg",
-    "red-3.jpg",
-    "red-4.jpg",
-    "red-5.jpg",
-    "red-6.jpg",
-    "red-7.jpg",
-    "red-8.jpg",
-    "white-1.jpg",
-    "white-2.jpg",
-    "white-3.jpg",
-    "white-4.jpg",
-    "white-5.jpg",
-    "white-6.jpg",
-    "white-7.jpg",
-    "white-8.jpg",
-    "yellow-1.jpg",
-    "yellow-2.jpg",
-    "yellow-3.jpg",
-    "yellow-4.jpg",
-    "yellow-5.jpg",
-    "yellow-6.jpg",
-    "yellow-7.jpg",
-    "yellow-8.jpg"
+    {
+      "file": "benelli-panarea-125-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-8.jpg",
+      "layer": "Gallery"
+    }
   ],
   "sym-vf3i-185": [
-    "vf3i-185-thumbnail.jpg",
-    "blue.jpg",
-    "gold.jpg",
-    "red.jpg"
+    {
+      "file": "blue.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "gold.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "vf3i-185-thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "sym-tuscany-150": [
-    "tuscany-150-thumbnail.jpg",
-    "grey-1.jpg",
-    "grey-2.jpg",
-    "red-1.jpg",
-    "red-2.jpg",
-    "white-1.jpg",
-    "white-2.jpg"
+    {
+      "file": "grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tuscany-150-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    }
   ],
   "wmoto-nx150s": [
-    "nx150s-thumbnail.jpg",
-    "glacier-grey-1.jpg",
-    "glacier-grey-2.jpg",
-    "grind-green-1.jpg",
-    "grind-green-2.jpg",
-    "lava-brown-1.jpg",
-    "lava-brown-2.jpg"
+    {
+      "file": "glacier-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glacier-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grind-green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grind-green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "lava-brown-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "lava-brown-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nx150s-thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "cfmoto-xo-papio-125": [
-    "xo-papio-125-thumbnail.jpg",
-    "white-1.jpg",
-    "white-2.jpg"
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "xo-papio-125-thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "aveta-dy-90": [
-    "aveta-dy-90-thumbnail.jpg",
-    "black.jpg",
-    "blue.jpg",
-    "red.jpg"
+    {
+      "file": "aveta-dy-90-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "black.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "red.jpg",
+      "layer": "Gallery"
+    }
   ],
   "aveta-ranger-max-explorer-130": [
-    "aveta-ranger-max-explorer-130-thumbnail.jpg",
-    "iron-grey.jpg",
-    "sierra-yellow.jpg",
-    "storm-blue.jpg"
+    {
+      "file": "aveta-ranger-max-explorer-130-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "iron-grey.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "sierra-yellow.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "storm-blue.jpg",
+      "layer": "Gallery"
+    }
   ],
   "aveta-nova-250": [
-    "aveta-nova-250-thumbnail.jpg",
-    "emerald-green.jpg",
-    "metro-green.jpg",
-    "titan-red.jpg"
+    {
+      "file": "aveta-nova-250-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "emerald-green.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "metro-green.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "titan-red.jpg",
+      "layer": "Gallery"
+    }
   ],
   "aveta-nova-125": [
-    "aveta-nova-125-thumbnail.jpg",
-    "blue-lemon.jpg",
-    "grey-lemon.jpg",
-    "nano-grey.jpg"
+    {
+      "file": "aveta-nova-125-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "blue-lemon.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-lemon.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nano-grey.jpg",
+      "layer": "Gallery"
+    }
   ],
   "moda-moca-110": [
-    "moca-110-thumbnail.jpg",
-    "black-1.jpg",
-    "black-2.jpg",
-    "black-3.jpg",
-    "black-4.jpg",
-    "black-5.jpg",
-    "black-6.jpg",
-    "black-7.jpg",
-    "black-8.jpg",
-    "blue-1.jpg",
-    "blue-2.jpg",
-    "blue-3.jpg",
-    "blue-4.jpg",
-    "blue-5.jpg",
-    "blue-6.jpg",
-    "blue-7.jpg",
-    "blue-8.jpg",
-    "orange-1.jpg",
-    "orange-2.jpg",
-    "orange-3.jpg",
-    "orange-4.jpg",
-    "orange-5.jpg",
-    "orange-6.jpg",
-    "orange-7.jpg",
-    "orange-8.jpg"
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "moca-110-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "orange-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "orange-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "orange-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "orange-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "orange-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "orange-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "orange-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "orange-8.jpg",
+      "layer": "Gallery"
+    }
   ],
   "ppr-racing-r63-sport-rim": [
-    "thumbnail.jpg",
-    "r63-black.jpg"
+    {
+      "file": "r63-black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "enkei-3-bintang-sport-rim": [
-    "thumbnail.jpg",
-    "black.jpg",
-    "orange.jpg",
-    "white.jpg"
+    {
+      "file": "black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "orange.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "white.jpg",
+      "layer": "top"
+    }
   ],
   "enkei-g500-custom": [
-    "thumbnail.jpg",
-    "g500-black.jpg"
+    {
+      "file": "g500-black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "aerox-thai-sport-rim": [
-    "thumbnail.jpg",
-    "aerox-thai-black.jpg",
-    "aerox-thai-gold.jpg"
+    {
+      "file": "aerox-thai-black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "aerox-thai-gold.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "ppr-racing-cnc-fork-lay-yamaha-lc135": [
-    "thumbnail.jpg",
-    "black-and-gold.jpg"
+    {
+      "file": "black-and-gold.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "kyt-nfj-5th-memorial-ft-full-package": [
-    "thumbnail.jpg",
-    "angled.jpg",
-    "back.jpg",
-    "front.jpg",
-    "full-set.jpg",
-    "left.jpg",
-    "right.jpg"
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "full-set.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "kyt-venom-espargaro-2016-replica": [
-    "thumbnail.jpg",
-    "angled.jpg",
-    "back.jpg",
-    "front.jpg",
-    "left.jpg",
-    "right.jpg"
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "arc-pastel-series": [
-    "thumbnail.jpg",
-    "beige.jpg",
-    "blue.jpg",
-    "green.jpg"
+    {
+      "file": "beige.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "blue.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "arc-ritz-yf-dragon-series": [
-    "thumbnail.jpg",
-    "1.jpg",
-    "2.jpg",
-    "3.jpg",
-    "4.jpg",
-    "5.jpg"
+    {
+      "file": "1.jpg",
+      "layer": "Naga Mas"
+    },
+    {
+      "file": "2.jpg",
+      "layer": "Naga Mas"
+    },
+    {
+      "file": "3.jpg",
+      "layer": "Naga Mas"
+    },
+    {
+      "file": "4.jpg",
+      "layer": "Naga Mas"
+    },
+    {
+      "file": "5.jpg",
+      "layer": "Naga Mas"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "yamaha-r-series": [
-    "thumbnail.jpg",
-    "1.jpg",
-    "2.jpg",
-    "3.jpg"
+    {
+      "file": "1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "kyt-raincoat": [
-    "thumbnail.jpg",
-    "blue-1.jpg",
-    "blue-2.jpg",
-    "lime-green-1.jpg",
-    "lime-green-2.jpg",
-    "red-1.jpg",
-    "red-2.jpg"
+    {
+      "file": "blue-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "blue-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "lime-green-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "lime-green-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "red-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "red-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "yamaha-raincoat": [
-    "thumbnail.jpg",
-    "black-1.jpg",
-    "black-2.jpg",
-    "green-1.jpg",
-    "green-2.jpg"
+    {
+      "file": "black-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ],
   "arc-ritz-spoiler": [
-    "thumbnail.jpg",
-    "clear-1.jpg",
-    "clear-2.jpg",
-    "smoke-1.jpg",
-    "smoke-2.jpg"
+    {
+      "file": "clear-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "clear-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "smoke-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "smoke-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ]
 }

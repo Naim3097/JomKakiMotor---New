@@ -87,20 +87,23 @@ const imageManifest = {};
 async function fetchImages(folderUrl, category, slug) {
   if (!folderUrl) return { image: undefined, images: [] };
   const dir = path.join(PUB, category, slug);
-  // Reuse an already-downloaded folder unless FRESH=1
+  // Reuse an already-downloaded folder unless FRESH=1. The Drive listing is
+  // still fetched (cheap) so each file keeps its layer: top level vs Gallery.
+  const files = await listFolder(folderUrl);
+  const stem = (name) => slugify(name.replace(/&amp;/g, "&").replace(/\.(jpe?g|png|webp)$/i, ""));
+  const layerOf = (fname) => files.find((f) => stem(f.name) === fname.replace(/\.\w+$/, ""))?.folder ?? "";
   if (fs.existsSync(dir) && fs.readdirSync(dir).length) {
     const cached = fs.readdirSync(dir).map((file) => ({
       file,
       base: file.replace(/\.\w+$/, "").replace(/-/g, " "),
       url: `/products/${category}/${slug}/${file}`,
+      folder: layerOf(file),
     }));
-    cached.sort((a, b) => /thumbnail/i.test(b.base) - /thumbnail/i.test(a.base));
-    imageManifest[slug] = cached.map((s) => s.file);
+    imageManifest[slug] = cached.map((s) => ({ file: s.file, layer: s.folder || "top" }));
     console.log(`   ${cached.length} image(s) (cached)`);
-    return { image: cached[0]?.url, images: cached.map((s) => s.url), saved: cached };
+    return splitMedia(cached);
   }
   fs.mkdirSync(dir, { recursive: true });
-  const files = await listFolder(folderUrl);
   const saved = [];
   for (const f of files) {
     const rawName = f.name.replace(/&amp;/g, "&");
@@ -116,13 +119,31 @@ async function fetchImages(folderUrl, category, slug) {
     const ext = isJpg ? "jpg" : isPng ? "png" : "webp";
     const fname = `${slugify(base)}.${ext}`;
     fs.writeFileSync(path.join(dir, fname), buf);
-    saved.push({ file: fname, base, url: `/products/${category}/${slug}/${fname}` });
+    saved.push({ file: fname, base, url: `/products/${category}/${slug}/${fname}`, folder: f.folder });
   }
-  // Thumbnail first, then the rest in Drive order
-  saved.sort((a, b) => /thumbnail/i.test(b.base) - /thumbnail/i.test(a.base));
-  imageManifest[slug] = saved.map((s) => s.file);
+  imageManifest[slug] = saved.map((s) => ({ file: s.file, layer: s.folder || "top" }));
   console.log(`   ${saved.length} image(s)`);
-  return { image: saved[0]?.url, images: saved.map((s) => s.url), saved };
+  return splitMedia(saved);
+}
+
+/**
+ * The client's folders carry two layers. When there is a sub-folder (bikes:
+ * "Gallery"), the top-level file is the listing-card thumbnail whatever it
+ * is called, and the sub-folder holds the product-page photos. Flat folders
+ * (rims, helmets) mark the thumbnail by name instead. The two never mix —
+ * the thumbnail only re-enters the gallery when it is the sole photo.
+ */
+function splitMedia(files) {
+  const nested = files.some((f) => f.folder);
+  const isThumb = nested ? (f) => !f.folder : (f) => /thumbnail/i.test(f.base);
+  const thumb =
+    files.find((f) => isThumb(f) && /thumbnail/i.test(f.base)) || files.find(isThumb) || files[0];
+  const gallery = files.filter((f) => !isThumb(f));
+  return {
+    image: thumb?.url,
+    images: (gallery.length ? gallery : thumb ? [thumb] : []).map((f) => f.url),
+    saved: files,
+  };
 }
 
 /** Map each colour option to a gallery image whose name starts with it. */

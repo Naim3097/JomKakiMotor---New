@@ -2,7 +2,7 @@ import type { GearItem } from "./types";
 
 /**
  * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-09-14. Edit the sheet and re-run the generator rather than
+ * on 2026-09-15. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const RIDER_GEAR: GearItem[] = [
@@ -20,7 +20,6 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/thumbnail.jpg",
     images: [
-      "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/thumbnail.jpg",
       "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/angled.jpg",
       "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/back.jpg",
       "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/front.jpg",
@@ -75,7 +74,6 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/kyt-venom-espargaro-2016-replica/thumbnail.jpg",
     images: [
-      "/products/rider-gear/kyt-venom-espargaro-2016-replica/thumbnail.jpg",
       "/products/rider-gear/kyt-venom-espargaro-2016-replica/angled.jpg",
       "/products/rider-gear/kyt-venom-espargaro-2016-replica/back.jpg",
       "/products/rider-gear/kyt-venom-espargaro-2016-replica/front.jpg",
@@ -136,7 +134,6 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/arc-pastel-series/thumbnail.jpg",
     images: [
-      "/products/rider-gear/arc-pastel-series/thumbnail.jpg",
       "/products/rider-gear/arc-pastel-series/beige.jpg",
       "/products/rider-gear/arc-pastel-series/blue.jpg",
       "/products/rider-gear/arc-pastel-series/green.jpg"
@@ -197,7 +194,6 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/arc-ritz-yf-dragon-series/thumbnail.jpg",
     images: [
-      "/products/rider-gear/arc-ritz-yf-dragon-series/thumbnail.jpg",
       "/products/rider-gear/arc-ritz-yf-dragon-series/1.jpg",
       "/products/rider-gear/arc-ritz-yf-dragon-series/2.jpg",
       "/products/rider-gear/arc-ritz-yf-dragon-series/3.jpg",
@@ -254,7 +250,6 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/yamaha-r-series/thumbnail.jpg",
     images: [
-      "/products/rider-gear/yamaha-r-series/thumbnail.jpg",
       "/products/rider-gear/yamaha-r-series/1.jpg",
       "/products/rider-gear/yamaha-r-series/2.jpg",
       "/products/rider-gear/yamaha-r-series/3.jpg"
@@ -316,7 +311,6 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/kyt-raincoat/thumbnail.jpg",
     images: [
-      "/products/rider-gear/kyt-raincoat/thumbnail.jpg",
       "/products/rider-gear/kyt-raincoat/blue-1.jpg",
       "/products/rider-gear/kyt-raincoat/blue-2.jpg",
       "/products/rider-gear/kyt-raincoat/lime-green-1.jpg",
@@ -376,7 +370,6 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/yamaha-raincoat/thumbnail.jpg",
     images: [
-      "/products/rider-gear/yamaha-raincoat/thumbnail.jpg",
       "/products/rider-gear/yamaha-raincoat/black-1.jpg",
       "/products/rider-gear/yamaha-raincoat/black-2.jpg",
       "/products/rider-gear/yamaha-raincoat/green-1.jpg",
@@ -430,7 +423,6 @@ export const RIDER_GEAR: GearItem[] = [
     ],
     image: "/products/rider-gear/arc-ritz-spoiler/thumbnail.jpg",
     images: [
-      "/products/rider-gear/arc-ritz-spoiler/thumbnail.jpg",
       "/products/rider-gear/arc-ritz-spoiler/clear-1.jpg",
       "/products/rider-gear/arc-ritz-spoiler/clear-2.jpg",
       "/products/rider-gear/arc-ritz-spoiler/smoke-1.jpg",

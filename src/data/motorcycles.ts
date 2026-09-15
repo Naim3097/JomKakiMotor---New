@@ -2,7 +2,7 @@ import type { Motorcycle } from "./types";
 
 /**
  * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-09-14. Edit the sheet and re-run the generator rather than
+ * on 2026-09-15. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const MOTORCYCLES: Motorcycle[] = [
@@ -25,7 +25,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/yamaha-lc135-v8/lc135-v8-thumbnail.jpg",
     images: [
-      "/products/motorcycles/yamaha-lc135-v8/lc135-v8-thumbnail.jpg",
       "/products/motorcycles/yamaha-lc135-v8/matador-red-1.jpg",
       "/products/motorcycles/yamaha-lc135-v8/matador-red-2.jpg",
       "/products/motorcycles/yamaha-lc135-v8/samba-green-1.jpg",
@@ -122,7 +121,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/yamaha-r15m/r15m-thumbnail.jpg",
     images: [
-      "/products/motorcycles/yamaha-r15m/r15m-thumbnail.jpg",
       "/products/motorcycles/yamaha-r15m/signature-black-1.jpg",
       "/products/motorcycles/yamaha-r15m/signature-black-2.jpg",
       "/products/motorcycles/yamaha-r15m/signature-black-3.jpg",
@@ -221,7 +219,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/yamaha-ego-gear/ego-gear-thumbnail.jpg",
     images: [
-      "/products/motorcycles/yamaha-ego-gear/ego-gear-thumbnail.jpg",
       "/products/motorcycles/yamaha-ego-gear/cyan-1.jpg",
       "/products/motorcycles/yamaha-ego-gear/cyan-2.jpg",
       "/products/motorcycles/yamaha-ego-gear/cyan-3.jpg",
@@ -335,7 +332,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/yamaha-xmax-250/xmax-250-thumbnail.jpg",
     images: [
-      "/products/motorcycles/yamaha-xmax-250/xmax-250-thumbnail.jpg",
       "/products/motorcycles/yamaha-xmax-250/ceramic-grey-1.jpg",
       "/products/motorcycles/yamaha-xmax-250/ceramic-grey-2.jpg",
       "/products/motorcycles/yamaha-xmax-250/ceramic-grey-3.jpg",
@@ -436,7 +432,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/honda-wave-alpha/wave-alpha-thumbnail.jpg",
     images: [
-      "/products/motorcycles/honda-wave-alpha/wave-alpha-thumbnail.jpg",
       "/products/motorcycles/honda-wave-alpha/black-1.jpg",
       "/products/motorcycles/honda-wave-alpha/black-2.jpg",
       "/products/motorcycles/honda-wave-alpha/black-3.jpg",
@@ -560,7 +555,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/honda-vario-125-street/vario-125-street-thumbnail.jpg",
     images: [
-      "/products/motorcycles/honda-vario-125-street/vario-125-street-thumbnail.jpg",
       "/products/motorcycles/honda-vario-125-street/purple-1.jpg",
       "/products/motorcycles/honda-vario-125-street/purple-2.jpg",
       "/products/motorcycles/honda-vario-125-street/purple-3.jpg",
@@ -667,7 +661,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/honda-adv160-roadsync/adv160-roadsync-thumbnail.jpg",
     images: [
-      "/products/motorcycles/honda-adv160-roadsync/adv160-roadsync-thumbnail.jpg",
       "/products/motorcycles/honda-adv160-roadsync/brown-1.jpg",
       "/products/motorcycles/honda-adv160-roadsync/brown-2.jpg",
       "/products/motorcycles/honda-adv160-roadsync/brown-3.jpg",
@@ -771,7 +764,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/honda-cbr150r/cbr150r-thumbnail.jpg",
     images: [
-      "/products/motorcycles/honda-cbr150r/cbr150r-thumbnail.jpg",
       "/products/motorcycles/honda-cbr150r/black-1.jpg",
       "/products/motorcycles/honda-cbr150r/black-2.jpg",
       "/products/motorcycles/honda-cbr150r/black-3.jpg",
@@ -887,7 +879,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/modenas-elit-150s/elit-150s-thumbnail.jpg",
     images: [
-      "/products/motorcycles/modenas-elit-150s/elit-150s-thumbnail.jpg",
       "/products/motorcycles/modenas-elit-150s/quantum-grey-1.jpg",
       "/products/motorcycles/modenas-elit-150s/quantum-grey-2.jpg",
       "/products/motorcycles/modenas-elit-150s/quantum-grey-3.jpg",
@@ -985,7 +976,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/modenas-z15gt/z15gt-thumbnail.jpg",
     images: [
-      "/products/motorcycles/modenas-z15gt/z15gt-thumbnail.jpg",
       "/products/motorcycles/modenas-z15gt/graphite-grey-1.jpg",
       "/products/motorcycles/modenas-z15gt/graphite-grey-2.jpg",
       "/products/motorcycles/modenas-z15gt/graphite-grey-3.jpg",
@@ -1098,7 +1088,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2023-01-01",
     image: "/products/motorcycles/modenas-kriss-110-fi/kriss-110-fi-thumbnail.jpg",
     images: [
-      "/products/motorcycles/modenas-kriss-110-fi/kriss-110-fi-thumbnail.jpg",
       "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-1.jpg",
       "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-2.jpg",
       "/products/motorcycles/modenas-kriss-110-fi/caribbean-cyan-3.jpg",
@@ -1208,7 +1197,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2025-01-01",
     image: "/products/motorcycles/modenas-karisma-ex-125/karisma-ex-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/modenas-karisma-ex-125/karisma-ex-125-thumbnail.jpg",
       "/products/motorcycles/modenas-karisma-ex-125/caribbean-cyan.jpg",
       "/products/motorcycles/modenas-karisma-ex-125/mint-green.jpg",
       "/products/motorcycles/modenas-karisma-ex-125/passionate-red.jpg"
@@ -1304,7 +1292,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/keeway-xdv-180-evo/xdv-180-evo-thumbnail.jpg",
     images: [
-      "/products/motorcycles/keeway-xdv-180-evo/xdv-180-evo-thumbnail.jpg",
       "/products/motorcycles/keeway-xdv-180-evo/black-1.jpg",
       "/products/motorcycles/keeway-xdv-180-evo/black-2.jpg",
       "/products/motorcycles/keeway-xdv-180-evo/grey-1.jpg",
@@ -1399,7 +1386,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2024-01-01",
     image: "/products/motorcycles/keeway-cafe-racer-152/cafe-racer-152-thumbnail.jpg",
     images: [
-      "/products/motorcycles/keeway-cafe-racer-152/cafe-racer-152-thumbnail.jpg",
       "/products/motorcycles/keeway-cafe-racer-152/black-1.jpg",
       "/products/motorcycles/keeway-cafe-racer-152/black-2.jpg",
       "/products/motorcycles/keeway-cafe-racer-152/green-1.jpg",
@@ -1501,7 +1487,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/qj-motor-ax-200s/ax-200s.jpg",
     images: [
-      "/products/motorcycles/qj-motor-ax-200s/ax-200s.jpg",
       "/products/motorcycles/qj-motor-ax-200s/chameleon-green.jpg",
       "/products/motorcycles/qj-motor-ax-200s/grey.jpg",
       "/products/motorcycles/qj-motor-ax-200s/matte-black.jpg",
@@ -1599,7 +1584,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/sym-husky-200/husky-200-thumbnail.jpg",
     images: [
-      "/products/motorcycles/sym-husky-200/husky-200-thumbnail.jpg",
       "/products/motorcycles/sym-husky-200/glossy-green-1.jpg",
       "/products/motorcycles/sym-husky-200/glossy-green-2.jpg",
       "/products/motorcycles/sym-husky-200/pearl-white-1.jpg",
@@ -1694,7 +1678,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2022-01-01",
     image: "/products/motorcycles/sym-benelli-panarea-125/benelli-panarea-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/sym-benelli-panarea-125/benelli-panarea-125-thumbnail.jpg",
       "/products/motorcycles/sym-benelli-panarea-125/black-1.jpg",
       "/products/motorcycles/sym-benelli-panarea-125/black-2.jpg",
       "/products/motorcycles/sym-benelli-panarea-125/black-3.jpg",
@@ -1820,7 +1803,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2020-01-01",
     image: "/products/motorcycles/sym-vf3i-185/vf3i-185-thumbnail.jpg",
     images: [
-      "/products/motorcycles/sym-vf3i-185/vf3i-185-thumbnail.jpg",
       "/products/motorcycles/sym-vf3i-185/blue.jpg",
       "/products/motorcycles/sym-vf3i-185/gold.jpg",
       "/products/motorcycles/sym-vf3i-185/red.jpg"
@@ -1912,7 +1894,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2023-01-01",
     image: "/products/motorcycles/sym-tuscany-150/tuscany-150-thumbnail.jpg",
     images: [
-      "/products/motorcycles/sym-tuscany-150/tuscany-150-thumbnail.jpg",
       "/products/motorcycles/sym-tuscany-150/grey-1.jpg",
       "/products/motorcycles/sym-tuscany-150/grey-2.jpg",
       "/products/motorcycles/sym-tuscany-150/red-1.jpg",
@@ -2011,7 +1992,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/wmoto-nx150s/nx150s-thumbnail.jpg",
     images: [
-      "/products/motorcycles/wmoto-nx150s/nx150s-thumbnail.jpg",
       "/products/motorcycles/wmoto-nx150s/glacier-grey-1.jpg",
       "/products/motorcycles/wmoto-nx150s/glacier-grey-2.jpg",
       "/products/motorcycles/wmoto-nx150s/grind-green-1.jpg",
@@ -2108,7 +2088,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2023-01-01",
     image: "/products/motorcycles/cfmoto-xo-papio-125/xo-papio-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/cfmoto-xo-papio-125/xo-papio-125-thumbnail.jpg",
       "/products/motorcycles/cfmoto-xo-papio-125/white-1.jpg",
       "/products/motorcycles/cfmoto-xo-papio-125/white-2.jpg"
     ],
@@ -2197,7 +2176,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2020-01-01",
     image: "/products/motorcycles/aveta-dy-90/aveta-dy-90-thumbnail.jpg",
     images: [
-      "/products/motorcycles/aveta-dy-90/aveta-dy-90-thumbnail.jpg",
       "/products/motorcycles/aveta-dy-90/black.jpg",
       "/products/motorcycles/aveta-dy-90/blue.jpg",
       "/products/motorcycles/aveta-dy-90/red.jpg"
@@ -2289,7 +2267,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2023-01-01",
     image: "/products/motorcycles/aveta-ranger-max-explorer-130/aveta-ranger-max-explorer-130-thumbnail.jpg",
     images: [
-      "/products/motorcycles/aveta-ranger-max-explorer-130/aveta-ranger-max-explorer-130-thumbnail.jpg",
       "/products/motorcycles/aveta-ranger-max-explorer-130/iron-grey.jpg",
       "/products/motorcycles/aveta-ranger-max-explorer-130/sierra-yellow.jpg",
       "/products/motorcycles/aveta-ranger-max-explorer-130/storm-blue.jpg"
@@ -2389,7 +2366,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/aveta-nova-250/aveta-nova-250-thumbnail.jpg",
     images: [
-      "/products/motorcycles/aveta-nova-250/aveta-nova-250-thumbnail.jpg",
       "/products/motorcycles/aveta-nova-250/emerald-green.jpg",
       "/products/motorcycles/aveta-nova-250/metro-green.jpg",
       "/products/motorcycles/aveta-nova-250/titan-red.jpg"
@@ -2489,7 +2465,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/aveta-nova-125/aveta-nova-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/aveta-nova-125/aveta-nova-125-thumbnail.jpg",
       "/products/motorcycles/aveta-nova-125/blue-lemon.jpg",
       "/products/motorcycles/aveta-nova-125/grey-lemon.jpg",
       "/products/motorcycles/aveta-nova-125/nano-grey.jpg"
@@ -2585,7 +2560,6 @@ export const MOTORCYCLES: Motorcycle[] = [
     arrival: "2026-01-01",
     image: "/products/motorcycles/moda-moca-110/moca-110-thumbnail.jpg",
     images: [
-      "/products/motorcycles/moda-moca-110/moca-110-thumbnail.jpg",
       "/products/motorcycles/moda-moca-110/black-1.jpg",
       "/products/motorcycles/moda-moca-110/black-2.jpg",
       "/products/motorcycles/moda-moca-110/black-3.jpg",
