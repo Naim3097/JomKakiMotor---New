@@ -48,3 +48,14 @@ could not be matched to a photo name — take those back to the client.
 
 `node scripts/catalogue/inspect.js <folderUrl>` walks a folder tree for a
 quick look at what the client uploaded.
+
+## Image weight
+
+Every downloaded photo is passed through `optimise.js` (long edge capped at
+1600 px, mozjpeg q82), and the site serves them via `next/image` as AVIF/WebP
+sized to the slot, so a listing card costs ~9 KB rather than the 400 KB
+original. To re-shrink assets added by hand:
+
+```bash
+node scripts/catalogue/optimise.js public/products public/images public/brand
+```

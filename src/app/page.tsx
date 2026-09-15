@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Section, SectionHeading } from "@/components/Section";
 import { LinkButton, TextLink } from "@/components/Button";
@@ -140,14 +141,16 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-brand">
         {/* Mobile: portrait crop as a full background, rider bottom-anchored
             below the text block. */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/brand/hero-mobile.jpg"
-          alt=""
-          aria-hidden="true"
-          fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover object-bottom md:hidden"
-        />
+        <div className="absolute inset-0 md:hidden" aria-hidden="true">
+          <Image
+            src="/brand/hero-mobile.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-bottom"
+          />
+        </div>
 
         {/* Desktop: the rider occupies a right-hand panel rather than a
             full-bleed background. A full-bleed cover crop pulls him leftwards
@@ -155,13 +158,14 @@ export default function HomePage() {
             column keeps the type clear at any size. The left-edge gradient
             dissolves the panel into the orange field so there is no seam. */}
         <div className="absolute inset-y-0 right-0 hidden w-[45%] md:block lg:w-[48%]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/brand/hero-rider.jpg"
             alt=""
             aria-hidden="true"
-            fetchPriority="high"
-            className="h-full w-full object-cover object-center"
+            fill
+            loading="eager"
+            sizes="(min-width: 768px) 48vw, 0px"
+            className="object-cover object-center"
           />
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-brand to-transparent" />
         </div>
@@ -269,13 +273,15 @@ export default function HomePage() {
           {SERVICES.map((s) => (
             <div key={s.title} className="flex flex-col">
               {/* Image-led per R3 feedback */}
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={s.image}
-                alt={s.alt}
-                loading="lazy"
-                className="aspect-3/2 w-full rounded-lg object-cover"
-              />
+              <div className="relative aspect-3/2 w-full overflow-hidden rounded-lg">
+                <Image
+                  src={s.image}
+                  alt={s.alt}
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
               <h3 className="display-3 mt-5 text-white">{s.title}</h3>
               {/* Check icons per R3 slide 5 */}
               <ul className="mt-3 space-y-2 text-[15px] text-white/65">

@@ -3,6 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 const { listFolder, download } = require("./drive");
+const { optimiseFile } = require("./optimise");
 
 const [, , parsedPath, repo] = process.argv;
 const d = require(parsedPath);
@@ -119,6 +120,7 @@ async function fetchImages(folderUrl, category, slug) {
     const ext = isJpg ? "jpg" : isPng ? "png" : "webp";
     const fname = `${slugify(base)}.${ext}`;
     fs.writeFileSync(path.join(dir, fname), buf);
+    await optimiseFile(path.join(dir, fname)); // cap at 1600px, mozjpeg — see optimise.js
     saved.push({ file: fname, base, url: `/products/${category}/${slug}/${fname}`, folder: f.folder });
   }
   imageManifest[slug] = saved.map((s) => ({ file: s.file, layer: s.folder || "top" }));

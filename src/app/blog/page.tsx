@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Section } from "@/components/Section";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -34,13 +35,9 @@ export default function BlogIndexPage() {
                 client supplies article imagery */}
             <div>
               {post.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={post.image}
-                  alt=""
-                  loading="lazy"
-                  className="aspect-4/3 w-full rounded-lg object-cover"
-                />
+                <div className="relative aspect-4/3 w-full overflow-hidden rounded-lg">
+                  <Image src={post.image} alt="" fill sizes="(min-width: 768px) 240px, 100vw" className="object-cover" />
+                </div>
               ) : (
                 <div
                   className="flex aspect-4/3 w-full items-center justify-center rounded-lg bg-[#ececea] text-[#d3d3cf]"

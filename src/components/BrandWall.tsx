@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import SearchBox from "./SearchBox";
 import { BRANDS, BRAND_CATALOGUE, BRAND_LOGOS } from "@/data/site";
@@ -30,11 +31,11 @@ export default function BrandWall({ searchIndex }: { searchIndex: SearchEntry[] 
                 // Fitting inside a fixed width AND height (rather than
                 // capping height alone) keeps wide wordmarks and squarish
                 // marks visually equal in weight.
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
+                <Image
                   src={BRAND_LOGOS[brand]}
                   alt={brand}
-                  loading="lazy"
+                  width={130}
+                  height={48}
                   className="h-12 w-full max-w-[130px] object-contain"
                 />
               ) : (

@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import Image from "next/image";
 import { Section, SectionHeading } from "@/components/Section";
 import AddToCartButton from "@/components/AddToCartButton";
 import CtaBanner from "@/components/CtaBanner";
@@ -44,22 +45,25 @@ export default function Iphone17Page() {
           gradient edge; mobile: full portrait background, subject in the
           reserved bottom band. */}
       <section className="relative overflow-hidden bg-black text-white">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/brand/iphone-hero-mobile.jpg"
-          alt=""
-          aria-hidden="true"
-          fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover object-bottom md:hidden"
-        />
+        <div className="absolute inset-0 md:hidden" aria-hidden="true">
+          <Image
+            src="/brand/iphone-hero-mobile.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-bottom"
+          />
+        </div>
         <div className="absolute inset-y-0 right-0 hidden w-[45%] md:block lg:w-[48%]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/brand/iphone-hero-phones.jpg"
             alt=""
             aria-hidden="true"
-            fetchPriority="high"
-            className="h-full w-full object-cover object-center"
+            fill
+            loading="eager"
+            sizes="(min-width: 768px) 48vw, 0px"
+            className="object-cover object-center"
           />
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent" />
         </div>
@@ -96,13 +100,12 @@ export default function Iphone17Page() {
                   // White-background lineup render floats on the white page —
                   // no tile chrome needed. All renders share 1000×562, so
                   // card image blocks stay equal-height.
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
+                  <Image
                     src={m.image}
                     alt={`${m.name} colour lineup`}
                     width={1000}
                     height={562}
-                    loading="lazy"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     className="aspect-video w-full rounded-lg object-cover"
                   />
                 ) : (
@@ -180,15 +183,13 @@ export default function Iphone17Page() {
             <div key={f.name} className="border-t-2 border-brand pt-6">
               {/* Partner's own mark where supplied (R3 slide 12) */}
               {"logo" in f && f.logo ? (
-                <>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={f.logo}
-                    alt={f.name}
-                    loading="lazy"
-                    className="h-11 w-auto max-w-[220px] object-contain"
-                  />
-                </>
+                <Image
+                  src={f.logo}
+                  alt={f.name}
+                  width={220}
+                  height={55}
+                  className="h-11 w-auto max-w-[220px] object-contain"
+                />
               ) : (
                 <h3 className="display-3 text-ink">{f.name}</h3>
               )}

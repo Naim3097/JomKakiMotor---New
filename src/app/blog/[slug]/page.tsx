@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { Section } from "@/components/Section";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -51,12 +52,9 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
             </time>
             <h1 className="display-2 mt-4 text-ink">{post.title}</h1>
             {post.image && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={post.image}
-                alt=""
-                className="mt-8 aspect-3/2 w-full rounded-lg object-cover"
-              />
+              <div className="relative mt-8 aspect-3/2 w-full overflow-hidden rounded-lg">
+                <Image src={post.image} alt="" fill priority sizes="(min-width: 768px) 768px, 100vw" className="object-cover" />
+              </div>
             )}
           </header>
           <div className="mt-10 space-y-10">

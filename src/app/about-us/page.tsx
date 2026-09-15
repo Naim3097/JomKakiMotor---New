@@ -107,11 +107,11 @@ export default function AboutPage() {
                   className="flex min-h-24 items-center justify-center rounded-lg border border-line bg-paper px-4 py-5 text-center"
                 >
                   {PARTNER_LOGOS[p] ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
+                    <Image
                       src={PARTNER_LOGOS[p]}
                       alt={p}
-                      loading="lazy"
+                      width={150}
+                      height={44}
                       className="max-h-11 w-full max-w-[150px] object-contain"
                     />
                   ) : (
