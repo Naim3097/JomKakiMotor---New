@@ -2,7 +2,7 @@ import type { GearItem } from "./types";
 
 /**
  * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-09-15. Edit the sheet and re-run the generator rather than
+ * on 2026-09-22. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const RIDER_GEAR: GearItem[] = [
@@ -474,7 +474,17 @@ export const RIDER_GEAR: GearItem[] = [
       "Rose Red",
       "Orange"
     ],
-    images: [],
+    image: "/products/rider-gear/kyt-venom-hellcat-visor/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-venom-hellcat-visor/orange.jpg",
+      "/products/rider-gear/kyt-venom-hellcat-visor/rainbow.jpg",
+      "/products/rider-gear/kyt-venom-hellcat-visor/rose-red.jpg"
+    ],
+    colourImages: {
+      Rainbow: "/products/rider-gear/kyt-venom-hellcat-visor/rainbow.jpg",
+      "Rose Red": "/products/rider-gear/kyt-venom-hellcat-visor/rose-red.jpg",
+      Orange: "/products/rider-gear/kyt-venom-hellcat-visor/orange.jpg"
+    },
     highlights: [
       "Shatter-resistant, optical-grade polycarbonate",
       "Anti-scratch and UV-blocking coatings",
@@ -520,7 +530,13 @@ export const RIDER_GEAR: GearItem[] = [
     colours: [
       "Titan Blue"
     ],
-    images: [],
+    image: "/products/rider-gear/arc-ritz-visor/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-visor/titan-blue.jpg"
+    ],
+    colourImages: {
+      "Titan Blue": "/products/rider-gear/arc-ritz-visor/titan-blue.jpg"
+    },
     highlights: [
       "Shatter-resistant, optical-grade polycarbonate",
       "Anti-scratch and UV-blocking coatings",
@@ -555,57 +571,9 @@ export const RIDER_GEAR: GearItem[] = [
     ]
   },
   {
-    slug: "arc-ritz-hypershield-visor",
+    slug: "sgv-black-cap-visor",
     gearType: "Helmet Visor",
-    name: "ARC Ritz Hypershield Visor",
-    brand: "ARC",
-    price: 60,
-    availability: "In Stock",
-    arrival: "2026-09-01",
-    shareVariant: "full",
-    colours: [
-      "Titan Light Blue",
-      "Titan Light Rainbow",
-      "Titan Light Red"
-    ],
-    images: [],
-    highlights: [
-      "Shatter-resistant, optical-grade polycarbonate",
-      "Anti-scratch and UV-blocking coatings",
-      "Tool-less, quick-release installation",
-      "Exact fit for the original ARC Ritz helmet model"
-    ],
-    description: [
-      "Stand out from the crowd and drastically reduce road glare with the aggressive styling of the ARC Ritz Hypershield Visor. Featuring a premium metallic or tinted finish, this visor not only elevates your helmet's overall aesthetic but provides enhanced privacy and bright-light protection.",
-      "It merges high-end optical clarity with uncompromising shatter resistance for the ultimate riding upgrade."
-    ],
-    specs: [
-      {
-        label: "Compatibility",
-        value: "Fits only ARC Ritz helmets"
-      },
-      {
-        label: "Tint / Color",
-        value: "Titan Light Blue / Titan Light Rainbow / Titan Light Red"
-      },
-      {
-        label: "Material",
-        value: "Anti-Scratch Polycarbonate"
-      },
-      {
-        label: "UV Protection",
-        value: "Blocks 99% of UVA/UVB rays"
-      },
-      {
-        label: "Installation",
-        value: "Tool-less Quick Release"
-      }
-    ]
-  },
-  {
-    slug: "sgv-black-cap",
-    gearType: "Helmet Visor",
-    name: "SGV Black Cap",
+    name: "SGV Black Cap Visor",
     brand: "SGV",
     price: 30,
     availability: "In Stock",
@@ -615,7 +583,15 @@ export const RIDER_GEAR: GearItem[] = [
       "Rainbow",
       "Black"
     ],
-    images: [],
+    image: "/products/rider-gear/sgv-black-cap-visor/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/sgv-black-cap-visor/black.jpg",
+      "/products/rider-gear/sgv-black-cap-visor/rainbow.jpg"
+    ],
+    colourImages: {
+      Rainbow: "/products/rider-gear/sgv-black-cap-visor/rainbow.jpg",
+      Black: "/products/rider-gear/sgv-black-cap-visor/black.jpg"
+    },
     highlights: [
       "Shatter-resistant, high-impact thermoplastic sun peak",
       "Blocks overhead UV sun glare and minor debris",
@@ -662,7 +638,15 @@ export const RIDER_GEAR: GearItem[] = [
       "Crystal Clear Orange",
       "Crystal Green"
     ],
-    images: [],
+    image: "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/crystal-clear-orange.jpg",
+      "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/crystal-green.jpg"
+    ],
+    colourImages: {
+      "Crystal Clear Orange": "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/crystal-clear-orange.jpg",
+      "Crystal Green": "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/crystal-green.jpg"
+    },
     highlights: [
       "Shatter-resistant, optical-grade polycarbonate",
       "Anti-scratch and UV-blocking coatings",

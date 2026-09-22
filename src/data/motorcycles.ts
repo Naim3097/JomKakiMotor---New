@@ -2,7 +2,7 @@ import type { Motorcycle } from "./types";
 
 /**
  * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-09-15. Edit the sheet and re-run the generator rather than
+ * on 2026-09-22. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const MOTORCYCLES: Motorcycle[] = [

@@ -1576,5 +1576,61 @@
       "file": "thumbnail.jpg",
       "layer": "top"
     }
+  ],
+  "kyt-venom-hellcat-visor": [
+    {
+      "file": "orange.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "rainbow.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "rose-red.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-visor": [
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "titan-blue.jpg",
+      "layer": "top"
+    }
+  ],
+  "sgv-black-cap-visor": [
+    {
+      "file": "black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "rainbow.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "bogo-optical-visor-for-ltd-helmets": [
+    {
+      "file": "crystal-clear-orange.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "crystal-green.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
   ]
 }

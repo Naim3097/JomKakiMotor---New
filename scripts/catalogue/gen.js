@@ -284,10 +284,13 @@ const GEAR_SHEETS = [
     keys: ["Material", "Seam Construction", "Visibility", "Available Sizes"] },
   { sheet: "✅ Spoiler (ENG)", gearType: "Helmet Spoiler", price: "C", short: "D", colours: "E", long: "F", spec: "G", img: "B",
     keys: ["Compatibility", "Material Build", "Mounting Type", "Color Options"] },
-  { sheet: "✅ Visor (ENG)", gearType: "Helmet Visor", price: "B", short: "C", colours: "D", long: "E", spec: "F",
+  // Image-link column added 2026-09-22, shifting the rest one to the right
+  { sheet: "✅ Visor (ENG)", gearType: "Helmet Visor", price: "C", short: "D", colours: "E", long: "F", spec: "G", img: "B",
     keys: ["Compatibility", "Tint / Color", "Material", "UV Protection", "Installation"] },
 ];
 const GEAR_BRANDS = ["KYT", "ARC", "Yamaha", "SGV", "BOGO"];
+
+const skipped = [];
 
 async function riderGear() {
   const out = [];
@@ -295,6 +298,12 @@ async function riderGear() {
     for (const r of d[g.sheet].filter((r) => r.n > 1 && isYellow(r))) {
       const c = (k) => (k ? clean(r.cells[k]?.v) : "");
       const name = c("A");
+      // A highlighted row without photos is not ready for the site yet
+      // (client: skip the ARC Ritz Hypershield Visor until its link lands).
+      if (g.img && !c(g.img)) {
+        skipped.push(`${name} — no image link in ${g.sheet.trim()}`);
+        continue;
+      }
       const brand = GEAR_BRANDS.find((b) => name.toUpperCase().startsWith(b.toUpperCase())) || name.split(" ")[0];
       const slug = slugify(name);
       const colours = splitList(fixTypos(c(g.colours))).map((x) => x.replace(/\s*\([^)]*\)$/, ""));
@@ -344,5 +353,8 @@ function emit(file, typeName, importLine, header, items) {
   console.log(`\nTotal: ${bikes.length} bikes, ${acc.length} accessories, ${gear.length} gear`);
   if (unmatched.length) {
     console.log(`\nColour names that do not match the photo names (ask the client):\n  - ${unmatched.join("\n  - ")}`);
+  }
+  if (skipped.length) {
+    console.log(`\nHighlighted but skipped (no photos yet):\n  - ${skipped.join("\n  - ")}`);
   }
 })().catch((e) => { console.error(e); process.exit(1); });

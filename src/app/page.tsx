@@ -98,7 +98,7 @@ const SERVICES = [
     hrefLabel: "How selling works",
     wa: SELL_ENQUIRY,
     image: "/images/home/service-sell.jpg",
-    alt: "Motorcycle parked in front of a building",
+    alt: "Handing over motorcycle keys in the JomKaki Rider showroom",
   },
   {
     title: "Roadtax & Insurance Renewal",
@@ -107,7 +107,7 @@ const SERVICES = [
     hrefLabel: "About renewals",
     wa: ROADTAX_ENQUIRY,
     image: "/images/home/service-roadtax.jpg",
-    alt: "Signing renewal documents",
+    alt: "Sales advisor going through renewal paperwork with a couple",
   },
   {
     title: "Trade In Your Motorcycle",
@@ -116,7 +116,7 @@ const SERVICES = [
     hrefLabel: "How trade-in works",
     wa: TRADE_IN_ENQUIRY,
     image: "/images/home/service-tradein.jpg",
-    alt: "Hands on a motorcycle fuel tank during handover",
+    alt: "JomKaki Rider advisor inspecting a trade-in motorcycle",
   },
 ];
 
