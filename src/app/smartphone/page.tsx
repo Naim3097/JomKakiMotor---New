@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Section, SectionHeading } from "@/components/Section";
+import BannerImage from "@/components/BannerImage";
 import CtaBanner from "@/components/CtaBanner";
 import FaqAccordion from "@/components/FaqAccordion";
 import { IconBadge } from "@/components/LineIcon";
@@ -44,24 +45,13 @@ export default function SmartphonePage() {
           so the copy takes the clear area and the type is dark, not light.
           Mobile reserves a bottom band for the handsets. */}
       <section className="relative overflow-hidden bg-[#f7c49b] text-ink">
-        <div className="absolute inset-0 md:hidden" aria-hidden="true">
-          <Image
-            src="/brand/hero-2-mobile.jpg"
+        <div className="absolute inset-0" aria-hidden="true">
+          <BannerImage
+            desktop="/brand/hero-2-desktop.jpg"
+            mobile="/brand/hero-2-mobile.jpg"
             alt=""
-            fill
             priority
-            sizes="100vw"
-            className="object-cover object-bottom"
-          />
-        </div>
-        <div className="absolute inset-0 hidden md:block" aria-hidden="true">
-          <Image
-            src="/brand/hero-2-desktop.jpg"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-bottom md:object-center"
           />
         </div>
 

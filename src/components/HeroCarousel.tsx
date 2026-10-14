@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import BannerImage from "./BannerImage";
 import { LinkButton } from "./Button";
 import WaButton from "./WaButton";
 import { HERO_SLIDES } from "@/data/heroSlides";
@@ -83,24 +83,12 @@ export default function HeroCarousel() {
                 full-bleed; the wide one crops vertically on narrow desktops,
                 which is safe because the composition is organised
                 horizontally — clear on the left, subject on the right. */}
-            <div className="relative min-h-[600px] md:hidden">
-              <Image
-                src={s.mobile}
+            <div className="relative min-h-[600px] md:min-h-[560px] lg:min-h-[640px]">
+              <BannerImage
+                desktop={s.desktop}
+                mobile={s.mobile}
                 alt={s.alt}
-                fill
                 priority={i === 0}
-                sizes="100vw"
-                className="object-cover object-center"
-              />
-            </div>
-            <div className="relative hidden min-h-[460px] md:block md:min-h-[560px] lg:min-h-[640px]">
-              <Image
-                src={s.desktop}
-                alt=""
-                fill
-                priority={i === 0}
-                sizes="100vw"
-                className="object-cover object-center"
               />
             </div>
 
