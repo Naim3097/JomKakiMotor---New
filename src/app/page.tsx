@@ -136,20 +136,6 @@ export default function HomePage() {
       {/* Sliding main banner — R4 slides 3-5 */}
       <HeroCarousel />
 
-      {/* Why Choose Us — R3 slide 2: icons rather than photography */}
-      <Section>
-        <SectionHeading kicker="The JomKaki Rider difference" title="Why Choose Us" />
-        <div className="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
-          {WHY_CHOOSE_US.map((w) => (
-            <div key={w.title}>
-              <IconBadge name={w.icon} />
-              <h3 className="mt-4 text-base font-semibold text-ink">{w.title}</h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-muted">{w.body}</p>
-            </div>
-          ))}
-        </div>
-      </Section>
-
       {/* Category cards — R2 slide 5: four cards with a See More CTA */}
       <Section tone="surface">
         <SectionHeading
@@ -161,7 +147,7 @@ export default function HomePage() {
             <Link
               key={c.href}
               href={c.href}
-              className="group overflow-hidden rounded-lg border border-line bg-paper transition-shadow hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
+              className="group flex flex-col overflow-hidden rounded-lg border border-line bg-paper transition-shadow hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
             >
               <ProductImage
                 src={c.image}
@@ -170,12 +156,14 @@ export default function HomePage() {
                 sizes="(min-width: 640px) 33vw, 100vw"
                 className="aspect-4/3 w-full transition-transform duration-500 group-hover:scale-[1.02]"
               />
-              <div className="border-t border-line p-4 sm:p-5">
+              {/* The blurbs are different lengths, so See More is pinned to the
+                  card's bottom edge rather than floating under its own blurb */}
+              <div className="flex flex-1 flex-col border-t border-line p-4 sm:p-5">
                 <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-ink transition-colors group-hover:text-brand">
                   {c.label}
                 </h3>
                 <p className="mt-1 hidden text-xs leading-relaxed text-muted sm:block">{c.blurb}</p>
-                <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
+                <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-semibold text-brand">
                   See More
                   <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                 </span>
@@ -216,7 +204,14 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="display-3 mt-5 text-white">{s.title}</h3>
+              {/* Two lines (2.4em, display-3 at 1.15 leading plus rounding) reserved
+                  the cards sit side by side, so "Roadtax & Insurance Renewal"
+                  wrapping cannot drop its bullet list below the neighbouring
+                  cards'. items-end keeps the one-line titles tight to their
+                  lists and puts the slack under the photo instead. */}
+              <h3 className="display-3 mt-5 flex items-end text-white md:min-h-[2.4em]">
+                {s.title}
+              </h3>
               {/* Check icons per R3 slide 5 */}
               <ul className="mt-3 space-y-2 text-[15px] text-white/65">
                 {s.points.map((p) => (
@@ -293,8 +288,24 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* How it works — R2 slide 9: after Newest Arrivals */}
+      {/* Why Choose Us — R3 slide 2: icons rather than photography.
+          Sits under Newest Arrivals per client request, so it takes the grey
+          tone the stripe needs at this point in the page. */}
       <Section tone="surface">
+        <SectionHeading kicker="The JomKaki Rider difference" title="Why Choose Us" />
+        <div className="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+          {WHY_CHOOSE_US.map((w) => (
+            <div key={w.title}>
+              <IconBadge name={w.icon} />
+              <h3 className="mt-4 text-base font-semibold text-ink">{w.title}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted">{w.body}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* How it works — R2 slide 9: after Newest Arrivals */}
+      <Section>
         <SectionHeading
           kicker="Simple steps"
           title="How It Works"
@@ -306,7 +317,7 @@ export default function HomePage() {
       </Section>
 
       {/* Google reviews */}
-      <Section>
+      <Section tone="surface">
         <ReviewsSection />
       </Section>
 
