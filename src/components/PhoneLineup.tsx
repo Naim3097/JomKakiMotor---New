@@ -40,7 +40,13 @@ function PhoneCard({ m }: { m: PhoneModel }) {
         <Thumb kind="phone" label={m.name} className="aspect-video w-full rounded-lg" />
       )}
 
-      <h3 className="display-3 mt-5 border-b-2 border-brand pb-2.5 text-ink">
+      {/* The rule is attached to the name, so the name box reserves two lines
+          (2.4em of text plus the 0.625rem padding) once the cards sit side by
+          side — otherwise a name that wraps, as the Samsung ones do at some
+          widths, drops its own rule, figure and picker a line below the
+          neighbouring cards'. items-end keeps a one-line name tight to its
+          rule and lets the slack fall under the photo instead. */}
+      <h3 className="display-3 mt-5 flex items-end border-b-2 border-brand pb-2.5 text-ink sm:min-h-[calc(2.4em+0.625rem)]">
         {m.name}
       </h3>
       <p className="mt-4">
