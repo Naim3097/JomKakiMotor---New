@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
     imageSizes: [96, 128, 256, 384],
     qualities: [75],
   },
+  // The iPhone-only page became the Apple & Samsung Smartphone page (R4
+  // slides 2, 15–23); keep the old URL working for anything already linking
+  // to it.
+  async redirects() {
+    return [{ source: "/iphone-17", destination: "/smartphone", permanent: true }];
+  },
 };
 
 export default nextConfig;

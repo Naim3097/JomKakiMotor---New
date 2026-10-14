@@ -15,7 +15,7 @@ const NAVIGATE_COLS: { label: string; href: string }[][] = [
     { label: "Road Tax", href: "/road-tax" },
   ],
   [
-    { label: "iPhone 17", href: "/iphone-17" },
+    { label: "Smartphone", href: "/smartphone" },
     { label: "Sell / Trade-In", href: "/sell" },
     { label: "About Us", href: "/about-us" },
     { label: "Contact Us", href: "/contact" },

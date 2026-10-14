@@ -11,9 +11,9 @@ import { waLink } from "@/lib/whatsapp";
  */
 export default function WhatsAppFab() {
   const pathname = usePathname();
-  const isIphone = pathname?.startsWith("/iphone-17");
-  const href = isIphone
-    ? waLink(WHATSAPP_IPHONE, "Hi, I'd like to order an iPhone 17.")
+  const isPhone = pathname?.startsWith("/smartphone");
+  const href = isPhone
+    ? waLink(WHATSAPP_IPHONE, "Hi, I'd like to order a smartphone.")
     : waLink(WHATSAPP_MOTOR, "Hi JomKaki Rider, I'd like to make an enquiry.");
 
   return (

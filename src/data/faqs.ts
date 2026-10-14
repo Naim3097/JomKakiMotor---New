@@ -117,48 +117,51 @@ export const SELL_PAGE_FAQS: Faq[] = [
   },
 ];
 
-/** iPhone 17 page FAQ (iPhone Website layout draft). */
-export const IPHONE_FAQS: Faq[] = [
+/** Smartphone page FAQ — client copy, R4 slide 22. */
+export const PHONE_FAQS: Faq[] = [
   {
-    q: "Can I order the iPhone 17 if I am outside of Kuching?",
+    q: "Can I order smartphones if I live outside Kuching?",
     a: [
-      "Currently, our iPhone 17 lineup and financing options (First Class Credit and Loan Kedai) are exclusively available for our Kuching customers. All orders require in-person collection at our designated Satok branch in Kuching.",
+      "Currently, all smartphone installment plans (Loan Kedai and First Class Credit) for our Apple and Samsung lineups are exclusively available for customers in Kuching. To ensure security and identity verification, all orders require in-person pickup at our designated Satok branch in Kuching. We do not offer courier delivery.",
     ],
   },
   {
-    q: "Can I trade in my old smartphone for the iPhone 17?",
+    q: "Do you accept phone trade-ins?",
     a: [
-      "We currently do not accept device trade-ins. All our iPhone 17 models are available through direct purchase or our flexible installment plans via First Class Credit and our in-house Loan Kedai.",
+      "We currently do not offer phone trade-ins. All our smartphone models are available through direct purchase or our low-deposit monthly installment plans. (Note: If you have a motorcycle to trade in, our sales team can assist you separately).",
     ],
   },
   {
-    q: "What documents do I need to apply for the installment plans?",
+    q: "What documents do I need to apply for phone installment plans?",
     a: [
-      "For both First Class Credit and our in-house Loan Kedai financing, you will typically need your original Identity Card (IC), your latest payslips, and recent bank statements. Once you contact us, our team will guide you step-by-step through the exact documentation needed via WhatsApp.",
+      "For both First Class Credit and in-house Loan Kedai, standard applications require your Malaysian IC, your latest payslips, and recent bank statements. For gig-economy workers or self-employed applicants in Kuching, reach out directly on WhatsApp and our team will advise on acceptable supporting income documents.",
     ],
   },
   {
-    q: "How do I place an order?",
+    q: "How do I place an order or apply for financing?",
     a: [
-      "All orders are handled personally by our sales team to ensure you get the best service. Simply click any \"WhatsApp to Order\" button on our website. We will help you check stock availability, choose your model, and process your financing application directly through chat.",
+      "All orders are coordinated directly with our Satok branch advisors. Click any \"WhatsApp to Order\" button to check live stock for your preferred iPhone or Galaxy model, submit your details, and have your installment eligibility assessed before you head down to collect.",
     ],
   },
   {
-    q: "Where exactly do I collect my new iPhone 17?",
+    q: "Where do I collect my new smartphone?",
     a: [
-      "To ensure a secure and safe handover, all collections are done in person. Once your financing is approved and your order is finalized, you can pick up your device exclusively at our JomKaki Rider Satok branch in Kuching.",
+      "Once your financing is approved, collect your smartphone at JomKaki Rider Satok (LOT 442, Ground Floor, Jalan Kulas, Kuching). Please remember to bring your physical IC and your WhatsApp confirmation for handover.",
     ],
   },
   {
-    q: "Are the iPhones original and covered by warranty?",
+    q: "Are the Apple and Samsung phones original and covered by warranty?",
     a: [
-      "Yes, absolutely. Every iPhone 17 we supply is 100% original, brand new in a sealed box, and comes fully covered by the official Apple Malaysia warranty.",
+      "Yes, 100%. Every smartphone we supply is brand-new, original, and factory-sealed:",
+      "iPhones: Covered by the official 1-Year Apple Malaysia Warranty.",
+      "Samsung Devices: Covered by the official Samsung Malaysia Electronics (SME) Warranty.",
+      "All warranties can be claimed at any authorized service center nationwide.",
     ],
   },
   {
-    q: "Do I need to pay a deposit for the installment plan?",
+    q: "Do I need to pay a down payment or deposit?",
     a: [
-      "Deposit requirements depend on the specific financing option you choose (First Class Credit or Loan Kedai) and your individual credit assessment. Our team will provide you with a transparent breakdown of any upfront costs during your WhatsApp application process.",
+      "Deposit amounts vary based on the smartphone model (such as iPhone 18 Pro or Samsung S26 Ultra) and your individual credit profile with Loan Kedai or First Class Credit. Our sales team provides a transparent breakdown of upfront deposits and monthly fees via WhatsApp before you finalise.",
     ],
   },
 ];

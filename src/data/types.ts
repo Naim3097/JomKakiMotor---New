@@ -85,13 +85,18 @@ export interface AccessoryItem extends CatalogueProduct {
   fitment?: { colour: string; models: string[] }[];
 }
 
-export interface IphoneModel {
+export interface PhoneModel {
   id: string;
+  /** Marque — drives the Apple / Samsung category buttons (R4 slide 17) */
+  make: "Apple" | "Samsung";
   name: string;
-  rrp: number;
-  monthlyFrom: number;
-  storage: string[];
-  colours: string[];
+  /**
+   * Storage tiers with the instalment band published for each, e.g.
+   * { size: "512GB", monthly: "3++" } meaning the RM300s. The client
+   * publishes bands rather than exact figures and no longer publishes
+   * handset prices at all (R4).
+   */
+  storage: { size: string; monthly: string }[];
   /** Lineup render (white background, 1000×562) in public/ */
   image?: string;
 }

@@ -8,7 +8,7 @@ export const COPYRIGHT =
 
 /** Primary motorcycle / general enquiry line (Peter Teo, Batu Kawa) */
 export const WHATSAPP_MOTOR = "60109726558";
-/** iPhone 17 orders — Satok branch */
+/** Smartphone orders — Satok branch */
 export const WHATSAPP_IPHONE = "60106608698";
 
 export const EMAIL = "enquiries@jomkaki.com.my";
@@ -195,7 +195,7 @@ export const NAV_LINKS = [
     { label: "Accessories", href: "/accessories" },
   ]},
   { label: "Sell", href: "/sell" },
-  { label: "iPhone 17", href: "/iphone-17" },
+  { label: "Smartphone", href: "/smartphone" },
   { label: "About Us", href: "/about-us" },
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },

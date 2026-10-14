@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/motorcycles",
     "/rider-gear",
     "/accessories",
-    "/iphone-17",
+    "/smartphone",
     "/sell",
     "/road-tax",
     "/about-us",
