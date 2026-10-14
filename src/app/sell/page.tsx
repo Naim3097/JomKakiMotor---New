@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Section, SectionHeading } from "@/components/Section";
-import sellHero from "../../../public/brand/sell-hero.png";
+import sellHero from "../../../public/brand/sell-hero.jpg";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BranchMap from "@/components/BranchMap";
 import CtaBanner from "@/components/CtaBanner";

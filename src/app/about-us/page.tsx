@@ -6,7 +6,7 @@ import { LinkButton } from "@/components/Button";
 import CtaBanner from "@/components/CtaBanner";
 import LineIcon from "@/components/LineIcon";
 import { BRANCHES, FINANCING_PARTNERS, PARTNER_LOGOS } from "@/data/site";
-import aboutHero from "../../../public/brand/about-hero.png";
+import aboutHero from "../../../public/brand/about-hero.jpg";
 
 export const metadata: Metadata = {
   title: "About JomKaki Rider — Malaysia's Premier Motorcycle Dealership",

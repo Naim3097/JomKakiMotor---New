@@ -6,6 +6,7 @@ import { LinkButton, TextLink } from "@/components/Button";
 import { BikeCard, ProductCard } from "@/components/cards";
 import HowItWorks from "@/components/HowItWorks";
 import BrandWall from "@/components/BrandWall";
+import HeroCarousel from "@/components/HeroCarousel";
 import ReviewsSection from "@/components/ReviewsSection";
 import ProductImage from "@/components/ProductImage";
 import { type ThumbKind } from "@/components/Thumb";
@@ -21,7 +22,6 @@ import {
 } from "@/lib/catalog";
 import { WHATSAPP_MOTOR } from "@/data/site";
 import {
-  GENERAL_ENQUIRY,
   ROADTAX_ENQUIRY,
   SELL_ENQUIRY,
   TRADE_IN_ENQUIRY,
@@ -133,74 +133,8 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero — brand-orange surface with art-directed background artwork.
-          Two crops (see public/brand/README.md for the spec): the desktop file
-          carries the subject on the right, beside the content column; the
-          mobile file carries it in the reserved band below the CTAs. Both are
-          flat #F26522 placeholders until the client's artwork lands. */}
-      <section className="relative overflow-hidden bg-brand">
-        {/* Mobile: portrait crop as a full background, rider bottom-anchored
-            below the text block. */}
-        <div className="absolute inset-0 md:hidden" aria-hidden="true">
-          <Image
-            src="/brand/hero-mobile.jpg"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-bottom"
-          />
-        </div>
-
-        {/* Desktop: the rider occupies a right-hand panel rather than a
-            full-bleed background. A full-bleed cover crop pulls him leftwards
-            into the headline at every width below ~1560px; giving him his own
-            column keeps the type clear at any size. The left-edge gradient
-            dissolves the panel into the orange field so there is no seam. */}
-        <div className="absolute inset-y-0 right-0 hidden w-[45%] md:block lg:w-[48%]">
-          <Image
-            src="/brand/hero-rider.jpg"
-            alt=""
-            aria-hidden="true"
-            fill
-            loading="eager"
-            sizes="(min-width: 768px) 48vw, 0px"
-            className="object-cover object-center"
-          />
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-brand to-transparent" />
-        </div>
-
-        {/* Below md the rider sits in a reserved band under the CTAs. That band
-            has to grow with viewport width: as the frame gets squarer the
-            portrait crop scales up and pulls him higher, so a fixed padding
-            collides with the body copy around 500–767px. */}
-        <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-5 pb-[max(460px,112vw)] pt-10 sm:px-8 md:min-h-[680px] md:pb-24 md:pt-24">
-          {/* Width-capped so the type never reaches the rider panel */}
-          <div className="md:max-w-[330px] lg:max-w-[450px] xl:max-w-[600px]">
-            <p className="eyebrow text-ink/60">
-              Kuching · Bintulu · KL &amp; Selangor
-            </p>
-            <h1 className="display-1 mt-4 md:mt-6">
-              <span className="text-white">The Ride You Want</span>
-              <br />
-              <span className="text-ink">One Message Away</span>
-            </h1>
-            <p className="mt-5 max-w-xl leading-relaxed text-ink/85 md:mt-8 md:text-lg">
-              Genuine motorcycles, parts and riding gear from Yamaha, Honda,
-              Modenas, SYM and more. Flexible financing, real people on
-              WhatsApp, collection at five branches nationwide.
-            </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center md:mt-10">
-              <WaButton href={GENERAL_ENQUIRY} size="lg" variant="ink" className="w-full sm:w-auto">
-                WhatsApp us
-              </WaButton>
-              <LinkButton href="/motorcycles" size="lg" variant="outline-ink" className="w-full sm:w-auto">
-                Browse motorcycles
-              </LinkButton>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Sliding main banner — R4 slides 3-5 */}
+      <HeroCarousel />
 
       {/* Why Choose Us — R3 slide 2: icons rather than photography */}
       <Section>
