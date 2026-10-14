@@ -23,6 +23,11 @@ export interface CartItem {
   /** Product page, so the cart can link back */
   href: string;
   /**
+   * Motorcycles publish an instalment band instead of a price (R4), so the
+   * line shows "From RM3++/month" and is left out of the cart total.
+   */
+  monthly?: string;
+  /**
    * Chosen variant, e.g. { Colour: "Matte Grey", Size: "L" } (R3 slide 8).
    * Two different variants of one product are separate line items.
    */
@@ -128,7 +133,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const value = useMemo<CartApi>(() => {
     const count = items.reduce((n, i) => n + i.qty, 0);
-    const subtotal = items.reduce((n, i) => n + i.price * i.qty, 0);
+    const subtotal = items.reduce((n, i) => n + (i.monthly ? 0 : i.price * i.qty), 0);
     return { items, count, subtotal, add, setQty, remove, clear };
   }, [items, add, setQty, remove, clear]);
 

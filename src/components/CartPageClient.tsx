@@ -37,9 +37,8 @@ export default function CartPageClient() {
   const orderLines = items
     .map((i) => {
       const opts = describeOptions(i.options);
-      return `• ${i.name}${opts ? ` (${opts})` : ""} × ${i.qty} — ${rm(
-        i.price * i.qty
-      )}`;
+      const amount = i.monthly ? `from RM${i.monthly}/month` : rm(i.price * i.qty);
+      return `• ${i.name}${opts ? ` (${opts})` : ""} × ${i.qty} — ${amount}`;
     })
     .join("\n");
   const message = `Hi JomKaki Rider, I'd like to order:\n${orderLines}\n\nTotal: ${rm(
@@ -66,7 +65,9 @@ export default function CartPageClient() {
                 </Link>
                 {/* Chosen colour / size (R3 slide 8) */}
                 {opts && <p className="mt-0.5 text-xs text-muted">{opts}</p>}
-                <p className="mt-0.5 text-sm font-semibold text-brand">{rm(item.price)}</p>
+                <p className="mt-0.5 text-sm font-semibold text-brand">
+                  {item.monthly ? `From RM${item.monthly}/month*` : rm(item.price)}
+                </p>
               </div>
               <div className="flex items-center gap-2">
                 <button
@@ -88,7 +89,7 @@ export default function CartPageClient() {
                 </button>
               </div>
               <p className="w-24 text-right text-[15px] font-semibold text-ink">
-                {rm(item.price * item.qty)}
+                {item.monthly ? "—" : rm(item.price * item.qty)}
               </p>
               <button
                 type="button"
@@ -108,7 +109,9 @@ export default function CartPageClient() {
           Order Summary
         </h2>
         <div className="mt-5 flex items-baseline justify-between border-t border-line pt-5">
-          <span className="text-sm text-muted">Total</span>
+          <span className="text-sm text-muted">
+            Total{items.some((i) => i.monthly) ? " (excluding financed items)" : ""}
+          </span>
           <span className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink">
             {rm(subtotal)}
           </span>

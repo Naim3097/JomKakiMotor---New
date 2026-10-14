@@ -43,7 +43,8 @@ export function dealerSchemas() {
 export function productSchema(opts: {
   name: string;
   description: string;
-  price: number;
+  /** Omitted for motorcycles — the client does not publish their prices (R4) */
+  price?: number;
   path: string;
   brand: string;
   availability: "In Stock" | "Pre-Order";
@@ -67,8 +68,7 @@ export function productSchema(opts: {
       : {}),
     offers: {
       "@type": "Offer",
-      price: opts.price,
-      priceCurrency: "MYR",
+      ...(opts.price !== undefined ? { price: opts.price, priceCurrency: "MYR" } : {}),
       availability:
         opts.availability === "In Stock"
           ? "https://schema.org/InStock"

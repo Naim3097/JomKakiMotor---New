@@ -7,12 +7,15 @@ const { optimiseFile } = require("./optimise");
 
 const [, , parsedPath, repo] = process.argv;
 const d = require(parsedPath);
-const YELLOW = "FFFFFF00";
+const YELLOW = "FFFFFF00";   // ready for the site
+const CYAN = "FF00FFFF";     // newly added by the client
+const RED = "FFFF0000";      // discontinued — must not reach the site
 const PUB = path.join(repo, "public", "products");
 
 /* ---------- text helpers ---------- */
 const clean = (s) => (s || "").replace(/\s+/g, " ").trim();
-const isYellow = (r) => r.cells.A && r.cells.A.fill === YELLOW && r.cells.A.v;
+const isLive = (r) =>
+  r.cells.A && r.cells.A.v && [YELLOW, CYAN].includes(r.cells.A.fill) && r.cells.A.fill !== RED;
 const slugify = (s) =>
   s.toLowerCase().replace(/&/g, " and ").replace(/[()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 const fixTypos = (s) =>
@@ -81,7 +84,24 @@ function specsBullets(s, keys) {
   return specsByKeys(s, keys);
 }
 
-const splitList = (s) => clean(s).split(/\s*•\s*|,\s*/).map((x) => x.trim()).filter(Boolean);
+/** Colour/size lists arrive as "A • B", "A, B" or "A, B and C". */
+const splitList = (s) =>
+  clean(s)
+    .split(/\s*•\s*|,\s*|\s+and\s+/i)
+    .map((x) => x.trim())
+    .filter(Boolean);
+
+/**
+ * R4: the client publishes the monthly instalment as a band ("3++" = in the
+ * RM300s) rather than an exact figure, and no longer publishes motorcycle
+ * selling prices at all. Accepts "3++", "RM3++" or a legacy exact figure.
+ */
+function monthlyBand(raw) {
+  const v = clean(raw).replace(/^RM\s*/i, "");
+  if (/^\d\+\+$/.test(v)) return v;
+  const n = parseFloat(v);
+  return Number.isFinite(n) ? `${Math.floor(n / 100)}++` : v;
+}
 
 /* ---------- images ---------- */
 const imageManifest = {};
@@ -91,8 +111,18 @@ async function fetchImages(folderUrl, category, slug) {
   // Reuse an already-downloaded folder unless FRESH=1. The Drive listing is
   // still fetched (cheap) so each file keeps its layer: top level vs Gallery.
   const files = await listFolder(folderUrl);
-  const stem = (name) => slugify(name.replace(/&amp;/g, "&").replace(/\.(jpe?g|png|webp)$/i, ""));
-  const layerOf = (fname) => files.find((f) => stem(f.name) === fname.replace(/\.\w+$/, ""))?.folder ?? "";
+  // Per-colour sub-folders ("Naga Mas/1.jpg") would collide once flattened, so
+  // the sub-folder name is folded into the file name.
+  const nameOf = (f) => {
+    const raw = f.name.replace(/&amp;/g, "&").replace(/\.(jpe?g|png|webp)$/i, "");
+    const sub = f.folder && !/^gallery$/i.test(f.folder) ? f.folder.split("/").pop() : "";
+    return { base: sub ? `${sub} ${raw}` : raw, folder: f.folder };
+  };
+  const layerOf = (fname) => {
+    const stem = fname.replace(/\.\w+$/, "");
+    const hit = files.find((f) => slugify(nameOf(f).base) === stem);
+    return hit ? hit.folder : "";
+  };
   if (fs.existsSync(dir) && fs.readdirSync(dir).length) {
     const cached = fs.readdirSync(dir).map((file) => ({
       file,
@@ -108,7 +138,7 @@ async function fetchImages(folderUrl, category, slug) {
   const saved = [];
   for (const f of files) {
     const rawName = f.name.replace(/&amp;/g, "&");
-    let base = rawName.replace(/\.(jpe?g|png|webp)$/i, "");
+    const base = nameOf(f).base;
     const buf = await download(f.id);
     const isJpg = buf[0] === 0xff && buf[1] === 0xd8;
     const isPng = buf[0] === 0x89 && buf[1] === 0x50;
@@ -137,9 +167,11 @@ async function fetchImages(folderUrl, category, slug) {
  */
 function splitMedia(files) {
   const nested = files.some((f) => f.folder);
-  const isThumb = nested ? (f) => !f.folder : (f) => /thumbnail/i.test(f.base);
-  const thumb =
-    files.find((f) => isThumb(f) && /thumbnail/i.test(f.base)) || files.find(isThumb) || files[0];
+  // Flat folders name the thumbnail "Thumbnail", "Thumbnail_v2", or append a
+  // " T" / " T_v2" suffix to the product name (client convention, R4).
+  const thumbNamed = (f) => /thumb/i.test(f.base) || /\sT(_v\d+)?$/i.test(f.base.trim());
+  const isThumb = nested ? (f) => !f.folder : thumbNamed;
+  const thumb = files.find((f) => isThumb(f) && thumbNamed(f)) || files.find(isThumb) || files[0];
   const gallery = files.filter((f) => !isThumb(f));
   return {
     image: thumb?.url,
@@ -167,10 +199,15 @@ function colourImages(colours, saved, productName) {
   const norm = (x) =>
     x.toLowerCase().replace(/\s*\([^)]*\)$/, "").replace(/colour/g, "color").replace(/grey/g, "gray")
       .replace(/[^a-z0-9]+/g, " ").replace(/\s*\d+$/, "").trim();
-  const gallery = saved.filter((s) => !/thumbnail/i.test(s.base));
-  // photo groups: "matador red 1/2" → "matador red"
+  const gallery = saved.filter((s) => !/thumb/i.test(s.base) && !/\sT(_v\d+)?$/i.test(s.base.trim()));
+  // Photo groups: a per-colour sub-folder ("Naga Mas/1.jpg") names the colour
+  // outright; otherwise the file name does ("matador red 1/2" → "matador red").
   const groups = new Map();
-  for (const s of gallery) { const g = norm(s.base); if (!groups.has(g)) groups.set(g, s); }
+  for (const s of gallery) {
+    const sub = s.folder && !/^gallery$/i.test(s.folder) ? s.folder.split("/").pop() : null;
+    const g = norm(sub || s.base);
+    if (!groups.has(g)) groups.set(g, s);
+  }
   const taken = new Set();
   const claim = (c, g) => { out[c] = groups.get(g).url; taken.add(g); };
   const remaining = [];
@@ -200,16 +237,22 @@ const BRAND_PREFIX = [
   ["Aveta", "Aveta"], ["Moda", "Moda"],
 ];
 const AVETA_PARTNERS = ["JCL", "Chailease Berjaya"];
+/** Sheet rows whose product name omits the marque (R4) */
+const BRAND_FALLBACK = { "Y16ZR-R Pramac Racing Replica": "Yamaha" };
 const BIKE_SPEC_KEYS = ["Engine", "Displacement", "Max Power", "Max Torque", "Transmission", "Fuel Capacity", "Brakes", "Weight", "Starting System"];
 
 async function motorcycles() {
-  const rows = d["✅ Motorcycle (ENG) "].filter((r) => r.n > 1 && isYellow(r));
+  const rows = d["✅ Motorcycle (ENG) "].filter((r) => r.n > 1 && isLive(r));
   const out = [];
   for (const r of rows) {
     const c = (k) => clean(r.cells[k]?.v);
     const name = c("A");
-    const [prefix, brand] = BRAND_PREFIX.find(([p]) => name.startsWith(p)) || ["", name.split(" ")[0]];
-    const model = name.slice(prefix.length).trim();
+    const [prefix, brand] = BRAND_PREFIX.find(([p]) => name.startsWith(p)) || [
+      "",
+      BRAND_FALLBACK[name] || name.split(" ")[0],
+    ];
+    // With a fallback marque the whole sheet name is the model
+    const model = (BRAND_FALLBACK[name] ? name : name.slice(prefix.length)).trim();
     const slug = slugify(name);
     const year = parseInt(c("C"), 10);
     const deposit = /no deposit/i.test(c("F")) ? 0 : Math.round(parseFloat(c("F")));
@@ -222,7 +265,7 @@ async function motorcycles() {
     const colours = splitList(fixTypos(c("I")));
     out.push({
       slug, brand, model, type: c("D"), cc, price: Math.round(parseFloat(c("E"))), deposit,
-      monthly: Math.round(parseFloat(c("G"))), year,
+      monthly: monthlyBand(c("G")), year,
       colours,
       availability: "In Stock",
       arrival: `${year}-01-01`,
@@ -242,7 +285,7 @@ const MODEL_ALIAS = { Y125Z: "Yamaha Y125Z", Y15ZR: "Yamaha Y15ZR", NVX: "Yamaha
 const normModel = (m) => MODEL_ALIAS[m.replace(/^Yamaha\s+/i, "").trim()] || m.trim();
 
 async function accessories() {
-  const rows = d["✅ Accessories (ENG)"].filter((r) => r.n > 1 && isYellow(r));
+  const rows = d["✅ Accessories (ENG)"].filter((r) => r.n > 1 && isLive(r));
   const out = [];
   for (const r of rows) {
     const c = (k) => clean(r.cells[k]?.v);
@@ -295,7 +338,7 @@ const skipped = [];
 async function riderGear() {
   const out = [];
   for (const g of GEAR_SHEETS) {
-    for (const r of d[g.sheet].filter((r) => r.n > 1 && isYellow(r))) {
+    for (const r of d[g.sheet].filter((r) => r.n > 1 && isLive(r))) {
       const c = (k) => (k ? clean(r.cells[k]?.v) : "");
       const name = c("A");
       // A highlighted row without photos is not ready for the site yet

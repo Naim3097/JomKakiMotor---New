@@ -44,26 +44,25 @@ export function BikeCard({ bike, isNew = false }: { bike: Motorcycle; isNew?: bo
             brand: bike.brand,
             price: bike.price,
             href: `/motorcycles/${bike.slug}`,
+            monthly: bike.monthly,
           }}
           className="absolute right-3 top-3"
         />
       </div>
-      {/* Typography per the client's card mock (R4), with a clear scale:
-          price (display, 26px, orange) > name (15px semibold) > detail
-          lines (14px) > *T&C (11px muted). One bold weight per tier so
-          the price stays the unambiguous focal point. */}
+      {/* Card format per R4 slide 7: no selling price — the monthly band is
+          the focal figure, then the rule, deposit and T&C note. */}
       <div className="mt-4">
         <h3 className="text-[15px] font-semibold leading-snug text-ink">
           {bike.brand} {bike.model}
         </h3>
         <p className="mt-1 font-display text-[26px] font-bold leading-tight tracking-[-0.02em] text-brand">
-          {rm(bike.price)}
+          From RM{bike.monthly}
+          <span className="text-base font-semibold">/month*</span>
         </p>
         <div className="mt-2.5 border-t-2 border-brand pt-2.5">
-          <p className="text-sm font-semibold text-brand">
+          <p className="text-sm font-semibold text-ink">
             {bike.deposit > 0 ? `Deposit: ${rm(bike.deposit)}*` : "No Deposit Required*"}
           </p>
-          <p className="mt-0.5 text-sm font-semibold text-ink">From {rm(bike.monthly)}/month*</p>
         </div>
         <p className="mt-2.5 text-[11px] text-muted">*T&amp;C Apply</p>
       </div>

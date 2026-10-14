@@ -44,7 +44,8 @@ export interface DetailProps {
   images?: string[];
   /** Motorcycle extras */
   deposit?: number;
-  monthly?: number;
+  /** Instalment band, e.g. "3++" — shown in place of a price for vehicles (R4) */
+  monthly?: string;
   isVehicle?: boolean;
   cc?: number;
   /** Overrides the site-wide credit partner list (e.g. Aveta: JCL & Chailease only) */
@@ -92,15 +93,23 @@ export default function ProductDetail(p: DetailProps) {
 
             <div className="mt-6 flex flex-wrap items-baseline gap-x-8 gap-y-3">
               <div>
-                <p className="font-display text-3xl font-semibold tracking-[-0.02em] text-ink">
-                  {rm(p.price)}
-                </p>
-                {p.monthly !== undefined && (
-                  <p className="mt-1 text-sm text-muted">
-                    From <span className="font-semibold text-brand">{rm(p.monthly)}/month</span>
+                {/* R4 slide 7: motorcycles publish the instalment band, not a
+                    selling price. Everything else still shows its price. */}
+                {p.monthly !== undefined ? (
+                  <>
+                    <p className="font-display text-3xl font-semibold tracking-[-0.02em] text-brand">
+                      From RM{p.monthly}
+                      <span className="text-xl">/month*</span>
+                    </p>
                     {p.deposit !== undefined && (
-                      <> · {p.deposit > 0 ? `deposit ${rm(p.deposit)}` : "no deposit required"}</>
+                      <p className="mt-1 text-sm font-semibold text-ink">
+                        {p.deposit > 0 ? `Deposit: ${rm(p.deposit)}*` : "No Deposit Required*"}
+                      </p>
                     )}
+                  </>
+                ) : (
+                  <p className="font-display text-3xl font-semibold tracking-[-0.02em] text-ink">
+                    {rm(p.price)}
                   </p>
                 )}
               </div>
@@ -114,7 +123,8 @@ export default function ProductDetail(p: DetailProps) {
             </div>
             {p.monthly !== undefined && (
               <p className="mt-2 text-xs text-muted/80">
-                Estimated installment. Final terms depend on financing approval. T&amp;C apply.
+                Indicative instalment. Final terms depend on financing approval.
+                T&amp;C apply — WhatsApp us for the exact figure.
               </p>
             )}
 
@@ -144,6 +154,7 @@ export default function ProductDetail(p: DetailProps) {
                   brand: p.brand,
                   price: p.price,
                   href: p.path,
+                  monthly: p.monthly,
                 }}
               />
             </div>
@@ -253,7 +264,8 @@ export default function ProductDetail(p: DetailProps) {
         data={productSchema({
           name: p.name,
           description: p.description[0] ?? "",
-          price: p.price,
+          // Vehicles publish no price (R4), so none goes into structured data
+          price: p.isVehicle ? undefined : p.price,
           path: p.path,
           brand: p.brand,
           availability: p.availability,

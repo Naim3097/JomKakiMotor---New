@@ -2,7 +2,7 @@ import type { AccessoryItem } from "./types";
 
 /**
  * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-09-22. Edit the sheet and re-run the generator rather than
+ * on 2026-10-14. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const ACCESSORIES: AccessoryItem[] = [
@@ -106,9 +106,10 @@ export const ACCESSORIES: AccessoryItem[] = [
         ]
       }
     ],
-    image: "/products/accessories/enkei-3-bintang-sport-rim/thumbnail.jpg",
+    image: "/products/accessories/enkei-3-bintang-sport-rim/black.jpg",
     images: [
       "/products/accessories/enkei-3-bintang-sport-rim/black.jpg",
+      "/products/accessories/enkei-3-bintang-sport-rim/enkei-3-bintang-sport-rim-t-v2.jpg",
       "/products/accessories/enkei-3-bintang-sport-rim/orange.jpg",
       "/products/accessories/enkei-3-bintang-sport-rim/white.jpg"
     ],
@@ -168,8 +169,9 @@ export const ACCESSORIES: AccessoryItem[] = [
         ]
       }
     ],
-    image: "/products/accessories/enkei-g500-custom/thumbnail.jpg",
+    image: "/products/accessories/enkei-g500-custom/enkei-g500-custom-t-v2.jpg",
     images: [
+      "/products/accessories/enkei-g500-custom/enkei-g500-custom-t-v2.jpg",
       "/products/accessories/enkei-g500-custom/g500-black.jpg"
     ],
     colourImages: {
@@ -233,10 +235,11 @@ export const ACCESSORIES: AccessoryItem[] = [
         ]
       }
     ],
-    image: "/products/accessories/aerox-thai-sport-rim/thumbnail.jpg",
+    image: "/products/accessories/aerox-thai-sport-rim/aerox-thai-black.jpg",
     images: [
       "/products/accessories/aerox-thai-sport-rim/aerox-thai-black.jpg",
-      "/products/accessories/aerox-thai-sport-rim/aerox-thai-gold.jpg"
+      "/products/accessories/aerox-thai-sport-rim/aerox-thai-gold.jpg",
+      "/products/accessories/aerox-thai-sport-rim/aerox-thai-sport-rim-t-v2.jpg"
     ],
     colourImages: {
       Black: "/products/accessories/aerox-thai-sport-rim/aerox-thai-black.jpg",
@@ -293,7 +296,7 @@ export const ACCESSORIES: AccessoryItem[] = [
         ]
       }
     ],
-    image: "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/thumbnail.jpg",
+    image: "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/ppr-racing-cnc-fork-lay-t.jpg",
     images: [
       "/products/accessories/ppr-racing-cnc-fork-lay-yamaha-lc135/black-and-gold.jpg"
     ],

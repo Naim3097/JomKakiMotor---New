@@ -13,9 +13,14 @@ export interface Motorcycle {
   model: string;
   type: MotorcycleType;
   cc: number;
+  /**
+   * Retail price. R4: the client no longer publishes motorcycle prices, so
+   * this is kept for sorting and internal reference but never rendered.
+   */
   price: number;
   deposit: number;
-  monthly: number;
+  /** Instalment band as published, e.g. "3++" meaning the RM300s (R4) */
+  monthly: string;
   year: number;
   colours: string[];
   availability: "In Stock" | "Pre-Order";

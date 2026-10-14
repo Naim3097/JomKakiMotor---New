@@ -2,7 +2,7 @@ import type { Motorcycle } from "./types";
 
 /**
  * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-09-22. Edit the sheet and re-run the generator rather than
+ * on 2026-10-14. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const MOTORCYCLES: Motorcycle[] = [
@@ -12,9 +12,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "LC135 V8",
     type: "Underbone",
     cc: 135,
-    price: 12200,
-    deposit: 500,
-    monthly: 295,
+    price: 11200,
+    deposit: 0,
+    monthly: "3++",
     year: 2026,
     colours: [
       "Matador Red",
@@ -105,14 +105,205 @@ export const MOTORCYCLES: Motorcycle[] = [
     ]
   },
   {
+    slug: "yamaha-y16zr-r",
+    brand: "Yamaha",
+    model: "Y16ZR-R",
+    type: "Underbone",
+    cc: 155,
+    price: 13700,
+    deposit: 400,
+    monthly: "3++",
+    year: 2026,
+    colours: [
+      "Kouka Grey",
+      "Raijin Green",
+      "Yoru Black"
+    ],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/yamaha-y16zr-r/y16zr-r-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/yamaha-y16zr-r/black-1.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/black-2.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/black-3.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/black-4.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/green-1.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/green-2.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/green-3.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/green-4.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/grey-1.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/grey-2.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/grey-3.jpg",
+      "/products/motorcycles/yamaha-y16zr-r/grey-4.jpg"
+    ],
+    colourImages: {
+      "Kouka Grey": "/products/motorcycles/yamaha-y16zr-r/grey-1.jpg",
+      "Raijin Green": "/products/motorcycles/yamaha-y16zr-r/green-1.jpg",
+      "Yoru Black": "/products/motorcycles/yamaha-y16zr-r/black-1.jpg"
+    },
+    highlights: [
+      "155cc liquid-cooled, SOHC with VVA engine",
+      "Flexible financing available via trusted credit partners",
+      "Comes with official manufacturer warranty",
+      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
+    ],
+    description: [
+      "Push the boundaries of supermoped performance with the Yamaha Y16ZR-R, engineered for those who demand the very best. 5 hp for relentless power and smooth cruising speeds for highway dominance.",
+      "Enhanced with a Traction Control System (TCS), a responsive anti-lock braking system, and an assist & slipper clutch, it provides riders with ultimate control and safety in all riding conditions."
+    ],
+    featureBlocks: [
+      {
+        title: "Variable Valve Actuation (VVA)",
+        body: "Delivers robust torque at low speeds and thrilling power at the top end."
+      },
+      {
+        title: "Assist & Slipper Clutch",
+        body: "Ensures a lighter clutch pull and prevents rear-wheel lockup during aggressive downshifts."
+      },
+      {
+        title: "Anti-lock Braking System (ABS) & TCS",
+        body: "Provides maximum stopping confidence and prevents wheel slip in all weather conditions."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Yamaha Y16ZR-R is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, VVA, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "155cc"
+      },
+      {
+        label: "Max Power",
+        value: "18.5 HP @ 9500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "14.4 Nm @ 8000 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "5.4L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc (ABS), Rear Disc"
+      },
+      {
+        label: "Weight",
+        value: "119 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
+    slug: "y16zr-r-pramac-racing-replica",
+    brand: "Yamaha",
+    model: "Y16ZR-R Pramac Racing Replica",
+    type: "Underbone",
+    cc: 155,
+    price: 16000,
+    deposit: 1400,
+    monthly: "3++",
+    year: 2026,
+    colours: [],
+    availability: "In Stock",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/y16zr-r-pramac-racing-replica/y16zr-r-pramac-racing-replica-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/y16zr-r-pramac-racing-replica/pramac-1.jpg",
+      "/products/motorcycles/y16zr-r-pramac-racing-replica/pramac-2.jpg",
+      "/products/motorcycles/y16zr-r-pramac-racing-replica/pramac-3.jpg",
+      "/products/motorcycles/y16zr-r-pramac-racing-replica/pramac-4.jpg"
+    ],
+    highlights: [
+      "155cc liquid-cooled, SOHC with VVA engine",
+      "Extremely limited production to just 3,000 units worldwide",
+      "Features exclusive Yamaha Prima Pramac MotoGP Team livery and premium Öhlins suspension",
+      "Comes with official manufacturer warranty"
+    ],
+    description: [
+      "Push the boundaries of supermoped performance with the Yamaha Y16ZR-R Pramac Racing Replica, engineered for collectors and those who demand the absolute best. Dressed in the iconic Yamaha Prima Pramac MotoGP Team colors, this masterpiece is limited to only 3,000 units globally.",
+      "5 hp for relentless power and thrilling acceleration. Outfitted with a premium, specially-tuned Öhlins rear monoshock, it provides riders with ultimate cornering control and track-inspired handling in all riding conditions."
+    ],
+    featureBlocks: [
+      {
+        title: "Variable Valve Actuation (VVA)",
+        body: "Delivers robust torque at low speeds and thrilling power at the top end."
+      },
+      {
+        title: "Limited Edition Exclusivity",
+        body: "Production is strictly capped at 3,000 units worldwide, complete with a unique Serial Number Emblem to guarantee authenticity."
+      },
+      {
+        title: "Premium Öhlins Suspension",
+        body: "An exclusive, specially developed Öhlins adjustable rear monoshock comes standard, vastly improving handling dynamics over the base model."
+      },
+      {
+        title: "Flexible Financing Available",
+        body: "Owning the Yamaha Y16ZR-R Pramac Racing Replica is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+      }
+    ],
+    specs: [
+      {
+        label: "Engine",
+        value: "4-Stroke, SOHC, VVA, Liquid Cooled"
+      },
+      {
+        label: "Displacement",
+        value: "155cc"
+      },
+      {
+        label: "Max Power",
+        value: "18.5 HP @ 9500 rpm"
+      },
+      {
+        label: "Max Torque",
+        value: "14.4 Nm @ 8500 rpm"
+      },
+      {
+        label: "Transmission",
+        value: "6-Speed"
+      },
+      {
+        label: "Fuel Capacity",
+        value: "5.4L"
+      },
+      {
+        label: "Brakes",
+        value: "Front Disc (ABS), Rear Disc"
+      },
+      {
+        label: "Weight",
+        value: "119 kg"
+      },
+      {
+        label: "Starting System",
+        value: "Electric"
+      }
+    ]
+  },
+  {
     slug: "yamaha-r15m",
     brand: "Yamaha",
     model: "R15M",
     type: "Sport",
     cc: 155,
-    price: 19400,
-    deposit: 4000,
-    monthly: 387,
+    price: 18400,
+    deposit: 3300,
+    monthly: "4++",
     year: 2025,
     colours: [
       "Signature Black"
@@ -206,14 +397,14 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Ego Gear",
     type: "Scooter",
     cc: 125,
-    price: 8900,
+    price: 7900,
     deposit: 0,
-    monthly: 225,
+    monthly: "2++",
     year: 2025,
     colours: [
-      "Yellow",
-      "Blue",
-      "Green"
+      "Cyan",
+      "Grey",
+      "Navy Blue"
     ],
     availability: "In Stock",
     arrival: "2025-01-01",
@@ -245,7 +436,9 @@ export const MOTORCYCLES: Motorcycle[] = [
       "/products/motorcycles/yamaha-ego-gear/navy-blue-8.jpg"
     ],
     colourImages: {
-      Blue: "/products/motorcycles/yamaha-ego-gear/navy-blue-1.jpg"
+      Cyan: "/products/motorcycles/yamaha-ego-gear/cyan-1.jpg",
+      Grey: "/products/motorcycles/yamaha-ego-gear/grey-1.jpg",
+      "Navy Blue": "/products/motorcycles/yamaha-ego-gear/navy-blue-1.jpg"
     },
     highlights: [
       "125cc air-cooled, SOHC Blue Core engine",
@@ -320,9 +513,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "XMAX 250",
     type: "Scooter",
     cc: 250,
-    price: 32000,
-    deposit: 8000,
-    monthly: 602,
+    price: 31000,
+    deposit: 7000,
+    monthly: "6++",
     year: 2025,
     colours: [
       "Ceramic Grey",
@@ -418,9 +611,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Wave Alpha",
     type: "Underbone",
     cc: 109.2,
-    price: 7500,
-    deposit: 500,
-    monthly: 207,
+    price: 6500,
+    deposit: 0,
+    monthly: "2++",
     year: 2025,
     colours: [
       "Silver",
@@ -543,9 +736,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Vario 125 Street",
     type: "Scooter",
     cc: 124.9,
-    price: 10600,
-    deposit: 1000,
-    monthly: 242,
+    price: 9600,
+    deposit: 400,
+    monthly: "2++",
     year: 2026,
     colours: [
       "Purple",
@@ -649,9 +842,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "ADV160 RoadSync",
     type: "Scooter",
     cc: 156.9,
-    price: 17800,
-    deposit: 3500,
-    monthly: 360,
+    price: 16800,
+    deposit: 2500,
+    monthly: "3++",
     year: 2026,
     colours: [
       "Matte Grey",
@@ -751,9 +944,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "CBR150R",
     type: "Sport",
     cc: 149.2,
-    price: 17500,
-    deposit: 4000,
-    monthly: 340,
+    price: 16500,
+    deposit: 3500,
+    monthly: "3++",
     year: 2025,
     colours: [
       "Black",
@@ -867,9 +1060,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "ELIT 150S",
     type: "Scooter",
     cc: 149,
-    price: 11500,
-    deposit: 500,
-    monthly: 323,
+    price: 10500,
+    deposit: 0,
+    monthly: "3++",
     year: 2026,
     colours: [
       "Riviera Blue",
@@ -963,9 +1156,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Z15GT",
     type: "Underbone",
     cc: 149.5,
-    price: 11500,
-    deposit: 500,
-    monthly: 323,
+    price: 10500,
+    deposit: 0,
+    monthly: "3++",
     year: 2026,
     colours: [
       "Graphite Grey",
@@ -1075,9 +1268,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Kriss 110 FI",
     type: "Underbone",
     cc: 107,
-    price: 7200,
-    deposit: 500,
-    monthly: 244,
+    price: 6200,
+    deposit: 0,
+    monthly: "2++",
     year: 2023,
     colours: [
       "Vigorous Blue",
@@ -1184,9 +1377,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Karisma EX 125",
     type: "Scooter",
     cc: 125,
-    price: 8400,
-    deposit: 500,
-    monthly: 287,
+    price: 7400,
+    deposit: 0,
+    monthly: "2++",
     year: 2025,
     colours: [
       "Mint Green",
@@ -1279,9 +1472,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "XDV 180 EVO",
     type: "Scooter",
     cc: 174,
-    price: 12500,
-    deposit: 2500,
-    monthly: 294,
+    price: 11500,
+    deposit: 2000,
+    monthly: "3++",
     year: 2026,
     colours: [
       "Black",
@@ -1368,100 +1561,96 @@ export const MOTORCYCLES: Motorcycle[] = [
     ]
   },
   {
-    slug: "keeway-cafe-racer-152",
+    slug: "keeway-bx200i",
     brand: "Keeway",
-    model: "Cafe Racer 152",
-    type: "Cafe Racer",
-    cc: 149,
-    price: 9900,
-    deposit: 2000,
-    monthly: 288,
-    year: 2024,
+    model: "BX200i",
+    type: "Scooter",
+    cc: 174,
+    price: 10800,
+    deposit: 400,
+    monthly: "2++",
+    year: 2026,
     colours: [
-      "Black",
-      "Red",
-      "Green"
+      "Midnight Black",
+      "Ocean Blue",
+      "Crimson Red"
     ],
     availability: "In Stock",
-    arrival: "2024-01-01",
-    image: "/products/motorcycles/keeway-cafe-racer-152/cafe-racer-152-thumbnail.jpg",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/keeway-bx200i/bx200i-thumbnail.jpg",
     images: [
-      "/products/motorcycles/keeway-cafe-racer-152/black-1.jpg",
-      "/products/motorcycles/keeway-cafe-racer-152/black-2.jpg",
-      "/products/motorcycles/keeway-cafe-racer-152/green-1.jpg",
-      "/products/motorcycles/keeway-cafe-racer-152/green-2.jpg",
-      "/products/motorcycles/keeway-cafe-racer-152/red-1.jpg",
-      "/products/motorcycles/keeway-cafe-racer-152/red-2.jpg"
+      "/products/motorcycles/keeway-bx200i/crimson-red-1.jpg",
+      "/products/motorcycles/keeway-bx200i/crimson-red-2.jpg",
+      "/products/motorcycles/keeway-bx200i/midnight-black-1.jpg",
+      "/products/motorcycles/keeway-bx200i/midnight-black-2.jpg",
+      "/products/motorcycles/keeway-bx200i/ocean-blue-1.jpg",
+      "/products/motorcycles/keeway-bx200i/ocean-blue-2.jpg"
     ],
     colourImages: {
-      Black: "/products/motorcycles/keeway-cafe-racer-152/black-1.jpg",
-      Red: "/products/motorcycles/keeway-cafe-racer-152/red-1.jpg",
-      Green: "/products/motorcycles/keeway-cafe-racer-152/green-1.jpg"
+      "Midnight Black": "/products/motorcycles/keeway-bx200i/midnight-black-1.jpg",
+      "Ocean Blue": "/products/motorcycles/keeway-bx200i/ocean-blue-1.jpg",
+      "Crimson Red": "/products/motorcycles/keeway-bx200i/crimson-red-1.jpg"
     },
     highlights: [
-      "149cc air-cooled, SOHC engine",
+      "174cc liquid-cooled, SOHC, 4-valve engine",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
       "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "Turn every ride into a nostalgic journey with the beautifully retro Keeway Cafe Racer 152. Featuring authentic clip-on bars, a rear seat cowl, and a classic peashooter exhaust, it perfectly captures the spirit of 1960s motorcycling.",
-      "Its incredibly lightweight and stripped-down chassis makes it highly flickable in traffic, offering a pure, visceral, and endlessly fun urban riding experience."
+      "Conquer the bustling urban streets with the Keeway BX200i, an aggressive and highly practical scooter engineered for the modern city rider. Its robust 174cc liquid-cooled engine and smooth CVT transmission deliver responsive, punchy acceleration and optimal fuel efficiency for navigating heavy stop-and-go traffic.",
+      "Enhanced with full LED lighting, a convenient keyless smart system, and a spacious 11-liter fuel tank for extended range, it provides riders with ultimate convenience and commanding style on every commute."
     ],
     featureBlocks: [
       {
-        title: "Authentic Cafe Aesthetics",
-        body: "Complete with a rear seat cowl, clip-on style bars, and a round headlamp."
+        title: "Smooth Urban Power",
+        body: "174cc engine delivering 18.2 hp and 17.2 Nm of torque for swift, effortless city commuting."
       },
       {
-        title: "Peashooter Exhaust",
-        body: "Emits a classic, throaty exhaust note characteristic of the 60s."
+        title: "Modern Convenience",
+        body: "Features a keyless smart system, a clear digital LCD dashboard, and dual USB charging ports (Type-A + Type-C)."
       },
       {
-        title: "Lightweight Nimbleness",
-        body: "Stripped-down design makes it incredibly fun to toss around city corners."
+        title: "Full LED Lighting",
+        body: "Dual LED projector headlights with sharp daytime running lights (DRL) ensure maximum visibility and a bold look."
       },
       {
         title: "Flexible Financing Available",
-        body: "Owning the Keeway Cafe Racer 152 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+        body: "Owning the Keeway BX200i is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
       }
     ],
     specs: [
       {
         label: "Engine",
-        value: "4-Stroke, SOHC, Air Cooled"
+        value: "ingle Cylinder, 4-Stroke, 4-Valve, SOHC, Liquid Cooled"
       },
       {
         label: "Displacement",
-        value: "149cc"
+        value: "174cc"
       },
       {
         label: "Max Power",
-        value: "8.4 kW @ 8,000 rpm"
+        value: "18.2 HP @ 8500 rpm"
       },
       {
         label: "Max Torque",
-        value: "11.1 Nm @ 6000 rpm"
+        value: "17.2 Nm @ 6500 rpm"
       },
       {
         label: "Transmission",
-        value: "5-Speed"
-      },
-      {
-        label: "Fuel Capacity",
-        value: "12.1L"
+        value: "Automatic CVT (V-Belt)"
       },
       {
         label: "Brakes",
-        value: "Front Disc, Rear Drum"
+        value: "Front/Rear Disc (ABS)"
       },
       {
         label: "Weight",
-        value: "108 kg"
+        value: "137 kg"
       },
       {
         label: "Starting System",
-        value: "Electric/Kick"
+        value: "Electric"
       }
     ]
   },
@@ -1471,9 +1660,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "AX 200S",
     type: "Scooter",
     cc: 175,
-    price: 11500,
-    deposit: 500,
-    monthly: 323,
+    price: 10500,
+    deposit: 0,
+    monthly: "2++",
     year: 2026,
     colours: [
       "Grey",
@@ -1571,9 +1760,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Husky 200",
     type: "Scooter",
     cc: 175,
-    price: 15500,
-    deposit: 2000,
-    monthly: 339,
+    price: 14500,
+    deposit: 1500,
+    monthly: "3++",
     year: 2026,
     colours: [
       "Glossy Green",
@@ -1659,231 +1848,14 @@ export const MOTORCYCLES: Motorcycle[] = [
     ]
   },
   {
-    slug: "sym-benelli-panarea-125",
-    brand: "SYM",
-    model: "Benelli Panarea 125",
-    type: "Scooter",
-    cc: 124,
-    price: 9400,
-    deposit: 1000,
-    monthly: 247,
-    year: 2022,
-    colours: [
-      "Black",
-      "Yellow",
-      "Red",
-      "White"
-    ],
-    availability: "In Stock",
-    arrival: "2022-01-01",
-    image: "/products/motorcycles/sym-benelli-panarea-125/benelli-panarea-125-thumbnail.jpg",
-    images: [
-      "/products/motorcycles/sym-benelli-panarea-125/black-1.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/black-2.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/black-3.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/black-4.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/black-5.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/black-6.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/black-7.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/black-8.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/red-1.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/red-2.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/red-3.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/red-4.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/red-5.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/red-6.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/red-7.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/red-8.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/white-1.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/white-2.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/white-3.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/white-4.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/white-5.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/white-6.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/white-7.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/white-8.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/yellow-1.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/yellow-2.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/yellow-3.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/yellow-4.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/yellow-5.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/yellow-6.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/yellow-7.jpg",
-      "/products/motorcycles/sym-benelli-panarea-125/yellow-8.jpg"
-    ],
-    colourImages: {
-      Black: "/products/motorcycles/sym-benelli-panarea-125/black-1.jpg",
-      Yellow: "/products/motorcycles/sym-benelli-panarea-125/yellow-1.jpg",
-      Red: "/products/motorcycles/sym-benelli-panarea-125/red-1.jpg",
-      White: "/products/motorcycles/sym-benelli-panarea-125/white-1.jpg"
-    },
-    highlights: [
-      "124cc air-cooled, SOHC engine",
-      "Flexible financing available via trusted credit partners",
-      "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
-    ],
-    description: [
-      "Glide through the city with timeless elegance on the Benelli Panarea 125, a beautifully crafted European-style scooter. Its classic rounded headlight and sweeping body panels are complemented by a premium quilted leatherette seat, offering luxurious comfort for both rider and pillion.",
-      "Blending vintage Italian aesthetics with modern LED technology, it provides a smooth, stylish, and highly sophisticated urban commute."
-    ],
-    featureBlocks: [
-      {
-        title: "Timeless Italian Styling",
-        body: "Features a classic rounded headlight and sweeping body panels."
-      },
-      {
-        title: "Quilted Leatherette Seat",
-        body: "Provides a premium, comfortable perch for both rider and pillion."
-      },
-      {
-        title: "Modern LED Touches",
-        body: "Blends vintage aesthetics with modern, bright LED lighting technology."
-      },
-      {
-        title: "Flexible Financing Available",
-        body: "Owning the Benelli Panarea 125 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
-      }
-    ],
-    specs: [
-      {
-        label: "Engine",
-        value: "4-Stroke, SOHC, Air Cooled"
-      },
-      {
-        label: "Displacement",
-        value: "124cc"
-      },
-      {
-        label: "Max Power",
-        value: "8.4 HP @ 7500 rpm"
-      },
-      {
-        label: "Max Torque",
-        value: "8.6 Nm @ 6000 rpm"
-      },
-      {
-        label: "Transmission",
-        value: "V-Belt Automatic"
-      },
-      {
-        label: "Fuel Capacity",
-        value: "4.6L"
-      },
-      {
-        label: "Brakes",
-        value: "Front Disc, Rear Drum"
-      },
-      {
-        label: "Weight",
-        value: "104 kg"
-      },
-      {
-        label: "Starting System",
-        value: "Electric"
-      }
-    ]
-  },
-  {
-    slug: "sym-vf3i-185",
-    brand: "SYM",
-    model: "VF3i 185",
-    type: "Underbone",
-    cc: 183,
-    price: 12900,
-    deposit: 1500,
-    monthly: 335,
-    year: 2020,
-    colours: [
-      "Red",
-      "Blue",
-      "Gold"
-    ],
-    availability: "In Stock",
-    arrival: "2020-01-01",
-    image: "/products/motorcycles/sym-vf3i-185/vf3i-185-thumbnail.jpg",
-    images: [
-      "/products/motorcycles/sym-vf3i-185/blue.jpg",
-      "/products/motorcycles/sym-vf3i-185/gold.jpg",
-      "/products/motorcycles/sym-vf3i-185/red.jpg"
-    ],
-    colourImages: {
-      Red: "/products/motorcycles/sym-vf3i-185/red.jpg",
-      Blue: "/products/motorcycles/sym-vf3i-185/blue.jpg",
-      Gold: "/products/motorcycles/sym-vf3i-185/gold.jpg"
-    },
-    highlights: [
-      "183cc liquid-cooled, SOHC engine",
-      "Flexible financing available via trusted credit partners",
-      "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
-    ],
-    description: [
-      "Command the ultimate kapchai performance with the SYM VF3i 185, boasting a massive 183cc engine that leaves the competition behind. Designed for true highway dominance, it features a massive 7-liter fuel tank that easily enables long-distance interstate touring.",
-      "Equipped with an anti-lock braking system to safely harness its breathtaking top-end speed, it delivers a thrilling, unmatched supermoped riding experience."
-    ],
-    featureBlocks: [
-      {
-        title: "183cc Powerplant",
-        body: "A massive engine for a kapchai, delivering breathtaking top-end speed. 2. 7-Liter Fuel Tank: Extremely large capacity for a moped, enabling true interstate touring."
-      },
-      {
-        title: "ABS Equipped",
-        body: "Features an anti-lock braking system to harness its immense power safely."
-      },
-      {
-        title: "Flexible Financing Available",
-        body: "Owning the SYM VF3i 185 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
-      }
-    ],
-    specs: [
-      {
-        label: "Engine",
-        value: "4-Stroke, SOHC, Liquid Cooled"
-      },
-      {
-        label: "Displacement",
-        value: "183cc"
-      },
-      {
-        label: "Max Power",
-        value: "19.7 HP @ 9000 rpm"
-      },
-      {
-        label: "Max Torque",
-        value: "17.4 Nm @ 7500 rpm"
-      },
-      {
-        label: "Transmission",
-        value: "6-Speed"
-      },
-      {
-        label: "Fuel Capacity",
-        value: "7.0L"
-      },
-      {
-        label: "Brakes",
-        value: "Front/Rear Disc"
-      },
-      {
-        label: "Weight",
-        value: "124 kg"
-      },
-      {
-        label: "Starting System",
-        value: "Electric"
-      }
-    ]
-  },
-  {
     slug: "sym-tuscany-150",
     brand: "SYM",
     model: "Tuscany 150",
     type: "Scooter",
     cc: 149.6,
-    price: 11900,
-    deposit: 1500,
-    monthly: 306,
+    price: 10900,
+    deposit: 1000,
+    monthly: "2++",
     year: 2023,
     colours: [
       "Red",
@@ -1979,9 +1951,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "NX150S",
     type: "Scooter",
     cc: 149.6,
-    price: 9500,
-    deposit: 1000,
-    monthly: 250,
+    price: 8500,
+    deposit: 600,
+    monthly: "2++",
     year: 2026,
     colours: [
       "Lava Brown",
@@ -2072,262 +2044,81 @@ export const MOTORCYCLES: Motorcycle[] = [
     ]
   },
   {
-    slug: "cfmoto-xo-papio-125",
-    brand: "CFMOTO",
-    model: "XO Papio 125",
-    type: "Mini-sport",
-    cc: 126,
-    price: 11800,
-    deposit: 1100,
-    monthly: 315,
-    year: 2023,
+    slug: "aveta-bellagio-125",
+    brand: "Aveta",
+    model: "Bellagio 125",
+    type: "Scooter",
+    cc: 124,
+    price: 9000,
+    deposit: 0,
+    monthly: "2++",
+    year: 2026,
     colours: [
-      "White"
+      "Carbon Black",
+      "Pistachio Green",
+      "Diamond White"
     ],
     availability: "In Stock",
-    arrival: "2023-01-01",
-    image: "/products/motorcycles/cfmoto-xo-papio-125/xo-papio-125-thumbnail.jpg",
+    arrival: "2026-01-01",
+    image: "/products/motorcycles/aveta-bellagio-125/aveta-bellagio-125-thumbnail.jpg",
     images: [
-      "/products/motorcycles/cfmoto-xo-papio-125/white-1.jpg",
-      "/products/motorcycles/cfmoto-xo-papio-125/white-2.jpg"
+      "/products/motorcycles/aveta-bellagio-125/carbon-black.jpg",
+      "/products/motorcycles/aveta-bellagio-125/diamond-white.jpg",
+      "/products/motorcycles/aveta-bellagio-125/pistachio-green.jpg"
     ],
     colourImages: {
-      White: "/products/motorcycles/cfmoto-xo-papio-125/white-1.jpg"
+      "Carbon Black": "/products/motorcycles/aveta-bellagio-125/carbon-black.jpg",
+      "Pistachio Green": "/products/motorcycles/aveta-bellagio-125/pistachio-green.jpg",
+      "Diamond White": "/products/motorcycles/aveta-bellagio-125/diamond-white.jpg"
     },
     highlights: [
-      "126cc air-cooled, SOHC engine",
+      "124cc air-cooled, SOHC single-cylinder engine with EFI",
       "Flexible financing available via trusted credit partners",
       "Comes with official manufacturer warranty",
       "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
     ],
     description: [
-      "Inject massive fun into your daily ride with the radically styled CFMoto XO Papio 125 mini-sport bike. Its ultra-low seat height and tiny 12-inch wheels make it incredibly unintimidating and hilariously nimble, perfect for carving through tight urban spaces.",
-      "Boasting a genuine 6-speed gearbox and a futuristic bug-eye LED headlight, it offers a highly engaging, big-bike feel in a brilliantly compact package."
+      "Embrace elegant urban practicality with the Aveta Bellagio 125, a stylish retro-inspired scooter designed for the modern daily commuter. Its reliable 124cc air-cooled engine, integrated with BOSCH Electronic Fuel Injection (EFI), delivers smooth, dependable performance and excellent fuel efficiency for zipping through city streets.",
+      "Boasting modern conveniences like an LCD digital display, dual USB charging ports, and a comfortable, approachable seat height, the Bellagio 125 offers riders a perfect blend of classic charm and everyday utility."
     ],
     featureBlocks: [
       {
-        title: "Mini-Moto Dimensions",
-        body: "Its 12-inch wheels and ultra-low seat make it incredibly unintimidating and fun. 2. 6-Speed Gearbox: Uniquely features a 6-speed transmission for genuine motorcycle engagement."
+        title: "Classic Retro Styling",
+        body: "Combines timeless aesthetics with modern LED lighting and a vibrant digital LCD display."
       },
       {
-        title: "LED Projector Headlight",
-        body: "A distinctive bug-eye headlamp setup gives it a unique, futuristic face."
+        title: "Smooth Efficiency",
+        body: "124cc EFI engine paired with a CVT automatic transmission for effortless, twist-and-go city cruising."
       },
       {
-        title: "Flexible Financing Available",
-        body: "Owning the CFMoto XO Papio 125 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners."
+        title: "Daily Practicality",
+        body: "Features a 6-liter fuel tank, under-seat storage, and built-in USB-A & USB-C charging ports."
       }
     ],
     specs: [
       {
         label: "Engine",
-        value: "4-Stroke, SOHC, Air Cooled"
+        value: "Single Cylinder, 4-Stroke, SOHC, Air Cooled"
       },
       {
         label: "Displacement",
-        value: "126cc"
+        value: "124cc"
       },
       {
         label: "Max Power",
-        value: "9.4 HP @ 8500 rpm"
+        value: "8.7 kW @ 7500 rpm"
       },
       {
         label: "Max Torque",
-        value: "8.3 Nm @ 6500 rpm"
+        value: "9.5 Nm @ 6000 rpm"
       },
       {
         label: "Transmission",
-        value: "6-Speed"
+        value: "Automatic CVT (Belt Drive)"
       },
       {
         label: "Fuel Capacity",
-        value: "7.0L"
-      },
-      {
-        label: "Brakes",
-        value: "Front/Rear Disc (ABS)"
-      },
-      {
-        label: "Weight",
-        value: "114 kg"
-      },
-      {
-        label: "Starting System",
-        value: "Electric"
-      }
-    ]
-  },
-  {
-    slug: "aveta-dy-90",
-    brand: "Aveta",
-    model: "DY 90",
-    type: "Underbone",
-    cc: 90,
-    price: 6500,
-    deposit: 500,
-    monthly: 219,
-    year: 2020,
-    colours: [
-      "Red",
-      "Blue",
-      "Black"
-    ],
-    availability: "In Stock",
-    arrival: "2020-01-01",
-    image: "/products/motorcycles/aveta-dy-90/aveta-dy-90-thumbnail.jpg",
-    images: [
-      "/products/motorcycles/aveta-dy-90/black.jpg",
-      "/products/motorcycles/aveta-dy-90/blue.jpg",
-      "/products/motorcycles/aveta-dy-90/red.jpg"
-    ],
-    colourImages: {
-      Red: "/products/motorcycles/aveta-dy-90/red.jpg",
-      Blue: "/products/motorcycles/aveta-dy-90/blue.jpg",
-      Black: "/products/motorcycles/aveta-dy-90/black.jpg"
-    },
-    highlights: [
-      "90cc air-cooled, SOHC engine",
-      "Flexible financing available via trusted credit partners",
-      "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
-    ],
-    description: [
-      "Maximize your business efficiency with the Aveta Dayang DY 90, the ultimate utilitarian workhorse designed for absolute simplicity. Its incredibly economical 90cc engine ensures that your running costs remain astonishingly low day in and day out.",
-      "Featuring a classic step-through frame and minimalist mechanicals, it offers delivery riders a completely fuss-free, easy-to-maintain, and highly reliable everyday tool."
-    ],
-    featureBlocks: [
-      {
-        title: "Ultra-Economical 90cc Engine",
-        body: "Sips fuel, making it one of the cheapest motorcycles to run daily."
-      },
-      {
-        title: "Classic Step-Through Frame",
-        body: "Easy to mount and dismount, perfect for delivery riders."
-      },
-      {
-        title: "Minimalist Maintenance",
-        body: "Mechanical simplicity ensures repair costs are virtually non-existent."
-      },
-      {
-        title: "Flexible Financing Available",
-        body: "Owning the Aveta Dayang DY 90 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners (JCL & Chailease Berjaya Credit only)."
-      }
-    ],
-    specs: [
-      {
-        label: "Engine",
-        value: "4-Stroke, SOHC, Air Cooled"
-      },
-      {
-        label: "Displacement",
-        value: "90cc"
-      },
-      {
-        label: "Transmission",
-        value: "4-Speed"
-      },
-      {
-        label: "Fuel Capacity",
-        value: "3.5L"
-      },
-      {
-        label: "Brakes",
-        value: "Front/Rear Drum"
-      },
-      {
-        label: "Weight",
-        value: "93 kg"
-      },
-      {
-        label: "Starting System",
-        value: "Kick"
-      }
-    ],
-    financingPartners: [
-      "JCL",
-      "Chailease Berjaya"
-    ]
-  },
-  {
-    slug: "aveta-ranger-max-explorer-130",
-    brand: "Aveta",
-    model: "Ranger Max Explorer 130",
-    type: "Underbone",
-    cc: 127,
-    price: 10100,
-    deposit: 1000,
-    monthly: 331,
-    year: 2023,
-    colours: [
-      "Storm Blue",
-      "Iron Grey",
-      "Sierra Yellow"
-    ],
-    availability: "In Stock",
-    arrival: "2023-01-01",
-    image: "/products/motorcycles/aveta-ranger-max-explorer-130/aveta-ranger-max-explorer-130-thumbnail.jpg",
-    images: [
-      "/products/motorcycles/aveta-ranger-max-explorer-130/iron-grey.jpg",
-      "/products/motorcycles/aveta-ranger-max-explorer-130/sierra-yellow.jpg",
-      "/products/motorcycles/aveta-ranger-max-explorer-130/storm-blue.jpg"
-    ],
-    colourImages: {
-      "Storm Blue": "/products/motorcycles/aveta-ranger-max-explorer-130/storm-blue.jpg",
-      "Iron Grey": "/products/motorcycles/aveta-ranger-max-explorer-130/iron-grey.jpg",
-      "Sierra Yellow": "/products/motorcycles/aveta-ranger-max-explorer-130/sierra-yellow.jpg"
-    },
-    highlights: [
-      "127cc air-cooled, SOHC engine",
-      "Flexible financing available via trusted credit partners",
-      "Comes with official manufacturer warranty",
-      "Available for pickup at Kuching, Bintulu, KL, or Selangor branches"
-    ],
-    description: [
-      "Take your outdoor excursions to the next level with the Aveta Ranger Max Explorer 130. This upgraded adventure kapchai features premium touring mounts ready for saddlebags, making it the perfect companion for off-road camping trips.",
-      "Complete with a modern digital dash and a rugged headlamp guard, it blends retro charm with advanced capability for a highly thrilling and practical exploration experience."
-    ],
-    featureBlocks: [
-      {
-        title: "Touring Accessories Ready",
-        body: "Features mounting points optimized for saddlebags and top boxes."
-      },
-      {
-        title: "Upgraded Headlamp Guard",
-        body: "A metal grill protects the headlight from rocks and trail debris."
-      },
-      {
-        title: "Digital Dash",
-        body: "Upgrades to a modern digital meter while retaining its retro charm."
-      },
-      {
-        title: "Flexible Financing Available",
-        body: "Owning the Aveta Ranger Max Explorer 130 is easier than ever. Apply via WhatsApp today and choose from our trusted financing partners (JCL & Chailease Berjaya Credit only)."
-      }
-    ],
-    specs: [
-      {
-        label: "Engine",
-        value: "4-Stroke, SOHC, Air Cooled"
-      },
-      {
-        label: "Displacement",
-        value: "127cc"
-      },
-      {
-        label: "Max Power",
-        value: "10.1 HP @ 8000 rpm"
-      },
-      {
-        label: "Max Torque",
-        value: "10.5 Nm @ 5500 rpm"
-      },
-      {
-        label: "Transmission",
-        value: "4-Speed"
-      },
-      {
-        label: "Fuel Capacity",
-        value: "8.5L"
+        value: "6L"
       },
       {
         label: "Brakes",
@@ -2335,11 +2126,11 @@ export const MOTORCYCLES: Motorcycle[] = [
       },
       {
         label: "Weight",
-        value: "115 kg"
+        value: "100 kg"
       },
       {
         label: "Starting System",
-        value: "Electric/Kick"
+        value: "Electric"
       }
     ],
     financingPartners: [
@@ -2353,9 +2144,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Nova 250",
     type: "Scooter",
     cc: 244,
-    price: 18400,
-    deposit: 0,
-    monthly: 460,
+    price: 17400,
+    deposit: 2800,
+    monthly: "3++",
     year: 2026,
     colours: [
       "Titan Red",
@@ -2452,9 +2243,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Nova 125",
     type: "Underbone",
     cc: 125,
-    price: 8000,
-    deposit: 0,
-    monthly: 200,
+    price: 7000,
+    deposit: 400,
+    monthly: "2++",
     year: 2026,
     colours: [
       "Nano Grey",
@@ -2547,9 +2338,9 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Moca 110",
     type: "Scooter",
     cc: 108,
-    price: 7000,
-    deposit: 500,
-    monthly: 192,
+    price: 6000,
+    deposit: 0,
+    monthly: "2++",
     year: 2026,
     colours: [
       "Piano Black",

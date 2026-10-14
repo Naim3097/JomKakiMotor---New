@@ -2,7 +2,7 @@ import type { GearItem } from "./types";
 
 /**
  * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-09-22. Edit the sheet and re-run the generator rather than
+ * on 2026-10-14. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const RIDER_GEAR: GearItem[] = [
@@ -18,7 +18,7 @@ export const RIDER_GEAR: GearItem[] = [
     sizes: [
       "L"
     ],
-    image: "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/thumbnail.jpg",
+    image: "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/thumbnail-v2.jpg",
     images: [
       "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/angled.jpg",
       "/products/rider-gear/kyt-nfj-5th-memorial-ft-full-package/back.jpg",
@@ -72,7 +72,7 @@ export const RIDER_GEAR: GearItem[] = [
     sizes: [
       "L"
     ],
-    image: "/products/rider-gear/kyt-venom-espargaro-2016-replica/thumbnail.jpg",
+    image: "/products/rider-gear/kyt-venom-espargaro-2016-replica/thumbnail-v2.jpg",
     images: [
       "/products/rider-gear/kyt-venom-espargaro-2016-replica/angled.jpg",
       "/products/rider-gear/kyt-venom-espargaro-2016-replica/back.jpg",
@@ -132,7 +132,7 @@ export const RIDER_GEAR: GearItem[] = [
       "Green",
       "Blue"
     ],
-    image: "/products/rider-gear/arc-pastel-series/thumbnail.jpg",
+    image: "/products/rider-gear/arc-pastel-series/thumbnail-v2.jpg",
     images: [
       "/products/rider-gear/arc-pastel-series/beige.jpg",
       "/products/rider-gear/arc-pastel-series/blue.jpg",
@@ -192,14 +192,23 @@ export const RIDER_GEAR: GearItem[] = [
       "Naga Mas",
       "Naga Vista"
     ],
-    image: "/products/rider-gear/arc-ritz-yf-dragon-series/thumbnail.jpg",
+    image: "/products/rider-gear/arc-ritz-yf-dragon-series/thumbnail-v2.jpg",
     images: [
-      "/products/rider-gear/arc-ritz-yf-dragon-series/1.jpg",
-      "/products/rider-gear/arc-ritz-yf-dragon-series/2.jpg",
-      "/products/rider-gear/arc-ritz-yf-dragon-series/3.jpg",
-      "/products/rider-gear/arc-ritz-yf-dragon-series/4.jpg",
-      "/products/rider-gear/arc-ritz-yf-dragon-series/5.jpg"
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-mas-1.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-mas-2.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-mas-3.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-mas-4.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-mas-5.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-vista-1.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-vista-2.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-vista-3.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-vista-4.jpg",
+      "/products/rider-gear/arc-ritz-yf-dragon-series/naga-vista-5.jpg"
     ],
+    colourImages: {
+      "Naga Mas": "/products/rider-gear/arc-ritz-yf-dragon-series/naga-mas-1.jpg",
+      "Naga Vista": "/products/rider-gear/arc-ritz-yf-dragon-series/naga-vista-1.jpg"
+    },
     highlights: [
       "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
       "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
@@ -368,7 +377,7 @@ export const RIDER_GEAR: GearItem[] = [
       "Green",
       "Black"
     ],
-    image: "/products/rider-gear/yamaha-raincoat/thumbnail.jpg",
+    image: "/products/rider-gear/yamaha-raincoat/thumbnail-v2.jpg",
     images: [
       "/products/rider-gear/yamaha-raincoat/black-1.jpg",
       "/products/rider-gear/yamaha-raincoat/black-2.jpg",
@@ -421,7 +430,7 @@ export const RIDER_GEAR: GearItem[] = [
       "Clear",
       "Smoke"
     ],
-    image: "/products/rider-gear/arc-ritz-spoiler/thumbnail.jpg",
+    image: "/products/rider-gear/arc-ritz-spoiler/thumbnail-v2.jpg",
     images: [
       "/products/rider-gear/arc-ritz-spoiler/clear-1.jpg",
       "/products/rider-gear/arc-ritz-spoiler/clear-2.jpg",
@@ -583,7 +592,7 @@ export const RIDER_GEAR: GearItem[] = [
       "Rainbow",
       "Black"
     ],
-    image: "/products/rider-gear/sgv-black-cap-visor/thumbnail.jpg",
+    image: "/products/rider-gear/sgv-black-cap-visor/thumbnail-v2.jpg",
     images: [
       "/products/rider-gear/sgv-black-cap-visor/black.jpg",
       "/products/rider-gear/sgv-black-cap-visor/rainbow.jpg"
@@ -638,7 +647,7 @@ export const RIDER_GEAR: GearItem[] = [
       "Crystal Clear Orange",
       "Crystal Green"
     ],
-    image: "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/thumbnail.jpg",
+    image: "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/thumbnail-v2.jpg",
     images: [
       "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/crystal-clear-orange.jpg",
       "/products/rider-gear/bogo-optical-visor-for-ltd-helmets/crystal-green.jpg"

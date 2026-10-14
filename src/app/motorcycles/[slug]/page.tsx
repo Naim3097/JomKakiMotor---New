@@ -15,8 +15,8 @@ export async function generateMetadata(
   const bike = MOTORCYCLES.find((m) => m.slug === slug);
   if (!bike) return {};
   return {
-    title: `${bike.brand} ${bike.model} Price Malaysia — From ${rm(bike.monthly)}/month`,
-    description: `${bike.brand} ${bike.model} (${bike.cc}cc ${bike.type}) at ${rm(bike.price)} with deposit from ${rm(bike.deposit)}. Flexible HP financing, official warranty, collection in Kuching, Bintulu, KL & Selangor. Enquire on WhatsApp.`,
+    title: `${bike.brand} ${bike.model} Malaysia — From RM${bike.monthly}/month`,
+    description: `${bike.brand} ${bike.model} (${bike.cc}cc ${bike.type}) from RM${bike.monthly}/month${bike.deposit > 0 ? ` with deposit ${rm(bike.deposit)}` : " with no deposit required"}. Flexible HP financing, official warranty, collection in Kuching, Bintulu, KL & Selangor. Enquire on WhatsApp.`,
     alternates: { canonical: `/motorcycles/${bike.slug}` },
   };
 }

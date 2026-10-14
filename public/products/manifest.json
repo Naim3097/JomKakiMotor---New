@@ -29,6 +29,82 @@
       "layer": "Gallery"
     }
   ],
+  "yamaha-y16zr-r": [
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "y16zr-r-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "y16zr-r-pramac-racing-replica": [
+    {
+      "file": "pramac-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "pramac-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "pramac-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "pramac-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "y16zr-r-pramac-racing-replica-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
   "yamaha-r15m": [
     {
       "file": "r15m-thumbnail.jpg",
@@ -833,34 +909,34 @@
       "layer": "top"
     }
   ],
-  "keeway-cafe-racer-152": [
+  "keeway-bx200i": [
     {
-      "file": "black-1.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "black-2.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "cafe-racer-152-thumbnail.jpg",
+      "file": "bx200i-thumbnail.jpg",
       "layer": "top"
     },
     {
-      "file": "green-1.jpg",
-      "layer": "Gallery"
+      "file": "crimson-red-1.jpg",
+      "layer": "top"
     },
     {
-      "file": "green-2.jpg",
-      "layer": "Gallery"
+      "file": "crimson-red-2.jpg",
+      "layer": "top"
     },
     {
-      "file": "red-1.jpg",
-      "layer": "Gallery"
+      "file": "midnight-black-1.jpg",
+      "layer": "top"
     },
     {
-      "file": "red-2.jpg",
-      "layer": "Gallery"
+      "file": "midnight-black-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ocean-blue-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ocean-blue-2.jpg",
+      "layer": "top"
     }
   ],
   "qj-motor-ax-200s": [
@@ -923,158 +999,6 @@
       "layer": "Gallery"
     }
   ],
-  "sym-benelli-panarea-125": [
-    {
-      "file": "benelli-panarea-125-thumbnail.jpg",
-      "layer": "top"
-    },
-    {
-      "file": "black-1.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "black-2.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "black-3.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "black-4.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "black-5.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "black-6.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "black-7.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "black-8.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red-1.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red-2.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red-3.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red-4.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red-5.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red-6.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red-7.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red-8.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-1.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-2.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-3.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-4.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-5.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-6.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-7.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-8.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "yellow-1.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "yellow-2.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "yellow-3.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "yellow-4.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "yellow-5.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "yellow-6.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "yellow-7.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "yellow-8.jpg",
-      "layer": "Gallery"
-    }
-  ],
-  "sym-vf3i-185": [
-    {
-      "file": "blue.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "gold.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "vf3i-185-thumbnail.jpg",
-      "layer": "top"
-    }
-  ],
   "sym-tuscany-150": [
     {
       "file": "grey-1.jpg",
@@ -1135,54 +1059,22 @@
       "layer": "top"
     }
   ],
-  "cfmoto-xo-papio-125": [
+  "aveta-bellagio-125": [
     {
-      "file": "white-1.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "white-2.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "xo-papio-125-thumbnail.jpg",
-      "layer": "top"
-    }
-  ],
-  "aveta-dy-90": [
-    {
-      "file": "aveta-dy-90-thumbnail.jpg",
+      "file": "aveta-bellagio-125-thumbnail.jpg",
       "layer": "top"
     },
     {
-      "file": "black.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "blue.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "red.jpg",
-      "layer": "Gallery"
-    }
-  ],
-  "aveta-ranger-max-explorer-130": [
-    {
-      "file": "aveta-ranger-max-explorer-130-thumbnail.jpg",
+      "file": "carbon-black.jpg",
       "layer": "top"
     },
     {
-      "file": "iron-grey.jpg",
-      "layer": "Gallery"
+      "file": "diamond-white.jpg",
+      "layer": "top"
     },
     {
-      "file": "sierra-yellow.jpg",
-      "layer": "Gallery"
-    },
-    {
-      "file": "storm-blue.jpg",
-      "layer": "Gallery"
+      "file": "pistachio-green.jpg",
+      "layer": "top"
     }
   ],
   "aveta-nova-250": [
@@ -1339,11 +1231,11 @@
       "layer": "top"
     },
     {
-      "file": "orange.jpg",
+      "file": "enkei-3-bintang-sport-rim-t-v2.jpg",
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "orange.jpg",
       "layer": "top"
     },
     {
@@ -1353,11 +1245,11 @@
   ],
   "enkei-g500-custom": [
     {
-      "file": "g500-black.jpg",
+      "file": "enkei-g500-custom-t-v2.jpg",
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "g500-black.jpg",
       "layer": "top"
     }
   ],
@@ -1371,7 +1263,7 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "aerox-thai-sport-rim-t-v2.jpg",
       "layer": "top"
     }
   ],
@@ -1381,7 +1273,7 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "ppr-racing-cnc-fork-lay-t.jpg",
       "layer": "top"
     }
   ],
@@ -1411,7 +1303,7 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "thumbnail-v2.jpg",
       "layer": "top"
     }
   ],
@@ -1437,7 +1329,7 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "thumbnail-v2.jpg",
       "layer": "top"
     }
   ],
@@ -1455,33 +1347,53 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "thumbnail-v2.jpg",
       "layer": "top"
     }
   ],
   "arc-ritz-yf-dragon-series": [
     {
-      "file": "1.jpg",
+      "file": "naga-mas-1.jpg",
       "layer": "Naga Mas"
     },
     {
-      "file": "2.jpg",
+      "file": "naga-mas-2.jpg",
       "layer": "Naga Mas"
     },
     {
-      "file": "3.jpg",
+      "file": "naga-mas-3.jpg",
       "layer": "Naga Mas"
     },
     {
-      "file": "4.jpg",
+      "file": "naga-mas-4.jpg",
       "layer": "Naga Mas"
     },
     {
-      "file": "5.jpg",
+      "file": "naga-mas-5.jpg",
       "layer": "Naga Mas"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "naga-vista-1.jpg",
+      "layer": "Naga Vista"
+    },
+    {
+      "file": "naga-vista-2.jpg",
+      "layer": "Naga Vista"
+    },
+    {
+      "file": "naga-vista-3.jpg",
+      "layer": "Naga Vista"
+    },
+    {
+      "file": "naga-vista-4.jpg",
+      "layer": "Naga Vista"
+    },
+    {
+      "file": "naga-vista-5.jpg",
+      "layer": "Naga Vista"
+    },
+    {
+      "file": "thumbnail-v2.jpg",
       "layer": "top"
     }
   ],
@@ -1551,7 +1463,7 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "thumbnail-v2.jpg",
       "layer": "top"
     }
   ],
@@ -1573,7 +1485,7 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "thumbnail-v2.jpg",
       "layer": "top"
     }
   ],
@@ -1615,7 +1527,7 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "thumbnail-v2.jpg",
       "layer": "top"
     }
   ],
@@ -1629,7 +1541,7 @@
       "layer": "top"
     },
     {
-      "file": "thumbnail.jpg",
+      "file": "thumbnail-v2.jpg",
       "layer": "top"
     }
   ]

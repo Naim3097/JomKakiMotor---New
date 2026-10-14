@@ -6,20 +6,13 @@ import { MOTORCYCLES, newestArrivals } from "@/lib/catalog";
 export const metadata: Metadata = {
   title: "Motorcycles for Sale in Malaysia — Kuching, Bintulu, KL & Selangor",
   description:
-    "New Yamaha, Honda, Modenas, SYM and more with flexible HP financing. Filter by brand, type, price, deposit and year — then enquire on WhatsApp.",
+    "New Yamaha, Honda, Modenas, SYM and more with flexible HP financing. Filter by brand, type, deposit and year — then enquire on WhatsApp.",
   alternates: { canonical: "/motorcycles" },
 };
 
-/* Facet bands per Client Comments R2 slide 15 */
-
-const priceBand = (p: number) =>
-  p < 10000
-    ? "Under RM10,000"
-    : p <= 15000
-      ? "RM10,000 - RM15,000"
-      : p <= 20000
-        ? "RM15,000 - RM20,000"
-        : "Over RM20,000";
+/* Facet bands per Client Comments R2 slide 15; the price band is gone —
+   R4 slide 7 removes published motorcycle prices, so a price filter would
+   have nothing to stand on. */
 
 const depositBand = (d: number) =>
   d <= 0
@@ -58,7 +51,6 @@ export default function MotorcyclesPage() {
     facetValues: {
       brand: m.brand,
       type: m.type,
-      price: priceBand(m.price),
       deposit: depositBand(m.deposit),
       year: yearBand(m.year),
       availability: m.availability,
@@ -76,22 +68,23 @@ export default function MotorcyclesPage() {
       items={items}
       newestIds={newestArrivals(MOTORCYCLES, 4).map((m) => m.slug)}
       facets={[
-        { key: "brand", label: "Brand", options: BRAND_OPTIONS },
-        { key: "type", label: "Type", options: TYPE_OPTIONS },
-        {
-          key: "price",
-          label: "Price Range",
-          options: ["Under RM10,000", "RM10,000 - RM15,000", "RM15,000 - RM20,000", "Over RM20,000"],
-        },
+        /* Options are the client's preferred order, narrowed to what is
+           actually in stock — a discontinued brand or type disappears. */
+        { key: "brand", label: "Brand", options: BRAND_OPTIONS.filter((b) => uniq("brand").includes(b)) },
+        { key: "type", label: "Type", options: TYPE_OPTIONS.filter((t) => uniq("type").includes(t)) },
         {
           key: "deposit",
           label: "Deposit",
-          options: ["No Deposit Required", "RM500 - RM1,000", "RM1,000 - RM5,000", "Over RM5,000"],
+          options: ["No Deposit Required", "RM500 - RM1,000", "RM1,000 - RM5,000", "Over RM5,000"].filter(
+            (dp) => uniq("deposit").includes(dp)
+          ),
         },
         {
           key: "year",
           label: "Year",
-          options: ["Latest Models (2026 - Present)", "Older Models (Before 2026)"],
+          options: ["Latest Models (2026 - Present)", "Older Models (Before 2026)"].filter((y) =>
+            uniq("year").includes(y)
+          ),
         },
         { key: "availability", label: "Availability", options: uniq("availability") },
       ]}
