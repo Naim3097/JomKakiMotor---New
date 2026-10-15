@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Section, SectionHeading } from "@/components/Section";
-import sellHero from "../../../public/brand/sell-hero.jpg";
+import sellHero from "../../../public/brand/sell-hero.png";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BranchMap from "@/components/BranchMap";
 import CtaBanner from "@/components/CtaBanner";
@@ -52,7 +52,7 @@ export default function SellPage() {
         {/* Hero — text left, client-supplied bike artwork right, vertically
             level with the write-up on desktop; on mobile the artwork sits
             below the CTAs with clear space before the steps divider. */}
-        <div className="grid gap-x-12 lg:grid-cols-[1fr_440px] lg:items-center">
+        <div className="grid gap-x-12 lg:grid-cols-[1fr_560px] lg:items-center">
           <div className="mt-10 max-w-3xl">
             <p className="eyebrow text-brand">Sell / Trade-in</p>
             <h1 className="display-1 mt-4 text-ink">
@@ -72,12 +72,15 @@ export default function SellPage() {
               </WaButton>
             </div>
           </div>
+          {/* Runs into the page's right-hand margin, same as the About hero,
+              so the client's cut-out reads at a comparable size on both
+              pages rather than shrinking into a 440px column. */}
           <Image
             src={sellHero}
             alt="Two motorcycles ready for valuation at JomKaki"
             priority
-            sizes="(min-width: 1024px) 440px, (min-width: 640px) 448px, 90vw"
-            className="mx-auto mb-14 mt-12 w-full max-w-md lg:mx-0 lg:my-10 lg:max-w-none"
+            sizes="(min-width: 1280px) 42vw, (min-width: 1024px) 592px, (min-width: 640px) 448px, 90vw"
+            className="-mx-5 mb-14 mt-12 w-[calc(100%+2.5rem)] max-w-none sm:mx-auto sm:w-full sm:max-w-md lg:mx-0 lg:my-8 lg:w-[calc(100%+2rem)] lg:max-w-none xl:w-[calc(100%+2rem+(100vw-80rem)/2)] xl:max-w-[760px]"
           />
         </div>
 
