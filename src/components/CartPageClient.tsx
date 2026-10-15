@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import { LinkButton } from "./Button";
 import { describeOptions, useCart } from "./CartContext";
@@ -13,8 +14,18 @@ import { waLink } from "@/lib/whatsapp";
  * Cart contents + WhatsApp checkout. There is no online payment — the order
  * summary is handed to a sales advisor as a prefilled WhatsApp message.
  */
-export default function CartPageClient() {
-  const { items, subtotal, setQty, remove, clear } = useCart();
+export default function CartPageClient({ validPaths }: { validPaths: string[] }) {
+  const { items, setQty, remove, clear } = useCart();
+
+  /**
+   * A saved line can name a product the catalogue no longer carries — the six
+   * bikes the client discontinued at R4, say, or anything whose slug changed
+   * in a re-import. Those lines used to link straight to the 404 page, so they
+   * are now shown without a link, marked, and kept out of both the total and
+   * the WhatsApp order.
+   */
+  const live = useMemo(() => new Set(validPaths), [validPaths]);
+  const inStock = items.filter((i) => live.has(i.href));
 
   if (items.length === 0) {
     return (
@@ -34,15 +45,17 @@ export default function CartPageClient() {
   }
 
   // Colour/size travels with each line into WhatsApp (R3 slide 8)
-  const orderLines = items
+  const orderLines = inStock
     .map((i) => {
       const opts = describeOptions(i.options);
       const amount = i.monthly ? `from RM${i.monthly}/month` : rm(i.price * i.qty);
       return `• ${i.name}${opts ? ` (${opts})` : ""} × ${i.qty} — ${amount}`;
     })
     .join("\n");
+  // Financed lines have no cash amount, so they count as zero here
+  const total = inStock.reduce((sum, i) => sum + (i.monthly ? 0 : i.price * i.qty), 0);
   const message = `Hi JomKaki Rider, I'd like to order:\n${orderLines}\n\nTotal: ${rm(
-    subtotal
+    total
   )}\n${SITE_URL}/cart`;
 
   const qtyBtn =
@@ -53,21 +66,32 @@ export default function CartPageClient() {
       <ul className="divide-y divide-line border-y border-line">
         {items.map((item) => {
           const opts = describeOptions(item.options);
+          const available = live.has(item.href);
           return (
             <li key={item.key} className="flex flex-wrap items-center gap-x-6 gap-y-3 py-5">
               <div className="min-w-0 flex-1">
                 <p className="text-xs font-medium text-muted">{item.brand}</p>
-                <Link
-                  href={item.href}
-                  className="text-[15px] font-semibold text-ink underline-offset-4 hover:underline"
-                >
-                  {item.name}
-                </Link>
+                {available ? (
+                  <Link
+                    href={item.href}
+                    className="text-[15px] font-semibold text-ink underline-offset-4 hover:underline"
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <p className="text-[15px] font-semibold text-muted">{item.name}</p>
+                )}
                 {/* Chosen colour / size (R3 slide 8) */}
                 {opts && <p className="mt-0.5 text-xs text-muted">{opts}</p>}
-                <p className="mt-0.5 text-sm font-semibold text-brand">
-                  {item.monthly ? `From RM${item.monthly}/month*` : rm(item.price)}
-                </p>
+                {available ? (
+                  <p className="mt-0.5 text-sm font-semibold text-brand">
+                    {item.monthly ? `From RM${item.monthly}/month*` : rm(item.price)}
+                  </p>
+                ) : (
+                  <p className="mt-0.5 text-sm font-semibold text-muted">
+                    No longer available — remove it to order the rest
+                  </p>
+                )}
               </div>
               <div className="flex items-center gap-2">
                 <button
@@ -89,7 +113,7 @@ export default function CartPageClient() {
                 </button>
               </div>
               <p className="w-24 text-right text-[15px] font-semibold text-ink">
-                {item.monthly ? "—" : rm(item.price * item.qty)}
+                {item.monthly || !available ? "—" : rm(item.price * item.qty)}
               </p>
               <button
                 type="button"
@@ -110,21 +134,38 @@ export default function CartPageClient() {
         </h2>
         <div className="mt-5 flex items-baseline justify-between border-t border-line pt-5">
           <span className="text-sm text-muted">
-            Total{items.some((i) => i.monthly) ? " (excluding financed items)" : ""}
+            Total{inStock.some((i) => i.monthly) ? " (excluding financed items)" : ""}
           </span>
           <span className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink">
-            {rm(subtotal)}
+            {rm(total)}
           </span>
         </div>
-        <div className="mt-6">
-          <WaButton href={waLink(WHATSAPP_MOTOR, message)} size="lg" className="w-full">
-            Order via WhatsApp
-          </WaButton>
-        </div>
-        <p className="mt-3 text-xs leading-relaxed text-muted">
-          No online payment. Your order goes straight to a sales advisor who
-          will confirm stock, pricing and collection at your nearest branch.
-        </p>
+        {/* Nothing to send if every saved line has since been discontinued */}
+        {inStock.length > 0 ? (
+          <>
+            <div className="mt-6">
+              <WaButton href={waLink(WHATSAPP_MOTOR, message)} size="lg" className="w-full">
+                Order via WhatsApp
+              </WaButton>
+            </div>
+            <p className="mt-3 text-xs leading-relaxed text-muted">
+              No online payment. Your order goes straight to a sales advisor who
+              will confirm stock, pricing and collection at your nearest branch.
+            </p>
+          </>
+        ) : (
+          <>
+            <div className="mt-6">
+              <LinkButton href="/motorcycles" variant="brand" className="w-full">
+                Browse the catalogue
+              </LinkButton>
+            </div>
+            <p className="mt-3 text-xs leading-relaxed text-muted">
+              Everything saved here has since sold out or been discontinued.
+              Pick something from the catalogue and we will take it from there.
+            </p>
+          </>
+        )}
         <button
           type="button"
           onClick={clear}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CartPageClient from "@/components/CartPageClient";
 import { Section } from "@/components/Section";
+import { PRODUCT_PATHS } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "Your Cart",
@@ -20,7 +21,9 @@ export default function CartPage() {
         <h1 className="display-1 mt-4 text-ink">Cart</h1>
       </div>
       <div className="mt-10">
-        <CartPageClient />
+        {/* The cart outlives the catalogue, so the client needs to know which
+            of its saved lines still lead anywhere */}
+        <CartPageClient validPaths={PRODUCT_PATHS} />
       </div>
     </Section>
   );
