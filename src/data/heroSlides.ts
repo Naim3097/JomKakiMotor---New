@@ -14,6 +14,15 @@ export interface HeroSlide {
   tone: "dark" | "light";
   desktop: string;
   mobile: string;
+  /**
+   * Where the wide crop is anchored from md up. Between 768 and about 1400px
+   * the 2.83:1 artwork is taller than the frame, so `object-cover` throws away
+   * several hundred pixels of width — centred, that cuts the subject in half.
+   * Each banner puts its subject somewhere different (the riders sit far right,
+   * the handsets right of centre, the branch map between the two), so no single
+   * anchor keeps all three in frame and each carries its own.
+   */
+  focus: string;
   /** Alt text for the artwork — the headline already carries the message */
   alt: string;
   ctas: { label: string; href: string; wa?: boolean }[];
@@ -28,6 +37,8 @@ export const HERO_SLIDES: HeroSlide[] = [
     tone: "dark",
     desktop: "/brand/hero-1-desktop.jpg",
     mobile: "/brand/hero-1-mobile.jpg",
+    // Riders occupy the right third of the wide crop
+    focus: "md:object-right",
     alt: "Riders on scooters accelerating through a highway tunnel",
     ctas: [
       {
@@ -46,6 +57,8 @@ export const HERO_SLIDES: HeroSlide[] = [
     tone: "light",
     desktop: "/brand/hero-2-desktop.jpg",
     mobile: "/brand/hero-2-mobile.jpg",
+    // Handsets sit right of centre and need their left edge kept
+    focus: "md:object-[65%_center]",
     alt: "iPhone and Samsung Galaxy flagship handsets",
     ctas: [
       {
@@ -64,6 +77,11 @@ export const HERO_SLIDES: HeroSlide[] = [
     tone: "light",
     desktop: "/brand/hero-3-desktop.jpg",
     mobile: "/brand/hero-3-mobile.jpg",
+    // The map runs from just past halfway to the right edge. It is the widest
+    // of the three subjects — at 768px it is about 1% wider than the window
+    // itself, so this anchor trades a sliver of the west coast for keeping
+    // Sabah and Sarawak whole, and shows all of it from 1024px up.
+    focus: "md:object-[92%_center]",
     alt: "Map of Malaysia marked with JomKaki Rider branch locations",
     ctas: [
       { label: "Find Your Nearest Branch", href: "/contact" },

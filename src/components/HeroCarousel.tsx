@@ -50,8 +50,15 @@ export default function HeroCarousel() {
     firstRender.current = false;
   }, []);
 
-  const arrow =
-    "absolute top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-ink/45 text-white backdrop-blur-sm transition-colors hover:bg-ink/70 focus-visible:bg-ink/70 sm:flex";
+  // The controls sit over whichever slide is on show, so they borrow its tone.
+  // The fills are deliberately strong: a faint wash disappears against the
+  // branch map, which is brand orange edge to edge.
+  const activeDark = HERO_SLIDES[active].tone === "dark";
+  const arrow = `flex h-9 w-9 items-center justify-center rounded-full backdrop-blur-sm transition-colors ${
+    activeDark
+      ? "bg-ink/55 text-white hover:bg-ink/80 focus-visible:bg-ink/80"
+      : "bg-paper/80 text-ink hover:bg-paper focus-visible:bg-paper"
+  }`;
 
   return (
     <section
@@ -79,21 +86,44 @@ export default function HeroCarousel() {
               current ? "relative opacity-100" : "pointer-events-none absolute inset-0 opacity-0"
             }`}
           >
-            {/* Portrait artwork on phones, the wide crop from md up. Both are
-                full-bleed; the wide one crops vertically on narrow desktops,
-                which is safe because the composition is organised
-                horizontally — clear on the left, subject on the right. */}
-            <div className="relative min-h-[600px] md:min-h-[560px] lg:min-h-[640px]">
+            {/* Portrait artwork on phones, the wide crop from md up, both
+                full-bleed. All three portrait crops put their subject — the
+                riders, the handsets, the branch map — in the bottom third, so
+                the phone frame is tall enough to show that third whole and
+                anchors the art to its bottom edge rather than its centre,
+                which used to slice the subject in half. */}
+            <div className="relative min-h-[720px] md:min-h-[560px] lg:min-h-[640px]">
               <BannerImage
                 desktop={s.desktop}
                 mobile={s.mobile}
                 alt={s.alt}
                 priority={i === 0}
+                className={`object-cover object-bottom ${s.focus}`}
               />
             </div>
 
-            {/* Copy sits over the artwork's clear left-hand area */}
-            <div className="absolute inset-0 flex items-center">
+            {/* Scrim. The copy has to stay readable over three unrelated
+                banners — a tunnel, pale handsets, a bright orange map — and
+                none of them keeps a large enough quiet area on its own: the
+                tunnel's struts run straight through the headline on a phone,
+                and the wide crops pull their subject into the text column
+                between 768 and about 1100px. The wash runs down from the top
+                on phones, where the copy sits above the subject, and in from
+                the left on wide screens, where it sits beside it. It is
+                tone-matched, so it deepens the dark banner and lightens the
+                pale ones instead of fighting them. */}
+            <div
+              aria-hidden="true"
+              className={`absolute inset-0 ${
+                onDark
+                  ? "bg-linear-to-b from-ink/90 via-ink/55 to-transparent md:bg-linear-to-r md:from-ink/90 md:via-ink/45 md:to-transparent"
+                  : "bg-linear-to-b from-paper/90 via-paper/60 to-transparent md:bg-linear-to-r md:from-paper/90 md:via-paper/50 md:to-transparent"
+              }`}
+            />
+
+            {/* Copy — pinned to the top on phones, above the subject band;
+                vertically centred beside it from md up. */}
+            <div className="absolute inset-0 flex items-start pt-10 md:items-center md:pt-0">
               <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
                 <div className="max-w-[520px] lg:max-w-[560px]">
                   <p
@@ -152,40 +182,53 @@ export default function HeroCarousel() {
         );
       })}
 
-      <button
-        type="button"
-        onClick={() => go(active - 1)}
-        aria-label="Previous slide"
-        className={`${arrow} left-3 lg:left-5`}
-      >
-        <svg viewBox="0 0 20 20" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 4l-6 6 6 6" />
-        </svg>
-      </button>
-      <button
-        type="button"
-        onClick={() => go(active + 1)}
-        aria-label="Next slide"
-        className={`${arrow} right-3 lg:right-5`}
-      >
-        <svg viewBox="0 0 20 20" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M8 4l6 6-6 6" />
-        </svg>
-      </button>
+      {/* Controls. The arrows used to be pinned to the left and right edges,
+          where they landed on top of the body copy at every width below about
+          1400px — the copy column starts at the same gutter they sat in. They
+          now share the bottom bar with the dots, which never collides, reads
+          as one control group, and gives phones a way to advance by hand.
+          Both take their colour from the slide on show. */}
+      <div className="absolute inset-x-0 bottom-5 z-20 flex items-center justify-center gap-3">
+        <button
+          type="button"
+          onClick={() => go(active - 1)}
+          aria-label="Previous slide"
+          className={arrow}
+        >
+          <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 4l-6 6 6 6" />
+          </svg>
+        </button>
 
-      <div className="absolute inset-x-0 bottom-5 z-20 flex justify-center gap-2">
-        {HERO_SLIDES.map((s, i) => (
-          <button
-            key={s.id}
-            type="button"
-            onClick={() => go(i)}
-            aria-label={`Go to slide ${i + 1}`}
-            aria-current={i === active}
-            className={`h-2 rounded-full transition-all ${
-              i === active ? "w-7 bg-brand" : "w-2 bg-ink/30 hover:bg-ink/50"
-            }`}
-          />
-        ))}
+        <div className="flex items-center gap-2">
+          {HERO_SLIDES.map((s, i) => (
+            <button
+              key={s.id}
+              type="button"
+              onClick={() => go(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              aria-current={i === active}
+              // Brand orange marks the active slide everywhere except the
+              // branch map, whose own field is brand orange — ink there
+              className={`h-2 rounded-full transition-all ${
+                i === active
+                  ? `w-7 ${activeDark ? "bg-brand" : "bg-ink"}`
+                  : `w-2 ${activeDark ? "bg-white/40 hover:bg-white/70" : "bg-ink/30 hover:bg-ink/55"}`
+              }`}
+            />
+          ))}
+        </div>
+
+        <button
+          type="button"
+          onClick={() => go(active + 1)}
+          aria-label="Next slide"
+          className={arrow}
+        >
+          <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M8 4l6 6-6 6" />
+          </svg>
+        </button>
       </div>
     </section>
   );
