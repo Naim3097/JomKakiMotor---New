@@ -22,7 +22,7 @@ export default function AboutPage() {
           artwork can sit flush on the section's bottom edge: the subject's
           baseline touches the borderline into the grey section below, on
           desktop and especially on mobile (client request). */}
-      <section className="bg-paper">
+      <section className="relative overflow-hidden bg-paper">
         <div className="mx-auto max-w-7xl px-5 pt-12 sm:px-8 md:pt-16">
           <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "About Us", href: "/about-us" }]} />
           <div className="grid items-end gap-x-12 lg:grid-cols-[1fr_560px]">
@@ -47,12 +47,20 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
+            {/* The artwork runs past its column into the page's right-hand
+                margin — the container caps at 1216px, so widening the column
+                instead would have taken the space straight out of the
+                headline. The width adds back the 2rem gutter at lg and, from
+                xl, the centring margin as well, which lands the artwork's
+                right edge on the viewport edge; `items-end` on the grid plus
+                a section with no bottom padding keeps its base on the border
+                into the next section, so it only ever grows upward. */}
             <Image
               src={aboutHero}
               alt="JomKaki sales advisor with a motorcycle"
               priority
-              sizes="(min-width: 1024px) 560px, (min-width: 640px) 448px, 90vw"
-              className="mx-auto mt-12 w-full max-w-md lg:mx-0 lg:mt-0 lg:max-w-none"
+              sizes="(min-width: 1280px) 42vw, (min-width: 1024px) 592px, (min-width: 640px) 448px, 90vw"
+              className="-mx-5 mt-12 w-[calc(100%+2.5rem)] max-w-none sm:mx-auto sm:w-full sm:max-w-md lg:mx-0 lg:mt-0 lg:w-[calc(100%+2rem)] lg:max-w-none xl:w-[calc(100%+2rem+(100vw-80rem)/2)] xl:max-w-[820px]"
             />
           </div>
         </div>
