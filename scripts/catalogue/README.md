@@ -61,6 +61,21 @@ records each file's layer. On the product page,
 the product page shows it. The generator prints any colour whose name
 could not be matched to a photo name — take those back to the client.
 
+## Corrections the sheet has not caught up with
+
+Two small maps at the top of `gen.js` hold fixes the client has confirmed in
+writing but not yet made in the workbook, so a re-import cannot undo them.
+Each is keyed by slug, and the entry should be deleted once the sheet is
+corrected:
+
+- `IMAGE_FOLDER_OVERRIDE` — the Drive folder to use instead of column B.
+  The Honda ADV160 row still carries the Honda Vario 160's folder id, which
+  put Vario photos on the ADV160's card until the client sent the right
+  folder (2026-11-10).
+- `DROPPED_COLOURS` — colour options to leave out. The ARC Ritz Modern
+  Series row lists seven colours but only six were photographed; the client
+  confirmed the seventh is discontinued rather than awaiting a photo.
+
 `node scripts/catalogue/inspect.js <folderUrl>` walks a folder tree for a
 quick look at what the client uploaded.
 

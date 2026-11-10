@@ -1663,6 +1663,44 @@
       "layer": "Gallery"
     }
   ],
+  "honda-adv160": [
+    {
+      "file": "adv160-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-4.jpg",
+      "layer": "Gallery"
+    }
+  ],
   "honda-adv160-roadsync": [
     {
       "file": "adv160-roadsync-thumbnail.jpg",

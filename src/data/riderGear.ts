@@ -1307,7 +1307,6 @@ export const RIDER_GEAR: GearItem[] = [
     colours: [
       "Modern Grey",
       "Modern Blue",
-      "Modern Silver",
       "Modern White",
       "Modern Black",
       "Modern Red",

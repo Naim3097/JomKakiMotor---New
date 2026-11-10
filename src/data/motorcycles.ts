@@ -2915,7 +2915,21 @@ export const MOTORCYCLES: Motorcycle[] = [
     ],
     availability: "In Stock",
     arrival: "2025-01-01",
-    images: [],
+    image: "/products/motorcycles/honda-adv160/adv160-thumbnail.jpg",
+    images: [
+      "/products/motorcycles/honda-adv160/grey-1.jpg",
+      "/products/motorcycles/honda-adv160/grey-2.jpg",
+      "/products/motorcycles/honda-adv160/grey-3.jpg",
+      "/products/motorcycles/honda-adv160/grey-4.jpg",
+      "/products/motorcycles/honda-adv160/white-1.jpg",
+      "/products/motorcycles/honda-adv160/white-2.jpg",
+      "/products/motorcycles/honda-adv160/white-3.jpg",
+      "/products/motorcycles/honda-adv160/white-4.jpg"
+    ],
+    colourImages: {
+      White: "/products/motorcycles/honda-adv160/white-1.jpg",
+      Grey: "/products/motorcycles/honda-adv160/grey-1.jpg"
+    },
     highlights: [
       "156.9cc liquid-cooled, 4-valve eSP+ engine",
       "Flexible financing available via trusted credit partners",

@@ -106,6 +106,21 @@ function specsBullets(s, keys) {
   return specsByKeys(s, keys);
 }
 
+/**
+ * Colours the client has withdrawn but not yet deleted from the sheet, so a
+ * re-import does not put them back. Keyed by slug; clear an entry once the
+ * sheet itself drops the colour.
+ */
+const DROPPED_COLOURS = {
+  // The Ritz Modern row lists seven colours but only six were ever
+  // photographed. The seventh turned out to be discontinued rather than
+  // awaiting a photo, and the client asked for it to come off (2026-11-10).
+  "arc-ritz-modern-series": ["Modern Silver"],
+};
+const keepsColour = (slug, colour) =>
+  !(DROPPED_COLOURS[slug] || []).some((d) => d.toLowerCase() === colour.trim().toLowerCase());
+const liveColours = (slug, colours) => colours.filter((c) => keepsColour(slug, c));
+
 /** Colour/size lists arrive as "A • B", "A, B" or "A, B and C". */
 const splitList = (s) =>
   clean(s)
@@ -129,35 +144,34 @@ function monthlyBand(raw) {
 const imageManifest = {};
 
 /**
- * Products whose sheet row points at the wrong Drive folder, so no photo is
- * imported rather than showing another product's bike. Clearing the entry
- * once the client fixes the link is all that is needed — nothing else keys
- * off this list.
+ * Products whose sheet row points at the wrong Drive folder, mapped to the
+ * folder the client sent instead. The override beats column B, so a re-import
+ * keeps the right photos until the sheet is corrected — clear the entry once
+ * it is, and nothing else keys off this list.
  */
-const WRONG_IMAGE_FOLDER = {
-  // R5: the ADV160 row carries the Honda Vario 160's folder (same id), and
-  // the photos in it are Vario 160s in the Vario's colours. Showing them
-  // would put the wrong bike on the ADV160's card and product page.
-  "honda-adv160": "its sheet row links the Honda Vario 160's photo folder",
+const IMAGE_FOLDER_OVERRIDE = {
+  // R5: the ADV160 row carries the Honda Vario 160's folder (same id), so the
+  // import put Vario 160s on the ADV160's card and product page. The client
+  // sent the real ADV160 folder on 2026-11-10; column B still has the Vario's.
+  "honda-adv160": "https://drive.google.com/drive/folders/1aqohaqjR8r5GPSXhlKSNYccZPLi0nB-K",
 };
 
 /** Which product claimed each Drive folder, so a shared one can be flagged */
 const folderOwner = new Map();
 const sharedFolders = [];
 
-async function fetchImages(folderUrl, category, slug) {
+async function fetchImages(sheetUrl, category, slug) {
+  const override = IMAGE_FOLDER_OVERRIDE[slug];
+  if (override) console.log("   using the folder the client sent, not the sheet's link");
+  const folderUrl = override || sheetUrl;
   // Two products on one folder almost always means a copy-paste slip in the
   // sheet, and it is invisible once the photos are downloaded under both
-  // slugs — so say so at the end of the run. Checked before the skip below,
-  // so the report still names both halves of a known pair.
+  // slugs — so say so at the end of the run. The override is resolved first,
+  // so a pair the client has already untangled no longer shows up here.
   if (folderUrl) {
     const folderId = (folderUrl.match(/folders\/([A-Za-z0-9_-]+)/) || [, folderUrl])[1];
     if (folderOwner.has(folderId)) sharedFolders.push(`${folderOwner.get(folderId)} and ${slug} share one photo folder`);
     else folderOwner.set(folderId, slug);
-  }
-  if (WRONG_IMAGE_FOLDER[slug]) {
-    console.warn(`   ! no photos: ${WRONG_IMAGE_FOLDER[slug]}`);
-    return { image: undefined, images: [] };
   }
   if (!folderUrl) return { image: undefined, images: [] };
   const dir = path.join(PUB, category, slug);
@@ -332,7 +346,7 @@ async function motorcycles() {
     const cc = parseFloat((c("H").match(/([\d.]+)\s*cc/i) || disp.match(/([\d.]+)/) || [])[1] || "0");
     console.log(`- ${name}`);
     const { image, images, saved } = await fetchImages(c("B"), "motorcycles", slug);
-    const colours = splitList(fixTypos(c("I")));
+    const colours = liveColours(slug, splitList(fixTypos(c("I"))));
     out.push({
       slug, brand, model, type: c("D"), cc, price: Math.round(parseFloat(c("E"))), deposit,
       monthly: monthlyBand(c("G")), year,
@@ -367,7 +381,7 @@ async function accessories() {
     const fitment = bullets(c("E")).map((e) => {
       const m = e.match(/^(.+?)\s*\(([^)]+)\)\s*$/);
       return { colour: (m ? m[1] : e).trim(), models: m ? m[2].split(/,\s*/).map(normModel) : [] };
-    });
+    }).filter((f) => keepsColour(slug, f.colour));
     const specs = specsBullets(c("G"), ["Material", "Compatibility", "Inclusions", "Lowering Spec", "Installation", "Available Colours"]);
     // Fork lays list fitment in the Compatibility spec rather than per colour
     const compat = specs.find((s) => /compatib/i.test(s.label))?.value || "";
@@ -419,7 +433,7 @@ async function riderGear() {
       }
       const brand = GEAR_BRANDS.find((b) => name.toUpperCase().startsWith(b.toUpperCase())) || name.split(" ")[0];
       const slug = slugify(name);
-      const colours = splitList(fixTypos(c(g.colours))).map((x) => x.replace(/\s*\([^)]*\)$/, ""));
+      const colours = liveColours(slug, splitList(fixTypos(c(g.colours))).map((x) => x.replace(/\s*\([^)]*\)$/, "")));
       const sizes = g.sizes ? splitList(c(g.sizes)) : [];
       console.log(`- ${name}`);
       const { image, images, saved } = await fetchImages(c(g.img), "rider-gear", slug);
