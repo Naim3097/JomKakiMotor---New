@@ -25,7 +25,7 @@ const NAVIGATE_COLS: { label: string; href: string }[][] = [
 const RESOURCES = [
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
-  { label: "Terms of Use", href: "/terms-of-use" },
+  { label: "Disclaimer Notice", href: "/disclaimer-notice" },
   { label: "Privacy Notice", href: "/privacy-notice" },
 ];
 

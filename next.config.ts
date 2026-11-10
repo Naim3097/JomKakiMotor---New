@@ -17,7 +17,11 @@ const nextConfig: NextConfig = {
   // slides 2, 15–23); keep the old URL working for anything already linking
   // to it.
   async redirects() {
-    return [{ source: "/iphone-17", destination: "/smartphone", permanent: true }];
+    return [
+      { source: "/iphone-17", destination: "/smartphone", permanent: true },
+      // Terms of Use became the client's Disclaimer Notice (R5 slide 3)
+      { source: "/terms-of-use", destination: "/disclaimer-notice", permanent: true },
+    ];
   },
 };
 
