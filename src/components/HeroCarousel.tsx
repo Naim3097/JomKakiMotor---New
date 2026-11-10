@@ -54,10 +54,12 @@ export default function HeroCarousel() {
   // The fills are deliberately strong: a faint wash disappears against the
   // branch map, which is brand orange edge to edge.
   const activeDark = HERO_SLIDES[active].tone === "dark";
-  const arrow = `flex h-9 w-9 items-center justify-center rounded-full backdrop-blur-sm transition-colors ${
+  // Hover inverts the fill rather than deepening it — darkening a dark pill
+  // was too quiet to read as a hover state (R5 slide 4).
+  const arrow = `flex h-9 w-9 items-center justify-center rounded-full backdrop-blur-sm transition-colors duration-200 ${
     activeDark
-      ? "bg-ink/55 text-white hover:bg-ink/80 focus-visible:bg-ink/80"
-      : "bg-paper/80 text-ink hover:bg-paper focus-visible:bg-paper"
+      ? "bg-ink/55 text-white hover:bg-white hover:text-ink focus-visible:bg-white focus-visible:text-ink"
+      : "bg-paper/80 text-ink hover:bg-ink hover:text-white focus-visible:bg-ink focus-visible:text-white"
   }`;
 
   return (
@@ -92,7 +94,13 @@ export default function HeroCarousel() {
                 the phone frame is tall enough to show that third whole and
                 anchors the art to its bottom edge rather than its centre,
                 which used to slice the subject in half. */}
-            <div className="relative min-h-[720px] md:min-h-[560px] lg:min-h-[640px]">
+            {/* The wide crop is 2.83:1, so the shorter the frame the less of
+                its width object-cover throws away. Dropping the large-screen
+                frame from 640 to 560 takes the side crop at 1440 from 386px
+                to about 160, which is the "zoom out" the client asked for on
+                the branch-map banner — more of the artwork, and more clear
+                space on the left for the copy (R5 slide 5). */}
+            <div className="relative min-h-[720px] md:min-h-[560px]">
               <BannerImage
                 desktop={s.desktop}
                 mobile={s.mobile}
@@ -111,13 +119,16 @@ export default function HeroCarousel() {
                 on phones, where the copy sits above the subject, and in from
                 the left on wide screens, where it sits beside it. It is
                 tone-matched, so it deepens the dark banner and lightens the
-                pale ones instead of fighting them. */}
+                pale ones instead of fighting them. Kept deliberately light on
+                wide screens — the client found the first pass washed the
+                artwork out (R5 slide 5) — which the per-slide anchors below
+                allow, since they keep each subject clear of the copy. */}
             <div
               aria-hidden="true"
               className={`absolute inset-0 ${
                 onDark
-                  ? "bg-linear-to-b from-ink/90 via-ink/55 to-transparent md:bg-linear-to-r md:from-ink/90 md:via-ink/45 md:to-transparent"
-                  : "bg-linear-to-b from-paper/90 via-paper/60 to-transparent md:bg-linear-to-r md:from-paper/90 md:via-paper/50 md:to-transparent"
+                  ? "bg-linear-to-b from-ink/85 via-ink/50 to-transparent md:bg-linear-to-r md:from-ink/80 md:via-ink/35 md:to-transparent"
+                  : "bg-linear-to-b from-paper/80 via-paper/40 to-transparent md:bg-linear-to-r md:from-paper/55 md:via-paper/15 md:to-transparent"
               }`}
             />
 
