@@ -1,4 +1,50 @@
 {
+  "yamaha-ez115": [
+    {
+      "file": "ez115-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-green-3.png",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ez115-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yamaha-ez115-t.jpg",
+      "layer": "top"
+    }
+  ],
   "yamaha-lc135-v8": [
     {
       "file": "lc135-v8-thumbnail.jpg",
@@ -27,6 +73,130 @@
     {
       "file": "tank-white-2.jpg",
       "layer": "Gallery"
+    }
+  ],
+  "yamaha-lc135-le": [
+    {
+      "file": "celeste-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "celeste-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "celeste-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "celeste-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "celeste-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "lc135-v8-le-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-lc135-se": [
+    {
+      "file": "lc135-v8-se-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "se-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "se-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "se-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "se-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "se-5.jpg",
+      "layer": "Gallery"
+    }
+  ],
+  "yamaha-y15zr": [
+    {
+      "file": "cyan-jade-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-jade-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-jade-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-jade-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-jade-5.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-jade-6.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-jade-7.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-jade-8.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "y15zr-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-y15zr-se": [
+    {
+      "file": "royal-maroon-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "royal-maroon-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "royal-maroon-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "royal-maroon-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "royal-maroon-5.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "royal-maroon-6.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "royal-maroon-7.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "y15zr-se-thumbnail.jpg",
+      "layer": "top"
     }
   ],
   "yamaha-y16zr-r": [
@@ -143,6 +313,60 @@
       "layer": "Gallery"
     }
   ],
+  "yamaha-ego-avantiz": [
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ego-avantiz-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-4.jpg",
+      "layer": "Gallery"
+    }
+  ],
   "yamaha-ego-gear": [
     {
       "file": "cyan-1.jpg",
@@ -245,6 +469,292 @@
       "layer": "Gallery"
     }
   ],
+  "yamaha-ego-gear-pro-hybrid": [
+    {
+      "file": "cosmic-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cosmic-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cosmic-blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cosmic-blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cosmic-blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cosmic-blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cosmic-blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cosmic-blue-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "ego-gear-pro-hybrid-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "navy-green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-green-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-green-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-green-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-green-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "navy-green-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "stellar-white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "stellar-white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "stellar-white-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "stellar-white-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "stellar-white-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "stellar-white-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "stellar-white-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "stellar-white-8.jpg",
+      "layer": "Gallery"
+    }
+  ],
+  "yamaha-nmax-v3": [
+    {
+      "file": "crystal-graphite-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "crystal-graphite-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "crystal-graphite-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "crystal-graphite-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "crystal-graphite-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "crystal-graphite-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "crystal-graphite-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "crystal-graphite-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "icon-blue-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nmax-v3-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-nvx-155-standard": [
+    {
+      "file": "blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "bronze-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "bronze-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "bronze-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "bronze-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "bronze-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "bronze-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "bronze-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "bronze-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nvx-std-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-nvx-155-v3": [
+    {
+      "file": "electric-yellow-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "electric-yellow-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "nvx-v3-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "violet-rush-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "violet-rush-2.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-nvx-155-v3-sp": [
+    {
+      "file": "cyber-blue-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyber-blue-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "gunmetal-grey-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "gunmetal-grey-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "nvx-v3-sp-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
   "yamaha-xmax-250": [
     {
       "file": "ceramic-grey-1.jpg",
@@ -280,6 +790,150 @@
     },
     {
       "file": "xmax-250-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-mt-15": [
+    {
+      "file": "ice-storm-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ice-storm-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ice-storm-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ice-storm-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "midnight-black-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "midnight-black-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "midnight-black-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "midnight-black-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "mt15-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-mt-25": [
+    {
+      "file": "black-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "black-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "black-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "cyan-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "mt25-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-yzf-r25": [
+    {
+      "file": "pearl-blu-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "pearl-blu-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "pearl-blu-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "r25-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "racing-blu-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "racing-blu-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "racing-blu-3.jpg",
+      "layer": "top"
+    }
+  ],
+  "yamaha-pg-1": [
+    {
+      "file": "classic-black-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "classic-black-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "classic-black-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "classic-black-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "pg-1-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "sky-blue-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "sky-blue-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "sky-blue-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "sky-blue-4.jpg",
       "layer": "top"
     }
   ],
@@ -413,6 +1067,242 @@
       "layer": "top"
     }
   ],
+  "honda-dash-125-fi": [
+    {
+      "file": "blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "dash-125-fi-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-8.jpg",
+      "layer": "Gallery"
+    }
+  ],
+  "honda-vario-125": [
+    {
+      "file": "cyan-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "cyan-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "magenta-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "magenta-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "magenta-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "magenta-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "magenta-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "magenta-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "magenta-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "magenta-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "vario-125-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
   "honda-vario-125-street": [
     {
       "file": "purple-1.jpg",
@@ -483,6 +1373,296 @@
       "layer": "Gallery"
     }
   ],
+  "honda-vario-160": [
+    {
+      "file": "grey-gold-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-gold-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-gold-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-gold-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-gold-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-gold-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-gold-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "grey-gold-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-black-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-blue-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "vario-160-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "honda-rs150r": [
+    {
+      "file": "matte-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-blue-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-blue-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-blue-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-blue-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rs150r-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "silver-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "silver-8.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-trico-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-trico-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-trico-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-trico-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-trico-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-trico-6.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-trico-7.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-trico-8.jpg",
+      "layer": "Gallery"
+    }
+  ],
+  "honda-rs-x-winner": [
+    {
+      "file": "blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "blue-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "rsx-winner-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "tricolour-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "tricolour-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "yellow-4.jpg",
+      "layer": "Gallery"
+    }
+  ],
   "honda-adv160-roadsync": [
     {
       "file": "adv160-roadsync-thumbnail.jpg",
@@ -550,6 +1730,76 @@
     },
     {
       "file": "matte-grey-8.jpg",
+      "layer": "Gallery"
+    }
+  ],
+  "honda-beat": [
+    {
+      "file": "beat-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "black-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "black-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "green-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-silver-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-silver-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-silver-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-silver-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-4.jpg",
       "layer": "Gallery"
     }
   ],
@@ -861,6 +2111,52 @@
       "layer": "Gallery"
     }
   ],
+  "modenas-kriss-125-fi": [
+    {
+      "file": "glacier-emerald-green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glacier-emerald-green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glacier-emerald-green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glacier-emerald-green-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glacier-emerald-green-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-4.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "graphite-grey-5.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "kriss-125-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
   "modenas-karisma-ex-125": [
     {
       "file": "caribbean-cyan.jpg",
@@ -939,7 +2235,7 @@
       "layer": "top"
     }
   ],
-  "qj-motor-ax-200s": [
+  "qjmotor-ax-200s": [
     {
       "file": "ax-200s.jpg",
       "layer": "top"
@@ -966,6 +2262,60 @@
     },
     {
       "file": "white.jpg",
+      "layer": "Gallery"
+    }
+  ],
+  "sym-husky-150-se": [
+    {
+      "file": "glossy-green-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glossy-green-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "glossy-green-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "indigo-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "indigo-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "indigo-blue-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "matte-grey-3.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "sym-husky-150-se-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "white-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "white-3.jpg",
       "layer": "Gallery"
     }
   ],
@@ -1077,6 +2427,36 @@
       "layer": "top"
     }
   ],
+  "aveta-nova-200": [
+    {
+      "file": "nano-grey-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nano-grey-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "neon-pulse-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "neon-pulse-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nordic-blue-1.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nordic-blue-2.jpg",
+      "layer": "Gallery"
+    },
+    {
+      "file": "nova-200-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
   "aveta-nova-250": [
     {
       "file": "aveta-nova-250-thumbnail.jpg",
@@ -1111,6 +2491,24 @@
     {
       "file": "nano-grey.jpg",
       "layer": "Gallery"
+    }
+  ],
+  "aveta-nova-160": [
+    {
+      "file": "cosmic-purple.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "dark-blue.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "nova-160-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "teal-green.jpg",
+      "layer": "top"
     }
   ],
   "moda-moca-110": [
@@ -1215,6 +2613,24 @@
       "layer": "Gallery"
     }
   ],
+  "ppr-cnc-alloy-s5-sport-rim": [
+    {
+      "file": "black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ppr-cnc-alloy-s5-sport-rim-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "purple.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "silver.jpg",
+      "layer": "top"
+    }
+  ],
   "ppr-racing-r63-sport-rim": [
     {
       "file": "r63-black.jpg",
@@ -1243,6 +2659,30 @@
       "layer": "top"
     }
   ],
+  "enkei-sp522-sport-rim-yamaha-y125z-yamaha-y15zr": [
+    {
+      "file": "black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "enkei-sp522-sport-rim-y125z-y15zr-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "gold.jpg",
+      "layer": "top"
+    }
+  ],
+  "enkei-sp522-sport-rim-yamaha-nvx": [
+    {
+      "file": "enkei-sp522-sport-rim-nvx-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "gold-nvx.jpg",
+      "layer": "top"
+    }
+  ],
   "enkei-g500-custom": [
     {
       "file": "enkei-g500-custom-t-v2.jpg",
@@ -1267,6 +2707,44 @@
       "layer": "top"
     }
   ],
+  "enkei-legenda-limited-sport-rim-yamaha-y125z-yamaha-y15zr": [
+    {
+      "file": "black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "copper.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "enkei-legenda-limited-sport-rim-y125z-y15zr-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "white.jpg",
+      "layer": "top"
+    }
+  ],
+  "enkei-legenda-limited-sport-rim-yamaha-nvx": [
+    {
+      "file": "black-nvx.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "enkei-legenda-limited-sport-rim-nvx-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "ppr-racing-r43-sport-rim": [
+    {
+      "file": "gold.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ppr-racing-r43-sport-rim-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
   "ppr-racing-cnc-fork-lay-yamaha-lc135": [
     {
       "file": "black-and-gold.jpg",
@@ -1274,6 +2752,174 @@
     },
     {
       "file": "ppr-racing-cnc-fork-lay-t.jpg",
+      "layer": "top"
+    }
+  ],
+  "ppr-racing-cnc-fork-lay-yamaha-nvx": [
+    {
+      "file": "ppr-racing-cnc-fork-lay-nvx-thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ppr-racing-cnc-fork-lay-nvx.jpg",
+      "layer": "top"
+    }
+  ],
+  "ppr-racing-fork-lay-drag": [
+    {
+      "file": "nvx-black-nvx.jpg",
+      "layer": "NVX"
+    },
+    {
+      "file": "ppr-racing-fork-lay-drag-thumbnail-v2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "y15zr-black-y15zr.jpg",
+      "layer": "Y15ZR"
+    },
+    {
+      "file": "y15zr-silver-y15zr.jpg",
+      "layer": "Y15ZR"
+    }
+  ],
+  "ppr-racing-fork-lay-pro": [
+    {
+      "file": "black-gold.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "ppr-racing-fork-lay-pro-thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-leopard-spain-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-jaume-masia-2019-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-espargaro-misano-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-xavi-sakura-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-dalla-porta-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
       "layer": "top"
     }
   ],
@@ -1307,6 +2953,110 @@
       "layer": "top"
     }
   ],
+  "kyt-hellcat-merdeka-64-limited-edition": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-hellcat-neon-yellow": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-hellcat-neon-red": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-hellcat-neon-blue": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
   "kyt-venom-espargaro-2016-replica": [
     {
       "file": "angled.jpg",
@@ -1333,6 +3083,318 @@
       "layer": "top"
     }
   ],
+  "kyt-venom-andrea-locatelli-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-xavi-fores-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-xavier-simeon-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-broc-parker-2018-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-simone-corsi-2018-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-ttr-jet-kasma-daniel-2023-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-radar-red": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-petronas-srt-3-0-special-edition": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-nfj-kasma-daniel-replica": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-ttr-jet-merdeka-67-limited-edition": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-hellcat-waves-white-blue": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "kyt-hellcat-restart-aqua": [
+    {
+      "file": "angled.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "back.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "front.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "left.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "right.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
   "arc-pastel-series": [
     {
       "file": "beige.jpg",
@@ -1348,6 +3410,66 @@
     },
     {
       "file": "thumbnail-v2.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-modern-series": [
+    {
+      "file": "black.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "blue.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "grey.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "red.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "white.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "yellow.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-yf1-series": [
+    {
+      "file": "blue-and-red-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "blue-and-red-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "blue-and-red-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "yellow-and-red-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "yellow-and-red-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "yellow-and-red-3.jpg",
       "layer": "top"
     }
   ],
@@ -1394,6 +3516,164 @@
     },
     {
       "file": "thumbnail-v2.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-two-tone-series": [
+    {
+      "file": "baby-blue.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "gold.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-xr-series-winston-eagle": [
+    {
+      "file": "1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-xr-series-supreme-gold": [
+    {
+      "file": "1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-special-edition-zamri-baba-tribute-helmet-cap": [
+    {
+      "file": "1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-ar4-series": [
+    {
+      "file": "1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-flash-series-yellow": [
+    {
+      "file": "thumbnail.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "yellow-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "yellow-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "yellow-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "yellow-4.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-flash-series": [
+    {
+      "file": "green-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "green-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "red-1.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "red-2.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "red-3.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "red-4.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail-copy.jpg",
       "layer": "top"
     }
   ],
@@ -1514,6 +3794,24 @@
     },
     {
       "file": "titan-blue.jpg",
+      "layer": "top"
+    }
+  ],
+  "arc-ritz-hypershield-visor": [
+    {
+      "file": "light-blue.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "light-rainbow.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "light-red.jpg",
+      "layer": "top"
+    },
+    {
+      "file": "thumbnail.jpg",
       "layer": "top"
     }
   ],

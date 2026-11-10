@@ -1,11 +1,276 @@
 import type { GearItem } from "./types";
 
 /**
- * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)
- * on 2026-10-14. Edit the sheet and re-run the generator rather than
+ * GENERATED from "JomKaki Rider Product Compilation.xlsx" (every named row)
+ * on 2026-11-10. Edit the sheet and re-run the generator rather than
  * hand-editing prices or copy here.
  */
 export const RIDER_GEAR: GearItem[] = [
+  {
+    slug: "kyt-nfj-leopard-spain-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Leopard Spain Replica",
+    brand: "KYT",
+    price: 395,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L"
+    ],
+    image: "/products/rider-gear/kyt-nfj-leopard-spain-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-leopard-spain-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-leopard-spain-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-leopard-spain-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-leopard-spain-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-leopard-spain-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: 100% SIRIM-approved to provide maximum safety compliance on Malaysian roads",
+      "Impact-Resistant & Aerodynamic: Built with an ADT-Advanced thermoplastic shell designed in wind tunnels for high-speed drag reduction and maximum impact resistance",
+      "Removable & Washable Lining: Equipped with a fully removable, washable, and breathable hypoallergenic interior padding",
+      "Quick-Release Buckle: Features a quick-release micrometric buckle retention system for secure, hassle-free fastening"
+    ],
+    description: [
+      "Inspired by Moto3 championship race graphics, the KYT NFJ Leopard Spain brings MotoGP track styling to everyday city commutes. Engineered with an ADT-Advanced thermoplastic shell and wind-tunnel-tested aerodynamics, it guarantees low drag and high stability at higher speeds.",
+      "The dual-visor setup includes an anti-scratch clear main shield along with a drop-down sun visor for effortless visibility under changing sun conditions. Complete with a plush, breathable interior and SIRIM certification, this open-face helmet delivers top-tier safety and standout street appeal."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Outer Shield + Integrated Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Hypoallergenic Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "L"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-jaume-masia-2019-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Jaume Masia 2019 Replica",
+    brand: "KYT",
+    price: 365,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L"
+    ],
+    image: "/products/rider-gear/kyt-nfj-jaume-masia-2019-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-jaume-masia-2019-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-jaume-masia-2019-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-jaume-masia-2019-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-jaume-masia-2019-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-jaume-masia-2019-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: Fully SIRIM-approved for maximum rider safety and street compliance",
+      "Impact-Resistant & Aerodynamic: Features a high-grade ADT-Advanced shell that delivers high impact protection and sleek aerodynamic performance",
+      "Removable & Washable Lining: Comes with removable, washable, and moisture-wicking breathable lining to keep riders cool",
+      "Quick-Release Buckle: Includes a quick-release micrometric buckle for rapid, adjustable retention"
+    ],
+    description: [
+      "Featuring the vibrant signature graphic of Moto3 contender Jaume Masia, this edition elevates open-face performance with aggressive racing heritage. Its aerodynamic contour minimizes air resistance while dual intake vents ensure maximum airflow during warm urban rides.",
+      "The double visor system allows instant switching between high sunlight and dim conditions without changing visors. Crafted for safety and comfort, it offers SIRIM certification alongside premium removable comfort padding."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Visor + Internal Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Comfort Lining"
+      },
+      {
+        label: "Available Sizes",
+        value: "L"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-espargaro-misano-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Espargaro Misano Replica",
+    brand: "KYT",
+    price: 395,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XL"
+    ],
+    image: "/products/rider-gear/kyt-nfj-espargaro-misano-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-espargaro-misano-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-espargaro-misano-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-espargaro-misano-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-espargaro-misano-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-espargaro-misano-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: 100% SIRIM-approved to guarantee maximum impact protection on public roads",
+      "Impact-Resistant & Aerodynamic: Molded in impact-resistant thermoplastic with an aerodynamic shell profile to minimize neck fatigue",
+      "Removable & Washable Lining: Fitted with a fully removable, washable, and highly breathable liner for easy hygiene",
+      "Quick-Release Buckle: Utilizes a quick-release micrometric lock mechanism for instant and secure adjustment"
+    ],
+    description: [
+      "The KYT NFJ Pol Espargaro Misano edition showcases exclusive grand-prix artwork wrapped around an advanced open-face shell profile. Engineered using computational fluid dynamics, the shell channels airflow seamlessly to keep the helmet planted at cruising speeds.",
+      "The dual visor mechanism equips riders for daytime sun glare and nighttime clarity with smooth slide-lever operation. With SIRIM certification and plush removable liners, it is an ideal choice for daily riders seeking race-level aesthetics."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Anti-Scratch Clear Visor + Tinted Sun Shield)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Comfort Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-xavi-sakura-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Xavi Sakura Replica",
+    brand: "KYT",
+    price: 365,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L"
+    ],
+    image: "/products/rider-gear/kyt-nfj-xavi-sakura-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-xavi-sakura-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-xavi-sakura-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-xavi-sakura-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-xavi-sakura-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-xavi-sakura-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-approved for maximum safety and full legal compliance",
+      "Impact-Resistant & Aerodynamic: Engineered with a tough impact-resistant resin shell contoured for optimum aerodynamic stability",
+      "Removable & Washable Lining: Interior padding is 100% removable, washable, and constructed from breathable fabric",
+      "Quick-Release Buckle: Fitted with an easy-to-use quick-release buckle for swift fastening"
+    ],
+    description: [
+      "Showcasing the popular cherry blossom Sakura livery of Xavi Vierge, this helmet combines delicate artistry with heavy-duty protection. Its lightweight ADT thermoplastic shell absorbs severe impacts while cutting down on wind buffeting at high speed.",
+      "The integrated drop-down sun visor guarantees uncompromised visibility when facing harsh afternoon sunlight. Designed with a washable, sweat-wicking liner and SIRIM approval, it offers daily comfort without sacrificing safety."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Visor + Retractable Sun Shield)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Hypoallergenic Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "L"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-dalla-porta-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Dalla Porta Replica",
+    brand: "KYT",
+    price: 365,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L"
+    ],
+    image: "/products/rider-gear/kyt-nfj-dalla-porta-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-dalla-porta-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-dalla-porta-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-dalla-porta-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-dalla-porta-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-dalla-porta-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: Certified by SIRIM Malaysia for maximum structural safety and road protection",
+      "Impact-Resistant & Aerodynamic: Features a high-tensile impact-resistant shell with aerodynamic ventilation ducts",
+      "Removable & Washable Lining: Fully removable and washable inner lining optimized for cooling and airflow",
+      "Quick-Release Buckle: Equipped with a precise quick-release micrometric buckle system"
+    ],
+    description: [
+      "Designed in honor of Moto3 World Champion Lorenzo Dalla Porta, this helmet brings iconic championship graphics to street riders. The aerodynamic shell design redirects air currents smoothly over the rider’s head to reduce fatigue during longer journeys.",
+      "An easy-to-operate inner sun visor delivers maximum glare protection, pairing perfectly with the wide scratch-resistant main visor. Backed by SIRIM safety certification, it delivers professional track style with everyday street usability."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Visor + Internal Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "L"
+      }
+    ]
+  },
   {
     slug: "kyt-nfj-5th-memorial-ft-full-package",
     gearType: "Helmet",
@@ -61,6 +326,218 @@ export const RIDER_GEAR: GearItem[] = [
     ]
   },
   {
+    slug: "kyt-hellcat-merdeka-64-limited-edition",
+    gearType: "Helmet",
+    name: "KYT Hellcat Merdeka 64 Limited Edition",
+    brand: "KYT",
+    price: 390,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L"
+    ],
+    image: "/products/rider-gear/kyt-hellcat-merdeka-64-limited-edition/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-hellcat-merdeka-64-limited-edition/angled.jpg",
+      "/products/rider-gear/kyt-hellcat-merdeka-64-limited-edition/back.jpg",
+      "/products/rider-gear/kyt-hellcat-merdeka-64-limited-edition/front.jpg",
+      "/products/rider-gear/kyt-hellcat-merdeka-64-limited-edition/left.jpg",
+      "/products/rider-gear/kyt-hellcat-merdeka-64-limited-edition/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety on Malaysian roads",
+      "Impact-Resistant & Aerodynamic: Constructed from an impact-resistant injection-molded shell featuring compact aerodynamic channels",
+      "Removable & Washable Lining: Features a removable, washable, and breathable cheek pad and head liner setup",
+      "Quick-Release Buckle: Secured by a reliable quick-release buckle for smooth daily operation"
+    ],
+    description: [
+      "Celebrating Malaysia’s 64th Independence Day, the KYT Hellcat Merdeka 64 boasts exclusive patriotic livery for local motor enthusiasts. Its injection-molded thermoplastic shell offers rigid impact resistance while maintaining a light, ergonomic feel on the head.",
+      "The built-in drop-down sun visor ensures effortless switching when transitioning between sunny stretches and shaded routes. SIRIM-certified and equipped with a removable breathable liner, it combines national pride with uncompromised daily protection."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Outer Shield + Drop-Down Inner Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Comfort Lining"
+      },
+      {
+        label: "Available Sizes",
+        value: "L"
+      }
+    ]
+  },
+  {
+    slug: "kyt-hellcat-neon-yellow",
+    gearType: "Helmet",
+    name: "KYT Hellcat Neon Yellow",
+    brand: "KYT",
+    price: 295,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    image: "/products/rider-gear/kyt-hellcat-neon-yellow/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-hellcat-neon-yellow/angled.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-yellow/back.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-yellow/front.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-yellow/left.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-yellow/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-approved to deliver maximum safety and high visibility on the road",
+      "Impact-Resistant & Aerodynamic: Formed with an impact-resistant resin shell tuned for reduced aerodynamic drag",
+      "Removable & Washable Lining: Inner liners are breathable, moisture-absorbent, fully removable, and washable",
+      "Quick-Release Buckle: Outfitted with a quick-release retention buckle for fast and secure adjustments"
+    ],
+    description: [
+      "Highlighting a hi-vis neon colorway, the KYT Hellcat Neon Yellow ensures you remain visible to surrounding traffic under low-light conditions. The tough thermoplastic structure provides reliable impact absorption without adding unnecessary weight to your neck.",
+      "Multi-port ventilation intake vents actively push airflow through the breathable interior pads for continuous rider cooling. Backed by SIRIM certification and a dual-visor mechanism, it is a practical choice for safety-conscious urban commuters."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Visor + Retractable Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Hypoallergenic Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-hellcat-neon-red",
+    gearType: "Helmet",
+    name: "KYT Hellcat Neon Red",
+    brand: "KYT",
+    price: 295,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    image: "/products/rider-gear/kyt-hellcat-neon-red/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-hellcat-neon-red/angled.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-red/back.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-red/front.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-red/left.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-red/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: Fully certified by SIRIM Malaysia for maximum rider safety",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant resin and streamlined aerodynamic lines",
+      "Removable & Washable Lining: Outfitted with removable, washable, and breathable anti-bacterial cheek pads",
+      "Quick-Release Buckle: Features a quick-release micrometric buckle for effortless, safe retention"
+    ],
+    description: [
+      "Wrapped in striking vibrant neon red paint, the KYT Hellcat Neon Red brings a bold dynamic energy to urban street riding. The aerodynamic outer shell helps dissipate wind turbulence during open-road cruising.",
+      "An inner drop-down solar visor shields eyes against direct glares, ensuring crisp visual clarity in daytime riding. Designed with SIRIM safety standards and washable interior padding, it provides ultimate peace of mind and comfort."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Outer Visor + Integrated Inner Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-hellcat-neon-blue",
+    gearType: "Helmet",
+    name: "KYT Hellcat Neon Blue",
+    brand: "KYT",
+    price: 295,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    image: "/products/rider-gear/kyt-hellcat-neon-blue/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-hellcat-neon-blue/angled.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-blue/back.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-blue/front.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-blue/left.jpg",
+      "/products/rider-gear/kyt-hellcat-neon-blue/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-approved for maximum safety standards and traffic compliance",
+      "Impact-Resistant & Aerodynamic: Shell is constructed from impact-resistant thermoplastic engineered for aerodynamic balance",
+      "Removable & Washable Lining: Comes with breathable, anti-odor lining that is 100% removable and washable",
+      "Quick-Release Buckle: Quick-release buckle allows rapid, effortless fastening and unfastening"
+    ],
+    description: [
+      "The KYT Hellcat Neon Blue stands out with its electric neon finish and modern street geometry. Engineered with advanced thermoplastic resin, the shell delivers heavy-duty impact dissipation in the event of an accident.",
+      "The integrated retractable sun shield keeps harsh UV rays at bay with a simple flip mechanism. Featuring a SIRIM safety badge and easily washable comfort pads, this open-face helmet satisfies both style and security."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Outer Visor + Drop-Down Inner Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Comfort Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
     slug: "kyt-venom-espargaro-2016-replica",
     gearType: "Helmet",
     name: "KYT Venom Espargaro 2016 Replica",
@@ -110,6 +587,643 @@ export const RIDER_GEAR: GearItem[] = [
       {
         label: "Available Sizes",
         value: "L"
+      }
+    ]
+  },
+  {
+    slug: "kyt-venom-andrea-locatelli-replica",
+    gearType: "Helmet",
+    name: "KYT Venom Andrea Locatelli Replica",
+    brand: "KYT",
+    price: 370,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L"
+    ],
+    image: "/products/rider-gear/kyt-venom-andrea-locatelli-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-venom-andrea-locatelli-replica/angled.jpg",
+      "/products/rider-gear/kyt-venom-andrea-locatelli-replica/back.jpg",
+      "/products/rider-gear/kyt-venom-andrea-locatelli-replica/front.jpg",
+      "/products/rider-gear/kyt-venom-andrea-locatelli-replica/left.jpg",
+      "/products/rider-gear/kyt-venom-andrea-locatelli-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM certified to ensure maximum safety for daily street usage",
+      "Impact-Resistant & Aerodynamic: Features an impact-resistant outer shell engineered with wind-tunnel aerodynamic efficiency",
+      "Removable & Washable Lining: Contains removable, washable, and highly breathable interior lining",
+      "Quick-Release Buckle: Utilizes a quick-release buckle mechanism for effortless locking and adjustment"
+    ],
+    description: [
+      "Sporting the crisp blue race graphics of World Supersport champion Andrea Locatelli, this helmet delivers race track styling to urban riders. Its durable thermoplastic outer casing effectively distributes impact forces while maintaining a streamlined aerodynamic profile.",
+      "The dual-visor system allows quick visual adaptability, making bright sunny rides effortlessly comfortable. Backed by SIRIM safety standards and removable inner pads, it is engineered for high durability and hygiene."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Visor + Retractable Inner Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Comfort Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "L"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-xavi-fores-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Xavi Fores Replica",
+    brand: "KYT",
+    price: 420,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XL"
+    ],
+    image: "/products/rider-gear/kyt-nfj-xavi-fores-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-xavi-fores-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-xavi-fores-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-xavi-fores-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-xavi-fores-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-xavi-fores-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: Certified by SIRIM Malaysia for maximum rider road safety",
+      "Impact-Resistant & Aerodynamic: Constructed from impact-resistant ADT resin with aerodynamic drag reduction",
+      "Removable & Washable Lining: Outfitted with fully removable, washable, and breathable inner padding",
+      "Quick-Release Buckle: Quick-release micrometric buckle ensures smooth and fast fastening"
+    ],
+    description: [
+      "Designed in collaboration with World Superbike racer Xavi Fores, this edition delivers aggressive aesthetic accents to the NFJ lineup. The aerodynamic shell contour stabilizes the helmet against buffeting when cruising at higher speeds.",
+      "Internal sun visors drop down smoothly to keep sun dazzle from compromising road awareness. With full SIRIM safety accreditation and removable washable interior padding, it provides premium comfort for every ride."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Shield + Drop-Down Inner Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-xavier-simeon-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Xavier Simeon Replica",
+    brand: "KYT",
+    price: 420,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    image: "/products/rider-gear/kyt-nfj-xavier-simeon-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-xavier-simeon-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-xavier-simeon-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-xavier-simeon-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-xavier-simeon-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-xavier-simeon-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: 100% SIRIM-approved for maximum safety assurance",
+      "Impact-Resistant & Aerodynamic: Impact-resistant ADT thermoplastic shell contoured for optimal aerodynamic balance",
+      "Removable & Washable Lining: Interior cheek pads and liner are removable, washable, and highly breathable",
+      "Quick-Release Buckle: Features a quick-release retention system for convenient daily use"
+    ],
+    description: [
+      "Showcasing Moto2 star Xavier Simeon's official design, this NFJ open-face helmet blends bold track graphics with functional street performance. The outer shell structure offers superior impact absorption while channeling air through strategically located front vents.",
+      "A dual visor system allows riders to combat solar glare instantly without swapping main shields. Certified by SIRIM and equipped with sweat-wicking removable liners, it ensures top-tier comfort and security."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Visor + Internal Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-broc-parker-2018-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Broc Parker 2018 Replica",
+    brand: "KYT",
+    price: 365,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XL"
+    ],
+    image: "/products/rider-gear/kyt-nfj-broc-parker-2018-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-broc-parker-2018-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-broc-parker-2018-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-broc-parker-2018-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-broc-parker-2018-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-broc-parker-2018-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-certified to ensure maximum protection on public highways",
+      "Impact-Resistant & Aerodynamic: Built with an impact-resistant ADT shell tested for aerodynamic airflow efficiency",
+      "Removable & Washable Lining: Features 100% removable, washable, and breathable liner pads",
+      "Quick-Release Buckle: Equipped with a quick-release micrometric buckle system"
+    ],
+    description: [
+      "Featuring the race-proven design of Australian endurance champion Broc Parkes, this helmet brings racing heritage to everyday commuting. The rigid ADT-Advanced thermoplastic shell delivers heavy-duty impact resistance while maintaining a light feel.",
+      "Integrated dual visors offer crystal-clear sightlines under both direct sunlight and low-light night riding conditions. Fully SIRIM-certified with a plush removable interior, it delivers a high level of comfort and safety."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Visor + Retractable Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Hypoallergenic Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-simone-corsi-2018-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Simone Corsi 2018 Replica",
+    brand: "KYT",
+    price: 420,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XL"
+    ],
+    image: "/products/rider-gear/kyt-nfj-simone-corsi-2018-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-simone-corsi-2018-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-simone-corsi-2018-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-simone-corsi-2018-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-simone-corsi-2018-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-simone-corsi-2018-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: Approved by SIRIM Malaysia for maximum rider safety",
+      "Impact-Resistant & Aerodynamic: Designed with an impact-resistant thermoplastic shell engineered for aerodynamic stability",
+      "Removable & Washable Lining: Removable, washable, and breathable interior liners ensure optimal hygiene",
+      "Quick-Release Buckle: Includes a quick-release buckle for effortless secure fitting"
+    ],
+    description: [
+      "Inspired by Italian rider Simone Corsi's Moto2 championship graphics, this open-face helmet stands out in any crowd. Its aerodynamically tuned structure minimizes lift and drag at high speeds to reduce neck strain.",
+      "Dual visor functionality provides instant protection against UV rays and flying road debris. Backed by SIRIM certification and lined with washable moisture-wicking foam, it guarantees long-lasting freshness and protection."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Outer Visor + Drop-Down Inner Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-ttr-jet-kasma-daniel-2023-replica",
+    gearType: "Helmet",
+    name: "KYT TTR-Jet Kasma Daniel 2023 Replica",
+    brand: "KYT",
+    price: 395,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L",
+      "XXL"
+    ],
+    image: "/products/rider-gear/kyt-ttr-jet-kasma-daniel-2023-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-ttr-jet-kasma-daniel-2023-replica/angled.jpg",
+      "/products/rider-gear/kyt-ttr-jet-kasma-daniel-2023-replica/back.jpg",
+      "/products/rider-gear/kyt-ttr-jet-kasma-daniel-2023-replica/front.jpg",
+      "/products/rider-gear/kyt-ttr-jet-kasma-daniel-2023-replica/left.jpg",
+      "/products/rider-gear/kyt-ttr-jet-kasma-daniel-2023-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: Certified by SIRIM for maximum safety standards (also compliant with ECE 22.06)",
+      "Impact-Resistant & Aerodynamic: Features an advanced impact-resistant ADT resin shell with sport-jet wind tunnel aerodynamics",
+      "Removable & Washable Lining: Plush, breathable inner lining that is fully removable and washable",
+      "Quick-Release Buckle: Features a quick-release micrometric retention buckle for instant fastening"
+    ],
+    description: [
+      "Built on KYT's next-generation TTR-Jet platform, the Kasma Daniel 2023 edition features official race graphics of Malaysia's premier motorcycle racer. The upgraded aerodynamic profile meets stringent safety benchmarks while delivering exceptional stability at speed.",
+      "Dual visor optics incorporate an anti-fog ready main shield alongside an internal sun shield for seamless lighting adaptability. With SIRIM safety certification and washable interior padding, it sets a benchmark for modern sporty jet helmets."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face (Sporty Jet)"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.06"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Outer Shield + Retractable Sun Shield)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Hypoallergenic Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "L, XXL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-radar-red",
+    gearType: "Helmet",
+    name: "KYT NFJ Radar Red",
+    brand: "KYT",
+    price: 365,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XL"
+    ],
+    image: "/products/rider-gear/kyt-nfj-radar-red/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-radar-red/angled.jpg",
+      "/products/rider-gear/kyt-nfj-radar-red/back.jpg",
+      "/products/rider-gear/kyt-nfj-radar-red/front.jpg",
+      "/products/rider-gear/kyt-nfj-radar-red/left.jpg",
+      "/products/rider-gear/kyt-nfj-radar-red/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: 100% SIRIM-approved for maximum street safety",
+      "Impact-Resistant & Aerodynamic: Molded from impact-resistant ADT resin with an aerodynamic shell shape",
+      "Removable & Washable Lining: Interior cheek pads and liners are fully removable, washable, and breathable",
+      "Quick-Release Buckle: Quick-release buckle allows rapid, effortless adjustments"
+    ],
+    description: [
+      "Featuring dynamic geometrical radar graphics in rich red tones, the KYT NFJ Radar Red gives daily commuters an energetic aesthetic upgrade. The high-density thermoplastic shell dissipates kinetic impact forces smoothly upon contact.",
+      "Its double-visor system features a clear outer shield and an inner solar visor for effortless transition between bright and shaded environments. Lined with removable breathable padding and backed by SIRIM safety certification, it delivers all-day comfort."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Visor + Internal Sun Shield)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-petronas-srt-3-0-special-edition",
+    gearType: "Helmet",
+    name: "KYT NFJ Petronas SRT 3.0 Special Edition",
+    brand: "KYT",
+    price: 365,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XL"
+    ],
+    image: "/products/rider-gear/kyt-nfj-petronas-srt-3-0-special-edition/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-petronas-srt-3-0-special-edition/angled.jpg",
+      "/products/rider-gear/kyt-nfj-petronas-srt-3-0-special-edition/back.jpg",
+      "/products/rider-gear/kyt-nfj-petronas-srt-3-0-special-edition/front.jpg",
+      "/products/rider-gear/kyt-nfj-petronas-srt-3-0-special-edition/left.jpg",
+      "/products/rider-gear/kyt-nfj-petronas-srt-3-0-special-edition/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-approved to ensure maximum safety on all roads",
+      "Impact-Resistant & Aerodynamic: Impact-resistant thermoplastic shell contoured for aerodynamic efficiency",
+      "Removable & Washable Lining: Fully removable, washable, and breathable interior fabric lining",
+      "Quick-Release Buckle: Secured with a quick-release micrometric buckle for fast retention"
+    ],
+    description: [
+      "0 edition is a favorite among local motorsports fans. Its aerodynamic contours reduce turbulence and wind noise at highway speeds.",
+      "The dual-visor setup protects eyes against dust and direct sun glare with a simple side-lever flick. Lined with washable breathable padding and certified by SIRIM, it offers championship style combined with street reliability."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Outer Shield + Drop-Down Inner Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Comfort Lining"
+      },
+      {
+        label: "Available Sizes",
+        value: "XL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-nfj-kasma-daniel-replica",
+    gearType: "Helmet",
+    name: "KYT NFJ Kasma Daniel Replica",
+    brand: "KYT",
+    price: 365,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XL"
+    ],
+    image: "/products/rider-gear/kyt-nfj-kasma-daniel-replica/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-nfj-kasma-daniel-replica/angled.jpg",
+      "/products/rider-gear/kyt-nfj-kasma-daniel-replica/back.jpg",
+      "/products/rider-gear/kyt-nfj-kasma-daniel-replica/front.jpg",
+      "/products/rider-gear/kyt-nfj-kasma-daniel-replica/left.jpg",
+      "/products/rider-gear/kyt-nfj-kasma-daniel-replica/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: Certified by SIRIM Malaysia for maximum rider protection",
+      "Impact-Resistant & Aerodynamic: Impact-resistant ADT resin construction engineered for aerodynamic balance",
+      "Removable & Washable Lining: Breathable inner liners that are 100% removable and washable",
+      "Quick-Release Buckle: Features a quick-release retention buckle for easy daily operation"
+    ],
+    description: [
+      "Showcasing Kasma Daniel’s popular signature graphics, this edition celebrates local racing talent in high-performance open-face styling. Designed with advanced thermoplastic materials, it provides high impact absorption across all contact zones.",
+      "An integrated retractable sun visor protects eyes from harsh afternoon heat without requiring visor swaps. SIRIM certified and fitted with plush removable liners, it keeps riders cool, safe, and stylish."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.05"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Visor + Retractable Sun Shield)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Hypoallergenic Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-ttr-jet-merdeka-67-limited-edition",
+    gearType: "Helmet",
+    name: "KYT TTR-Jet Merdeka 67 Limited Edition",
+    brand: "KYT",
+    price: 420,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    image: "/products/rider-gear/kyt-ttr-jet-merdeka-67-limited-edition/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-ttr-jet-merdeka-67-limited-edition/angled.jpg",
+      "/products/rider-gear/kyt-ttr-jet-merdeka-67-limited-edition/back.jpg",
+      "/products/rider-gear/kyt-ttr-jet-merdeka-67-limited-edition/front.jpg",
+      "/products/rider-gear/kyt-ttr-jet-merdeka-67-limited-edition/left.jpg",
+      "/products/rider-gear/kyt-ttr-jet-merdeka-67-limited-edition/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-approved for maximum street safety and road compliance (ECE 22.06 standard)",
+      "Impact-Resistant & Aerodynamic: Built using impact-resistant thermoplastic resin with advanced sport aerodynamics",
+      "Removable & Washable Lining: Outfitted with removable, washable, and breathable interior liners",
+      "Quick-Release Buckle: Equipped with a quick-release micrometric buckle retention system"
+    ],
+    description: [
+      "Released to commemorate Malaysia's 67th Independence Day, the KYT TTR-Jet Merdeka 67 features exclusive limited-edition graphics. Built upon the latest TTR-Jet shell platform, it combines sharp drag reduction channels with heavy-duty impact dissipation.",
+      "Dual visor optics allow effortless light management during daytime and nighttime riding sessions. Certified under SIRIM safety standards, this limited release is a must-have piece for helmet collectors and daily riders."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face (Sporty Jet)"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved / ECE 22.06"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Visor + Integrated Inner Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Comfort Lining"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-hellcat-waves-white-blue",
+    gearType: "Helmet",
+    name: "KYT Hellcat Waves White Blue",
+    brand: "KYT",
+    price: 300,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    image: "/products/rider-gear/kyt-hellcat-waves-white-blue/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-hellcat-waves-white-blue/angled.jpg",
+      "/products/rider-gear/kyt-hellcat-waves-white-blue/back.jpg",
+      "/products/rider-gear/kyt-hellcat-waves-white-blue/front.jpg",
+      "/products/rider-gear/kyt-hellcat-waves-white-blue/left.jpg",
+      "/products/rider-gear/kyt-hellcat-waves-white-blue/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: 100% SIRIM-approved to ensure maximum safety on public roads",
+      "Impact-Resistant & Aerodynamic: Molded in impact-resistant thermoplastic with aerodynamic cooling channels",
+      "Removable & Washable Lining: Fully removable, washable, and breathable cheek and crown pads",
+      "Quick-Release Buckle: Fitted with a quick-release buckle for simple and secure fastening"
+    ],
+    description: [
+      "Featuring a refreshing fluid wave graphic design in white and blue, this Hellcat helmet brings a cool, dynamic vibe to city cruising. Its rigid outer shell structure absorbs and distributes kinetic energy smoothly during impact.",
+      "The double-visor arrangement protects against sun dazzle while keeping dust out of your eyes. Lined with removable breathable padding and verified with SIRIM safety approval, it delivers a comfortable, worry-free ride."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Visor + Drop-Down Sun Visor)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "kyt-hellcat-restart-aqua",
+    gearType: "Helmet",
+    name: "KYT Hellcat Restart Aqua",
+    brand: "KYT",
+    price: 300,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    image: "/products/rider-gear/kyt-hellcat-restart-aqua/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/kyt-hellcat-restart-aqua/angled.jpg",
+      "/products/rider-gear/kyt-hellcat-restart-aqua/back.jpg",
+      "/products/rider-gear/kyt-hellcat-restart-aqua/front.jpg",
+      "/products/rider-gear/kyt-hellcat-restart-aqua/left.jpg",
+      "/products/rider-gear/kyt-hellcat-restart-aqua/right.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety standards and legal compliance",
+      "Impact-Resistant & Aerodynamic: High-impact thermoplastic resin shell with aerodynamic contouring",
+      "Removable & Washable Lining: Breathable, removable, and washable inner liner for hygiene",
+      "Quick-Release Buckle: Features a quick-release retention buckle for fast daily use"
+    ],
+    description: [
+      "Sporting a vibrant turquoise Aqua livery, the KYT Hellcat Restart Aqua offers a standout look for contemporary street riders. Its compact thermoplastic shell provides maximum impact resistance while minimizing wind noise during city commutes.",
+      "Dual visor technology allows riders to deploy an internal dark shield instantly under bright sunlight. SIRIM certified and fitted with plush washable comfort liners, it is built for style, security, and daily ease."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Dual Visor (Clear Main Shield + Retractable Sun Shield)"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Comfort Lining"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
       }
     ]
   },
@@ -177,6 +1291,142 @@ export const RIDER_GEAR: GearItem[] = [
     ]
   },
   {
+    slug: "arc-ritz-modern-series",
+    gearType: "Helmet",
+    name: "ARC Ritz Modern Series",
+    brand: "ARC",
+    price: 180,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "M",
+      "L",
+      "XXL"
+    ],
+    colours: [
+      "Modern Grey",
+      "Modern Blue",
+      "Modern Silver",
+      "Modern White",
+      "Modern Black",
+      "Modern Red",
+      "Modern Yellow"
+    ],
+    image: "/products/rider-gear/arc-ritz-modern-series/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-modern-series/black.jpg",
+      "/products/rider-gear/arc-ritz-modern-series/blue.jpg",
+      "/products/rider-gear/arc-ritz-modern-series/grey.jpg",
+      "/products/rider-gear/arc-ritz-modern-series/red.jpg",
+      "/products/rider-gear/arc-ritz-modern-series/white.jpg",
+      "/products/rider-gear/arc-ritz-modern-series/yellow.jpg"
+    ],
+    colourImages: {
+      "Modern Grey": "/products/rider-gear/arc-ritz-modern-series/grey.jpg",
+      "Modern Blue": "/products/rider-gear/arc-ritz-modern-series/blue.jpg",
+      "Modern White": "/products/rider-gear/arc-ritz-modern-series/white.jpg",
+      "Modern Black": "/products/rider-gear/arc-ritz-modern-series/black.jpg",
+      "Modern Red": "/products/rider-gear/arc-ritz-modern-series/red.jpg",
+      "Modern Yellow": "/products/rider-gear/arc-ritz-modern-series/yellow.jpg"
+    },
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "The ARC Ritz Modern is one of Malaysia's most trusted open-face helmet models, blending sleek contemporary design with dependable protection. Its impact-resistant ABS shell is shaped to direct airflow efficiently and keep head weight balanced during rides.",
+      "The wide optical clear visor guards against road grit, rain, and wind buffeting. Verified with official SIRIM safety standards and lined with comfortable washable padding, it delivers excellent everyday value."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Clear Single Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable, Washable & Breathable Padding"
+      },
+      {
+        label: "Available Sizes",
+        value: "M, L, XXL"
+      }
+    ]
+  },
+  {
+    slug: "arc-ritz-yf1-series",
+    gearType: "Helmet",
+    name: "ARC Ritz YF1 Series",
+    brand: "ARC",
+    price: 290,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L",
+      "XXL"
+    ],
+    colours: [
+      "Yellow & Red",
+      "Blue & Red"
+    ],
+    image: "/products/rider-gear/arc-ritz-yf1-series/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-yf1-series/blue-and-red-1.jpg",
+      "/products/rider-gear/arc-ritz-yf1-series/blue-and-red-2.jpg",
+      "/products/rider-gear/arc-ritz-yf1-series/blue-and-red-3.jpg",
+      "/products/rider-gear/arc-ritz-yf1-series/yellow-and-red-1.jpg",
+      "/products/rider-gear/arc-ritz-yf1-series/yellow-and-red-2.jpg",
+      "/products/rider-gear/arc-ritz-yf1-series/yellow-and-red-3.jpg"
+    ],
+    colourImages: {
+      "Yellow & Red": "/products/rider-gear/arc-ritz-yf1-series/yellow-and-red-1.jpg",
+      "Blue & Red": "/products/rider-gear/arc-ritz-yf1-series/blue-and-red-1.jpg"
+    },
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "Boost your visibility and your style with the vibrant ARC Ritz YF1 Series, designed to keep you seen and safe in all lighting conditions. The dynamic YF1 graphics add a sporty edge to the classic open-face silhouette, making it a favorite among energetic city riders.",
+      "Enjoy lasting comfort with its moisture-wicking, easily removable interior lining built for the tropical Malaysian climate."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Standard Clear Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable & Washable"
+      },
+      {
+        label: "Available Sizes",
+        value: "L, XXL"
+      }
+    ]
+  },
+  {
     slug: "arc-ritz-yf-dragon-series",
     gearType: "Helmet",
     name: "ARC Ritz YF Dragon Series",
@@ -239,6 +1489,400 @@ export const RIDER_GEAR: GearItem[] = [
       {
         label: "Available Sizes",
         value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "arc-ritz-two-tone-series",
+    gearType: "Helmet",
+    name: "ARC Ritz Two-Tone Series",
+    brand: "ARC",
+    price: 250,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    colours: [
+      "Baby Blue",
+      "Gold"
+    ],
+    image: "/products/rider-gear/arc-ritz-two-tone-series/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-two-tone-series/baby-blue.jpg",
+      "/products/rider-gear/arc-ritz-two-tone-series/gold.jpg"
+    ],
+    colourImages: {
+      "Baby Blue": "/products/rider-gear/arc-ritz-two-tone-series/baby-blue.jpg",
+      Gold: "/products/rider-gear/arc-ritz-two-tone-series/gold.jpg"
+    },
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "Embrace a striking aesthetic with the ARC Ritz Two-Tone Series. The elegant dual-color design pairs seamlessly with its rugged, impact-absorbing thermoplastic construction to provide both class and resilience.",
+      "With fully removable padding, you can effortlessly maintain this stylish helmet in pristine condition for years to come."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Standard Clear Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable & Washable"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "arc-xr-series-winston-eagle",
+    gearType: "Helmet",
+    name: "ARC XR Series – Winston Eagle",
+    brand: "ARC",
+    price: 290,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L"
+    ],
+    image: "/products/rider-gear/arc-xr-series-winston-eagle/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-xr-series-winston-eagle/1.jpg",
+      "/products/rider-gear/arc-xr-series-winston-eagle/2.jpg",
+      "/products/rider-gear/arc-xr-series-winston-eagle/3.jpg",
+      "/products/rider-gear/arc-xr-series-winston-eagle/4.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "Experience the next level of urban riding with the ARC XR Series – Winston Eagle, showcasing a sleek, contemporary design tailored for the modern commuter. The XR series shell delivers superior aerodynamic stability at higher speeds, ensuring a smooth and comfortable journey every time.",
+      "Complete with a plush, washable interior, it is the ultimate companion for daily reliability and refined style."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face (XR Shell)"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Standard Clear Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable & Washable"
+      },
+      {
+        label: "Available Sizes",
+        value: "L"
+      }
+    ]
+  },
+  {
+    slug: "arc-xr-series-supreme-gold",
+    gearType: "Helmet",
+    name: "ARC XR Series – Supreme Gold",
+    brand: "ARC",
+    price: 250,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L"
+    ],
+    image: "/products/rider-gear/arc-xr-series-supreme-gold/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-xr-series-supreme-gold/1.jpg",
+      "/products/rider-gear/arc-xr-series-supreme-gold/2.jpg",
+      "/products/rider-gear/arc-xr-series-supreme-gold/3.jpg",
+      "/products/rider-gear/arc-xr-series-supreme-gold/4.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "Turn every ride into a premium experience with the ARC XR Series – Supreme Gold, featuring luxurious gold accents that radiate exclusivity. The advanced XR aerodynamic profile minimizes wind noise, while the impact-resistant ABS construction offers uncompromising protection on the asphalt.",
+      "Ride with supreme confidence and unparalleled comfort, knowing you are protected by top-tier SIRIM safety standards."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face (XR Shell)"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Standard Clear Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable & Washable"
+      },
+      {
+        label: "Available Sizes",
+        value: "L"
+      }
+    ]
+  },
+  {
+    slug: "arc-ritz-special-edition-zamri-baba-tribute-helmet-cap",
+    gearType: "Helmet",
+    name: "ARC Ritz Special Edition – Zamri Baba Tribute (Helmet + Cap)",
+    brand: "ARC",
+    price: 390,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    image: "/products/rider-gear/arc-ritz-special-edition-zamri-baba-tribute-helmet-cap/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-special-edition-zamri-baba-tribute-helmet-cap/1.jpg",
+      "/products/rider-gear/arc-ritz-special-edition-zamri-baba-tribute-helmet-cap/2.jpg",
+      "/products/rider-gear/arc-ritz-special-edition-zamri-baba-tribute-helmet-cap/3.jpg",
+      "/products/rider-gear/arc-ritz-special-edition-zamri-baba-tribute-helmet-cap/4.jpg"
+    ],
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "Celebrate Malaysian motorsport heritage with the exclusive ARC Ritz Special Edition – Zamri Baba Tribute, bundled perfectly with a matching commemorative cap. Featuring distinctive racing graphics that honor a local legend, this collector's helmet combines track-inspired passion with everyday street practicality.",
+      "Stand out from the pack while enjoying top-tier impact protection and superior airflow."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Standard Clear Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable & Washable"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "arc-ritz-ar4-series",
+    gearType: "Helmet",
+    name: "ARC Ritz AR4 Series",
+    brand: "ARC",
+    price: 260,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    colours: [
+      "Star Blue"
+    ],
+    image: "/products/rider-gear/arc-ritz-ar4-series/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-ar4-series/1.jpg",
+      "/products/rider-gear/arc-ritz-ar4-series/2.jpg",
+      "/products/rider-gear/arc-ritz-ar4-series/3.jpg"
+    ],
+    colourImages: {
+      "Star Blue": "/products/rider-gear/arc-ritz-ar4-series/1.jpg"
+    },
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "Embrace a stellar riding experience with the ARC Ritz AR4 Series (Star Blue), boasting a deep, captivating blue finish with iconic star motifs. Engineered to absorb shock effectively while maintaining a low weight profile, it ensures your neck remains strain-free on longer commutes.",
+      "Trust in the secure Double D-Ring strap and crisp clear visor to elevate your daily journey."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Standard Clear Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable & Washable"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "arc-ritz-flash-series-yellow",
+    gearType: "Helmet",
+    name: "ARC Ritz Flash Series (Yellow)",
+    brand: "ARC",
+    price: 260,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "XXL"
+    ],
+    colours: [
+      "Yellow"
+    ],
+    image: "/products/rider-gear/arc-ritz-flash-series-yellow/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-flash-series-yellow/yellow-1.jpg",
+      "/products/rider-gear/arc-ritz-flash-series-yellow/yellow-2.jpg",
+      "/products/rider-gear/arc-ritz-flash-series-yellow/yellow-3.jpg",
+      "/products/rider-gear/arc-ritz-flash-series-yellow/yellow-4.jpg"
+    ],
+    colourImages: {
+      Yellow: "/products/rider-gear/arc-ritz-flash-series-yellow/yellow-1.jpg"
+    },
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "Command attention on the highway with the high-visibility ARC Ritz Flash Series (Yellow), blending electrifying color with dynamic geometric decals. This lightweight open-face helmet excels in dense urban traffic, offering a wide field of vision and exceptional head mobility.",
+      "Stay cool, secure, and fully compliant with national safety regulations every time you twist the throttle."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Standard Clear Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable & Washable"
+      },
+      {
+        label: "Available Sizes",
+        value: "XXL"
+      }
+    ]
+  },
+  {
+    slug: "arc-ritz-flash-series",
+    gearType: "Helmet",
+    name: "ARC Ritz Flash Series",
+    brand: "ARC",
+    price: 250,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    sizes: [
+      "L",
+      "XXL"
+    ],
+    colours: [
+      "Green",
+      "Red"
+    ],
+    image: "/products/rider-gear/arc-ritz-flash-series/thumbnail-copy.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-flash-series/green-1.jpg",
+      "/products/rider-gear/arc-ritz-flash-series/green-2.jpg",
+      "/products/rider-gear/arc-ritz-flash-series/green-3.jpg",
+      "/products/rider-gear/arc-ritz-flash-series/green-4.jpg",
+      "/products/rider-gear/arc-ritz-flash-series/red-1.jpg",
+      "/products/rider-gear/arc-ritz-flash-series/red-2.jpg",
+      "/products/rider-gear/arc-ritz-flash-series/red-3.jpg",
+      "/products/rider-gear/arc-ritz-flash-series/red-4.jpg"
+    ],
+    colourImages: {
+      Green: "/products/rider-gear/arc-ritz-flash-series/green-1.jpg",
+      Red: "/products/rider-gear/arc-ritz-flash-series/red-1.jpg"
+    },
+    highlights: [
+      "SIRIM Certified: SIRIM-certified for maximum safety assurance and legal road compliance",
+      "Impact-Resistant & Aerodynamic: Built with high-strength impact-resistant ABS plastic featuring aerodynamic air ventilation ports",
+      "Removable & Washable Lining: Features removable, washable, and breathable comfort padding",
+      "Double D-Ring Buckle: Utilizes friction through two metal loops for maximum security"
+    ],
+    description: [
+      "Ignite your daily commute with the ARC Ritz Flash Series, sporting high-energy graphics that perfectly match your fast-paced lifestyle. The aerodynamic profile slices through wind with ease, reducing drag and keeping you comfortably balanced on the saddle.",
+      "Complete with a crystal-clear visor and a heavy-duty retention system, it is the ultimate blend of speed, safety, and street cred."
+    ],
+    specs: [
+      {
+        label: "Helmet Type",
+        value: "Open Face"
+      },
+      {
+        label: "Safety Certification",
+        value: "SIRIM Approved"
+      },
+      {
+        label: "Visor Included",
+        value: "Standard Clear Visor"
+      },
+      {
+        label: "Inner Lining",
+        value: "Removable & Washable"
+      },
+      {
+        label: "Available Sizes",
+        value: "L, XXL"
       }
     ]
   },
@@ -564,6 +2208,64 @@ export const RIDER_GEAR: GearItem[] = [
       {
         label: "Tint / Color",
         value: "Titan Blue"
+      },
+      {
+        label: "Material",
+        value: "Anti-Scratch Polycarbonate"
+      },
+      {
+        label: "UV Protection",
+        value: "Blocks 99% of UVA/UVB rays"
+      },
+      {
+        label: "Installation",
+        value: "Tool-less Quick Release"
+      }
+    ]
+  },
+  {
+    slug: "arc-ritz-hypershield-visor",
+    gearType: "Helmet Visor",
+    name: "ARC Ritz Hypershield Visor",
+    brand: "ARC",
+    price: 60,
+    availability: "In Stock",
+    arrival: "2026-09-01",
+    shareVariant: "full",
+    colours: [
+      "Titan Light Blue",
+      "Titan Light Rainbow",
+      "Titan Light Red"
+    ],
+    image: "/products/rider-gear/arc-ritz-hypershield-visor/thumbnail.jpg",
+    images: [
+      "/products/rider-gear/arc-ritz-hypershield-visor/light-blue.jpg",
+      "/products/rider-gear/arc-ritz-hypershield-visor/light-rainbow.jpg",
+      "/products/rider-gear/arc-ritz-hypershield-visor/light-red.jpg"
+    ],
+    colourImages: {
+      "Titan Light Blue": "/products/rider-gear/arc-ritz-hypershield-visor/light-blue.jpg",
+      "Titan Light Rainbow": "/products/rider-gear/arc-ritz-hypershield-visor/light-rainbow.jpg",
+      "Titan Light Red": "/products/rider-gear/arc-ritz-hypershield-visor/light-red.jpg"
+    },
+    highlights: [
+      "Shatter-resistant, optical-grade polycarbonate",
+      "Anti-scratch and UV-blocking coatings",
+      "Tool-less, quick-release installation",
+      "Exact fit for the original ARC Ritz helmet model"
+    ],
+    description: [
+      "Stand out from the crowd and drastically reduce road glare with the aggressive styling of the ARC Ritz Hypershield Visor. Featuring a premium metallic or tinted finish, this visor not only elevates your helmet's overall aesthetic but provides enhanced privacy and bright-light protection.",
+      "It merges high-end optical clarity with uncompromising shatter resistance for the ultimate riding upgrade."
+    ],
+    specs: [
+      {
+        label: "Compatibility",
+        value: "Fits only ARC Ritz helmets"
+      },
+      {
+        label: "Tint / Color",
+        value: "Titan Light Blue / Titan Light Rainbow / Titan Light Red"
       },
       {
         label: "Material",

@@ -1,5 +1,5 @@
 // Generates src/data/{motorcycles,accessories,riderGear}.ts from parsed.json
-// (yellow rows only) and downloads product images into public/products/.
+// and downloads product images into public/products/.
 const fs = require("fs");
 const path = require("path");
 const { listFolder, download } = require("./drive");
@@ -7,17 +7,39 @@ const { optimiseFile } = require("./optimise");
 
 const [, , parsedPath, repo] = process.argv;
 const d = require(parsedPath);
-const YELLOW = "FFFFFF00";   // ready for the site
-const CYAN = "FF00FFFF";     // newly added by the client
-const RED = "FFFF0000";      // discontinued — must not reach the site
 const PUB = path.join(repo, "public", "products");
 
 /* ---------- text helpers ---------- */
 const clean = (s) => (s || "").replace(/\s+/g, " ").trim();
-const isLive = (r) =>
-  r.cells.A && r.cells.A.v && [YELLOW, CYAN].includes(r.cells.A.fill) && r.cells.A.fill !== RED;
+/**
+ * Every named row is imported.
+ *
+ * Up to R4 the sheet listed the client's whole range and used fill colours to
+ * say which rows were ready, so the generator imported only the yellow and
+ * cyan ones and had to skip the red (discontinued) rows. At R5 the client
+ * deleted the discontinued rows outright and re-purposed yellow to mean
+ * "already uploaded", asking for everything else to go up too — so presence
+ * in the sheet is now the signal, and a colour means nothing here. If a
+ * product must come off the site, it has to come out of the sheet.
+ */
+const isLive = (r) => Boolean(r.cells.A && clean(r.cells.A.v));
 const slugify = (s) =>
   s.toLowerCase().replace(/&/g, " and ").replace(/[()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+/**
+ * Is this file the listing-card thumbnail, by name?
+ *
+ * The client marks it either "Thumbnail"/"Thumbnail_v2" or by suffixing the
+ * product name with " T" / " T_v2". The separator has to stay loose: on the
+ * first run the name comes from Drive ("ENKEI 3 Bintang Sport Rim T_v2"), but
+ * on a cached re-run it is rebuilt from the saved file name with every dash
+ * turned back into a space ("enkei 3 bintang sport rim t v2"). Matching only
+ * the Drive spelling meant a re-run failed to recognise the thumbnail, so it
+ * fell through to the first file alphabetically and the real thumbnail was
+ * left in the product-page gallery — the duplicate picture the client flagged
+ * on the ENKEI 3 Bintang, ENKEI G500 and AEROX THAI pages (R5 slides 13-15).
+ */
+const thumbNamed = (f) => /thumb/i.test(f.base) || /\s+t(?:[\s_-]*v\d+)?$/i.test(f.base.trim());
 const fixTypos = (s) =>
   s.replace(/\bIron Gret\b/g, "Iron Grey").replace(/\bBLue\b/g, "Blue").replace(/\bBlu\b/g, "Blue");
 
@@ -105,7 +127,38 @@ function monthlyBand(raw) {
 
 /* ---------- images ---------- */
 const imageManifest = {};
+
+/**
+ * Products whose sheet row points at the wrong Drive folder, so no photo is
+ * imported rather than showing another product's bike. Clearing the entry
+ * once the client fixes the link is all that is needed — nothing else keys
+ * off this list.
+ */
+const WRONG_IMAGE_FOLDER = {
+  // R5: the ADV160 row carries the Honda Vario 160's folder (same id), and
+  // the photos in it are Vario 160s in the Vario's colours. Showing them
+  // would put the wrong bike on the ADV160's card and product page.
+  "honda-adv160": "its sheet row links the Honda Vario 160's photo folder",
+};
+
+/** Which product claimed each Drive folder, so a shared one can be flagged */
+const folderOwner = new Map();
+const sharedFolders = [];
+
 async function fetchImages(folderUrl, category, slug) {
+  // Two products on one folder almost always means a copy-paste slip in the
+  // sheet, and it is invisible once the photos are downloaded under both
+  // slugs — so say so at the end of the run. Checked before the skip below,
+  // so the report still names both halves of a known pair.
+  if (folderUrl) {
+    const folderId = (folderUrl.match(/folders\/([A-Za-z0-9_-]+)/) || [, folderUrl])[1];
+    if (folderOwner.has(folderId)) sharedFolders.push(`${folderOwner.get(folderId)} and ${slug} share one photo folder`);
+    else folderOwner.set(folderId, slug);
+  }
+  if (WRONG_IMAGE_FOLDER[slug]) {
+    console.warn(`   ! no photos: ${WRONG_IMAGE_FOLDER[slug]}`);
+    return { image: undefined, images: [] };
+  }
   if (!folderUrl) return { image: undefined, images: [] };
   const dir = path.join(PUB, category, slug);
   // Reuse an already-downloaded folder unless FRESH=1. The Drive listing is
@@ -167,9 +220,6 @@ async function fetchImages(folderUrl, category, slug) {
  */
 function splitMedia(files) {
   const nested = files.some((f) => f.folder);
-  // Flat folders name the thumbnail "Thumbnail", "Thumbnail_v2", or append a
-  // " T" / " T_v2" suffix to the product name (client convention, R4).
-  const thumbNamed = (f) => /thumb/i.test(f.base) || /\sT(_v\d+)?$/i.test(f.base.trim());
   const isThumb = nested ? (f) => !f.folder : thumbNamed;
   const thumb = files.find((f) => isThumb(f) && thumbNamed(f)) || files.find(isThumb) || files[0];
   const gallery = files.filter((f) => !isThumb(f));
@@ -198,8 +248,11 @@ function colourImages(colours, saved, productName) {
   const out = {};
   const norm = (x) =>
     x.toLowerCase().replace(/\s*\([^)]*\)$/, "").replace(/colour/g, "color").replace(/grey/g, "gray")
-      .replace(/[^a-z0-9]+/g, " ").replace(/\s*\d+$/, "").trim();
-  const gallery = saved.filter((s) => !/thumb/i.test(s.base) && !/\sT(_v\d+)?$/i.test(s.base.trim()));
+      .replace(/[^a-z0-9]+/g, " ").replace(/\s*\d+$/, "")
+      // The client shortens "blue" to "blu" in photo names (YZF-R25)
+      .replace(/\bblu\b/g, "blue")
+      .trim();
+  const gallery = saved.filter((s) => !thumbNamed(s));
   // Photo groups: a per-colour sub-folder ("Naga Mas/1.jpg") names the colour
   // outright; otherwise the file name does ("matador red 1/2" → "matador red").
   const groups = new Map();
@@ -226,7 +279,24 @@ function colourImages(colours, saved, productName) {
   // One colour left and one photo group left → they belong together
   const freeGroups = [...groups.keys()].filter((g) => !taken.has(g));
   if (remaining.length === 1 && freeGroups.length === 1) claim(remaining[0], freeGroups[0]);
-  else if (remaining.length && gallery.length) unmatched.push(`${productName}: sheet says "${remaining.join(", ")}" but photos are named "${freeGroups.join(", ") || "(numbered only)"}"`);
+
+  // Last resort: the group key can be the wrong axis. The Fork Lay Drag keeps
+  // its photos in sub-folders named for the bike they fit ("NVX", "Y15ZR"),
+  // so the colour only ever appears inside the file name — look there before
+  // giving up on a colour.
+  const stillOut = [];
+  for (const c of remaining.length === 1 && freeGroups.length === 1 ? [] : remaining) {
+    const hues = norm(c).split(" ").filter((w) => w && !FINISH_WORDS.has(w));
+    const hit = hues.length
+      ? gallery.find((s) => !taken.has(norm(s.folder?.split("/").pop() || s.base))
+          && hues.every((h) => norm(s.base).split(" ").includes(h)))
+      : undefined;
+    if (hit) {
+      out[c] = hit.url;
+      taken.add(norm(hit.folder?.split("/").pop() || hit.base));
+    } else stillOut.push(c);
+  }
+  if (stillOut.length && gallery.length) unmatched.push(`${productName}: sheet says "${stillOut.join(", ")}" but photos are named "${[...groups.keys()].filter((g) => !taken.has(g)).join(", ") || "(numbered only)"}"`);
   return Object.keys(out).length ? out : undefined;
 }
 
@@ -388,7 +458,7 @@ function emit(file, typeName, importLine, header, items) {
   console.log("\n## Rider gear");
   const gear = await riderGear();
 
-  const gen = `/**\n * GENERATED from "JomKaki Rider Product Compilation.xlsx" (yellow rows only)\n * on ${new Date().toISOString().slice(0, 10)}. Edit the sheet and re-run the generator rather than\n * hand-editing prices or copy here.\n */`;
+  const gen = `/**\n * GENERATED from "JomKaki Rider Product Compilation.xlsx" (every named row)\n * on ${new Date().toISOString().slice(0, 10)}. Edit the sheet and re-run the generator rather than\n * hand-editing prices or copy here.\n */`;
   emit("motorcycles.ts", "MOTORCYCLES: Motorcycle[]", 'import type { Motorcycle } from "./types";', gen, bikes);
   emit("accessories.ts", "ACCESSORIES: AccessoryItem[]", 'import type { AccessoryItem } from "./types";', gen, acc);
   emit("riderGear.ts", "RIDER_GEAR: GearItem[]", 'import type { GearItem } from "./types";', gen, gear);
@@ -399,5 +469,8 @@ function emit(file, typeName, importLine, header, items) {
   }
   if (skipped.length) {
     console.log(`\nHighlighted but skipped (no photos yet):\n  - ${skipped.join("\n  - ")}`);
+  }
+  if (sharedFolders.length) {
+    console.log(`\nTwo products pointing at one photo folder (ask the client):\n  - ${sharedFolders.join("\n  - ")}`);
   }
 })().catch((e) => { console.error(e); process.exit(1); });

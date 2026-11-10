@@ -2,9 +2,15 @@
 
 Regenerates `src/data/{motorcycles,accessories,riderGear}.ts` and downloads
 product photos into `public/products/` from the client's master sheet
-"JomKaki Rider Product Compilation.xlsx". Only yellow-highlighted rows
-(fill `FFFFFF00`) are imported — that is the client's "ready" flag and it
-matches the rows that carry a Google Drive image folder.
+"JomKaki Rider Product Compilation.xlsx". **Every named row is imported.**
+
+Up to R4 the sheet listed the client's whole range and used fill colours to
+say which rows were ready — yellow and cyan meant import, red meant
+discontinued and had to be skipped. At R5 the client deleted the
+discontinued rows outright and re-purposed yellow to mean "already uploaded",
+asking for the rest to go up too, so presence in the sheet is now the only
+signal and fill colours mean nothing to the generator. **To take a product
+off the site, delete its row** — un-highlighting it does nothing.
 
 No Python needed; Node only.
 
@@ -39,8 +45,17 @@ each file via `uc?export=download`, **recursing into sub-folders** — bikes
 keep their colour shots in a `Gallery` sub-folder beside the thumbnail.
 The two layers never mix: with a sub-folder present, the top-level file is
 the listing-card image (whatever it is named) and the sub-folder is the
-product-page gallery; in a flat folder the file named `Thumbnail` is the
-card image and the rest are the gallery. `public/products/manifest.json`
+product-page gallery; in a flat folder the thumbnail is marked by name and
+the rest are the gallery.
+
+`thumbNamed()` is what recognises that name — `Thumbnail`, `Thumbnail_v2`,
+or the product name suffixed with ` T` / ` T_v2`. It has to accept loose
+separators: on a first run the name comes from Drive (`… Sport Rim T_v2`),
+but on a cached re-run it is rebuilt from the saved file name with dashes
+turned back into spaces (`… sport rim t v2`). Matching only the Drive
+spelling silently broke re-runs — the thumbnail went unrecognised, the card
+fell back to the first file alphabetically, and the real thumbnail stayed in
+the gallery as a duplicate (R5 slides 13-15). `public/products/manifest.json`
 records each file's layer. On the product page,
 `colourImages` maps each colour option to its photo so picking a colour on
 the product page shows it. The generator prints any colour whose name
