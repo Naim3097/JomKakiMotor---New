@@ -7,7 +7,10 @@ import type { SearchEntry } from "@/lib/catalog";
 
 export default function SearchBox({
   index,
-  placeholder = "Search bikes, gear, parts",
+  // Names phones so the header says the catalogue covers them (R5 slide 2) —
+  // the index reaches them, but nothing invited the search. "smartphones"
+  // spelt out overruns the 200px header field; "phones" clears it.
+  placeholder = "Search bikes, gear, phones",
 }: {
   index: SearchEntry[];
   /** kept for call-site compatibility; header and page contexts share one style */
