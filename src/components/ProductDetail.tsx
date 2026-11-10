@@ -56,6 +56,8 @@ export interface DetailProps {
     name: string;
     brand: string;
     price: number;
+    /** Instalment band for a motorcycle, which publishes no price (R4) */
+    monthly?: string;
     thumb: ThumbKind;
     image?: string;
   }[];
@@ -233,17 +235,24 @@ export default function ProductDetail(p: DetailProps) {
           <div className="mt-8">
             <Carousel>
               {p.related.map((r) => (
-                <Link key={r.href} href={r.href} className="group block w-60 shrink-0 snap-start sm:w-72">
+                <Link key={r.href} href={r.href} className="group flex w-60 shrink-0 snap-start flex-col sm:w-72">
                   <ProductImage
                     src={r.image}
                     kind={r.thumb}
                     alt={r.name}
                     className="aspect-4/3 w-full rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
                   />
-                  <div className="mt-4">
+                  {/* Bottom-aligned so a name that wraps to two lines cannot
+                      drop its figure below the neighbouring cards' */}
+                  <div className="mt-4 flex flex-1 flex-col justify-end">
                     <p className="text-xs font-medium text-muted">{r.brand}</p>
                     <h3 className="text-[15px] font-semibold text-ink transition-colors group-hover:text-brand">{r.name}</h3>
-                    <p className="mt-1 text-[15px] font-semibold text-ink">{rm(r.price)}</p>
+                    {/* Motorcycles publish an instalment band, never a price
+                        (R4 slide 24); this row still showed cash figures
+                        until the client flagged it at R5 slide 9. */}
+                    <p className="mt-1 text-[15px] font-semibold text-ink">
+                      {r.monthly ? `From RM${r.monthly}/month*` : rm(r.price)}
+                    </p>
                   </div>
                 </Link>
               ))}

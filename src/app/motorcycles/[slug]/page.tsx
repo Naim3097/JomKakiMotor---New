@@ -41,6 +41,7 @@ export default async function MotorcyclePage(props: PageProps<"/motorcycles/[slu
       name: `${m.brand} ${m.model}`,
       brand: m.brand,
       price: m.price,
+      monthly: m.monthly,
       thumb: "bike" as const,
       image: m.image,
     }));

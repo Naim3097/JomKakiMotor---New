@@ -1,6 +1,7 @@
 import { MOTORCYCLES } from "@/data/motorcycles";
 import { RIDER_GEAR } from "@/data/riderGear";
 import { ACCESSORIES } from "@/data/accessories";
+import { PHONE_MODELS } from "@/data/phones";
 
 export type CategoryKey = "motorcycles" | "rider-gear" | "accessories";
 
@@ -48,6 +49,14 @@ export function buildSearchIndex(): SearchEntry[] {
       label: a.name,
       sub: `Accessories · ${a.accessoryType}`,
       href: `/accessories/${a.slug}`,
+    })),
+    // Handsets are sold from one page rather than a page each, so every model
+    // points at the same route — searching "iPhone" or "Galaxy" has to reach
+    // it (R5 slide 2).
+    ...PHONE_MODELS.map((p) => ({
+      label: p.name,
+      sub: `Smartphone · ${p.make}`,
+      href: "/smartphone",
     })),
   ];
 }

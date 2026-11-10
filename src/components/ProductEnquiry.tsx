@@ -96,7 +96,10 @@ export default function ProductEnquiry({
 
   return (
     <div className={`flex flex-col gap-6 ${stretch ? "h-full" : ""}`}>
-      {groups.map((opt) => (
+      {/* A group with nothing in it rendered as a bare heading — the
+          Y16ZR-R Pramac page showed the word COLOUR with no swatches under
+          it, which read as broken (R5 slide 6). */}
+      {groups.filter((opt) => opt.values.length > 0).map((opt) => (
         <div key={opt.label}>
           <p className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">
             {opt.label}
